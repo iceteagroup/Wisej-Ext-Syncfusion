@@ -10,8 +10,9 @@ When you look at the code, you will find a common base class **ejBase** for all 
 
 The ejBase class uses a custom **wisej.web.ext.Syncfusion** implementation that takes care of the creation and registration of events, methods, and templates. It also provides some simple methods to override in each derived class.
 
-Each specific clas
+Each specific class has it's own nested .js file that may add specific functionality to filter event data to make it serializable for the server, make sure the wrapped widget fits the container, and whatever else may be needed to make the integration as smooth as possible.
 
+All the premium extensions are open projects, meaning that we will keep adding, fixing, changing, and expanding them according to the requirements of our Technology Partners and needs we find on our projects using these extensions.
 
 ## License
 To use this extension you need to acquire at least a **JavaScript Bundle** license forom Syncfusion: https://www.syncfusion.com/sales/products. Contact us at sales@wisej.com if you'd like us to get you a nice discount from Syncfusion.
@@ -21,7 +22,6 @@ To use this extension you need to acquire at least a **JavaScript Bundle** licen
 All the integrated widgets have 3 types of members: options, methods, and events. The options (you'll find them under "members" in the documentation) are represented by a single javascript map. Methods are javascript functions. Events in the Syncfusion widgets are callback methods defined in the options map.
 
 ### Options
-
 When using the ej classes in your .NET Wisej application, you have access to the entire set of options using a single property Options. It is a dynamic .NET object and you can use it directly or assign it.
 
 When you set the Options using the designer, you can simply copy and paste (and edit) any JSON string.
@@ -66,7 +66,6 @@ this.ejCircularGauge1.Options.scales = new [] {
 You will find the complete set of options at the Syncfusion docs site linked below. Each ej class in the source code also include a direct link to the docs API and Concept pages.
 
 ### Methods
-
 All the methods exposed by the javascript ej1 widget are available to your .NET extension class using the existing Call and Eval methods. You can also use the CallAsync and EvalAsync to retrieve the return value in-line, or use the callback methods to receive the return value asynchronously.
 
 However, some methods may return values that are not immediately usable in .NET, or you need to use several methods together in a single javascript function in a way that wouldn't make sense from the server. When you need to add a method to your ej widget instance, or your derived class, use the **WidgetFunctions** property in the designer (can be used at runtime as well) to register a new javascript function that you can use with a simple widget.Call().
@@ -96,7 +95,6 @@ this.ejRichTextEditor1.Call("addMenuOption", "Make Lowercase", "e-lowercase_01")
 The code above add a javascript function "addMenuOption" to the Wisej Syncfusion widget and then called it to add a context menu option to the ejRTE widget. The javascript code can refer to the Wisej widget as **this** and to the inner Syncfusion object as **this.widget**. All the arguments are available in the **arguments[]** array.
 
 ### Events
-
 Events fired by the Syncfusion widgets are callbacks, not events. The .NET classes representing each widget already register a set of events and route them to the .NET widget's WidgetEvent event. However, if your app needs to handle an event in javascript, you can use the **WidgetEvents** collection to register your event callback.
 
 ~~~
@@ -111,6 +109,11 @@ this.ejRichTextEditor1.WidgetEvents = new []{
 ~~~
 
 The event **args** object sent by the widget is available as **e** and the code can refer to the ej widget simplty using **this**. Note that in the event code **this** refers to the ej widget, while in function code **this** refers to the Wisej widget and **this.widget** refers to the wrapped ej widget.
+
+## Support
+To log issues related to this extension, please use the Issues section of this repository. To log issues related to the usage of this extension in your projects, please use the Issues section in your Technology Partner repository.
+
+You may also fork this project and modify it to fit your needs and if you want to share a change or fix, please create a pull request.
 
 ## Documentation
 
