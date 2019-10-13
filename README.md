@@ -15,7 +15,7 @@ Each specific class has it's own nested .js file that may add specific functiona
 All the premium extensions are open projects, meaning that we will keep adding, fixing, changing, and expanding them according to the requirements of our Technology Partners and needs we find on our projects using these extensions.
 
 ## License
-To use this extension you need to acquire at least a **JavaScript Bundle** license forom Syncfusion: https://www.syncfusion.com/sales/products. Contact us at sales@wisej.com if you'd like us to get you a nice discount from Syncfusion.
+To use this extension you need to acquire at least a **JavaScript Bundle** license from Syncfusion: https://www.syncfusion.com/sales/products. Contact us at sales@wisej.com if you'd like us to get you a nice discount from Syncfusion.
 
 
 ## How to use
@@ -32,7 +32,7 @@ When you set (or change) the Options by code, you can
 - Assign an object that has the properties you want to use,
 - Assign an anonymous class.
 
-Assigning the fields directly will automatically upate the widget on the client when the property that changes is a the first level. In case your code changes properies deeper in the hierarchy, you need to call widget1.Update().
+Assigning the fields directly will automatically update the widget on the client when the property that changes is on the first level. In case your code changes properties deeper than the first level in the hierarchy, you need to call widget1.Update().
 
 ~~~
 this.ejCircularGauge1.Options.backgroundColor = "white"; // this is updated automatically on the client.
@@ -68,7 +68,7 @@ You will find the complete set of options at the Syncfusion docs site linked bel
 ### Methods
 All the methods exposed by the javascript ej1 widget are available to your .NET extension class using the existing Call and Eval methods. You can also use the CallAsync and EvalAsync to retrieve the return value in-line, or use the callback methods to receive the return value asynchronously.
 
-However, some methods may return values that are not immediately usable in .NET, or you need to use several methods together in a single javascript function in a way that wouldn't make sense from the server. When you need to add a method to your ej widget instance, or your derived class, use the **WidgetFunctions** property in the designer (can be used at runtime as well) to register a new javascript function that you can use with a simple widget.Call().
+However, some methods may return values that are not immediately usable in .NET, or you need to use several methods together in a single javascript function in a way that wouldn't make sense from the server. When you need to add a method to your ej widget instance, or your derived class, use the **WidgetFunctions** property in the designer (can be used at runtime as well) to register a new javascript function that you can use with widget.Call().
 
 ~~~
 this.ejRichTextEditor1.WidgetFunctions = new []{
@@ -76,7 +76,7 @@ this.ejRichTextEditor1.WidgetFunctions = new []{
   new WidgetFunction()  {
     Name = "addMenuOption",
     Source = @"
-      this.widget.inserMenuOption({
+      this.widget.insertMenuOption({
         newItem: arguments[0],
         targetItem: "Insert/Edit Hyperlink",
         insertType: "insertAfter",
@@ -92,10 +92,10 @@ this.ejRichTextEditor1.WidgetFunctions = new []{
 this.ejRichTextEditor1.Call("addMenuOption", "Make Lowercase", "e-lowercase_01");
 ~~~
 
-The code above add a javascript function "addMenuOption" to the Wisej Syncfusion widget and then called it to add a context menu option to the ejRTE widget. The javascript code can refer to the Wisej widget as **this** and to the inner Syncfusion object as **this.widget**. All the arguments are available in the **arguments[]** array.
+The code above adds a javascript function "addMenuOption" to the Wisej Syncfusion widget and then called it to add a context menu option to the ejRTE widget. The javascript code can refer to the Wisej widget as **this** and to the inner Syncfusion object as **this.widget**. All the arguments are available in the **arguments[]** array.
 
 ### Events
-Events fired by the Syncfusion widgets are callbacks, not events. The .NET classes representing each widget already register a set of events and route them to the .NET widget's WidgetEvent event. However, if your app needs to handle an event in javascript, you can use the **WidgetEvents** collection to register your event callback.
+Events fired by the Syncfusion widgets are callbacks, not events. The .NET classes representing each widget already registers a set of events and routes them to the .NET widget's WidgetEvent event. However, if your app needs to handle an event in javascript, you can use the **WidgetEvents** collection to register your event callback.
 
 ~~~
 this.ejRichTextEditor1.WidgetEvents = new []{
@@ -108,7 +108,7 @@ this.ejRichTextEditor1.WidgetEvents = new []{
 };
 ~~~
 
-The event **args** object sent by the widget is available as **e** and the code can refer to the ej widget simplty using **this**. Note that in the event code **this** refers to the ej widget, while in function code **this** refers to the Wisej widget and **this.widget** refers to the wrapped ej widget.
+The event **args** object sent by the widget is available as **e** and the code can refer to the ej widget simply using **this**. Note that in the event code **this** refers to the ej widget, while in function code **this** refers to the Wisej widget and **this.widget** refers to the wrapped ej widget.
 
 ## Support
 To log issues related to this extension, please use the Issues section of this repository. To log issues related to the usage of this extension in your projects, please use the Issues section in your Technology Partner repository.
@@ -117,11 +117,11 @@ You may also fork this project and modify it to fit your needs and if you want t
 
 ## Documentation
 
-Synfusion Documentation:
+Syncfusion Documentation:
 
 https://help.syncfusion.com/js/
 
-Synfusion API:
+Syncfusion API:
 
 https://help.syncfusion.com/api/js/
 
