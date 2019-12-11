@@ -66,9 +66,21 @@ this.ejCircularGauge1.Options.scales = new [] {
 You will find the complete set of options at the Syncfusion docs site linked below. Each ej class in the source code also include a direct link to the docs API and Concept pages.
 
 ### Methods
-All the methods exposed by the javascript ej1 widget are available to your .NET extension class using the existing Call and Eval methods. You can also use the CallAsync and EvalAsync to retrieve the return value in-line, or use the callback methods to receive the return value asynchronously.
+All the methods exposed by the javascript ej1 widget are available to your .NET extension class as C# or VB.NET methods using the new *Widget* object. All methods are also available as async methods with the "Async" suffix.
 
-However, some methods may return values that are not immediately usable in .NET, or you need to use several methods together in a single javascript function in a way that wouldn't make sense from the server. When you need to add a method to your ej widget instance, or your derived class, use the **WidgetFunctions** property in the designer (can be used at runtime as well) to register a new javascript function that you can use with widget.Call().
+Note: When using VB.NET you need to use *Option Strict Off* to allow the .NET dynamic compiler handle the calls into the *Widget* object.
+
+~~~
+
+// C#
+this.ejSpreadsheet1.Widget.setReadOnly("B3");
+
+' VB.NET
+Me.ejSpreadsheet1.Widget.setReadOnly("B3")
+
+~~~
+
+However, some methods may return values that are not immediately usable in .NET, or you need to use several methods together in a single javascript function in a way that wouldn't make sense from the server. When you need to add a method to your ej widget instance, or your derived class, use the **WidgetFunctions** property in the designer (can be used at runtime as well) to register a new javascript function.
 
 ~~~
 this.ejRichTextEditor1.WidgetFunctions = new []{
@@ -89,12 +101,24 @@ this.ejRichTextEditor1.WidgetFunctions = new []{
 
 };
 
-this.ejRichTextEditor1.Call("addMenuOption", "Make Lowercase", "e-lowercase_01");
+this.ejRichTextEditor1.Widget.addMenuOption("Make Lowercase", "e-lowercase_01");
 ~~~
 
-The code above adds a javascript function "addMenuOption" to the Wisej Syncfusion widget and then called it to add a context menu option to the ejRTE widget. The javascript code can refer to the Wisej widget as **this** and to the inner Syncfusion object as **this.widget**. All the arguments are available in the **arguments[]** array.
+The code above adds a javascript function "addMenuOption" to the Wisej Syncfusion widget and then calls it to add a context menu option to the ejRTE widget.
+
+**Be careful** not to override existing methods. The extension will simply not register your new method and log an error in the JavaScript console.
 
 ### Events
+The events registered by the ej class (see constructor for each component in the source code) are also available as standard .NET events exposed by the *Widget* object:
+
+~~~
+// C#
+this.ejChart1.Widget.chartClick += new WidgetEventHandler(ejChart1_WidgetEvent);
+
+
+~~~
+
+
 Events fired by the Syncfusion widgets are callbacks, not events. The .NET classes representing each widget already registers a set of events and routes them to the .NET widget's WidgetEvent event. However, if your app needs to handle an event in javascript, you can use the **WidgetEvents** collection to register your event callback.
 
 ~~~
