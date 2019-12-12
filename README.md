@@ -17,6 +17,9 @@ All the premium extensions are open projects, meaning that we will keep adding, 
 ## License
 To use this extension you need to acquire at least a **JavaScript Bundle** license from Syncfusion: https://www.syncfusion.com/sales/products. Contact us at sales@wisej.com if you'd like us to get you a nice discount from Syncfusion.
 
+## Demo
+Live demo of the Wisej.Web.Ext.Syncfusion.Test.sln project:
+http://demo.wisej.com/syncfusion
 
 ## How to use
 All the integrated widgets have 3 types of members: options, methods, and events. The options (you'll find them under "members" in the documentation) are represented by a single javascript map. Methods are javascript functions. Events in the Syncfusion widgets are callback methods defined in the options map.
