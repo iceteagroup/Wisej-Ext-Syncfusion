@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Wisej.Web.Ext.Syncfusion.Test</RootNamespace>
+    <AssemblyName>Wisej.Web.Ext.Syncfusion.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+    <ProjectGuid>{D36DDFDB-AC1B-4E75-96F9-4113A54F9D5C}</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Wisej.Web.Ext.Syncfusion.Test.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Default.html" />
+    <Content Include="Default.json" />
+    <Content Include="favicon.ico" />
+    <EmbeddedResource Include="Component\ejChart.resx">
+      <DependentUpon>ejChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejCircularGauge.resx">
+      <DependentUpon>ejCircularGauge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejColorPicker.resx">
+      <DependentUpon>ejColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejDiagram.resx">
+      <DependentUpon>ejDiagram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejDropDownList.resx">
+      <DependentUpon>ejDropDownList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejFileExplorer.resx">
+      <DependentUpon>ejFileExplorer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejRotator.resx">
+      <DependentUpon>ejRotator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejSchedule.resx">
+      <DependentUpon>ejSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejSpreadsheet.resx">
+      <DependentUpon>ejSpreadsheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Themes\App.mixin.theme" />
+    <Content Include="Data\OrganizationalChart.json" />
+    <Content Include="Data\Sample.xlsx" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\bird.jpg" />
+    <Content Include="Images\card.jpg" />
+    <Content Include="Images\nature.jpg" />
+    <Content Include="Images\night.jpg" />
+    <Content Include="Images\sculpture.jpg" />
+    <Content Include="Images\seaview.jpg" />
+    <Content Include="Images\snowfall.jpg" />
+    <Content Include="Images\syncfusion.png" />
+    <Content Include="README.txt" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Component\ejBarcode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejBarcode.Designer.cs">
+      <DependentUpon>ejBarcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejChart.Designer.cs">
+      <DependentUpon>ejChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejCircularGauge.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejCircularGauge.Designer.cs">
+      <DependentUpon>ejCircularGauge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejColorPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejColorPicker.Designer.cs">
+      <DependentUpon>ejColorPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejDiagram.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejDiagram.Designer.cs">
+      <DependentUpon>ejDiagram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejDropDownList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejDropDownList.Designer.cs">
+      <DependentUpon>ejDropDownList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejFileExplorer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejFileExplorer.Designer.cs">
+      <DependentUpon>ejFileExplorer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejRotator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejRotator.Designer.cs">
+      <DependentUpon>ejRotator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejSchedule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejSchedule.Designer.cs">
+      <DependentUpon>ejSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejSpreadsheet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejSpreadsheet.Designer.cs">
+      <DependentUpon>ejSpreadsheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\TestBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainView.Designer.cs">
+      <DependentUpon>MainView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Syncfusion.DocIO.Base, Version=17.3460.0.26, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\Syncfusion.DocIO.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.EJ, Version=17.3460.0.26, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\Syncfusion.EJ.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.EJ.Export, Version=17.3460.0.26, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\Syncfusion.EJ.Export.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.XlsIO.Base, Version=17.3460.0.26, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\Syncfusion.XlsIO.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Wisej.Ext.MaterialDesign">
+      <HintPath>..\..\..\..\2.1\bin\Wisej.Ext.MaterialDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="Wisej.Framework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=17bef35e11b84171, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Development\2.1\bin\Wisej.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Wisej.Web.Ext.Syncfusion, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\Wisej.Web.Ext.Syncfusion.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Component\ejBarcode.resx">
+      <DependentUpon>ejBarcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\TestBase.resx">
+      <DependentUpon>TestBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainView.resx">
+      <DependentUpon>MainView.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>65193</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:65193/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
