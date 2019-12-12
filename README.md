@@ -21,6 +21,9 @@ To use this extension you need to acquire at least a **JavaScript Bundle** licen
 Live demo of the Wisej.Web.Ext.Syncfusion.Test.sln project:
 http://demo.wisej.com/syncfusion
 
+## Work in progress
+The library and test are in progress - we are adding every available widget to the test app and will keep refining the intergration for the foreseable future.
+
 ## How to use
 All the integrated widgets have 3 types of members: options, methods, and events. The options (you'll find them under "members" in the documentation) are represented by a single javascript map. Methods are javascript functions. Events in the Syncfusion widgets are callback methods defined in the options map.
 
