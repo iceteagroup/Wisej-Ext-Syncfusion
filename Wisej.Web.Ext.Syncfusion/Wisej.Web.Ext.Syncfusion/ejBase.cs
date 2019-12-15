@@ -25,9 +25,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Design;
 using System.Dynamic;
-using System.Globalization;
 using System.IO;
-using System.Linq.Expressions;
 using Wisej.Base;
 using Wisej.Core;
 using Wisej.Design;
@@ -77,6 +75,28 @@ namespace Wisej.Web.Ext.Syncfusion
 			this.Options = options;
 			this.WidgetHtml = html;
 			this.WidgetClass = className;
+		}
+
+		#endregion
+
+		#region Events
+
+		/// <summary>
+		/// Fired when the Syncfusion widget is created and it available to receive calls.
+		/// </summary>
+		public event EventHandler Initialized
+		{
+			add { AddHandler(nameof(Initialized), value); }
+			remove { RemoveHandler(nameof(Initialized), value); }
+		}
+
+		/// <summary>
+		/// Raises the <see cref="Initialized"/> event.
+		/// </summary>
+		/// <param name="e"></param>
+		protected virtual void OnInitialized(EventArgs e)
+		{
+			((EventHandler)base.Events[nameof(Initialized)])?.Invoke(this, e);
 		}
 
 		#endregion
@@ -350,6 +370,7 @@ namespace Wisej.Web.Ext.Syncfusion
 		/// Returns a <see cref="System.Dynamic.DynamicObject"/> that can
 		/// convert calls into JavaScript calls targeting the third party "widget" object.
 		/// </summary>
+		[Browsable(false)]
 		[DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
 		public dynamic Widget
 		{
@@ -411,6 +432,23 @@ namespace Wisej.Web.Ext.Syncfusion
 		#region Wisej Implementation
 
 		/// <summary>
+		/// Processes the event from the client.
+		/// </summary>
+		/// <param name="e">Event arguments.</param>
+		protected override void OnWebEvent(Core.WisejEventArgs e)
+		{
+			switch (e.Type)
+			{
+				case "initialized":
+					OnInitialized(EventArgs.Empty);
+					break;
+
+				default:
+					base.OnWebEvent(e);
+					break;
+			}
+		}
+		/// <summary>
 		/// Wire the client config to the server
 		/// </summary>
 		/// <param name="config"></param>
@@ -425,6 +463,13 @@ namespace Wisej.Web.Ext.Syncfusion
 			config.widgetFunctions = this.WidgetFunctions;
 			config.widgetTemplates = this.WidgetTemplates;
 			config.widgetWiredEvents = this.WidgetWiredEvents;
+
+			// replace this.GetPostbackUrl() with this.GetServiceURL()
+			// to generate a rest URL with the session id in the path
+			// instead of the ?sid= parameter.
+			config.postbackUrl = this.GetServiceURL();
+
+			config.wiredEvents.Add("initialized");
 		}
 
 		#endregion

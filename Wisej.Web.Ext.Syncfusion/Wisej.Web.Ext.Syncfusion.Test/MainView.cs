@@ -15,7 +15,18 @@ namespace Wisej.Web.Ext.Syncfusion.Test
 
 		private void MainView_Load(object sender, EventArgs e)
 		{
+			var hash = Application.Hash;
 			this.listBox1.DataSource = PopulateTestList();
+
+			Application.HashChanged += this.Application_HashChanged;
+
+			if (hash != "")
+				this.listBox1.SelectedIndex = this.listBox1.FindString(hash);
+		}
+
+		private void Application_HashChanged(object sender, HashChangedEventArgs e)
+		{
+			this.listBox1.SelectedIndex = this.listBox1.FindString(e.Hash);
 		}
 
 		private IList PopulateTestList()
@@ -39,6 +50,7 @@ namespace Wisej.Web.Ext.Syncfusion.Test
 			testPanel.Parent = container;
 
 			container.Text = type.Name;
+			Application.Hash = type.Name;
 		}
 
 		private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)

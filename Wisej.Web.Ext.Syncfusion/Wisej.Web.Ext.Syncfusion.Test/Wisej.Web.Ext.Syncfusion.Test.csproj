@@ -22,7 +22,8 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <TargetFrameworkProfile />
-    <Use64BitIISExpress />
+    <Use64BitIISExpress>
+    </Use64BitIISExpress>
     <ProjectGuid>{D36DDFDB-AC1B-4E75-96F9-4113A54F9D5C}</ProjectGuid>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -47,6 +48,9 @@
     <Content Include="Default.html" />
     <Content Include="Default.json" />
     <Content Include="favicon.ico" />
+    <EmbeddedResource Include="Component\ejBulletGraph.resx">
+      <DependentUpon>ejBulletGraph.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Component\ejChart.resx">
       <DependentUpon>ejChart.cs</DependentUpon>
     </EmbeddedResource>
@@ -65,6 +69,9 @@
     <EmbeddedResource Include="Component\ejFileExplorer.resx">
       <DependentUpon>ejFileExplorer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejPdfViewer.resx">
+      <DependentUpon>ejPdfViewer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Component\ejRotator.resx">
       <DependentUpon>ejRotator.cs</DependentUpon>
     </EmbeddedResource>
@@ -81,6 +88,7 @@
     <EmbeddedResource Include="Themes\App.mixin.theme" />
     <Content Include="Data\OrganizationalChart.json" />
     <Content Include="Data\Sample.xlsx" />
+    <Content Include="Data\Wisej-Datasheet-V2.3.pdf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -106,6 +114,12 @@
     </Compile>
     <Compile Include="Component\ejBarcode.Designer.cs">
       <DependentUpon>ejBarcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejBulletGraph.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejBulletGraph.Designer.cs">
+      <DependentUpon>ejBulletGraph.cs</DependentUpon>
     </Compile>
     <Compile Include="Component\ejChart.cs">
       <SubType>UserControl</SubType>
@@ -142,6 +156,12 @@
     </Compile>
     <Compile Include="Component\ejFileExplorer.Designer.cs">
       <DependentUpon>ejFileExplorer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejPdfViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejPdfViewer.Designer.cs">
+      <DependentUpon>ejPdfViewer.cs</DependentUpon>
     </Compile>
     <Compile Include="Component\ejRotator.cs">
       <SubType>UserControl</SubType>
@@ -181,6 +201,10 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Syncfusion.DocIO.Base, Version=17.3460.0.26, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Libs\Syncfusion.DocIO.Base.dll</HintPath>
@@ -192,6 +216,12 @@
     <Reference Include="Syncfusion.EJ.Export, Version=17.3460.0.26, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Libs\Syncfusion.EJ.Export.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.EJ.PdfViewer">
+      <HintPath>Libs\Syncfusion.EJ.PdfViewer.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Pdf.Base">
+      <HintPath>Libs\Syncfusion.Pdf.Base.dll</HintPath>
     </Reference>
     <Reference Include="Syncfusion.XlsIO.Base, Version=17.3460.0.26, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>

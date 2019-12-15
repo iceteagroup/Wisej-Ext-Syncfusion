@@ -19,4 +19,31 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
+/**
+ * Resizes the hosted widget to always fit our container.
+ */
+this.resizeWidget = function () {
 
+	if (this.widget) {
+		var bounds = this.getBounds();
+		this.widget.option({
+			width: bounds.width,
+			height: bounds.height,
+		});
+		this.widget.redraw();
+	}
+};
+
+// Returns a data map that can be converted to JSON.
+this.filterEventData = function (args) {
+
+	var data = args.data;
+
+	return {
+		id: data.id,
+		location: data.location,
+		size: data.size,
+		pageX: data.pageX,
+		pageY: data.pageY,
+	};
+}

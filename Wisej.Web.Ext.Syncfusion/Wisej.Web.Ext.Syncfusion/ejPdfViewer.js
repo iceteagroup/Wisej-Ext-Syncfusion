@@ -29,3 +29,13 @@ this.initWidget = function () {
 		serviceUrl: serviceUrl
 	});
 };
+
+/**
+ * Resizes the hosted widget to always fit our container.
+ */
+this.resizeWidget = function () {
+
+	if (this.widget) {
+		this.widget.updateViewerSize();
+	}
+};

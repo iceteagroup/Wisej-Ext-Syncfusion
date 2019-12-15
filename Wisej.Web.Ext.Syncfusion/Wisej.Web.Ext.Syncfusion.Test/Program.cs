@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.RegularExpressions;
 using Wisej.Web;
 
 namespace Wisej.Web.Ext.Syncfusion.Test
