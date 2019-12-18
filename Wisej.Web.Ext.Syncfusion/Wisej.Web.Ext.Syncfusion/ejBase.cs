@@ -467,7 +467,8 @@ namespace Wisej.Web.Ext.Syncfusion
 			// replace this.GetPostbackUrl() with this.GetServiceURL()
 			// to generate a rest URL with the session id in the path
 			// instead of the ?sid= parameter.
-			config.postbackUrl = this.GetServiceURL();
+			//config.postbackUrl = this.GetServiceURL();
+			config.postbackUrl = this.GetPostbackURL();
 
 			config.wiredEvents.Add("initialized");
 		}
@@ -504,7 +505,7 @@ namespace Wisej.Web.Ext.Syncfusion
 			/// The template used by the <see cref="WidgetTemplate"/>
 			/// </summary>
 			[DefaultValue("")]
-			[Editor("Wisej.Web.Design.HtmlEditor, Wisej.Web.Design, Version=1.0.0.0, Culture=neutral, PublicKeyToken=17bef35e11b84171", typeof(UITypeEditor))]
+			[Editor("Wisej.Design.HtmlEditor, Wisej.Framework.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=17bef35e11b84171", typeof(UITypeEditor))]
 			public string Template
 			{
 				get { return this._template; }
@@ -575,7 +576,7 @@ namespace Wisej.Web.Ext.Syncfusion
 			/// <summary>
 			/// The source code of the <see cref="WidgetEventHandler"/>
 			/// </summary>
-			[Editor("Wisej.Web.Design.CodeEditor, Wisej.Web.Design, Version=1.0.0.0, Culture=neutral, PublicKeyToken=17bef35e11b84171", typeof(UITypeEditor))]
+			[Editor("Wisej.Design.CodeEditor, Wisej.Framework.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=17bef35e11b84171", typeof(UITypeEditor))]
 			public string Source
 			{
 				get { return this._source; }
@@ -628,7 +629,7 @@ namespace Wisej.Web.Ext.Syncfusion
 			/// <summary>
 			/// The source code for the <see cref="WidgetFunction"/>
 			/// </summary>
-			[Editor("Wisej.Web.Design.CodeEditor, Wisej.Web.Design, Version=1.0.0.0, Culture=neutral, PublicKeyToken=17bef35e11b84171", typeof(UITypeEditor))]
+			[Editor("Wisej.Design.CodeEditor, Wisej.Framework.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=17bef35e11b84171", typeof(UITypeEditor))]
 			public string Source
 			{
 				get { return this._source; }
@@ -651,6 +652,8 @@ namespace Wisej.Web.Ext.Syncfusion
 		}
 
 		#endregion
+
+		#region WidgetTarget
 
 		/// <summary>
 		/// Represents the third party widget as the target of dynamic method calls.
@@ -761,5 +764,7 @@ namespace Wisej.Web.Ext.Syncfusion
 				}
 			}
 		}
+
+		#endregion
 	}
 }

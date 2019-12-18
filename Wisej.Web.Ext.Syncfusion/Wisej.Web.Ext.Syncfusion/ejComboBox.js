@@ -18,3 +18,11 @@
 // FROM ICE TEA GROUP LLC.
 //
 ///////////////////////////////////////////////////////////////////////////////
+
+/**
+ * Additional widget initialization.
+ */
+this.initWidget = function () {
+
+	this.container.style.boxSizing = "border-box";
+};

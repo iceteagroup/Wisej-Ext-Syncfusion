@@ -100,7 +100,7 @@
 			this.checkBox1.AutoSize = false;
 			this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBox1.Checked = true;
-			this.checkBox1.CheckState = Wisej.Web.CheckState.Checked;
+			this.checkBox1.CheckState = ((Wisej.Web.CheckState)(Wisej.Web.CheckState.Checked));
 			this.checkBox1.Location = new System.Drawing.Point(28, 37);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(195, 31);
@@ -113,7 +113,7 @@
 			this.checkBox2.AutoSize = false;
 			this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBox2.Checked = true;
-			this.checkBox2.CheckState = Wisej.Web.CheckState.Checked;
+			this.checkBox2.CheckState = ((Wisej.Web.CheckState)(Wisej.Web.CheckState.Checked));
 			this.checkBox2.Location = new System.Drawing.Point(28, 74);
 			this.checkBox2.Name = "checkBox2";
 			this.checkBox2.Size = new System.Drawing.Size(195, 31);
@@ -127,8 +127,7 @@
 			this.comboBox1.Items.AddRange(new object[] {
             "None",
             "HierarchicalTree",
-            "OrganizationalChart"
-			});
+            "OrganizationalChart"});
 			this.comboBox1.Label.Size = 50;
 			this.comboBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
 			this.comboBox1.Label.Text = "Layout";

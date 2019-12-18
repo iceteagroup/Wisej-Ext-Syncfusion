@@ -39,7 +39,7 @@ namespace Wisej.Web.Ext.Syncfusion
 		/// Constructs a new instance of the <see cref="ejCheckBox"/> class.
 		/// </summary>
 		/// <param name="options">Initial set of options.</param>
-		public ejCheckBox(object options) : base("ejCaptcha", options)
+		public ejCheckBox(object options) : base("ejCheckBox", "<input style='width:100%;height:100%'>", options)
 		{
 			this.WidgetWiredEvents = new[] {
 				"change",

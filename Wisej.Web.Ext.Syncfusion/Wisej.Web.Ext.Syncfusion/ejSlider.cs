@@ -39,14 +39,13 @@ namespace Wisej.Web.Ext.Syncfusion
 		/// Constructs a new instance of the <see cref="ejSlider"/> class.
 		/// </summary>
 		/// <param name="options">Initial set of options.</param>
-		public ejSlider(object options) : base("ejSlider", options)
+		public ejSlider(object options) : base("ejSlider", "<div style='margin-top:10px'></div>", options)
 		{
 			this.WidgetWiredEvents = new[] {
 				"stop",
 				"start",
 				"slide",
 				"change",
-				"renderTicks",
 				"tooltipChange"
 			};
 		}

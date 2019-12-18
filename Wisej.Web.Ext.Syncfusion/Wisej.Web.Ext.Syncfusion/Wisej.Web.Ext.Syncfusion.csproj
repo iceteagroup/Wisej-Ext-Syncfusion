@@ -47,9 +47,6 @@
     <Compile Include="ejBase.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ejButton.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="ejBulletGraph.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -101,9 +98,6 @@
     <Compile Include="ejChart.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ejGroupButton.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="ejHeatMap.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -131,9 +125,6 @@
     <Compile Include="ejMediaPlayer.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ejMenu.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="ejOverview.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -152,43 +143,16 @@
     <Compile Include="ejPivotClient.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ejPivotGauge.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="ejPivotGrid.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ejPivotPager.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="ejPivotSchemaDesigner.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="ejPivotTreeMap.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="ejProgressBar.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="ejRadioButton.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="ejRating.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="ejRecurrenceEditor.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="ejReportDesigner.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="ejReportViewer.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="ejRibbon.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="ejRichTextEditor.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="ejRotator.cs">
@@ -204,9 +168,6 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="ejSparkline.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="ejSplitButton.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="ejSpreadsheet.cs">
@@ -228,9 +189,6 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="ejTimePicker.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="ejToggleButton.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="ejToolbar.cs">
@@ -649,9 +607,6 @@
     <EmbeddedResource Include="ejOverview.js">
       <DependentUpon>ejOverview.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ejRichTextEditor.js">
-      <DependentUpon>ejRichTextEditor.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ejSyncfusion.bmp" />
     <EmbeddedResource Include="ejChart.js">
       <DependentUpon>ejChart.cs</DependentUpon>
@@ -670,9 +625,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ejBulletGraph.js">
       <DependentUpon>ejBulletGraph.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ejButton.js">
-      <DependentUpon>ejButton.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ejCheckBox.js">
       <DependentUpon>ejCheckBox.cs</DependentUpon>
@@ -716,9 +668,6 @@
     <Content Include="ejGrid.js">
       <DependentUpon>ejGrid.cs</DependentUpon>
     </Content>
-    <EmbeddedResource Include="ejGroupButton.js">
-      <DependentUpon>ejGroupButton.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ejHeatMap.js">
       <DependentUpon>ejHeatMap.cs</DependentUpon>
     </EmbeddedResource>
@@ -746,9 +695,6 @@
     <EmbeddedResource Include="ejMediaPlayer.js">
       <DependentUpon>ejMediaPlayer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ejMenu.js">
-      <DependentUpon>ejMenu.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ejPager.js">
       <DependentUpon>ejPager.cs</DependentUpon>
     </EmbeddedResource>
@@ -761,41 +707,17 @@
     <EmbeddedResource Include="ejPivotClient.js">
       <DependentUpon>ejPivotClient.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ejPivotGauge.js">
-      <DependentUpon>ejPivotGauge.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ejPivotGrid.js">
       <DependentUpon>ejPivotGrid.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ejPivotPager.js">
-      <DependentUpon>ejPivotPager.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ejPivotSchemaDesigner.js">
-      <DependentUpon>ejPivotSchemaDesigner.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ejPivotTreeMap.js">
       <DependentUpon>ejPivotTreeMap.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ejProgressBar.js">
-      <DependentUpon>ejProgressBar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ejRadioButton.js">
-      <DependentUpon>ejRadioButton.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ejRating.js">
       <DependentUpon>ejRating.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ejRecurrenceEditor.js">
       <DependentUpon>ejRecurrenceEditor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ejReportDesigner.js">
-      <DependentUpon>ejReportDesigner.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ejReportViewer.js">
-      <DependentUpon>ejReportViewer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ejRibbon.js">
-      <DependentUpon>ejRibbon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ejRotator.js">
       <DependentUpon>ejRotator.cs</DependentUpon>
@@ -812,9 +734,6 @@
     <EmbeddedResource Include="ejSparkline.js">
       <DependentUpon>ejSparkline.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ejSplitButton.js">
-      <DependentUpon>ejSplitButton.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ejSunburstChart.js">
       <DependentUpon>ejSunburstChart.cs</DependentUpon>
     </EmbeddedResource>
@@ -829,9 +748,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ejTimePicker.js">
       <DependentUpon>ejTimePicker.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ejToggleButton.js">
-      <DependentUpon>ejToggleButton.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ejToolbar.js">
       <DependentUpon>ejToolbar.cs</DependentUpon>

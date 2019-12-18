@@ -1,8 +1,7 @@
 ﻿using System;
-using Wisej.Web;
+using System.Collections;
 using System.Linq;
 using Wisej.Web.Ext.Syncfusion.Test.Component;
-using System.Collections;
 
 namespace Wisej.Web.Ext.Syncfusion.Test
 {

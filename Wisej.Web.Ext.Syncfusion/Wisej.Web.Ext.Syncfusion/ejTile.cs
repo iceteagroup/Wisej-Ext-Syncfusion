@@ -18,6 +18,9 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 
+using System.ComponentModel;
+using System.Drawing;
+
 namespace Wisej.Web.Ext.Syncfusion
 {
 	/// <summary>
@@ -46,6 +49,15 @@ namespace Wisej.Web.Ext.Syncfusion
 				"mouseUp",
 				"mouseDown"
 			};
+		}
+
+		/// <summary>
+		/// Specifies the text to display on the tile.
+		/// </summary>
+		public override string Text
+		{
+			get { return this.Options.text ?? ""; }
+			set { this.Options.text = value ?? ""; }
 		}
 	}
 }

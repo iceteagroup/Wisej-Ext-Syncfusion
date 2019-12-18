@@ -44,7 +44,6 @@ namespace Wisej.Web.Ext.Syncfusion
 				"mouseClick",
 				"rightClick",
 				"doubleClick",
-				"renderComplete"
 			};
 		}
 	}

@@ -37,7 +37,7 @@ namespace Wisej.Web.Ext.Syncfusion
 		/// Constructs a new instance of the <see cref="ejDropDownTree"/> class.
 		/// </summary>
 		/// <param name="options">Initial set of options.</param>
-		public ejDropDownTree(object options) : base("ejDropDownTree", options)
+		public ejDropDownTree(object options) : base("ejDropDownTree", "<input style='width:100%;height:100%' >", options)
 		{
 			this.WidgetWiredEvents = new[] {
 				"blur",

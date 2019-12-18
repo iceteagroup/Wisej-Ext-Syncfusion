@@ -18,3 +18,12 @@
 // FROM ICE TEA GROUP LLC.
 //
 ///////////////////////////////////////////////////////////////////////////////
+
+/**
+ * Resizes the hosted widget to always fit our container.
+ */
+this.resizeWidget = function () {
+
+	// the ejSlider resizes the width automatically and cannot resize the height.
+
+};

@@ -39,13 +39,9 @@ namespace Wisej.Web.Ext.Syncfusion
 		public ejDigitalGauge(object options) : base("ejDigitalGauge", options)
 		{
 			this.WidgetWiredEvents = new[] {
-				"init",
-				"load",
 				"click",
 				"rightClick",
 				"doubleClick",
-				"itemRendering",
-				"renderComplete",
 			};
 		}
 	}

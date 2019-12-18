@@ -42,7 +42,7 @@ namespace Wisej.Web.Ext.Syncfusion
 		/// Constructs a new instance of the <see cref="ejDateRangePicker"/> class.
 		/// </summary>
 		/// <param name="options">Initial set of options.</param>
-		public ejDateRangePicker(object options) : base("ejDateRangePicker", options)
+		public ejDateRangePicker(object options) : base("ejDateRangePicker", "<input style='width:100%;height:100%'>", options)
 		{
 			this.WidgetWiredEvents = new[] {
 				"open",

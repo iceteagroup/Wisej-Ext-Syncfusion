@@ -1,0 +1,34 @@
+﻿using System;
+using Wisej.Web;
+
+namespace Wisej.Web.Ext.Syncfusion.Test.Component
+{
+	public partial class ejComboBox : Wisej.Web.Ext.Syncfusion.Test.Component.TestBase
+	{
+		public ejComboBox()
+		{
+			InitializeComponent();
+
+			this.ejComboBox1.Widget.open += new WidgetEventHandler(ejComboBox1_WidgetEvent);
+			this.ejComboBox1.Widget.select += new WidgetEventHandler(ejComboBox1_WidgetEvent);
+			this.ejComboBox1.Widget.customValueSpecifier += new WidgetEventHandler(ejComboBox1_WidgetEvent);
+		}
+
+		private void buttonUpdate_Click(object sender, EventArgs e)
+		{
+			this.ejComboBox1.Options.autofill = this.checkBox1.Checked;
+			this.ejComboBox1.Options.showClearButton = this.checkBox2.Checked;
+
+			this.ejComboBox1.Update();
+		}
+
+		private void ejComboBox1_WidgetEvent(object sender, WidgetEventArgs e)
+		{
+			AlertBox.Show(
+				$"<b>{e.Type}</b><br/>{JSON.Stringify(e.Data)}",
+				MessageBoxIcon.Information);
+
+			Application.Play(MessageBoxIcon.Information);
+		}
+	}
+}

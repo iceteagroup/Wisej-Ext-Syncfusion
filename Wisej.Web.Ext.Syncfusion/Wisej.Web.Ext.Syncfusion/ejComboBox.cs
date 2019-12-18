@@ -36,9 +36,10 @@ namespace Wisej.Web.Ext.Syncfusion
 		/// Constructs a new instance of the <see cref="ejComboBox"/> class.
 		/// </summary>
 		/// <param name="options">Initial set of options.</param>
-		public ejComboBox(object options) : base("ejComboBox", options)
+		public ejComboBox(object options) : base("ejComboBox", "<input style='width:100%;height:100%'>", options)
 		{
 			this.WidgetWiredEvents = new[] {
+				"open",
 				"focus",
 				"select",
 				"change",

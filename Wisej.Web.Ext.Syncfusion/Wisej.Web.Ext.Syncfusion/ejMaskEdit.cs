@@ -38,7 +38,7 @@ namespace Wisej.Web.Ext.Syncfusion
 		/// Constructs a new instance of the <see cref="ejMaskEdit"/> class.
 		/// </summary>
 		/// <param name="options">Initial set of options.</param>
-		public ejMaskEdit(object options) : base("ejMaskEdit", options)
+		public ejMaskEdit(object options) : base("ejMaskEdit", "<input style='width:100%';height:100% >", options)
 		{
 			this.WidgetWiredEvents = new[] {
 				"keyUp",

@@ -42,13 +42,11 @@ namespace Wisej.Web.Ext.Syncfusion
 				"load",
 				"click",
 				"loaded",
-				"preRender",
 				"rightClick",
 				"doubleClick",
 				"drillDownBack",
 				"drillDownClick",
 				"pointRegionClick",
-				"legendItemRendering",
 				"pointRegionMouseMove"
 			};
 		}
