@@ -8,18 +8,25 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 		public ejHeatMap()
 		{
 			InitializeComponent();
+
+			this.ejHeatMap1.Widget.cellSelected += new WidgetEventHandler(ejHeatMap1_WidgetEvent);
+		}
+
+		private void ejHeatMap1_Appear(object sender, EventArgs e)
+		{
+			// Isn't working (need to link the ejHeatMap with the ejHeatMapLegend
+			this.ejHeatMap1.Options.legendCollection = new [] { $"id_{this.ejHeatMapLegend1.Handle}_container" };
+
+			this.ejHeatMap1.Update();
 		}
 
 		private void ejHeatMap1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
+			AlertBox.Show(
+				$"<b>{e.Type}</b><br/>{JSON.Stringify(e.Data)}",
+				MessageBoxIcon.Information);
 
-		}
-
-		private void ejHeatMapLegend1_Appear(object sender, EventArgs e)
-		{
-			//this.ejHeatMap1.Options.legendCollection = new String[] { $"id_{this.ejHeatMapLegend1.Handle}_container" };
-			//this.ejHeatMapLegend1.Update();
-			//this.ejHeatMap1.Update();
+			Application.Play(MessageBoxIcon.Information);
 		}
 	}
 }

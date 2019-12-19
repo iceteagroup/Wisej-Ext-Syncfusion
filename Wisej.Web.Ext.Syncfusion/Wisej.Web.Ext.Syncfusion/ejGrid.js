@@ -19,4 +19,15 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
+this.initWidget = function () {
 
+	this.container.style.boxSizing = "border-box";
+};
+
+/**
+ * Resizes the hosted widget to always fit our container.
+ */
+this.resizeWidget = function () {
+
+	this.widget.windowonresize();
+};

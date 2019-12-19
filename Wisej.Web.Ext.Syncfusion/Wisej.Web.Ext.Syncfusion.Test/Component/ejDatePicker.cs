@@ -26,9 +26,9 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			this.ejDatePicker1.Options.allowDrillDown = this.checkBox2.Checked;
-			this.ejDatePicker1.Options.showOtherMonths = this.checkBox3.Checked;
-			this.ejDatePicker1.Options.enableStrictMode = this.checkBox1.Checked;
+			this.ejDatePicker1.Options.allowDrillDown = this.checkBoxAllowDrillDown.Checked;
+			this.ejDatePicker1.Options.showOtherMonths = this.checkBoxShowOtherMonths.Checked;
+			this.ejDatePicker1.Options.enableStrictMode = this.checkBoxEnableStrictMode.Checked;
 		}
 	}
 }

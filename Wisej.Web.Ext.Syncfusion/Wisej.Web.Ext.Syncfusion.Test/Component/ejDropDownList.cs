@@ -26,10 +26,10 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 
 		private void Update(Wisej.Web.Ext.Syncfusion.ejDropDownList ejList)
 		{
-			ejList.Options.allowVirtualScrolling = this.checkBox1.Checked;
-			ejList.Options.caseSensitiveSearch = this.checkBox2.Checked;
-			ejList.Options.enableIncrementalSearch = this.checkBox3.Checked;
-			ejList.Options.enableFilterSearch = this.checkBox4.Checked;
+			ejList.Options.allowVirtualScrolling = this.checkBoxAllowVirtualScrolling.Checked;
+			ejList.Options.caseSensitiveSearch = this.checkBoxCaseSensitiveSearch.Checked;
+			ejList.Options.enableIncrementalSearch = this.checkBoxEnableIncrementalSearch.Checked;
+			ejList.Options.enableFilterSearch = this.checkBoxEnableFilterSearch.Checked;
 
 			ejList.Update();
 		}

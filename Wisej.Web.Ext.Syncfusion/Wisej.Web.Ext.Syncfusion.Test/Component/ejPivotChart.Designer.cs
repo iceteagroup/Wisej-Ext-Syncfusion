@@ -30,6 +30,9 @@
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ejPivotChart));
 			this.ejPivotChart1 = new Wisej.Web.Ext.Syncfusion.ejPivotChart();
+			this.buttonLoad = new Wisej.Web.Upload();
+			this.buttonExportExcel = new Wisej.Web.Button();
+			this.buttonSaveJson = new Wisej.Web.Button();
 			this.groupBox1.SuspendLayout();
 			this.panel.SuspendLayout();
 			this.SuspendLayout();
@@ -41,6 +44,16 @@
 			// linkAPI
 			// 
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejpivotchart";
+			// 
+			// groupBox1
+			// 
+			this.groupBox1.Controls.Add(this.buttonSaveJson);
+			this.groupBox1.Controls.Add(this.buttonLoad);
+			this.groupBox1.Controls.Add(this.buttonExportExcel);
+			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
+			this.groupBox1.Controls.SetChildIndex(this.buttonExportExcel, 0);
+			this.groupBox1.Controls.SetChildIndex(this.buttonLoad, 0);
+			this.groupBox1.Controls.SetChildIndex(this.buttonSaveJson, 0);
 			// 
 			// panel
 			// 
@@ -61,6 +74,37 @@
 			this.ejPivotChart1.Size = new System.Drawing.Size(396, 278);
 			this.ejPivotChart1.Text = "ejPivotChart1";
 			// 
+			// buttonLoad
+			// 
+			this.buttonLoad.AllowedFileTypes = ".xlsx";
+			this.buttonLoad.HideValue = true;
+			this.buttonLoad.ImageSource = "icon-file";
+			this.buttonLoad.Location = new System.Drawing.Point(28, 167);
+			this.buttonLoad.Name = "buttonLoad";
+			this.buttonLoad.Size = new System.Drawing.Size(42, 42);
+			this.buttonLoad.TabIndex = 11;
+			this.buttonLoad.Uploaded += new Wisej.Web.UploadedEventHandler(this.buttonLoad_Uploaded);
+			// 
+			// buttonExportExcel
+			// 
+			this.buttonExportExcel.Display = Wisej.Web.Display.Icon;
+			this.buttonExportExcel.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/microsoft-excel-logo.svg";
+			this.buttonExportExcel.Location = new System.Drawing.Point(76, 167);
+			this.buttonExportExcel.Name = "buttonExportExcel";
+			this.buttonExportExcel.Size = new System.Drawing.Size(42, 42);
+			this.buttonExportExcel.TabIndex = 10;
+			this.buttonExportExcel.Click += new System.EventHandler(this.buttonExportExcel_Click);
+			// 
+			// buttonSaveJson
+			// 
+			this.buttonSaveJson.Display = Wisej.Web.Display.Icon;
+			this.buttonSaveJson.ImageSource = "icon-save";
+			this.buttonSaveJson.Location = new System.Drawing.Point(124, 167);
+			this.buttonSaveJson.Name = "buttonSaveJson";
+			this.buttonSaveJson.Size = new System.Drawing.Size(42, 42);
+			this.buttonSaveJson.TabIndex = 12;
+			this.buttonSaveJson.Click += new System.EventHandler(this.buttonSaveJson_Click);
+			// 
 			// ejPivotChart
 			// 
 			this.Name = "ejPivotChart";
@@ -74,5 +118,8 @@
 		#endregion
 
 		private Syncfusion.ejPivotChart ejPivotChart1;
+		private Upload buttonLoad;
+		private Button buttonExportExcel;
+		private Button buttonSaveJson;
 	}
 }

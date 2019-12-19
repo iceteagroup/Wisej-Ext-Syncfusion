@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.ejColorPicker1 = new Wisej.Web.Ext.Syncfusion.ejColorPicker();
-            this.textBox1 = new Wisej.Web.TextBox();
+            this.textBoxColor = new Wisej.Web.TextBox();
             this.label4 = new Wisej.Web.Label();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
@@ -45,9 +45,9 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.textBoxColor);
             this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.textBox1, 0);
+            this.groupBox1.Controls.SetChildIndex(this.textBoxColor, 0);
             // 
             // buttonUpdate
             // 
@@ -74,14 +74,14 @@
             // 
             // textBox1
             // 
-            this.textBox1.AutoSize = false;
-            this.textBox1.Label.Size = 50;
-            this.textBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
-            this.textBox1.Label.Text = "Value (prefix with #)";
-            this.textBox1.Location = new System.Drawing.Point(28, 32);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 60);
-            this.textBox1.TabIndex = 2;
+            this.textBoxColor.AutoSize = false;
+            this.textBoxColor.Label.Size = 50;
+            this.textBoxColor.Label.SizeType = Wisej.Web.SizeType.Percent;
+            this.textBoxColor.Label.Text = "Value (prefix with #)";
+            this.textBoxColor.Location = new System.Drawing.Point(28, 32);
+            this.textBoxColor.Name = "textBox1";
+            this.textBoxColor.Size = new System.Drawing.Size(200, 60);
+            this.textBoxColor.TabIndex = 2;
             // 
             // label4
             // 
@@ -113,7 +113,7 @@
 
         #endregion
 
-        private TextBox textBox1;
+        private TextBox textBoxColor;
         private Label label4;
     }
 }

@@ -16,8 +16,8 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			this.ejComboBox1.Options.autofill = this.checkBox1.Checked;
-			this.ejComboBox1.Options.showClearButton = this.checkBox2.Checked;
+			this.ejComboBox1.Options.autofill = this.checkBoxAutofill.Checked;
+			this.ejComboBox1.Options.showClearButton = this.checkBoxShowClearButton.Checked;
 
 			this.ejComboBox1.Update();
 		}

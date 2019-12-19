@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ejMediaPlayer1.Options" xml:space="preserve">
-    <value>{"showPlaylist":true,"renderMode":"basic","playlistTitle":"Syncfusion License","source":[{"url":"https://www.youtube.com/watch?v=BfA_wIqjF_8","author":"iceteagroup","title":"HelloWorld","posterUrl":"Images/MediaPlayer/mqdefault.jpg"},{"url":"https://www.youtube.com/watch?v=qp6cQOQFHWk","author":"iceteagroup","title":"Responsive Properties","posterUrl":"Images/MediaPlayer/mqdefault.jpg"},{"url":"https://www.youtube.com/watch?v=5SzoJZF6rdQ","author":"iceteagroup","title":"Live Theme Builder","posterUrl":"Images/MediaPlayer/mqdefault.jpg"},{"url":"https://www.youtube.com/watch?v=lqTszFkviRg","posterUrl":"Images/MediaPlayer/mqdefault.jpg","author":"iceteagroup","title":"Tools Everywhere"}]}</value>
+    <value>{"showPlaylist":true,"renderMode":"basic","playlistTitle":"Wisej","source":[{"url":"https://www.youtube.com/watch?v=BfA_wIqjF_8","author":"iceteagroup","title":"HelloWorld","posterUrl":"Images/MediaPlayer/mqdefault.jpg"},{"url":"https://www.youtube.com/watch?v=qp6cQOQFHWk","author":"iceteagroup","title":"Responsive Properties","posterUrl":"Images/MediaPlayer/mqdefault.jpg"},{"url":"https://www.youtube.com/watch?v=5SzoJZF6rdQ","author":"iceteagroup","title":"Live Theme Builder","posterUrl":"Images/MediaPlayer/mqdefault.jpg"},{"url":"https://www.youtube.com/watch?v=lqTszFkviRg","posterUrl":"Images/MediaPlayer/mqdefault.jpg","author":"iceteagroup","title":"Tools Everywhere"}]}</value>
   </data>
   <metadata name="$this.RulerSnapLines" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>

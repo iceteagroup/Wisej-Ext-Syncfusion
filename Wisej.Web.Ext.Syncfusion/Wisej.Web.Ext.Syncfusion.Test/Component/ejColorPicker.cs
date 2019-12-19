@@ -18,12 +18,12 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 				MessageBoxIcon.Information);
 
 			if (e.Type == "select")
-				this.textBox1.Text = e.Data?.value ?? "";
+				this.textBoxColor.Text = e.Data?.value ?? "";
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			ejColorPicker1.Options.value = textBox1.Text;
+			ejColorPicker1.Options.value = textBoxColor.Text;
 		}
 	}
 }

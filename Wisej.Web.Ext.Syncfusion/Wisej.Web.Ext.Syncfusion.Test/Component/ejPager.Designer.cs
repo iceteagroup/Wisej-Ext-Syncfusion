@@ -28,7 +28,9 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ejPager));
 			this.ejPager1 = new Wisej.Web.Ext.Syncfusion.ejPager();
+			this.ejRotator1 = new Wisej.Web.Ext.Syncfusion.ejRotator();
 			this.groupBox1.SuspendLayout();
 			this.panel.SuspendLayout();
 			this.SuspendLayout();
@@ -43,20 +45,34 @@
 			// 
 			// panel
 			// 
+			this.panel.Controls.Add(this.ejRotator1);
 			this.panel.Controls.Add(this.ejPager1);
 			// 
 			// linkDemo
 			// 
+			this.linkDemo.Size = new System.Drawing.Size(519, 24);
 			this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/bootstrap/pager/DefaultFunctionalities";
 			// 
 			// ejPager1
 			// 
-			this.ejPager1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Bottom | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
+			this.ejPager1.Anchor = Wisej.Web.AnchorStyles.None;
 			this.ejPager1.Location = new System.Drawing.Point(20, 250);
 			this.ejPager1.Name = "ejPager1";
+			this.ejPager1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"pageSize\":1,\"totalPages\":6,\"totalRecordsCount\":6,\"pageCount\":3,\"isResponsive\":t" +
+        "rue}")));
 			this.ejPager1.Size = new System.Drawing.Size(412, 44);
+			this.ejPager1.TabIndex = 3;
 			this.ejPager1.Text = "ejPager1";
+			// 
+			// ejRotator1
+			// 
+			this.ejRotator1.Anchor = Wisej.Web.AnchorStyles.None;
+			this.ejRotator1.Location = new System.Drawing.Point(20, 20);
+			this.ejRotator1.Name = "ejRotator1";
+			this.ejRotator1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejRotator1.Options"))));
+			this.ejRotator1.Size = new System.Drawing.Size(412, 224);
+			this.ejRotator1.TabIndex = 2;
+			this.ejRotator1.Text = "ejRotator1";
 			// 
 			// ejPager
 			// 
@@ -71,5 +87,6 @@
 		#endregion
 
 		private Syncfusion.ejPager ejPager1;
+		private Syncfusion.ejRotator ejRotator1;
 	}
 }

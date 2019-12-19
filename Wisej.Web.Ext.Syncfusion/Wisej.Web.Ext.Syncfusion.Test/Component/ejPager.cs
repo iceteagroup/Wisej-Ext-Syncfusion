@@ -8,6 +8,22 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 		public ejPager()
 		{
 			InitializeComponent();
+
+			this.ejPager1.Widget.click += new WidgetEventHandler(ejPager1_WidgetEvent);
+			this.ejPager1.Widget.change += new WidgetEventHandler(ejPager1_WidgetEvent);
+		}
+
+		private void ejPager1_WidgetEvent(object sender, WidgetEventArgs e)
+		{
+			if (e.Type == "change" || e.Type == "click")
+			{
+				this.ejRotator1.Widget.gotoIndex(e.Data.currentPage);
+			}
+			AlertBox.Show(
+				$"<b>{e.Type}</b><br/>{JSON.Stringify(e.Data)}",
+				MessageBoxIcon.Information);
+
+			Application.Play(MessageBoxIcon.Information);
 		}
 	}
 }

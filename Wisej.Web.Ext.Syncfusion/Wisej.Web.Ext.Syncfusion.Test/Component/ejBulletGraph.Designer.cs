@@ -31,12 +31,12 @@
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ejBulletGraph));
 			this.ejBulletGraph1 = new Wisej.Web.Ext.Syncfusion.ejBulletGraph();
 			this.ejBulletGraph2 = new Wisej.Web.Ext.Syncfusion.ejBulletGraph();
-			this.numericUpDown1 = new Wisej.Web.NumericUpDown();
-			this.numericUpDown2 = new Wisej.Web.NumericUpDown();
+			this.numericUpDownVal = new Wisej.Web.NumericUpDown();
+			this.numericUpDownCompMeasureVal = new Wisej.Web.NumericUpDown();
 			this.groupBox1.SuspendLayout();
 			this.panel.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.numericUpDownVal)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.numericUpDownCompMeasureVal)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// linkDocs
@@ -49,11 +49,11 @@
 			// 
 			// groupBox1
 			// 
-			this.groupBox1.Controls.Add(this.numericUpDown2);
-			this.groupBox1.Controls.Add(this.numericUpDown1);
+			this.groupBox1.Controls.Add(this.numericUpDownCompMeasureVal);
+			this.groupBox1.Controls.Add(this.numericUpDownVal);
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-			this.groupBox1.Controls.SetChildIndex(this.numericUpDown1, 0);
-			this.groupBox1.Controls.SetChildIndex(this.numericUpDown2, 0);
+			this.groupBox1.Controls.SetChildIndex(this.numericUpDownVal, 0);
+			this.groupBox1.Controls.SetChildIndex(this.numericUpDownCompMeasureVal, 0);
 			// 
 			// buttonUpdate
 			// 
@@ -63,6 +63,7 @@
 			// 
 			this.panel.Controls.Add(this.ejBulletGraph2);
 			this.panel.Controls.Add(this.ejBulletGraph1);
+			this.panel.Size = new System.Drawing.Size(666, 315);
 			// 
 			// linkDemo
 			// 
@@ -72,59 +73,59 @@
 			// 
 			// ejBulletGraph1
 			// 
-			this.ejBulletGraph1.Location = new System.Drawing.Point(27, 48);
+			this.ejBulletGraph1.Location = new System.Drawing.Point(34, 48);
 			this.ejBulletGraph1.Name = "ejBulletGraph1";
 			this.ejBulletGraph1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejBulletGraph1.Options"))));
-			this.ejBulletGraph1.Size = new System.Drawing.Size(398, 83);
+			this.ejBulletGraph1.Size = new System.Drawing.Size(596, 83);
 			this.ejBulletGraph1.TabIndex = 5;
 			this.ejBulletGraph1.Text = "ejBulletGraph1";
 			// 
 			// ejBulletGraph2
 			// 
-			this.ejBulletGraph2.Location = new System.Drawing.Point(27, 182);
+			this.ejBulletGraph2.Location = new System.Drawing.Point(29, 182);
 			this.ejBulletGraph2.Name = "ejBulletGraph2";
 			this.ejBulletGraph2.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejBulletGraph2.Options"))));
-			this.ejBulletGraph2.Size = new System.Drawing.Size(398, 83);
+			this.ejBulletGraph2.Size = new System.Drawing.Size(606, 83);
 			this.ejBulletGraph2.TabIndex = 2;
 			this.ejBulletGraph2.Text = "ejBulletGraph2";
 			// 
-			// numericUpDown1
+			// numericUpDownVal
 			// 
-			this.numericUpDown1.AutoSize = false;
-			this.numericUpDown1.Label.Size = 50;
-			this.numericUpDown1.Label.SizeType = Wisej.Web.SizeType.Percent;
-			this.numericUpDown1.Label.Text = "Revenue Value";
-			this.numericUpDown1.Location = new System.Drawing.Point(28, 49);
-			this.numericUpDown1.Maximum = new decimal(new int[] {
+			this.numericUpDownVal.AutoSize = false;
+			this.numericUpDownVal.Label.Size = 50;
+			this.numericUpDownVal.Label.SizeType = Wisej.Web.SizeType.Percent;
+			this.numericUpDownVal.Label.Text = "Revenue Value";
+			this.numericUpDownVal.Location = new System.Drawing.Point(28, 49);
+			this.numericUpDownVal.Maximum = new decimal(new int[] {
             10,
             0,
             0,
             0});
-			this.numericUpDown1.Name = "numericUpDown1";
-			this.numericUpDown1.Size = new System.Drawing.Size(195, 60);
-			this.numericUpDown1.TabIndex = 2;
-			this.numericUpDown1.Value = new decimal(new int[] {
+			this.numericUpDownVal.Name = "numericUpDownVal";
+			this.numericUpDownVal.Size = new System.Drawing.Size(195, 60);
+			this.numericUpDownVal.TabIndex = 2;
+			this.numericUpDownVal.Value = new decimal(new int[] {
             8,
             0,
             0,
             0});
 			// 
-			// numericUpDown2
+			// numericUpDownCompMeasureVal
 			// 
-			this.numericUpDown2.AutoSize = false;
-			this.numericUpDown2.Label.Size = 50;
-			this.numericUpDown2.Label.SizeType = Wisej.Web.SizeType.Percent;
-			this.numericUpDown2.Label.Text = "Revenue Comparative Value";
-			this.numericUpDown2.Location = new System.Drawing.Point(28, 127);
-			this.numericUpDown2.Maximum = new decimal(new int[] {
+			this.numericUpDownCompMeasureVal.AutoSize = false;
+			this.numericUpDownCompMeasureVal.Label.Size = 50;
+			this.numericUpDownCompMeasureVal.Label.SizeType = Wisej.Web.SizeType.Percent;
+			this.numericUpDownCompMeasureVal.Label.Text = "Revenue Comparative Value";
+			this.numericUpDownCompMeasureVal.Location = new System.Drawing.Point(28, 127);
+			this.numericUpDownCompMeasureVal.Maximum = new decimal(new int[] {
             10,
             0,
             0,
             0});
-			this.numericUpDown2.Name = "numericUpDown2";
-			this.numericUpDown2.Size = new System.Drawing.Size(195, 60);
-			this.numericUpDown2.TabIndex = 3;
-			this.numericUpDown2.Value = new decimal(new int[] {
+			this.numericUpDownCompMeasureVal.Name = "numericUpDownCompMeasureVal";
+			this.numericUpDownCompMeasureVal.Size = new System.Drawing.Size(195, 60);
+			this.numericUpDownCompMeasureVal.TabIndex = 3;
+			this.numericUpDownCompMeasureVal.Value = new decimal(new int[] {
             5,
             0,
             0,
@@ -133,10 +134,11 @@
 			// ejBulletGraph
 			// 
 			this.Name = "ejBulletGraph";
+			this.Size = new System.Drawing.Size(1075, 505);
 			this.groupBox1.ResumeLayout(false);
 			this.panel.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.numericUpDownVal)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.numericUpDownCompMeasureVal)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -146,7 +148,7 @@
 
 		private Syncfusion.ejBulletGraph ejBulletGraph1;
 		private Syncfusion.ejBulletGraph ejBulletGraph2;
-		private NumericUpDown numericUpDown1;
-		private NumericUpDown numericUpDown2;
+		private NumericUpDown numericUpDownVal;
+		private NumericUpDown numericUpDownCompMeasureVal;
 	}
 }

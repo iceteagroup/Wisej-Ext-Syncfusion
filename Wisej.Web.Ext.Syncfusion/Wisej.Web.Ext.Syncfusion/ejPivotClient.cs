@@ -41,6 +41,15 @@ namespace Wisej.Web.Ext.Syncfusion
 		/// <param name="options">Initial set of options.</param>
 		public ejPivotClient(object options) : base("ejPivotClient", options)
 		{
+			this.WidgetWiredEvents = new[] {
+				"cellEdit",
+				"saveReport",
+				"fetchReport",
+				"beforeExport",
+				"cellSelection",
+				"cellDoubleClick",
+				"pointRegionClick",
+			};
 		}
 	}
 }

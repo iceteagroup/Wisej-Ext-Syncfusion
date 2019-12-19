@@ -16,8 +16,8 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			this.ejDateTimePicker1.Options.dateTimeFormat = this.textBox1.Text;
-			this.ejDateTimePicker1.Options.startDay = this.numericUpDown1.Value;
+			this.ejDateTimePicker1.Options.startDay = this.numericUpDownStartDay.Value;
+			this.ejDateTimePicker1.Options.dateTimeFormat = this.textBoxDateTimeFormat.Text;
 
 			this.ejDateTimePicker1.Update();
 		}

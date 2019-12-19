@@ -21,8 +21,8 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			this.ejChart1.Options.title.text = this.textBox1.Text;
-			this.ejChart1.Options.legend.alignment = this.comboBox1.Text;
+			this.ejChart1.Options.title.text = this.textBoxTitle.Text;
+			this.ejChart1.Options.legend.alignment = this.comboBoxLegendAlignment.Text;
 
 			ejChart1.Update();
 		}

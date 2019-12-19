@@ -43,6 +43,13 @@ namespace Wisej.Web.Ext.Syncfusion
 		/// </summary>
 		public ejGrid(object options) : base("ejGrid", options)
 		{
+			this.WidgetWiredEvents = new[] {
+				"cellSave",
+				"batchSave",
+				"rowSelected",
+				"cellSelected",
+				"toolbarClick",
+			};
 		}
 	}
 }

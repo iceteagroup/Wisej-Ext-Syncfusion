@@ -30,8 +30,8 @@
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ejChart));
 			this.ejChart1 = new Wisej.Web.Ext.Syncfusion.ejChart();
-			this.comboBox1 = new Wisej.Web.ComboBox();
-			this.textBox1 = new Wisej.Web.TextBox();
+			this.comboBoxLegendAlignment = new Wisej.Web.ComboBox();
+			this.textBoxTitle = new Wisej.Web.TextBox();
 			this.buttonPrint = new Wisej.Web.Button();
 			this.buttonSave = new Wisej.Web.Button();
 			this.groupBox1.SuspendLayout();
@@ -50,12 +50,12 @@
 			// 
 			this.groupBox1.Controls.Add(this.buttonSave);
 			this.groupBox1.Controls.Add(this.buttonPrint);
-			this.groupBox1.Controls.Add(this.textBox1);
-			this.groupBox1.Controls.Add(this.comboBox1);
+			this.groupBox1.Controls.Add(this.textBoxTitle);
+			this.groupBox1.Controls.Add(this.comboBoxLegendAlignment);
 			this.groupBox1.Size = new System.Drawing.Size(250, 382);
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-			this.groupBox1.Controls.SetChildIndex(this.comboBox1, 0);
-			this.groupBox1.Controls.SetChildIndex(this.textBox1, 0);
+			this.groupBox1.Controls.SetChildIndex(this.comboBoxLegendAlignment, 0);
+			this.groupBox1.Controls.SetChildIndex(this.textBoxTitle, 0);
 			this.groupBox1.Controls.SetChildIndex(this.buttonPrint, 0);
 			this.groupBox1.Controls.SetChildIndex(this.buttonSave, 0);
 			// 
@@ -86,32 +86,32 @@
 			// 
 			// comboBox1
 			// 
-			this.comboBox1.AutoSize = false;
-			this.comboBox1.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
-			this.comboBox1.Items.AddRange(new object[] {
+			this.comboBoxLegendAlignment.AutoSize = false;
+			this.comboBoxLegendAlignment.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+			this.comboBoxLegendAlignment.Items.AddRange(new object[] {
             "Center",
             "Near",
             "Far"});
-			this.comboBox1.Label.Size = 50;
-			this.comboBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
-			this.comboBox1.Label.Text = "Legend Alignment";
-			this.comboBox1.Location = new System.Drawing.Point(25, 44);
-			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(195, 60);
-			this.comboBox1.TabIndex = 3;
-			this.comboBox1.Text = "Center";
+			this.comboBoxLegendAlignment.Label.Size = 50;
+			this.comboBoxLegendAlignment.Label.SizeType = Wisej.Web.SizeType.Percent;
+			this.comboBoxLegendAlignment.Label.Text = "Legend Alignment";
+			this.comboBoxLegendAlignment.Location = new System.Drawing.Point(25, 44);
+			this.comboBoxLegendAlignment.Name = "comboBox1";
+			this.comboBoxLegendAlignment.Size = new System.Drawing.Size(195, 60);
+			this.comboBoxLegendAlignment.TabIndex = 3;
+			this.comboBoxLegendAlignment.Text = "Center";
 			// 
 			// textBox1
 			// 
-			this.textBox1.AutoSize = false;
-			this.textBox1.Label.Size = 50;
-			this.textBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
-			this.textBox1.Label.Text = "Chart Title";
-			this.textBox1.Location = new System.Drawing.Point(25, 124);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(195, 60);
-			this.textBox1.TabIndex = 4;
-			this.textBox1.Text = "Efficiency of oil-fired power production";
+			this.textBoxTitle.AutoSize = false;
+			this.textBoxTitle.Label.Size = 50;
+			this.textBoxTitle.Label.SizeType = Wisej.Web.SizeType.Percent;
+			this.textBoxTitle.Label.Text = "Chart Title";
+			this.textBoxTitle.Location = new System.Drawing.Point(25, 124);
+			this.textBoxTitle.Name = "textBox1";
+			this.textBoxTitle.Size = new System.Drawing.Size(195, 60);
+			this.textBoxTitle.TabIndex = 4;
+			this.textBoxTitle.Text = "Efficiency of oil-fired power production";
 			// 
 			// buttonPrint
 			// 
@@ -147,8 +147,8 @@
 		#endregion
 
 		private Syncfusion.ejChart ejChart1;
-		private ComboBox comboBox1;
-		private TextBox textBox1;
+		private ComboBox comboBoxLegendAlignment;
+		private TextBox textBoxTitle;
 		private Button buttonSave;
 		private Button buttonPrint;
 	}

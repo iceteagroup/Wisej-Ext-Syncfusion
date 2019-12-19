@@ -29,15 +29,15 @@
 		private void InitializeComponent()
 		{
 			this.ejDigitalGauge1 = new Wisej.Web.Ext.Syncfusion.ejDigitalGauge();
-			this.textBox1 = new Wisej.Web.TextBox();
+			this.textBoxVal = new Wisej.Web.TextBox();
 			this.label4 = new Wisej.Web.Label();
-			this.trackBar1 = new Wisej.Web.TrackBar();
+			this.trackBarSegmentSpacing = new Wisej.Web.TrackBar();
 			this.label5 = new Wisej.Web.Label();
-			this.trackBar2 = new Wisej.Web.TrackBar();
+			this.trackBarCharSpacing = new Wisej.Web.TrackBar();
 			this.groupBox1.SuspendLayout();
 			this.panel.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.trackBarSegmentSpacing)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.trackBarCharSpacing)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// linkDocs
@@ -51,16 +51,16 @@
 			// groupBox1
 			// 
 			this.groupBox1.Controls.Add(this.label5);
-			this.groupBox1.Controls.Add(this.trackBar2);
+			this.groupBox1.Controls.Add(this.trackBarCharSpacing);
 			this.groupBox1.Controls.Add(this.label4);
-			this.groupBox1.Controls.Add(this.trackBar1);
-			this.groupBox1.Controls.Add(this.textBox1);
+			this.groupBox1.Controls.Add(this.trackBarSegmentSpacing);
+			this.groupBox1.Controls.Add(this.textBoxVal);
 			this.groupBox1.Size = new System.Drawing.Size(250, 437);
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-			this.groupBox1.Controls.SetChildIndex(this.textBox1, 0);
-			this.groupBox1.Controls.SetChildIndex(this.trackBar1, 0);
+			this.groupBox1.Controls.SetChildIndex(this.textBoxVal, 0);
+			this.groupBox1.Controls.SetChildIndex(this.trackBarSegmentSpacing, 0);
 			this.groupBox1.Controls.SetChildIndex(this.label4, 0);
-			this.groupBox1.Controls.SetChildIndex(this.trackBar2, 0);
+			this.groupBox1.Controls.SetChildIndex(this.trackBarCharSpacing, 0);
 			this.groupBox1.Controls.SetChildIndex(this.label5, 0);
 			// 
 			// buttonUpdate
@@ -94,15 +94,15 @@
 			// 
 			// textBox1
 			// 
-			this.textBox1.AutoSize = false;
-			this.textBox1.Label.Size = 50;
-			this.textBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
-			this.textBox1.Label.Text = "Text";
-			this.textBox1.Location = new System.Drawing.Point(28, 45);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(195, 60);
-			this.textBox1.TabIndex = 2;
-			this.textBox1.Text = "123456789";
+			this.textBoxVal.AutoSize = false;
+			this.textBoxVal.Label.Size = 50;
+			this.textBoxVal.Label.SizeType = Wisej.Web.SizeType.Percent;
+			this.textBoxVal.Label.Text = "Text";
+			this.textBoxVal.Location = new System.Drawing.Point(28, 45);
+			this.textBoxVal.Name = "textBox1";
+			this.textBoxVal.Size = new System.Drawing.Size(195, 60);
+			this.textBoxVal.TabIndex = 2;
+			this.textBoxVal.Text = "123456789";
 			// 
 			// label4
 			// 
@@ -115,12 +115,12 @@
 			// 
 			// trackBar1
 			// 
-			this.trackBar1.Location = new System.Drawing.Point(28, 150);
-			this.trackBar1.Maximum = 1;
-			this.trackBar1.Minimum = -2;
-			this.trackBar1.Name = "trackBar1";
-			this.trackBar1.Size = new System.Drawing.Size(195, 36);
-			this.trackBar1.TabIndex = 4;
+			this.trackBarSegmentSpacing.Location = new System.Drawing.Point(28, 150);
+			this.trackBarSegmentSpacing.Maximum = 1;
+			this.trackBarSegmentSpacing.Minimum = -2;
+			this.trackBarSegmentSpacing.Name = "trackBar1";
+			this.trackBarSegmentSpacing.Size = new System.Drawing.Size(195, 36);
+			this.trackBarSegmentSpacing.TabIndex = 4;
 			// 
 			// label5
 			// 
@@ -133,13 +133,13 @@
 			// 
 			// trackBar2
 			// 
-			this.trackBar2.Location = new System.Drawing.Point(28, 265);
-			this.trackBar2.Maximum = 4;
-			this.trackBar2.Minimum = 1;
-			this.trackBar2.Name = "trackBar2";
-			this.trackBar2.Size = new System.Drawing.Size(195, 36);
-			this.trackBar2.TabIndex = 6;
-			this.trackBar2.Value = 2;
+			this.trackBarCharSpacing.Location = new System.Drawing.Point(28, 265);
+			this.trackBarCharSpacing.Maximum = 4;
+			this.trackBarCharSpacing.Minimum = 1;
+			this.trackBarCharSpacing.Name = "trackBar2";
+			this.trackBarCharSpacing.Size = new System.Drawing.Size(195, 36);
+			this.trackBarCharSpacing.TabIndex = 6;
+			this.trackBarCharSpacing.Value = 2;
 			// 
 			// ejDigitalGauge
 			// 
@@ -148,8 +148,8 @@
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
 			this.panel.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.trackBarSegmentSpacing)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.trackBarCharSpacing)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -158,10 +158,10 @@
 		#endregion
 
 		private Syncfusion.ejDigitalGauge ejDigitalGauge1;
-		private TextBox textBox1;
+		private TextBox textBoxVal;
 		private Label label4;
-		private TrackBar trackBar1;
+		private TrackBar trackBarSegmentSpacing;
 		private Label label5;
-		private TrackBar trackBar2;
+		private TrackBar trackBarCharSpacing;
 	}
 }

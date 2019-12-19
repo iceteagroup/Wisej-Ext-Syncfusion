@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ejRotator1.Options" xml:space="preserve">
+    <value>{"showPager":false,"showCaption":true,"animationType":"slide","dataSource":[{"text":"Beautiful Bird","url":"images/bird.jpg"},{"text":"Colorful Night","url":"images/night.jpg"},{"text":"Nature","url":"images/nature.jpg"},{"text":"Snow Fall","url":"images/snowfall.jpg"},{"text":"Credit Card","url":"images/card.jpg"},{"text":"Amazing Sculptures","url":"images/sculpture.jpg"}]}</value>
+  </data>
   <metadata name="$this.RulerSnapLines" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0

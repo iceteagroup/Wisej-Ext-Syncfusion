@@ -28,9 +28,9 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.textBox1 = new Wisej.Web.TextBox();
+			this.textBoxBarcodeValue = new Wisej.Web.TextBox();
 			this.ejBarcode1 = new Wisej.Web.Ext.Syncfusion.ejBarcode();
-			this.comboBox1 = new Wisej.Web.ComboBox();
+			this.comboBoxSymbology = new Wisej.Web.ComboBox();
 			this.groupBox1.SuspendLayout();
 			this.panel.SuspendLayout();
 			this.SuspendLayout();
@@ -45,11 +45,11 @@
 			// 
 			// groupBox1
 			// 
-			this.groupBox1.Controls.Add(this.comboBox1);
-			this.groupBox1.Controls.Add(this.textBox1);
+			this.groupBox1.Controls.Add(this.comboBoxSymbology);
+			this.groupBox1.Controls.Add(this.textBoxBarcodeValue);
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-			this.groupBox1.Controls.SetChildIndex(this.textBox1, 0);
-			this.groupBox1.Controls.SetChildIndex(this.comboBox1, 0);
+			this.groupBox1.Controls.SetChildIndex(this.textBoxBarcodeValue, 0);
+			this.groupBox1.Controls.SetChildIndex(this.comboBoxSymbology, 0);
 			// 
 			// buttonUpdate
 			// 
@@ -65,15 +65,15 @@
 			// 
 			// textBox1
 			// 
-			this.textBox1.AutoSize = false;
-			this.textBox1.Label.Size = 50;
-			this.textBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
-			this.textBox1.Label.Text = "Text";
-			this.textBox1.Location = new System.Drawing.Point(25, 44);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(200, 60);
-			this.textBox1.TabIndex = 1;
-			this.textBox1.Text = "HTTP://WISEJ.COM";
+			this.textBoxBarcodeValue.AutoSize = false;
+			this.textBoxBarcodeValue.Label.Size = 50;
+			this.textBoxBarcodeValue.Label.SizeType = Wisej.Web.SizeType.Percent;
+			this.textBoxBarcodeValue.Label.Text = "Text";
+			this.textBoxBarcodeValue.Location = new System.Drawing.Point(25, 44);
+			this.textBoxBarcodeValue.Name = "textBox1";
+			this.textBoxBarcodeValue.Size = new System.Drawing.Size(200, 60);
+			this.textBoxBarcodeValue.TabIndex = 1;
+			this.textBoxBarcodeValue.Text = "HTTP://WISEJ.COM";
 			// 
 			// ejBarcode1
 			// 
@@ -86,9 +86,9 @@
 			// 
 			// comboBox1
 			// 
-			this.comboBox1.AutoSize = false;
-			this.comboBox1.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
-			this.comboBox1.Items.AddRange(new object[] {
+			this.comboBoxSymbology.AutoSize = false;
+			this.comboBoxSymbology.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+			this.comboBoxSymbology.Items.AddRange(new object[] {
             "QRBarcode",
             "DataMatrix",
             "Code39",
@@ -101,14 +101,14 @@
             "Code128A",
             "Code128B",
             "Code128C"});
-			this.comboBox1.Label.Size = 50;
-			this.comboBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
-			this.comboBox1.Label.Text = "Symbology";
-			this.comboBox1.Location = new System.Drawing.Point(25, 120);
-			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(200, 60);
-			this.comboBox1.TabIndex = 2;
-			this.comboBox1.Text = "QRBarcode";
+			this.comboBoxSymbology.Label.Size = 50;
+			this.comboBoxSymbology.Label.SizeType = Wisej.Web.SizeType.Percent;
+			this.comboBoxSymbology.Label.Text = "Symbology";
+			this.comboBoxSymbology.Location = new System.Drawing.Point(25, 120);
+			this.comboBoxSymbology.Name = "comboBox1";
+			this.comboBoxSymbology.Size = new System.Drawing.Size(200, 60);
+			this.comboBoxSymbology.TabIndex = 2;
+			this.comboBoxSymbology.Text = "QRBarcode";
 			// 
 			// ejBarcode
 			// 
@@ -122,8 +122,8 @@
 
 		#endregion
 
-		private TextBox textBox1;
+		private TextBox textBoxBarcodeValue;
 		private Syncfusion.ejBarcode ejBarcode1;
-		private ComboBox comboBox1;
+		private ComboBox comboBoxSymbology;
 	}
 }

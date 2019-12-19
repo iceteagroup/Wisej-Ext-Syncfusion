@@ -50,9 +50,9 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			this.ejFileExplorer1.Options.showFooter = this.checkBox1.Checked;
-			this.ejFileExplorer1.Options.showToolbar = this.checkBox2.Checked;
-			this.ejFileExplorer1.Options.layout = this.comboBox1.Text.ToLower();
+			this.ejFileExplorer1.Options.showFooter = this.checkBoxShowFooter.Checked;
+			this.ejFileExplorer1.Options.showToolbar = this.checkBoxShowToolbar.Checked;
+			this.ejFileExplorer1.Options.layout = this.comboBoxLayout.Text.ToLower();
 
 			this.ejFileExplorer1.Update();
 		}

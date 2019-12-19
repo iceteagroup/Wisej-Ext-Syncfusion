@@ -30,8 +30,13 @@
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ejTagCloud));
 			this.ejTagCloud1 = new Wisej.Web.Ext.Syncfusion.ejTagCloud();
+			this.numericUpDownMinimumFontSize = new Wisej.Web.NumericUpDown();
+			this.numericUpDownMaximumFontSize = new Wisej.Web.NumericUpDown();
+			this.comboBoxFormat = new Wisej.Web.ComboBox();
 			this.groupBox1.SuspendLayout();
 			this.panel.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.numericUpDownMinimumFontSize)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.numericUpDownMaximumFontSize)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// linkDocs
@@ -42,9 +47,26 @@
 			// 
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejtagcloud";
 			// 
+			// groupBox1
+			// 
+			this.groupBox1.Controls.Add(this.comboBoxFormat);
+			this.groupBox1.Controls.Add(this.numericUpDownMaximumFontSize);
+			this.groupBox1.Controls.Add(this.numericUpDownMinimumFontSize);
+			this.groupBox1.Size = new System.Drawing.Size(250, 359);
+			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
+			this.groupBox1.Controls.SetChildIndex(this.numericUpDownMinimumFontSize, 0);
+			this.groupBox1.Controls.SetChildIndex(this.numericUpDownMaximumFontSize, 0);
+			this.groupBox1.Controls.SetChildIndex(this.comboBoxFormat, 0);
+			// 
+			// buttonUpdate
+			// 
+			this.buttonUpdate.Location = new System.Drawing.Point(28, 278);
+			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
+			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejTagCloud1);
+			this.panel.Size = new System.Drawing.Size(455, 359);
 			// 
 			// linkDemo
 			// 
@@ -59,14 +81,95 @@
 			this.ejTagCloud1.Location = new System.Drawing.Point(26, 19);
 			this.ejTagCloud1.Name = "ejTagCloud1";
 			this.ejTagCloud1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejTagCloud1.Options"))));
-			this.ejTagCloud1.Size = new System.Drawing.Size(400, 275);
+			this.ejTagCloud1.Size = new System.Drawing.Size(400, 319);
 			this.ejTagCloud1.Text = "ejTagCloud1";
+			// 
+			// numericUpDownMinimumFontSize
+			// 
+			this.numericUpDownMinimumFontSize.AutoSize = false;
+			this.numericUpDownMinimumFontSize.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+			this.numericUpDownMinimumFontSize.Label.Size = 50;
+			this.numericUpDownMinimumFontSize.Label.SizeType = Wisej.Web.SizeType.Percent;
+			this.numericUpDownMinimumFontSize.Label.Text = "Minimum Font Size";
+			this.numericUpDownMinimumFontSize.Location = new System.Drawing.Point(28, 44);
+			this.numericUpDownMinimumFontSize.Maximum = new decimal(new int[] {
+            40,
+            0,
+            0,
+            0});
+			this.numericUpDownMinimumFontSize.Minimum = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+			this.numericUpDownMinimumFontSize.Name = "numericUpDownMinimumFontSize";
+			this.numericUpDownMinimumFontSize.Size = new System.Drawing.Size(195, 60);
+			this.numericUpDownMinimumFontSize.TabIndex = 4;
+			this.numericUpDownMinimumFontSize.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+			// 
+			// numericUpDown1
+			// 
+			this.numericUpDownMaximumFontSize.AutoSize = false;
+			this.numericUpDownMaximumFontSize.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+			this.numericUpDownMaximumFontSize.Label.Size = 50;
+			this.numericUpDownMaximumFontSize.Label.SizeType = Wisej.Web.SizeType.Percent;
+			this.numericUpDownMaximumFontSize.Label.Text = "Maximum Font Size";
+			this.numericUpDownMaximumFontSize.Location = new System.Drawing.Point(28, 120);
+			this.numericUpDownMaximumFontSize.Maximum = new decimal(new int[] {
+            60,
+            0,
+            0,
+            0});
+			this.numericUpDownMaximumFontSize.Minimum = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+			this.numericUpDownMaximumFontSize.Name = "numericUpDown1";
+			this.numericUpDownMaximumFontSize.Size = new System.Drawing.Size(195, 60);
+			this.numericUpDownMaximumFontSize.TabIndex = 5;
+			this.numericUpDownMaximumFontSize.Value = new decimal(new int[] {
+            40,
+            0,
+            0,
+            0});
+			// 
+			// comboBoxChartType
+			// 
+			this.comboBoxFormat.AutoSize = false;
+			this.comboBoxFormat.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+			this.comboBoxFormat.Items.AddRange(new object[] {
+            "Cloud",
+            "List"});
+			this.comboBoxFormat.Label.Size = 50;
+			this.comboBoxFormat.Label.SizeType = Wisej.Web.SizeType.Percent;
+			this.comboBoxFormat.Label.Text = "Format";
+			this.comboBoxFormat.Location = new System.Drawing.Point(28, 196);
+			this.comboBoxFormat.Name = "comboBoxChartType";
+			this.comboBoxFormat.Size = new System.Drawing.Size(195, 60);
+			this.comboBoxFormat.TabIndex = 6;
+			this.comboBoxFormat.Text = "Cloud";
 			// 
 			// ejTagCloud
 			// 
 			this.Name = "ejTagCloud";
+			this.Size = new System.Drawing.Size(864, 549);
 			this.groupBox1.ResumeLayout(false);
 			this.panel.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.numericUpDownMinimumFontSize)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.numericUpDownMaximumFontSize)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -75,5 +178,8 @@
 		#endregion
 
 		private Syncfusion.ejTagCloud ejTagCloud1;
+		private NumericUpDown numericUpDownMaximumFontSize;
+		private NumericUpDown numericUpDownMinimumFontSize;
+		private ComboBox comboBoxFormat;
 	}
 }

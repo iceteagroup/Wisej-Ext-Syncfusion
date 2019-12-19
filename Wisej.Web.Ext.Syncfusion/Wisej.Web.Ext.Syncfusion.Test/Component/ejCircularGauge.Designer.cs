@@ -30,17 +30,17 @@
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ejCircularGauge));
 			this.ejCircularGauge1 = new Wisej.Web.Ext.Syncfusion.ejCircularGauge();
-			this.numericUpDown1 = new Wisej.Web.NumericUpDown();
-			this.trackBar1 = new Wisej.Web.TrackBar();
+			this.numericUpDownVal = new Wisej.Web.NumericUpDown();
+			this.trackBarDistanceFromScale = new Wisej.Web.TrackBar();
 			this.label4 = new Wisej.Web.Label();
 			this.label5 = new Wisej.Web.Label();
-			this.trackBar2 = new Wisej.Web.TrackBar();
-			this.checkBox1 = new Wisej.Web.CheckBox();
+			this.trackBarSize = new Wisej.Web.TrackBar();
+			this.checkBoxShowTicks = new Wisej.Web.CheckBox();
 			this.groupBox1.SuspendLayout();
 			this.panel.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.numericUpDownVal)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.trackBarDistanceFromScale)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.trackBarSize)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// linkDocs
@@ -53,20 +53,20 @@
 			// 
 			// groupBox1
 			// 
-			this.groupBox1.Controls.Add(this.checkBox1);
+			this.groupBox1.Controls.Add(this.checkBoxShowTicks);
 			this.groupBox1.Controls.Add(this.label5);
-			this.groupBox1.Controls.Add(this.trackBar2);
+			this.groupBox1.Controls.Add(this.trackBarSize);
 			this.groupBox1.Controls.Add(this.label4);
-			this.groupBox1.Controls.Add(this.trackBar1);
-			this.groupBox1.Controls.Add(this.numericUpDown1);
+			this.groupBox1.Controls.Add(this.trackBarDistanceFromScale);
+			this.groupBox1.Controls.Add(this.numericUpDownVal);
 			this.groupBox1.Size = new System.Drawing.Size(250, 472);
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-			this.groupBox1.Controls.SetChildIndex(this.numericUpDown1, 0);
-			this.groupBox1.Controls.SetChildIndex(this.trackBar1, 0);
+			this.groupBox1.Controls.SetChildIndex(this.numericUpDownVal, 0);
+			this.groupBox1.Controls.SetChildIndex(this.trackBarDistanceFromScale, 0);
 			this.groupBox1.Controls.SetChildIndex(this.label4, 0);
-			this.groupBox1.Controls.SetChildIndex(this.trackBar2, 0);
+			this.groupBox1.Controls.SetChildIndex(this.trackBarSize, 0);
 			this.groupBox1.Controls.SetChildIndex(this.label5, 0);
-			this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBoxShowTicks, 0);
 			// 
 			// buttonUpdate
 			// 
@@ -96,15 +96,15 @@
 			// 
 			// numericUpDown1
 			// 
-			this.numericUpDown1.AutoSize = false;
-			this.numericUpDown1.Label.Size = 50;
-			this.numericUpDown1.Label.SizeType = Wisej.Web.SizeType.Percent;
-			this.numericUpDown1.Label.Text = "Value";
-			this.numericUpDown1.Location = new System.Drawing.Point(28, 41);
-			this.numericUpDown1.Name = "numericUpDown1";
-			this.numericUpDown1.Size = new System.Drawing.Size(195, 60);
-			this.numericUpDown1.TabIndex = 1;
-			this.numericUpDown1.Value = new decimal(new int[] {
+			this.numericUpDownVal.AutoSize = false;
+			this.numericUpDownVal.Label.Size = 50;
+			this.numericUpDownVal.Label.SizeType = Wisej.Web.SizeType.Percent;
+			this.numericUpDownVal.Label.Text = "Value";
+			this.numericUpDownVal.Location = new System.Drawing.Point(28, 41);
+			this.numericUpDownVal.Name = "numericUpDown1";
+			this.numericUpDownVal.Size = new System.Drawing.Size(195, 60);
+			this.numericUpDownVal.TabIndex = 1;
+			this.numericUpDownVal.Value = new decimal(new int[] {
             50,
             0,
             0,
@@ -112,13 +112,13 @@
 			// 
 			// trackBar1
 			// 
-			this.trackBar1.Location = new System.Drawing.Point(28, 146);
-			this.trackBar1.Maximum = 0;
-			this.trackBar1.Minimum = -30;
-			this.trackBar1.Name = "trackBar1";
-			this.trackBar1.Size = new System.Drawing.Size(195, 36);
-			this.trackBar1.TabIndex = 2;
-			this.trackBar1.Value = -30;
+			this.trackBarDistanceFromScale.Location = new System.Drawing.Point(28, 146);
+			this.trackBarDistanceFromScale.Maximum = 0;
+			this.trackBarDistanceFromScale.Minimum = -30;
+			this.trackBarDistanceFromScale.Name = "trackBar1";
+			this.trackBarDistanceFromScale.Size = new System.Drawing.Size(195, 36);
+			this.trackBarDistanceFromScale.TabIndex = 2;
+			this.trackBarDistanceFromScale.Value = -30;
 			// 
 			// label4
 			// 
@@ -140,26 +140,26 @@
 			// 
 			// trackBar2
 			// 
-			this.trackBar2.Location = new System.Drawing.Point(28, 236);
-			this.trackBar2.Maximum = 12;
-			this.trackBar2.Minimum = 2;
-			this.trackBar2.Name = "trackBar2";
-			this.trackBar2.Size = new System.Drawing.Size(195, 36);
-			this.trackBar2.TabIndex = 4;
-			this.trackBar2.Value = 2;
+			this.trackBarSize.Location = new System.Drawing.Point(28, 236);
+			this.trackBarSize.Maximum = 12;
+			this.trackBarSize.Minimum = 2;
+			this.trackBarSize.Name = "trackBar2";
+			this.trackBarSize.Size = new System.Drawing.Size(195, 36);
+			this.trackBarSize.TabIndex = 4;
+			this.trackBarSize.Value = 2;
 			// 
 			// checkBox1
 			// 
-			this.checkBox1.Appearance = Wisej.Web.Appearance.Switch;
-			this.checkBox1.AutoSize = false;
-			this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox1.Checked = true;
-			this.checkBox1.CheckState = ((Wisej.Web.CheckState)(Wisej.Web.CheckState.Checked));
-			this.checkBox1.Location = new System.Drawing.Point(28, 309);
-			this.checkBox1.Name = "checkBox1";
-			this.checkBox1.Size = new System.Drawing.Size(183, 38);
-			this.checkBox1.TabIndex = 6;
-			this.checkBox1.Text = "Show Ticks";
+			this.checkBoxShowTicks.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBoxShowTicks.AutoSize = false;
+			this.checkBoxShowTicks.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBoxShowTicks.Checked = true;
+			this.checkBoxShowTicks.CheckState = ((Wisej.Web.CheckState)(Wisej.Web.CheckState.Checked));
+			this.checkBoxShowTicks.Location = new System.Drawing.Point(28, 309);
+			this.checkBoxShowTicks.Name = "checkBox1";
+			this.checkBoxShowTicks.Size = new System.Drawing.Size(183, 38);
+			this.checkBoxShowTicks.TabIndex = 6;
+			this.checkBoxShowTicks.Text = "Show Ticks";
 			// 
 			// ejCircularGauge
 			// 
@@ -168,9 +168,9 @@
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
 			this.panel.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.numericUpDownVal)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.trackBarDistanceFromScale)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.trackBarSize)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -179,11 +179,11 @@
 		#endregion
 
 		private Syncfusion.ejCircularGauge ejCircularGauge1;
-		private NumericUpDown numericUpDown1;
+		private NumericUpDown numericUpDownVal;
 		private Label label4;
-		private TrackBar trackBar1;
+		private TrackBar trackBarDistanceFromScale;
 		private Label label5;
-		private TrackBar trackBar2;
-		private CheckBox checkBox1;
+		private TrackBar trackBarSize;
+		private CheckBox checkBoxShowTicks;
 	}
 }

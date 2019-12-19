@@ -29,8 +29,8 @@
 		private void InitializeComponent()
 		{
 			this.ejDateRangePicker1 = new Wisej.Web.Ext.Syncfusion.ejDateRangePicker();
-			this.textBox1 = new Wisej.Web.TextBox();
-			this.textBox2 = new Wisej.Web.TextBox();
+			this.textBoxStartDay = new Wisej.Web.TextBox();
+			this.textBoxEndDay = new Wisej.Web.TextBox();
 			this.groupBox1.SuspendLayout();
 			this.panel.SuspendLayout();
 			this.SuspendLayout();
@@ -45,11 +45,11 @@
 			// 
 			// groupBox1
 			// 
-			this.groupBox1.Controls.Add(this.textBox2);
-			this.groupBox1.Controls.Add(this.textBox1);
+			this.groupBox1.Controls.Add(this.textBoxEndDay);
+			this.groupBox1.Controls.Add(this.textBoxStartDay);
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-			this.groupBox1.Controls.SetChildIndex(this.textBox1, 0);
-			this.groupBox1.Controls.SetChildIndex(this.textBox2, 0);
+			this.groupBox1.Controls.SetChildIndex(this.textBoxStartDay, 0);
+			this.groupBox1.Controls.SetChildIndex(this.textBoxEndDay, 0);
 			// 
 			// buttonUpdate
 			// 
@@ -76,31 +76,31 @@
 			// 
 			// textBox1
 			// 
-			this.textBox1.AutoSize = false;
-			this.textBox1.InputType.Type = Wisej.Web.TextBoxType.Date;
-			this.textBox1.Label.Size = 50;
-			this.textBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
-			this.textBox1.Label.Text = "Start Date";
-			this.textBox1.Location = new System.Drawing.Point(28, 43);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(195, 60);
-			this.textBox1.TabIndex = 2;
-			this.textBox1.Text = "2020-01-01";
-			this.textBox1.Watermark = "Select date...";
+			this.textBoxStartDay.AutoSize = false;
+			this.textBoxStartDay.InputType.Type = Wisej.Web.TextBoxType.Date;
+			this.textBoxStartDay.Label.Size = 50;
+			this.textBoxStartDay.Label.SizeType = Wisej.Web.SizeType.Percent;
+			this.textBoxStartDay.Label.Text = "Start Date";
+			this.textBoxStartDay.Location = new System.Drawing.Point(28, 43);
+			this.textBoxStartDay.Name = "textBox1";
+			this.textBoxStartDay.Size = new System.Drawing.Size(195, 60);
+			this.textBoxStartDay.TabIndex = 2;
+			this.textBoxStartDay.Text = "2020-01-01";
+			this.textBoxStartDay.Watermark = "Select date...";
 			// 
 			// textBox2
 			// 
-			this.textBox2.AutoSize = false;
-			this.textBox2.InputType.Type = Wisej.Web.TextBoxType.Date;
-			this.textBox2.Label.Size = 50;
-			this.textBox2.Label.SizeType = Wisej.Web.SizeType.Percent;
-			this.textBox2.Label.Text = "End Date";
-			this.textBox2.Location = new System.Drawing.Point(28, 127);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(195, 60);
-			this.textBox2.TabIndex = 3;
-			this.textBox2.Text = "2020-01-15";
-			this.textBox2.Watermark = "Select date...";
+			this.textBoxEndDay.AutoSize = false;
+			this.textBoxEndDay.InputType.Type = Wisej.Web.TextBoxType.Date;
+			this.textBoxEndDay.Label.Size = 50;
+			this.textBoxEndDay.Label.SizeType = Wisej.Web.SizeType.Percent;
+			this.textBoxEndDay.Label.Text = "End Date";
+			this.textBoxEndDay.Location = new System.Drawing.Point(28, 127);
+			this.textBoxEndDay.Name = "textBox2";
+			this.textBoxEndDay.Size = new System.Drawing.Size(195, 60);
+			this.textBoxEndDay.TabIndex = 3;
+			this.textBoxEndDay.Text = "2020-01-15";
+			this.textBoxEndDay.Watermark = "Select date...";
 			// 
 			// ejDateRangePicker
 			// 
@@ -115,7 +115,7 @@
 		#endregion
 
 		private Syncfusion.ejDateRangePicker ejDateRangePicker1;
-		private TextBox textBox2;
-		private TextBox textBox1;
+		private TextBox textBoxEndDay;
+		private TextBox textBoxStartDay;
 	}
 }

@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ejListView1.Options" xml:space="preserve">
-    <value>{"showHeader":true,"showHeaderBackButton":true,"headerTitle":"Music","loadComplete":"Refresh","dataSource":[{"text":"Hot Singles"},{"text":"Rising Artists"},{"text":"Live Music"},{"text":"Best of 2013 So Far"},{"text":"100 Albums - $5 Each"},{"text":"Hip-Hop and R&amp;B Sale"},{"text":"CD Deals"},{"text":"Songs"},{"text":"Bestselling Albums"},{"text":"New Releases"},{"text":"Bestselling Songs"},{"text":"Rock"},{"text":"Gospel"},{"text":"Latin Music"},{"text":"Jazz"},{"text":"Music Trade-In"},{"text":"Redeem a Gift Card"},{"text":"Band T-Shirts"},{"text":"Web MVC"}]}</value>
+    <value>{"showHeader":true,"enableCheckMark":true,"headerTitle":"Music","showHeaderBackButton":true,"dataSource":[{"text":"Hot Singles"},{"text":"Rising Artists"},{"text":"Live Music"},{"text":"Best of 2013 So Far"},{"text":"100 Albums - $5 Each"},{"text":"Hip-Hop and R&amp;B Sale"},{"text":"CD Deals"},{"text":"Songs"},{"text":"Bestselling Albums"},{"text":"New Releases"},{"text":"Bestselling Songs"},{"text":"Rock"},{"text":"Gospel"},{"text":"Latin Music"},{"text":"Jazz"},{"text":"Music Trade-In"},{"text":"Redeem a Gift Card"},{"text":"Band T-Shirts"},{"text":"Web MVC"}]}</value>
   </data>
   <metadata name="$this.RulerSnapLines" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>

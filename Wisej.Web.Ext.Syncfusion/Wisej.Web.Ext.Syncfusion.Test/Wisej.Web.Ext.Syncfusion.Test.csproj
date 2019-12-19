@@ -114,9 +114,6 @@
     <EmbeddedResource Include="Component\ejListView.resx">
       <DependentUpon>ejListView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Component\ejMap.resx">
-      <DependentUpon>ejMap.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Component\ejMaskEdit.resx">
       <DependentUpon>ejMaskEdit.cs</DependentUpon>
     </EmbeddedResource>
@@ -143,6 +140,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Component\ejRating.resx">
       <DependentUpon>ejRating.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Component\ejRecurrenceEditor.resx">
       <DependentUpon>ejRecurrenceEditor.cs</DependentUpon>
@@ -384,12 +382,6 @@
     <Compile Include="Component\ejListView.Designer.cs">
       <DependentUpon>ejListView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Component\ejMap.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\ejMap.Designer.cs">
-      <DependentUpon>ejMap.cs</DependentUpon>
-    </Compile>
     <Compile Include="Component\ejMaskEdit.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -601,7 +593,7 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Wisej.Ext.MaterialDesign">
-      <HintPath>..\..\..\..\2.1\bin\Wisej.Ext.MaterialDesign.dll</HintPath>
+      <HintPath>..\..\..\..\2.0\Wisej.Ext.MaterialDesign\bin\Wisej.Ext.MaterialDesign.dll</HintPath>
     </Reference>
     <Reference Include="Wisej.Framework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=17bef35e11b84171, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>

@@ -42,6 +42,8 @@ namespace Wisej.Web.Ext.Syncfusion
 		public ejListView(object options) : base("ejListView", options)
 		{
 			this.WidgetWiredEvents = new[] {
+				"mouseUp",
+				"mouseDown",
 				"ajaxError",
 				"ajaxSuccess",
 				"ajaxComplete",

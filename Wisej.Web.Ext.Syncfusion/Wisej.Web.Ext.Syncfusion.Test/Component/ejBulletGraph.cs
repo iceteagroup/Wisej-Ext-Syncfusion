@@ -14,8 +14,8 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			this.ejBulletGraph1.Options.value = numericUpDown1.Value;
-			this.ejBulletGraph1.Options.comparativeMeasureValue = numericUpDown2.Value;
+			this.ejBulletGraph1.Options.value = numericUpDownVal.Value;
+			this.ejBulletGraph1.Options.comparativeMeasureValue = numericUpDownCompMeasureVal.Value;
 
 			ejBulletGraph1.Update();
 		}

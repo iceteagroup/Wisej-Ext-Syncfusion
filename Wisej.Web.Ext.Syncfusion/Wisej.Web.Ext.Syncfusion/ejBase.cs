@@ -40,7 +40,7 @@ namespace Wisej.Web.Ext.Syncfusion
 	{
 		internal const string DEFAULT_THEME = "default-theme";
 		internal const string NAMESPACE = "Wisej.Web.Ext.Syncfusion";
-		internal const string RESOURCES_ROOT = "Wisej.Web.Ext.Syncfusion.JavaScript";
+		internal const string RESOURCES_ROOT = "Wisej.Web.Ext.Syncfusion.Syncfusion";
 
 		#region Constructors
 
@@ -218,12 +218,12 @@ namespace Wisej.Web.Ext.Syncfusion
 					});
 					packages.Add(new Package()
 					{
-						Name = "syncfusion/jsrender.js",
+						Name = "jsrender.js",
 						Source = this.GetResourceURL($"{RESOURCES_ROOT}/external/jsrender.min.js")
 					});
 					packages.Add(new Package()
 					{
-						Name = "syncfusion/ej.web.all.js",
+						Name = "ej.web.all.js",
 						Source = this.GetResourceURL($"{RESOURCES_ROOT}/assets/scripts/web/ej.web.all.min.js")
 					});
 
@@ -467,8 +467,8 @@ namespace Wisej.Web.Ext.Syncfusion
 			// replace this.GetPostbackUrl() with this.GetServiceURL()
 			// to generate a rest URL with the session id in the path
 			// instead of the ?sid= parameter.
-			//config.postbackUrl = this.GetServiceURL();
-			config.postbackUrl = this.GetPostbackURL();
+			config.postbackUrl = this.GetServiceURL();
+			//config.postbackUrl = this.GetPostbackURL();
 
 			config.wiredEvents.Add("initialized");
 		}

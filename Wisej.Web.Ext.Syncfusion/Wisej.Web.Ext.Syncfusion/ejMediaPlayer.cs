@@ -39,6 +39,7 @@ namespace Wisej.Web.Ext.Syncfusion
 		public ejMediaPlayer(object options) : base("ejMediaPlayer", options)
 		{
 			this.WidgetWiredEvents = new[] {
+				"onRepeat",
 				"onPlaying",
 				"onActionBegin",
 				"onActionComplete"

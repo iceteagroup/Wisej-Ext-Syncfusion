@@ -44,7 +44,8 @@ namespace Wisej.Web.Ext.Syncfusion
 		{
 			this.WidgetWiredEvents = new[] {
 				"rowSelected",
-				"taskbarClick" };
+				"taskbarClick",
+			};
 		}
 	}
 }

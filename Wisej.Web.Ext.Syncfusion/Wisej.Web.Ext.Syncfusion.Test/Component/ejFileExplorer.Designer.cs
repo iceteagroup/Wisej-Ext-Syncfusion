@@ -29,9 +29,9 @@
 		private void InitializeComponent()
 		{
 			this.ejFileExplorer1 = new Wisej.Web.Ext.Syncfusion.ejFileExplorer();
-			this.checkBox2 = new Wisej.Web.CheckBox();
-			this.checkBox1 = new Wisej.Web.CheckBox();
-			this.comboBox1 = new Wisej.Web.ComboBox();
+			this.checkBoxShowToolbar = new Wisej.Web.CheckBox();
+			this.checkBoxShowFooter = new Wisej.Web.CheckBox();
+			this.comboBoxLayout = new Wisej.Web.ComboBox();
 			this.groupBox1.SuspendLayout();
 			this.panel.SuspendLayout();
 			this.SuspendLayout();
@@ -46,13 +46,13 @@
 			// 
 			// groupBox1
 			// 
-			this.groupBox1.Controls.Add(this.comboBox1);
-			this.groupBox1.Controls.Add(this.checkBox2);
-			this.groupBox1.Controls.Add(this.checkBox1);
+			this.groupBox1.Controls.Add(this.comboBoxLayout);
+			this.groupBox1.Controls.Add(this.checkBoxShowToolbar);
+			this.groupBox1.Controls.Add(this.checkBoxShowFooter);
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-			this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
-			this.groupBox1.Controls.SetChildIndex(this.checkBox2, 0);
-			this.groupBox1.Controls.SetChildIndex(this.comboBox1, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBoxShowFooter, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBoxShowToolbar, 0);
+			this.groupBox1.Controls.SetChildIndex(this.comboBoxLayout, 0);
 			// 
 			// buttonUpdate
 			// 
@@ -73,56 +73,56 @@
 			this.ejFileExplorer1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
             | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-			this.ejFileExplorer1.Location = new System.Drawing.Point(51, 47);
+			this.ejFileExplorer1.Location = new System.Drawing.Point(26, 21);
 			this.ejFileExplorer1.Name = "ejFileExplorer1";
 			this.ejFileExplorer1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"showFooter\":true,\"showToolbar\":true,\"layout\":\"tile\",\"path\":\"/\"}")));
-			this.ejFileExplorer1.Size = new System.Drawing.Size(358, 224);
+			this.ejFileExplorer1.Size = new System.Drawing.Size(400, 270);
 			this.ejFileExplorer1.Text = "ejFileExplorer1";
 			this.ejFileExplorer1.WebRequest += new Wisej.Web.WebRequestHandler(this.ejFileExplorer1_WebRequest);
 			// 
 			// checkBox2
 			// 
-			this.checkBox2.Appearance = Wisej.Web.Appearance.Switch;
-			this.checkBox2.AutoSize = false;
-			this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox2.Checked = true;
-			this.checkBox2.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBox2.Location = new System.Drawing.Point(28, 63);
-			this.checkBox2.Margin = new Wisej.Web.Padding(3, 10, 3, 3);
-			this.checkBox2.Name = "checkBox2";
-			this.checkBox2.Size = new System.Drawing.Size(195, 22);
-			this.checkBox2.TabIndex = 6;
-			this.checkBox2.Text = "Show Toolbar";
+			this.checkBoxShowToolbar.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBoxShowToolbar.AutoSize = false;
+			this.checkBoxShowToolbar.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBoxShowToolbar.Checked = true;
+			this.checkBoxShowToolbar.CheckState = Wisej.Web.CheckState.Checked;
+			this.checkBoxShowToolbar.Location = new System.Drawing.Point(28, 63);
+			this.checkBoxShowToolbar.Margin = new Wisej.Web.Padding(3, 10, 3, 3);
+			this.checkBoxShowToolbar.Name = "checkBox2";
+			this.checkBoxShowToolbar.Size = new System.Drawing.Size(195, 22);
+			this.checkBoxShowToolbar.TabIndex = 6;
+			this.checkBoxShowToolbar.Text = "Show Toolbar";
 			// 
 			// checkBox1
 			// 
-			this.checkBox1.Appearance = Wisej.Web.Appearance.Switch;
-			this.checkBox1.AutoSize = false;
-			this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox1.Checked = true;
-			this.checkBox1.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBox1.Location = new System.Drawing.Point(28, 28);
-			this.checkBox1.Name = "checkBox1";
-			this.checkBox1.Size = new System.Drawing.Size(195, 22);
-			this.checkBox1.TabIndex = 5;
-			this.checkBox1.Text = "Show Footer";
+			this.checkBoxShowFooter.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBoxShowFooter.AutoSize = false;
+			this.checkBoxShowFooter.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBoxShowFooter.Checked = true;
+			this.checkBoxShowFooter.CheckState = Wisej.Web.CheckState.Checked;
+			this.checkBoxShowFooter.Location = new System.Drawing.Point(28, 28);
+			this.checkBoxShowFooter.Name = "checkBox1";
+			this.checkBoxShowFooter.Size = new System.Drawing.Size(195, 22);
+			this.checkBoxShowFooter.TabIndex = 5;
+			this.checkBoxShowFooter.Text = "Show Footer";
 			// 
 			// comboBox1
 			// 
-			this.comboBox1.AutoSize = false;
-			this.comboBox1.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
-			this.comboBox1.Items.AddRange(new object[] {
+			this.comboBoxLayout.AutoSize = false;
+			this.comboBoxLayout.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+			this.comboBoxLayout.Items.AddRange(new object[] {
             "Tile",
             "Grid",
             "LargeIcons"});
-			this.comboBox1.Label.Size = 50;
-			this.comboBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
-			this.comboBox1.Label.Text = "Layout";
-			this.comboBox1.Location = new System.Drawing.Point(28, 104);
-			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(195, 60);
-			this.comboBox1.TabIndex = 7;
-			this.comboBox1.Text = "Tile";
+			this.comboBoxLayout.Label.Size = 50;
+			this.comboBoxLayout.Label.SizeType = Wisej.Web.SizeType.Percent;
+			this.comboBoxLayout.Label.Text = "Layout";
+			this.comboBoxLayout.Location = new System.Drawing.Point(28, 104);
+			this.comboBoxLayout.Name = "comboBox1";
+			this.comboBoxLayout.Size = new System.Drawing.Size(195, 60);
+			this.comboBoxLayout.TabIndex = 7;
+			this.comboBoxLayout.Text = "Tile";
 			// 
 			// ejFileExplorer
 			// 
@@ -137,8 +137,8 @@
 		#endregion
 
 		private Syncfusion.ejFileExplorer ejFileExplorer1;
-		private ComboBox comboBox1;
-		private CheckBox checkBox2;
-		private CheckBox checkBox1;
+		private ComboBox comboBoxLayout;
+		private CheckBox checkBoxShowToolbar;
+		private CheckBox checkBoxShowFooter;
 	}
 }

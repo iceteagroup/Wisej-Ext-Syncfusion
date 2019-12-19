@@ -29,11 +29,11 @@
 		private void InitializeComponent()
 		{
 			this.ejDateTimePicker1 = new Wisej.Web.Ext.Syncfusion.ejDateTimePicker();
-			this.textBox1 = new Wisej.Web.TextBox();
-			this.numericUpDown1 = new Wisej.Web.NumericUpDown();
+			this.textBoxDateTimeFormat = new Wisej.Web.TextBox();
+			this.numericUpDownStartDay = new Wisej.Web.NumericUpDown();
 			this.groupBox1.SuspendLayout();
 			this.panel.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.numericUpDownStartDay)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// linkDocs
@@ -46,11 +46,11 @@
 			// 
 			// groupBox1
 			// 
-			this.groupBox1.Controls.Add(this.numericUpDown1);
-			this.groupBox1.Controls.Add(this.textBox1);
+			this.groupBox1.Controls.Add(this.numericUpDownStartDay);
+			this.groupBox1.Controls.Add(this.textBoxDateTimeFormat);
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-			this.groupBox1.Controls.SetChildIndex(this.textBox1, 0);
-			this.groupBox1.Controls.SetChildIndex(this.numericUpDown1, 0);
+			this.groupBox1.Controls.SetChildIndex(this.textBoxDateTimeFormat, 0);
+			this.groupBox1.Controls.SetChildIndex(this.numericUpDownStartDay, 0);
 			// 
 			// buttonUpdate
 			// 
@@ -77,37 +77,37 @@
 			// 
 			// textBox1
 			// 
-			this.textBox1.AutoSize = false;
-			this.textBox1.Label.Size = 50;
-			this.textBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
-			this.textBox1.Label.Text = "Date Time Format";
-			this.textBox1.Location = new System.Drawing.Point(28, 43);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(195, 60);
-			this.textBox1.TabIndex = 2;
-			this.textBox1.Text = "M/d/yyyy h:mm tt";
+			this.textBoxDateTimeFormat.AutoSize = false;
+			this.textBoxDateTimeFormat.Label.Size = 50;
+			this.textBoxDateTimeFormat.Label.SizeType = Wisej.Web.SizeType.Percent;
+			this.textBoxDateTimeFormat.Label.Text = "Date Time Format";
+			this.textBoxDateTimeFormat.Location = new System.Drawing.Point(28, 43);
+			this.textBoxDateTimeFormat.Name = "textBox1";
+			this.textBoxDateTimeFormat.Size = new System.Drawing.Size(195, 60);
+			this.textBoxDateTimeFormat.TabIndex = 2;
+			this.textBoxDateTimeFormat.Text = "M/d/yyyy h:mm tt";
 			// 
 			// numericUpDown1
 			// 
-			this.numericUpDown1.AutoSize = false;
-			this.numericUpDown1.Label.Size = 50;
-			this.numericUpDown1.Label.SizeType = Wisej.Web.SizeType.Percent;
-			this.numericUpDown1.Label.Text = "Start Day";
-			this.numericUpDown1.Location = new System.Drawing.Point(28, 138);
-			this.numericUpDown1.Maximum = new decimal(new int[] {
+			this.numericUpDownStartDay.AutoSize = false;
+			this.numericUpDownStartDay.Label.Size = 50;
+			this.numericUpDownStartDay.Label.SizeType = Wisej.Web.SizeType.Percent;
+			this.numericUpDownStartDay.Label.Text = "Start Day";
+			this.numericUpDownStartDay.Location = new System.Drawing.Point(28, 138);
+			this.numericUpDownStartDay.Maximum = new decimal(new int[] {
             7,
             0,
             0,
             0});
-			this.numericUpDown1.Minimum = new decimal(new int[] {
+			this.numericUpDownStartDay.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-			this.numericUpDown1.Name = "numericUpDown1";
-			this.numericUpDown1.Size = new System.Drawing.Size(195, 60);
-			this.numericUpDown1.TabIndex = 3;
-			this.numericUpDown1.Value = new decimal(new int[] {
+			this.numericUpDownStartDay.Name = "numericUpDown1";
+			this.numericUpDownStartDay.Size = new System.Drawing.Size(195, 60);
+			this.numericUpDownStartDay.TabIndex = 3;
+			this.numericUpDownStartDay.Value = new decimal(new int[] {
             1,
             0,
             0,
@@ -118,7 +118,7 @@
 			this.Name = "ejDateTimePicker";
 			this.groupBox1.ResumeLayout(false);
 			this.panel.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.numericUpDownStartDay)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -127,7 +127,7 @@
 		#endregion
 
 		private Syncfusion.ejDateTimePicker ejDateTimePicker1;
-		private TextBox textBox1;
-		private NumericUpDown numericUpDown1;
+		private TextBox textBoxDateTimeFormat;
+		private NumericUpDown numericUpDownStartDay;
 	}
 }

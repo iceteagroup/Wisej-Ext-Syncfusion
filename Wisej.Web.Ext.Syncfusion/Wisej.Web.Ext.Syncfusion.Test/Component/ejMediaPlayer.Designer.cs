@@ -30,8 +30,17 @@
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ejMediaPlayer));
 			this.ejMediaPlayer1 = new Wisej.Web.Ext.Syncfusion.ejMediaPlayer();
+			this.flowLayoutPanel1 = new Wisej.Web.FlowLayoutPanel();
+			this.buttonPlay = new Wisej.Web.Button();
+			this.buttonPause = new Wisej.Web.Button();
+			this.buttonFullScreen = new Wisej.Web.Button();
+			this.buttonNext = new Wisej.Web.Button();
+			this.buttonReset = new Wisej.Web.Button();
+			this.buttonMute = new Wisej.Web.Button();
+			this.comboBoxRenderMode = new Wisej.Web.ComboBox();
 			this.groupBox1.SuspendLayout();
 			this.panel.SuspendLayout();
+			this.flowLayoutPanel1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// linkDocs
@@ -42,9 +51,24 @@
 			// 
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejmediaplayer";
 			// 
+			// groupBox1
+			// 
+			this.groupBox1.Controls.Add(this.comboBoxRenderMode);
+			this.groupBox1.Controls.Add(this.flowLayoutPanel1);
+			this.groupBox1.Size = new System.Drawing.Size(250, 364);
+			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
+			this.groupBox1.Controls.SetChildIndex(this.flowLayoutPanel1, 0);
+			this.groupBox1.Controls.SetChildIndex(this.comboBoxRenderMode, 0);
+			// 
+			// buttonUpdate
+			// 
+			this.buttonUpdate.Location = new System.Drawing.Point(28, 283);
+			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
+			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejMediaPlayer1);
+			this.panel.Size = new System.Drawing.Size(455, 364);
 			// 
 			// linkDemo
 			// 
@@ -60,14 +84,112 @@
 			this.ejMediaPlayer1.Location = new System.Drawing.Point(21, 20);
 			this.ejMediaPlayer1.Name = "ejMediaPlayer1";
 			this.ejMediaPlayer1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejMediaPlayer1.Options"))));
-			this.ejMediaPlayer1.Size = new System.Drawing.Size(410, 272);
+			this.ejMediaPlayer1.Size = new System.Drawing.Size(410, 321);
 			this.ejMediaPlayer1.Text = "ejMediaPlayer1";
+			// 
+			// flowLayoutPanel1
+			// 
+			this.flowLayoutPanel1.Anchor = Wisej.Web.AnchorStyles.Top;
+			this.flowLayoutPanel1.AutoSize = true;
+			this.flowLayoutPanel1.AutoSizeMode = Wisej.Web.AutoSizeMode.GrowAndShrink;
+			this.flowLayoutPanel1.Controls.Add(this.buttonPlay);
+			this.flowLayoutPanel1.Controls.Add(this.buttonPause);
+			this.flowLayoutPanel1.Controls.Add(this.buttonFullScreen);
+			this.flowLayoutPanel1.Controls.Add(this.buttonNext);
+			this.flowLayoutPanel1.Controls.Add(this.buttonReset);
+			this.flowLayoutPanel1.Controls.Add(this.buttonMute);
+			this.flowLayoutPanel1.Location = new System.Drawing.Point(53, 56);
+			this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+			this.flowLayoutPanel1.Size = new System.Drawing.Size(144, 96);
+			this.flowLayoutPanel1.TabIndex = 1;
+			this.flowLayoutPanel1.TabStop = true;
+			// 
+			// buttonPlay
+			// 
+			this.buttonPlay.Display = Wisej.Web.Display.Icon;
+			this.buttonPlay.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/play-arrow.svg";
+			this.buttonPlay.Location = new System.Drawing.Point(3, 3);
+			this.buttonPlay.Name = "buttonPlay";
+			this.buttonPlay.Size = new System.Drawing.Size(42, 42);
+			this.buttonPlay.TabIndex = 9;
+			this.buttonPlay.Click += new System.EventHandler(this.buttonPlay_Click);
+			// 
+			// buttonPause
+			// 
+			this.buttonPause.Display = Wisej.Web.Display.Icon;
+			this.buttonPause.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/pause-button.svg";
+			this.buttonPause.Location = new System.Drawing.Point(51, 3);
+			this.buttonPause.Name = "buttonPause";
+			this.buttonPause.Size = new System.Drawing.Size(42, 42);
+			this.buttonPause.TabIndex = 10;
+			this.buttonPause.Click += new System.EventHandler(this.buttonPause_Click);
+			// 
+			// buttonFullScreen
+			// 
+			this.buttonFullScreen.Display = Wisej.Web.Display.Icon;
+			this.flowLayoutPanel1.SetFlowBreak(this.buttonFullScreen, true);
+			this.buttonFullScreen.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/show-more-button.svg";
+			this.buttonFullScreen.Location = new System.Drawing.Point(99, 3);
+			this.buttonFullScreen.Name = "buttonFullScreen";
+			this.buttonFullScreen.Size = new System.Drawing.Size(42, 42);
+			this.buttonFullScreen.TabIndex = 11;
+			this.buttonFullScreen.Click += new System.EventHandler(this.buttonFullScreen_Click);
+			// 
+			// buttonNext
+			// 
+			this.buttonNext.Display = Wisej.Web.Display.Icon;
+			this.buttonNext.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/play-next-button.svg";
+			this.buttonNext.Location = new System.Drawing.Point(3, 51);
+			this.buttonNext.Name = "buttonNext";
+			this.buttonNext.Size = new System.Drawing.Size(42, 42);
+			this.buttonNext.TabIndex = 12;
+			this.buttonNext.Click += new System.EventHandler(this.buttonNext_Click);
+			// 
+			// buttonReset
+			// 
+			this.buttonReset.Display = Wisej.Web.Display.Icon;
+			this.buttonReset.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/back-arrow.svg";
+			this.buttonReset.Location = new System.Drawing.Point(51, 51);
+			this.buttonReset.Name = "buttonReset";
+			this.buttonReset.Size = new System.Drawing.Size(42, 42);
+			this.buttonReset.TabIndex = 13;
+			this.buttonReset.Click += new System.EventHandler(this.buttonReset_Click);
+			// 
+			// buttonMute
+			// 
+			this.buttonMute.Display = Wisej.Web.Display.Icon;
+			this.buttonMute.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/volume-muted.svg";
+			this.buttonMute.Location = new System.Drawing.Point(99, 51);
+			this.buttonMute.Name = "buttonMute";
+			this.buttonMute.Size = new System.Drawing.Size(42, 42);
+			this.buttonMute.TabIndex = 14;
+			this.buttonMute.Click += new System.EventHandler(this.buttonMute_Click);
+			// 
+			// comboBoxInputMode
+			// 
+			this.comboBoxRenderMode.AutoSize = false;
+			this.comboBoxRenderMode.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+			this.comboBoxRenderMode.Items.AddRange(new object[] {
+            "Basic",
+            "Advanced",
+            "Mobile"});
+			this.comboBoxRenderMode.Label.Size = 50;
+			this.comboBoxRenderMode.Label.SizeType = Wisej.Web.SizeType.Percent;
+			this.comboBoxRenderMode.Label.Text = "Render Mode";
+			this.comboBoxRenderMode.Location = new System.Drawing.Point(28, 187);
+			this.comboBoxRenderMode.Name = "comboBoxInputMode";
+			this.comboBoxRenderMode.Size = new System.Drawing.Size(195, 60);
+			this.comboBoxRenderMode.TabIndex = 4;
+			this.comboBoxRenderMode.Text = "Basic";
 			// 
 			// ejMediaPlayer
 			// 
 			this.Name = "ejMediaPlayer";
+			this.Size = new System.Drawing.Size(864, 554);
 			this.groupBox1.ResumeLayout(false);
+			this.groupBox1.PerformLayout();
 			this.panel.ResumeLayout(false);
+			this.flowLayoutPanel1.ResumeLayout(false);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -76,5 +198,13 @@
 		#endregion
 
 		private Syncfusion.ejMediaPlayer ejMediaPlayer1;
+		private FlowLayoutPanel flowLayoutPanel1;
+		private Button buttonPlay;
+		private Button buttonPause;
+		private Button buttonFullScreen;
+		private Button buttonNext;
+		private Button buttonReset;
+		private Button buttonMute;
+		private ComboBox comboBoxRenderMode;
 	}
 }

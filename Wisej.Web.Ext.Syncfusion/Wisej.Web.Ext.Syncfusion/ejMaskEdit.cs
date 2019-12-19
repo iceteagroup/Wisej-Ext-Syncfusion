@@ -44,6 +44,7 @@ namespace Wisej.Web.Ext.Syncfusion
 				"keyUp",
 				"change",
 				"keyPress",
+				"onKeyDown"
 			};
 		}
 	}

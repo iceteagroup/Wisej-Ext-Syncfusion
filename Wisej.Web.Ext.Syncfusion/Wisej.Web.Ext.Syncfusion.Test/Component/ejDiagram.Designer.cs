@@ -31,8 +31,8 @@
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ejDiagram));
 			Wisej.Web.Ext.Syncfusion.ejBase.WidgetTemplate widgetTemplate1 = new Wisej.Web.Ext.Syncfusion.ejBase.WidgetTemplate();
 			this.ejDiagram1 = new Wisej.Web.Ext.Syncfusion.ejDiagram();
-			this.checkBox1 = new Wisej.Web.CheckBox();
-			this.checkBox2 = new Wisej.Web.CheckBox();
+			this.checkBoxConstraints = new Wisej.Web.CheckBox();
+			this.checkBoxEnableContextMenu = new Wisej.Web.CheckBox();
 			this.comboBox1 = new Wisej.Web.ComboBox();
 			this.buttonSave = new Wisej.Web.Button();
 			this.buttonLoad = new Wisej.Web.Upload();
@@ -53,11 +53,11 @@
 			this.groupBox1.Controls.Add(this.buttonLoad);
 			this.groupBox1.Controls.Add(this.buttonSave);
 			this.groupBox1.Controls.Add(this.comboBox1);
-			this.groupBox1.Controls.Add(this.checkBox2);
-			this.groupBox1.Controls.Add(this.checkBox1);
+			this.groupBox1.Controls.Add(this.checkBoxEnableContextMenu);
+			this.groupBox1.Controls.Add(this.checkBoxConstraints);
 			this.groupBox1.Size = new System.Drawing.Size(250, 405);
-			this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
-			this.groupBox1.Controls.SetChildIndex(this.checkBox2, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBoxConstraints, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBoxEnableContextMenu, 0);
 			this.groupBox1.Controls.SetChildIndex(this.comboBox1, 0);
 			this.groupBox1.Controls.SetChildIndex(this.buttonSave, 0);
 			this.groupBox1.Controls.SetChildIndex(this.buttonLoad, 0);
@@ -96,29 +96,29 @@
 			// 
 			// checkBox1
 			// 
-			this.checkBox1.Appearance = Wisej.Web.Appearance.Switch;
-			this.checkBox1.AutoSize = false;
-			this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox1.Checked = true;
-			this.checkBox1.CheckState = ((Wisej.Web.CheckState)(Wisej.Web.CheckState.Checked));
-			this.checkBox1.Location = new System.Drawing.Point(28, 37);
-			this.checkBox1.Name = "checkBox1";
-			this.checkBox1.Size = new System.Drawing.Size(195, 31);
-			this.checkBox1.TabIndex = 1;
-			this.checkBox1.Text = "Editable";
+			this.checkBoxConstraints.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBoxConstraints.AutoSize = false;
+			this.checkBoxConstraints.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBoxConstraints.Checked = true;
+			this.checkBoxConstraints.CheckState = ((Wisej.Web.CheckState)(Wisej.Web.CheckState.Checked));
+			this.checkBoxConstraints.Location = new System.Drawing.Point(28, 37);
+			this.checkBoxConstraints.Name = "checkBox1";
+			this.checkBoxConstraints.Size = new System.Drawing.Size(195, 31);
+			this.checkBoxConstraints.TabIndex = 1;
+			this.checkBoxConstraints.Text = "Editable";
 			// 
 			// checkBox2
 			// 
-			this.checkBox2.Appearance = Wisej.Web.Appearance.Switch;
-			this.checkBox2.AutoSize = false;
-			this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox2.Checked = true;
-			this.checkBox2.CheckState = ((Wisej.Web.CheckState)(Wisej.Web.CheckState.Checked));
-			this.checkBox2.Location = new System.Drawing.Point(28, 74);
-			this.checkBox2.Name = "checkBox2";
-			this.checkBox2.Size = new System.Drawing.Size(195, 31);
-			this.checkBox2.TabIndex = 2;
-			this.checkBox2.Text = "Context Menu";
+			this.checkBoxEnableContextMenu.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBoxEnableContextMenu.AutoSize = false;
+			this.checkBoxEnableContextMenu.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBoxEnableContextMenu.Checked = true;
+			this.checkBoxEnableContextMenu.CheckState = ((Wisej.Web.CheckState)(Wisej.Web.CheckState.Checked));
+			this.checkBoxEnableContextMenu.Location = new System.Drawing.Point(28, 74);
+			this.checkBoxEnableContextMenu.Name = "checkBox2";
+			this.checkBoxEnableContextMenu.Size = new System.Drawing.Size(195, 31);
+			this.checkBoxEnableContextMenu.TabIndex = 2;
+			this.checkBoxEnableContextMenu.Text = "Context Menu";
 			// 
 			// comboBox1
 			// 
@@ -172,8 +172,8 @@
 		#endregion
 
 		private Syncfusion.ejDiagram ejDiagram1;
-		private CheckBox checkBox2;
-		private CheckBox checkBox1;
+		private CheckBox checkBoxEnableContextMenu;
+		private CheckBox checkBoxConstraints;
 		private ComboBox comboBox1;
 		private Button buttonSave;
 		private Upload buttonLoad;

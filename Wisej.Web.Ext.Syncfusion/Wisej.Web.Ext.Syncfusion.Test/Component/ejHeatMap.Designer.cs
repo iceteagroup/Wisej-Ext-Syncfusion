@@ -50,6 +50,7 @@
 			// 
 			// linkDemo
 			// 
+			this.linkDemo.Size = new System.Drawing.Size(538, 24);
 			this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/flatlight/heatmap/celldatabinding";
 			// 
 			// ejHeatMap1
@@ -63,10 +64,11 @@
 			this.ejHeatMap1.Size = new System.Drawing.Size(409, 233);
 			this.ejHeatMap1.TabIndex = 2;
 			this.ejHeatMap1.Text = "ejHeatMap1";
+			this.ejHeatMap1.Appear += new System.EventHandler(this.ejHeatMap1_Appear);
 			// 
 			// ejHeatMapLegend1
 			// 
-			this.ejHeatMapLegend1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Bottom | Wisej.Web.AnchorStyles.Left) 
+			this.ejHeatMapLegend1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
 			this.ejHeatMapLegend1.Location = new System.Drawing.Point(22, 259);
 			this.ejHeatMapLegend1.Name = "ejHeatMapLegend1";

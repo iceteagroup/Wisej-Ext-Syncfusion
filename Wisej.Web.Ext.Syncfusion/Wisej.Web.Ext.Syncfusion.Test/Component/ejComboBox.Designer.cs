@@ -30,8 +30,8 @@
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ejComboBox));
 			this.ejComboBox1 = new Wisej.Web.Ext.Syncfusion.ejComboBox();
-			this.checkBox1 = new Wisej.Web.CheckBox();
-			this.checkBox2 = new Wisej.Web.CheckBox();
+			this.checkBoxAutofill = new Wisej.Web.CheckBox();
+			this.checkBoxShowClearButton = new Wisej.Web.CheckBox();
 			this.groupBox1.SuspendLayout();
 			this.panel.SuspendLayout();
 			this.SuspendLayout();
@@ -46,11 +46,11 @@
 			// 
 			// groupBox1
 			// 
-			this.groupBox1.Controls.Add(this.checkBox2);
-			this.groupBox1.Controls.Add(this.checkBox1);
+			this.groupBox1.Controls.Add(this.checkBoxShowClearButton);
+			this.groupBox1.Controls.Add(this.checkBoxAutofill);
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-			this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
-			this.groupBox1.Controls.SetChildIndex(this.checkBox2, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBoxAutofill, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBoxShowClearButton, 0);
 			// 
 			// buttonUpdate
 			// 
@@ -77,29 +77,29 @@
 			// 
 			// checkBox1
 			// 
-			this.checkBox1.Appearance = Wisej.Web.Appearance.Switch;
-			this.checkBox1.AutoSize = false;
-			this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox1.Checked = true;
-			this.checkBox1.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBox1.Location = new System.Drawing.Point(28, 36);
-			this.checkBox1.Name = "checkBox1";
-			this.checkBox1.Size = new System.Drawing.Size(195, 38);
-			this.checkBox1.TabIndex = 8;
-			this.checkBox1.Text = "Autofill";
+			this.checkBoxAutofill.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBoxAutofill.AutoSize = false;
+			this.checkBoxAutofill.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBoxAutofill.Checked = true;
+			this.checkBoxAutofill.CheckState = Wisej.Web.CheckState.Checked;
+			this.checkBoxAutofill.Location = new System.Drawing.Point(28, 36);
+			this.checkBoxAutofill.Name = "checkBox1";
+			this.checkBoxAutofill.Size = new System.Drawing.Size(195, 38);
+			this.checkBoxAutofill.TabIndex = 8;
+			this.checkBoxAutofill.Text = "Autofill";
 			// 
 			// checkBox2
 			// 
-			this.checkBox2.Appearance = Wisej.Web.Appearance.Switch;
-			this.checkBox2.AutoSize = false;
-			this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox2.Checked = true;
-			this.checkBox2.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBox2.Location = new System.Drawing.Point(28, 96);
-			this.checkBox2.Name = "checkBox2";
-			this.checkBox2.Size = new System.Drawing.Size(195, 38);
-			this.checkBox2.TabIndex = 9;
-			this.checkBox2.Text = "Show Clear Button";
+			this.checkBoxShowClearButton.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBoxShowClearButton.AutoSize = false;
+			this.checkBoxShowClearButton.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBoxShowClearButton.Checked = true;
+			this.checkBoxShowClearButton.CheckState = Wisej.Web.CheckState.Checked;
+			this.checkBoxShowClearButton.Location = new System.Drawing.Point(28, 96);
+			this.checkBoxShowClearButton.Name = "checkBox2";
+			this.checkBoxShowClearButton.Size = new System.Drawing.Size(195, 38);
+			this.checkBoxShowClearButton.TabIndex = 9;
+			this.checkBoxShowClearButton.Text = "Show Clear Button";
 			// 
 			// ejComboBox
 			// 
@@ -114,7 +114,7 @@
 		#endregion
 
 		private Syncfusion.ejComboBox ejComboBox1;
-		private CheckBox checkBox1;
-		private CheckBox checkBox2;
+		private CheckBox checkBoxAutofill;
+		private CheckBox checkBoxShowClearButton;
 	}
 }

@@ -87,6 +87,7 @@
         "ethroughAnnotation\":true,\"enableSignature\":false}")));
 			this.ejPdfViewer1.Size = new System.Drawing.Size(395, 321);
 			this.ejPdfViewer1.Text = "ejPdfViewer1";
+			this.ejPdfViewer1.Initialized += new System.EventHandler(this.ejPdfViewer1_Initialized);
 			this.ejPdfViewer1.WebRequest += new Wisej.Web.WebRequestHandler(this.ejPdfViewer1_WebRequest);
 			// 
 			// checkBox1

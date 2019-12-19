@@ -15,6 +15,8 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
+			this.ejKanban1.Options.selectionType = this.comboBoxSelectionType.Text;
+			this.ejKanban1.Options.allowDragAndDrop = this.checkBoxAllowDragAndDrop.Checked;
 
 			this.ejKanban1.Update();
 		}
@@ -37,6 +39,13 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 			var json = Wisej.Core.WisejSerializer.Serialize(data);
 
 			Application.Download(new MemoryStream(Encoding.UTF8.GetBytes(json)), "kanban.json");
+		}
+
+		private async void buttonGetVisibleColumnNames_Click(object sender, EventArgs e)
+		{
+			var visibleNames = await this.ejKanban1.Widget.getVisibleColumnNamesAsync();
+
+			AlertBox.Show(Wisej.Core.WisejSerializer.Serialize(visibleNames));
 		}
 	}
 }

@@ -24,5 +24,34 @@
  */
 this.initWidget = function () {
 
+	var serviceUrl = this.getPostbackUrl();
+	this.widget.option({
+		url: serviceUrl
+	});
 	this.container.style.boxSizing = "border-box";
+};
+
+/**
+ * Resizes the hosted widget to always fit our container.
+ */
+this.resizeWidget = function () {
+
+	if (this.widget) {
+		var bounds = this.getBounds();
+		this.widget.option({
+			size: {
+				width: bounds.width - 2,
+				height: bounds.height - 2,
+			}
+		});
+	}
+};
+
+// Returns a data map that can be converted to JSON.
+this.filterEventData = function (args) {
+
+	return {
+		url: args.url,
+		fileName: args.fileName
+	}
 };

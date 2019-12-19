@@ -18,3 +18,16 @@
 // FROM ICE TEA GROUP LLC.
 //
 ///////////////////////////////////////////////////////////////////////////////
+
+// Returns a data map that can be converted to JSON.
+this.filterEventData = function (args) {
+
+	return {
+		index: args.index,
+		isChecked: args.isChecked,
+		isSelected: args.isSelected,
+		isEnabled: args.isEnabled,
+		text: args.text,
+		value: args.value
+	}
+};
