@@ -56,10 +56,10 @@
 			this.ejSunburstChart1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
             | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-			this.ejSunburstChart1.Location = new System.Drawing.Point(34, 28);
+			this.ejSunburstChart1.Location = new System.Drawing.Point(19, 18);
 			this.ejSunburstChart1.Name = "ejSunburstChart1";
 			this.ejSunburstChart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejSunburstChart1.Options"))));
-			this.ejSunburstChart1.Size = new System.Drawing.Size(385, 257);
+			this.ejSunburstChart1.Size = new System.Drawing.Size(415, 276);
 			this.ejSunburstChart1.Text = "ejSunburstChart1";
 			// 
 			// ejSunburstChart

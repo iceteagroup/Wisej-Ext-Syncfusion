@@ -53,11 +53,14 @@
 			// 
 			// ejToolbar1
 			// 
+			this.ejToolbar1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
 			this.ejToolbar1.CssStyle = resources.GetString("ejToolbar1.CssStyle");
-			this.ejToolbar1.Location = new System.Drawing.Point(43, 26);
+			this.ejToolbar1.Location = new System.Drawing.Point(17, 13);
 			this.ejToolbar1.Name = "ejToolbar1";
-			this.ejToolbar1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"width\":\"auto\",\"height\":\"33px\"}")));
-			this.ejToolbar1.Size = new System.Drawing.Size(366, 259);
+			this.ejToolbar1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"width\":\"auto\",\"dataSource\":[{\"id\":\"1\",\"text\":\"Wisej\"},{\"id\":\"2\",\"text\":\"File\"}," +
+        "{\"id\":\"3\",\"text\":\"Edit\"},{\"id\":\"4\",\"text\":\"View\"},{\"id\":\"5\",\"text\":\"Window\"}]}")));
+			this.ejToolbar1.Size = new System.Drawing.Size(418, 27);
 			this.ejToolbar1.Text = "ejToolbar1";
 			// 
 			// ejToolbar

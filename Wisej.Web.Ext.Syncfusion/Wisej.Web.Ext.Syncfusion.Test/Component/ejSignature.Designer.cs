@@ -72,10 +72,11 @@
 			this.ejSignature1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
             | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-			this.ejSignature1.Location = new System.Drawing.Point(17, 23);
+			this.ejSignature1.Location = new System.Drawing.Point(23, 19);
 			this.ejSignature1.Name = "ejSignature1";
 			this.ejSignature1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"isResponsive\":true,\"strokeWidth\":3}")));
-			this.ejSignature1.Size = new System.Drawing.Size(418, 266);
+			this.ejSignature1.Size = new System.Drawing.Size(407, 274);
+			this.ejSignature1.TabIndex = 1;
 			this.ejSignature1.Text = "ejSignature1";
 			// 
 			// button1

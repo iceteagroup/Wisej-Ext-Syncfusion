@@ -25,5 +25,15 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 
 			Application.Play(MessageBoxIcon.Information);
 		}
+
+		private void buttonGoToFirstPage_Click(object sender, EventArgs e)
+		{
+			this.ejPager1.Widget.goToFirstPage();
+		}
+
+		private void buttonUpdate_Click(object sender, EventArgs e)
+		{
+			this.ejPager1.Widget.goToPage(this.numericSelectedPage.Value);
+		}
 	}
 }

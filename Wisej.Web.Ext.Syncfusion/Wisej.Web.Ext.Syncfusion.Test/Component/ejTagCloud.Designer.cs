@@ -78,10 +78,10 @@
 			this.ejTagCloud1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
             | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-			this.ejTagCloud1.Location = new System.Drawing.Point(26, 19);
+			this.ejTagCloud1.Location = new System.Drawing.Point(19, 17);
 			this.ejTagCloud1.Name = "ejTagCloud1";
 			this.ejTagCloud1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejTagCloud1.Options"))));
-			this.ejTagCloud1.Size = new System.Drawing.Size(400, 319);
+			this.ejTagCloud1.Size = new System.Drawing.Size(415, 323);
 			this.ejTagCloud1.Text = "ejTagCloud1";
 			// 
 			// numericUpDownMinimumFontSize
@@ -115,7 +115,7 @@
             0,
             0});
 			// 
-			// numericUpDown1
+			// numericUpDownMaximumFontSize
 			// 
 			this.numericUpDownMaximumFontSize.AutoSize = false;
 			this.numericUpDownMaximumFontSize.Increment = new decimal(new int[] {
@@ -137,7 +137,7 @@
             0,
             0,
             0});
-			this.numericUpDownMaximumFontSize.Name = "numericUpDown1";
+			this.numericUpDownMaximumFontSize.Name = "numericUpDownMaximumFontSize";
 			this.numericUpDownMaximumFontSize.Size = new System.Drawing.Size(195, 60);
 			this.numericUpDownMaximumFontSize.TabIndex = 5;
 			this.numericUpDownMaximumFontSize.Value = new decimal(new int[] {
@@ -146,7 +146,7 @@
             0,
             0});
 			// 
-			// comboBoxChartType
+			// comboBoxFormat
 			// 
 			this.comboBoxFormat.AutoSize = false;
 			this.comboBoxFormat.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
@@ -157,7 +157,7 @@
 			this.comboBoxFormat.Label.SizeType = Wisej.Web.SizeType.Percent;
 			this.comboBoxFormat.Label.Text = "Format";
 			this.comboBoxFormat.Location = new System.Drawing.Point(28, 196);
-			this.comboBoxFormat.Name = "comboBoxChartType";
+			this.comboBoxFormat.Name = "comboBoxFormat";
 			this.comboBoxFormat.Size = new System.Drawing.Size(195, 60);
 			this.comboBoxFormat.TabIndex = 6;
 			this.comboBoxFormat.Text = "Cloud";

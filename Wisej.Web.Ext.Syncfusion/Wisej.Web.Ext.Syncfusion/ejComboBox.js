@@ -20,9 +20,28 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 /**
- * Additional widget initialization.
+ * Resizes the hosted widget to always fit our container.
  */
-this.initWidget = function () {
+this.resizeWidget = function () {
 
-	this.container.style.boxSizing = "border-box";
+	if (this.widget) {
+		var bounds = this.getBounds();
+		if (bounds) {
+			try {
+				this.widget.option({
+					width: bounds.width - 2,
+					height: bounds.height
+				});
+			} catch (ex) { }
+		}
+	}
+};
+
+// Returns a data map that can be converted to JSON.
+this.filterEventData = function (args) {
+
+	return {
+		value: args.value,
+		isInteracted: args.isInteracted
+	}
 };

@@ -27,3 +27,11 @@ this.initWidget = function () {
 	//this.widget.element.css("box-sizing", "border-box");
 	this.container.style.boxSizing = "border-box";
 };
+
+// Returns a data map that can be converted to JSON.
+this.filterEventData = function (args) {
+
+	return {
+		lastImage: args.lastImage
+	}
+};

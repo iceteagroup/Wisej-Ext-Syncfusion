@@ -27,3 +27,14 @@ this.resizeWidget = function () {
 	// the ejSlider resizes the width automatically and cannot resize the height.
 
 };
+
+// Returns a data map that can be converted to JSON.
+this.filterEventData = function (args) {
+
+	return {
+		id: args.id,
+		value: args.value,
+		sliderIndex: args.sliderIndex,
+		isInteraction: args.isInteraction
+	}
+};

@@ -76,10 +76,10 @@
 			this.ejListBox1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
             | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-			this.ejListBox1.Location = new System.Drawing.Point(98, 16);
+			this.ejListBox1.Location = new System.Drawing.Point(143, 16);
 			this.ejListBox1.Name = "ejListBox1";
 			this.ejListBox1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejListBox1.Options"))));
-			this.ejListBox1.Size = new System.Drawing.Size(257, 291);
+			this.ejListBox1.Size = new System.Drawing.Size(167, 291);
 			this.ejListBox1.Text = "ejListBox1";
 			// 
 			// buttonLoad

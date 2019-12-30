@@ -10,13 +10,9 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 			InitializeComponent();
 
 			this.ejSchedule1.Widget.cellClick += new WidgetEventHandler(ejSchedule1_WidgetEvent);
-
 			this.ejSchedule1.Widget.menuItemClick += new WidgetEventHandler(ejSchedule1_WidgetEvent);
-
 			this.ejSchedule1.Widget.cellDoubleClick += new WidgetEventHandler(ejSchedule1_WidgetEvent);
-
 			this.ejSchedule1.Widget.appointmentClicked += new WidgetEventHandler(ejSchedule1_WidgetEvent);
-
 			this.ejSchedule1.Widget.appointmentChanged += new WidgetEventHandler(ejSchedule1_WidgetEvent);
 		}
 
@@ -34,8 +30,8 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 			this.ejSchedule1.Options.showWeekend = this.checkBox1.Checked;
 			this.ejSchedule1.Options.currentView = this.comboBox1.Text.ToLowerInvariant();
 			this.ejSchedule1.Options.orientation = this.comboBox2.Text.ToLowerInvariant();
-			this.ejSchedule1.Update();
 
+			this.ejSchedule1.Update();
 		}
 	}
 }

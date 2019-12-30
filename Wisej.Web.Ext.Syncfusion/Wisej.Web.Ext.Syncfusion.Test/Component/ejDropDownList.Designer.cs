@@ -76,69 +76,69 @@
 			// 
 			// ejDropDownList1
 			// 
-			this.ejDropDownList1.Anchor = Wisej.Web.AnchorStyles.None;
-			this.ejDropDownList1.Location = new System.Drawing.Point(126, 106);
+			this.ejDropDownList1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
+			this.ejDropDownList1.Location = new System.Drawing.Point(101, 106);
 			this.ejDropDownList1.Name = "ejDropDownList1";
 			this.ejDropDownList1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejDropDownList1.Options"))));
-			this.ejDropDownList1.Size = new System.Drawing.Size(200, 30);
+			this.ejDropDownList1.Size = new System.Drawing.Size(250, 30);
 			this.ejDropDownList1.TabIndex = 3;
 			this.ejDropDownList1.Text = "ejDropDownList1";
 			this.ejDropDownList1.WidgetEvent += new Wisej.Web.WidgetEventHandler(this.ejDropDownList_WidgetEvent);
 			// 
-			// checkBox1
+			// checkBoxAllowVirtualScrolling
 			// 
 			this.checkBoxAllowVirtualScrolling.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBoxAllowVirtualScrolling.AutoSize = false;
 			this.checkBoxAllowVirtualScrolling.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBoxAllowVirtualScrolling.Location = new System.Drawing.Point(28, 48);
-			this.checkBoxAllowVirtualScrolling.Name = "checkBox1";
+			this.checkBoxAllowVirtualScrolling.Name = "checkBoxAllowVirtualScrolling";
 			this.checkBoxAllowVirtualScrolling.Size = new System.Drawing.Size(195, 22);
 			this.checkBoxAllowVirtualScrolling.TabIndex = 1;
 			this.checkBoxAllowVirtualScrolling.Text = "Virtual Scroll";
 			// 
-			// checkBox2
+			// checkBoxCaseSensitiveSearch
 			// 
 			this.checkBoxCaseSensitiveSearch.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBoxCaseSensitiveSearch.AutoSize = false;
 			this.checkBoxCaseSensitiveSearch.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBoxCaseSensitiveSearch.Location = new System.Drawing.Point(28, 83);
 			this.checkBoxCaseSensitiveSearch.Margin = new Wisej.Web.Padding(3, 10, 3, 3);
-			this.checkBoxCaseSensitiveSearch.Name = "checkBox2";
+			this.checkBoxCaseSensitiveSearch.Name = "checkBoxCaseSensitiveSearch";
 			this.checkBoxCaseSensitiveSearch.Size = new System.Drawing.Size(195, 22);
 			this.checkBoxCaseSensitiveSearch.TabIndex = 2;
 			this.checkBoxCaseSensitiveSearch.Text = "Case Sensitive Search";
 			// 
-			// checkBox3
+			// checkBoxEnableIncrementalSearch
 			// 
 			this.checkBoxEnableIncrementalSearch.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBoxEnableIncrementalSearch.AutoSize = false;
 			this.checkBoxEnableIncrementalSearch.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBoxEnableIncrementalSearch.Location = new System.Drawing.Point(28, 118);
 			this.checkBoxEnableIncrementalSearch.Margin = new Wisej.Web.Padding(3, 10, 3, 3);
-			this.checkBoxEnableIncrementalSearch.Name = "checkBox3";
+			this.checkBoxEnableIncrementalSearch.Name = "checkBoxEnableIncrementalSearch";
 			this.checkBoxEnableIncrementalSearch.Size = new System.Drawing.Size(195, 22);
 			this.checkBoxEnableIncrementalSearch.TabIndex = 3;
 			this.checkBoxEnableIncrementalSearch.Text = "Incremental Search";
 			// 
-			// checkBox4
+			// checkBoxEnableFilterSearch
 			// 
 			this.checkBoxEnableFilterSearch.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBoxEnableFilterSearch.AutoSize = false;
 			this.checkBoxEnableFilterSearch.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBoxEnableFilterSearch.Location = new System.Drawing.Point(28, 153);
 			this.checkBoxEnableFilterSearch.Margin = new Wisej.Web.Padding(3, 10, 3, 3);
-			this.checkBoxEnableFilterSearch.Name = "checkBox4";
+			this.checkBoxEnableFilterSearch.Name = "checkBoxEnableFilterSearch";
 			this.checkBoxEnableFilterSearch.Size = new System.Drawing.Size(195, 22);
 			this.checkBoxEnableFilterSearch.TabIndex = 4;
 			this.checkBoxEnableFilterSearch.Text = "Filter Search";
 			// 
 			// ejDropDownList2
 			// 
-			this.ejDropDownList2.Anchor = Wisej.Web.AnchorStyles.None;
-			this.ejDropDownList2.Location = new System.Drawing.Point(126, 176);
+			this.ejDropDownList2.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
+			this.ejDropDownList2.Location = new System.Drawing.Point(101, 176);
 			this.ejDropDownList2.Name = "ejDropDownList2";
 			this.ejDropDownList2.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejDropDownList2.Options"))));
-			this.ejDropDownList2.Size = new System.Drawing.Size(200, 30);
+			this.ejDropDownList2.Size = new System.Drawing.Size(250, 30);
 			this.ejDropDownList2.TabIndex = 2;
 			this.ejDropDownList2.Text = "ejDropDownList2";
 			this.ejDropDownList2.WidgetEvent += new Wisej.Web.WidgetEventHandler(this.ejDropDownList_WidgetEvent);

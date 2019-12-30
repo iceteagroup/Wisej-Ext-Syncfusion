@@ -34,5 +34,6 @@
 //                             Custom settings are available using Application.Configuration.Settings.
 {
 	"url": "Default.html",
+	"showLoader": false,
 	"startup": "Wisej.Web.Ext.Syncfusion.Test.Program.Main, Wisej.Web.Ext.Syncfusion.Test"
 }

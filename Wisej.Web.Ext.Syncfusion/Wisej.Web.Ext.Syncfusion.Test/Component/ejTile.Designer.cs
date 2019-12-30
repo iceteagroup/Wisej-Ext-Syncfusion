@@ -30,15 +30,13 @@
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ejTile));
 			this.flowLayoutPanel1 = new Wisej.Web.FlowLayoutPanel();
-			this.flowLayoutPanel2 = new Wisej.Web.FlowLayoutPanel();
-			this.checkBox1 = new Wisej.Web.CheckBox();
-			this.numericUpDown1 = new Wisej.Web.NumericUpDown();
-			this.ejTile8 = new Wisej.Web.Ext.Syncfusion.ejTile();
-			this.ejTile1 = new Wisej.Web.Ext.Syncfusion.ejTile();
 			this.ejTile2 = new Wisej.Web.Ext.Syncfusion.ejTile();
 			this.ejTile4 = new Wisej.Web.Ext.Syncfusion.ejTile();
 			this.ejTile3 = new Wisej.Web.Ext.Syncfusion.ejTile();
 			this.ejTile5 = new Wisej.Web.Ext.Syncfusion.ejTile();
+			this.flowLayoutPanel2 = new Wisej.Web.FlowLayoutPanel();
+			this.ejTile8 = new Wisej.Web.Ext.Syncfusion.ejTile();
+			this.ejTile1 = new Wisej.Web.Ext.Syncfusion.ejTile();
 			this.ejTile7 = new Wisej.Web.Ext.Syncfusion.ejTile();
 			this.ejTile9 = new Wisej.Web.Ext.Syncfusion.ejTile();
 			this.ejTile10 = new Wisej.Web.Ext.Syncfusion.ejTile();
@@ -46,6 +44,8 @@
 			this.ejTile6 = new Wisej.Web.Ext.Syncfusion.ejTile();
 			this.ejTile12 = new Wisej.Web.Ext.Syncfusion.ejTile();
 			this.ejTile13 = new Wisej.Web.Ext.Syncfusion.ejTile();
+			this.checkBox1 = new Wisej.Web.CheckBox();
+			this.numericUpDown1 = new Wisej.Web.NumericUpDown();
 			this.groupBox1.SuspendLayout();
 			this.panel.SuspendLayout();
 			this.flowLayoutPanel1.SuspendLayout();
@@ -99,79 +99,6 @@
 			this.flowLayoutPanel1.TabIndex = 7;
 			this.flowLayoutPanel1.TabStop = true;
 			// 
-			// flowLayoutPanel2
-			// 
-			this.flowLayoutPanel2.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-			this.flowLayoutPanel2.AutoScroll = true;
-			this.flowLayoutPanel2.Controls.Add(this.ejTile8);
-			this.flowLayoutPanel2.Controls.Add(this.ejTile1);
-			this.flowLayoutPanel2.Controls.Add(this.flowLayoutPanel1);
-			this.flowLayoutPanel2.Controls.Add(this.ejTile7);
-			this.flowLayoutPanel2.Controls.Add(this.ejTile9);
-			this.flowLayoutPanel2.Controls.Add(this.ejTile10);
-			this.flowLayoutPanel2.Controls.Add(this.ejTile11);
-			this.flowLayoutPanel2.Controls.Add(this.ejTile6);
-			this.flowLayoutPanel2.Controls.Add(this.ejTile12);
-			this.flowLayoutPanel2.Controls.Add(this.ejTile13);
-			this.flowLayoutPanel2.Location = new System.Drawing.Point(41, 46);
-			this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-			this.flowLayoutPanel2.Size = new System.Drawing.Size(573, 377);
-			this.flowLayoutPanel2.TabIndex = 8;
-			this.flowLayoutPanel2.TabStop = true;
-			// 
-			// checkBox1
-			// 
-			this.checkBox1.Appearance = Wisej.Web.Appearance.Switch;
-			this.checkBox1.AutoSize = false;
-			this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox1.Checked = true;
-			this.checkBox1.CheckState = ((Wisej.Web.CheckState)(Wisej.Web.CheckState.Checked));
-			this.checkBox1.Location = new System.Drawing.Point(28, 52);
-			this.checkBox1.Name = "checkBox1";
-			this.checkBox1.Size = new System.Drawing.Size(195, 38);
-			this.checkBox1.TabIndex = 7;
-			this.checkBox1.Text = "Live Tile";
-			// 
-			// numericUpDown1
-			// 
-			this.numericUpDown1.AutoSize = false;
-			this.numericUpDown1.Label.Size = 50;
-			this.numericUpDown1.Label.SizeType = Wisej.Web.SizeType.Percent;
-			this.numericUpDown1.Label.Text = "Badge";
-			this.numericUpDown1.Location = new System.Drawing.Point(28, 109);
-			this.numericUpDown1.Name = "numericUpDown1";
-			this.numericUpDown1.Size = new System.Drawing.Size(195, 60);
-			this.numericUpDown1.TabIndex = 8;
-			this.numericUpDown1.Value = new decimal(new int[] {
-            50,
-            0,
-            0,
-            0});
-			// 
-			// ejTile8
-			// 
-			this.ejTile8.Location = new System.Drawing.Point(5, 5);
-			this.ejTile8.Margin = new Wisej.Web.Padding(5);
-			this.ejTile8.Name = "ejTile8";
-			this.ejTile8.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"imageUrl\":\"Images/Tile/games.png\",\"tileSize\":\"medium\",\"text\":\"Games\"}")));
-			this.ejTile8.Size = new System.Drawing.Size(150, 150);
-			this.ejTile8.TabIndex = 9;
-			this.ejTile8.Text = "Games";
-			// 
-			// ejTile1
-			// 
-			this.ejTile1.Location = new System.Drawing.Point(165, 5);
-			this.ejTile1.Margin = new Wisej.Web.Padding(5);
-			this.ejTile1.Name = "ejTile1";
-			this.ejTile1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"imagePosition\":\"fill\",\"tileSize\":\"medium\",\"text\":\"People\",\"liveTile\":{\"updateIn" +
-        "terval\":5000,\"enabled\":true,\"type\":\"slide\",\"imageUrl\":[\"images/tile/people_1.png" +
-        "\",\"images/tile/people_2.png\"]}}")));
-			this.ejTile1.Size = new System.Drawing.Size(150, 150);
-			this.ejTile1.TabIndex = 3;
-			this.ejTile1.Text = "People";
-			// 
 			// ejTile2
 			// 
 			this.ejTile2.Margin = new Wisej.Web.Padding(0, 0, 5, 5);
@@ -211,6 +138,48 @@
 			this.ejTile5.Size = new System.Drawing.Size(70, 70);
 			this.ejTile5.TabIndex = 5;
 			this.ejTile5.Text = "ejTile5";
+			// 
+			// flowLayoutPanel2
+			// 
+			this.flowLayoutPanel2.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
+            | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+			this.flowLayoutPanel2.AutoScroll = true;
+			this.flowLayoutPanel2.Controls.Add(this.ejTile8);
+			this.flowLayoutPanel2.Controls.Add(this.ejTile1);
+			this.flowLayoutPanel2.Controls.Add(this.flowLayoutPanel1);
+			this.flowLayoutPanel2.Controls.Add(this.ejTile7);
+			this.flowLayoutPanel2.Controls.Add(this.ejTile9);
+			this.flowLayoutPanel2.Controls.Add(this.ejTile10);
+			this.flowLayoutPanel2.Controls.Add(this.ejTile11);
+			this.flowLayoutPanel2.Controls.Add(this.ejTile6);
+			this.flowLayoutPanel2.Controls.Add(this.ejTile12);
+			this.flowLayoutPanel2.Controls.Add(this.ejTile13);
+			this.flowLayoutPanel2.Location = new System.Drawing.Point(41, 46);
+			this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+			this.flowLayoutPanel2.Size = new System.Drawing.Size(573, 377);
+			this.flowLayoutPanel2.TabIndex = 8;
+			this.flowLayoutPanel2.TabStop = true;
+			// 
+			// ejTile8
+			// 
+			this.ejTile8.Location = new System.Drawing.Point(5, 5);
+			this.ejTile8.Margin = new Wisej.Web.Padding(5);
+			this.ejTile8.Name = "ejTile8";
+			this.ejTile8.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"imageUrl\":\"Images/Tile/games.png\",\"tileSize\":\"medium\",\"text\":\"Games\"}")));
+			this.ejTile8.Size = new System.Drawing.Size(150, 150);
+			this.ejTile8.TabIndex = 9;
+			this.ejTile8.Text = "Games";
+			// 
+			// ejTile1
+			// 
+			this.ejTile1.Location = new System.Drawing.Point(165, 5);
+			this.ejTile1.Margin = new Wisej.Web.Padding(5);
+			this.ejTile1.Name = "ejTile1";
+			this.ejTile1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejTile1.Options"))));
+			this.ejTile1.Size = new System.Drawing.Size(150, 150);
+			this.ejTile1.TabIndex = 3;
+			this.ejTile1.Text = "People";
 			// 
 			// ejTile7
 			// 
@@ -285,6 +254,35 @@
 			this.ejTile13.Size = new System.Drawing.Size(150, 150);
 			this.ejTile13.TabIndex = 14;
 			this.ejTile13.Text = "Notifications";
+			// 
+			// checkBox1
+			// 
+			this.checkBox1.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBox1.AutoSize = false;
+			this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBox1.Checked = true;
+			this.checkBox1.CheckState = Wisej.Web.CheckState.Checked;
+			this.checkBox1.Location = new System.Drawing.Point(28, 52);
+			this.checkBox1.Name = "checkBox1";
+			this.checkBox1.Size = new System.Drawing.Size(195, 38);
+			this.checkBox1.TabIndex = 7;
+			this.checkBox1.Text = "Live Tile";
+			// 
+			// numericUpDown1
+			// 
+			this.numericUpDown1.AutoSize = false;
+			this.numericUpDown1.Label.Size = 50;
+			this.numericUpDown1.Label.SizeType = Wisej.Web.SizeType.Percent;
+			this.numericUpDown1.Label.Text = "Badge";
+			this.numericUpDown1.Location = new System.Drawing.Point(28, 109);
+			this.numericUpDown1.Name = "numericUpDown1";
+			this.numericUpDown1.Size = new System.Drawing.Size(195, 60);
+			this.numericUpDown1.TabIndex = 8;
+			this.numericUpDown1.Value = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
 			// 
 			// ejTile
 			// 

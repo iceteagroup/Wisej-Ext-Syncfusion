@@ -67,15 +67,14 @@
 			// 
 			// ejComboBox1
 			// 
-			this.ejComboBox1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-			this.ejComboBox1.Location = new System.Drawing.Point(129, 140);
+			this.ejComboBox1.Anchor = Wisej.Web.AnchorStyles.Left;
+			this.ejComboBox1.Location = new System.Drawing.Point(101, 141);
 			this.ejComboBox1.Name = "ejComboBox1";
 			this.ejComboBox1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejComboBox1.Options"))));
-			this.ejComboBox1.Size = new System.Drawing.Size(194, 32);
+			this.ejComboBox1.Size = new System.Drawing.Size(250, 30);
 			this.ejComboBox1.Text = "ejComboBox1";
 			// 
-			// checkBox1
+			// checkBoxAutofill
 			// 
 			this.checkBoxAutofill.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBoxAutofill.AutoSize = false;
@@ -83,12 +82,12 @@
 			this.checkBoxAutofill.Checked = true;
 			this.checkBoxAutofill.CheckState = Wisej.Web.CheckState.Checked;
 			this.checkBoxAutofill.Location = new System.Drawing.Point(28, 36);
-			this.checkBoxAutofill.Name = "checkBox1";
+			this.checkBoxAutofill.Name = "checkBoxAutofill";
 			this.checkBoxAutofill.Size = new System.Drawing.Size(195, 38);
 			this.checkBoxAutofill.TabIndex = 8;
 			this.checkBoxAutofill.Text = "Autofill";
 			// 
-			// checkBox2
+			// checkBoxShowClearButton
 			// 
 			this.checkBoxShowClearButton.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBoxShowClearButton.AutoSize = false;
@@ -96,7 +95,7 @@
 			this.checkBoxShowClearButton.Checked = true;
 			this.checkBoxShowClearButton.CheckState = Wisej.Web.CheckState.Checked;
 			this.checkBoxShowClearButton.Location = new System.Drawing.Point(28, 96);
-			this.checkBoxShowClearButton.Name = "checkBox2";
+			this.checkBoxShowClearButton.Name = "checkBoxShowClearButton";
 			this.checkBoxShowClearButton.Size = new System.Drawing.Size(195, 38);
 			this.checkBoxShowClearButton.TabIndex = 9;
 			this.checkBoxShowClearButton.Text = "Show Clear Button";

@@ -8,6 +8,26 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 		public ejRating()
 		{
 			InitializeComponent();
+
+			this.ejRating1.Widget.click += new WidgetEventHandler(ejRating1_WidgetEvent);
+			this.ejRating1.Widget.change += new WidgetEventHandler(ejRating1_WidgetEvent);
+		}
+
+		private void ejRating1_WidgetEvent(object sender, WidgetEventArgs e)
+		{
+			AlertBox.Show(
+				$"<b>{e.Type}</b><br/>{JSON.Stringify(e.Data)}",
+				MessageBoxIcon.Information);
+
+			Application.Play(MessageBoxIcon.Information);
+		}
+
+		private void buttonUpdate_Click(object sender, EventArgs e)
+		{
+			this.ejRating1.Options.maxValue = this.numericUpDownMaxValue.Value;
+			this.ejRating1.Options.incrementStep = this.numericUpDownIncrementStep.Value;
+
+			this.ejRating1.Update();
 		}
 	}
 }

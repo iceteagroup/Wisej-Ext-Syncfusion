@@ -38,28 +38,32 @@
 			this.label4 = new Wisej.Web.Label();
 			this.ejRating1 = new Wisej.Web.Ext.Syncfusion.ejRating();
 			this.tabPage2 = new Wisej.Web.TabPage();
-			this.tabPage3 = new Wisej.Web.TabPage();
 			this.pictureBox2 = new Wisej.Web.PictureBox();
 			this.label8 = new Wisej.Web.Label();
 			this.label9 = new Wisej.Web.Label();
 			this.label10 = new Wisej.Web.Label();
 			this.label11 = new Wisej.Web.Label();
 			this.ejRating2 = new Wisej.Web.Ext.Syncfusion.ejRating();
+			this.tabPage3 = new Wisej.Web.TabPage();
 			this.pictureBox3 = new Wisej.Web.PictureBox();
 			this.label12 = new Wisej.Web.Label();
 			this.label13 = new Wisej.Web.Label();
 			this.label14 = new Wisej.Web.Label();
 			this.label15 = new Wisej.Web.Label();
 			this.ejRating3 = new Wisej.Web.Ext.Syncfusion.ejRating();
+			this.numericUpDownMaxValue = new Wisej.Web.NumericUpDown();
+			this.numericUpDownIncrementStep = new Wisej.Web.NumericUpDown();
 			this.groupBox1.SuspendLayout();
 			this.panel.SuspendLayout();
 			this.tabControl1.SuspendLayout();
 			this.tabPage1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.tabPage2.SuspendLayout();
-			this.tabPage3.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+			this.tabPage3.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.numericUpDownMaxValue)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.numericUpDownIncrementStep)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// linkDocs
@@ -69,6 +73,18 @@
 			// linkAPI
 			// 
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejrating";
+			// 
+			// groupBox1
+			// 
+			this.groupBox1.Controls.Add(this.numericUpDownIncrementStep);
+			this.groupBox1.Controls.Add(this.numericUpDownMaxValue);
+			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
+			this.groupBox1.Controls.SetChildIndex(this.numericUpDownMaxValue, 0);
+			this.groupBox1.Controls.SetChildIndex(this.numericUpDownIncrementStep, 0);
+			// 
+			// buttonUpdate
+			// 
+			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
@@ -106,9 +122,7 @@
 			// 
 			// pictureBox1
 			// 
-			this.pictureBox1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
+			this.pictureBox1.Anchor = Wisej.Web.AnchorStyles.Top;
 			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
 			this.pictureBox1.Location = new System.Drawing.Point(40, 61);
 			this.pictureBox1.Name = "pictureBox1";
@@ -117,7 +131,7 @@
 			// 
 			// label7
 			// 
-			this.label7.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Right)));
+			this.label7.Anchor = Wisej.Web.AnchorStyles.Top;
 			this.label7.Location = new System.Drawing.Point(146, 170);
 			this.label7.Name = "label7";
 			this.label7.Size = new System.Drawing.Size(265, 33);
@@ -126,7 +140,7 @@
 			// 
 			// label6
 			// 
-			this.label6.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Right)));
+			this.label6.Anchor = Wisej.Web.AnchorStyles.Top;
 			this.label6.AutoSize = true;
 			this.label6.Location = new System.Drawing.Point(146, 148);
 			this.label6.Name = "label6";
@@ -136,7 +150,7 @@
 			// 
 			// label5
 			// 
-			this.label5.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Right)));
+			this.label5.Anchor = Wisej.Web.AnchorStyles.Top;
 			this.label5.AutoSize = true;
 			this.label5.Location = new System.Drawing.Point(146, 93);
 			this.label5.Name = "label5";
@@ -146,7 +160,7 @@
 			// 
 			// label4
 			// 
-			this.label4.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Right)));
+			this.label4.Anchor = Wisej.Web.AnchorStyles.Top;
 			this.label4.AutoSize = true;
 			this.label4.Font = new System.Drawing.Font("default", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
 			this.label4.Location = new System.Drawing.Point(146, 67);
@@ -157,7 +171,7 @@
 			// 
 			// ejRating1
 			// 
-			this.ejRating1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Right)));
+			this.ejRating1.Anchor = Wisej.Web.AnchorStyles.Top;
 			this.ejRating1.Location = new System.Drawing.Point(146, 115);
 			this.ejRating1.Name = "ejRating1";
 			this.ejRating1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":4}")));
@@ -178,6 +192,66 @@
 			this.tabPage2.Size = new System.Drawing.Size(451, 270);
 			this.tabPage2.Text = "World War Z";
 			// 
+			// pictureBox2
+			// 
+			this.pictureBox2.Anchor = Wisej.Web.AnchorStyles.Top;
+			this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+			this.pictureBox2.Location = new System.Drawing.Point(40, 61);
+			this.pictureBox2.Name = "pictureBox2";
+			this.pictureBox2.Size = new System.Drawing.Size(92, 135);
+			this.pictureBox2.SizeMode = Wisej.Web.PictureBoxSizeMode.Zoom;
+			// 
+			// label8
+			// 
+			this.label8.Anchor = Wisej.Web.AnchorStyles.Top;
+			this.label8.Location = new System.Drawing.Point(146, 170);
+			this.label8.Name = "label8";
+			this.label8.Size = new System.Drawing.Size(265, 63);
+			this.label8.TabIndex = 16;
+			this.label8.Text = "When former U.N. investigator Gerry Lane (Brad Pitt) and his family get stuck in " +
+    "urban gridlock, he senses that it\'s no ordinary traffic jam";
+			// 
+			// label9
+			// 
+			this.label9.Anchor = Wisej.Web.AnchorStyles.Top;
+			this.label9.AutoSize = true;
+			this.label9.Location = new System.Drawing.Point(146, 148);
+			this.label9.Name = "label9";
+			this.label9.Size = new System.Drawing.Size(73, 16);
+			this.label9.TabIndex = 15;
+			this.label9.Text = "Movie Info:";
+			// 
+			// label10
+			// 
+			this.label10.Anchor = Wisej.Web.AnchorStyles.Top;
+			this.label10.AutoSize = true;
+			this.label10.Location = new System.Drawing.Point(146, 93);
+			this.label10.Name = "label10";
+			this.label10.Size = new System.Drawing.Size(50, 16);
+			this.label10.TabIndex = 14;
+			this.label10.Text = "Rating:";
+			// 
+			// label11
+			// 
+			this.label11.Anchor = Wisej.Web.AnchorStyles.Top;
+			this.label11.AutoSize = true;
+			this.label11.Font = new System.Drawing.Font("default", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+			this.label11.Location = new System.Drawing.Point(146, 67);
+			this.label11.Name = "label11";
+			this.label11.Size = new System.Drawing.Size(104, 20);
+			this.label11.TabIndex = 13;
+			this.label11.Text = "World War Z";
+			// 
+			// ejRating2
+			// 
+			this.ejRating2.Anchor = Wisej.Web.AnchorStyles.Top;
+			this.ejRating2.Location = new System.Drawing.Point(146, 115);
+			this.ejRating2.Name = "ejRating2";
+			this.ejRating2.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":4}")));
+			this.ejRating2.Size = new System.Drawing.Size(144, 27);
+			this.ejRating2.TabIndex = 17;
+			this.ejRating2.Text = "ejRating2";
+			// 
 			// tabPage3
 			// 
 			this.tabPage3.Controls.Add(this.pictureBox3);
@@ -191,73 +265,9 @@
 			this.tabPage3.Size = new System.Drawing.Size(451, 270);
 			this.tabPage3.Text = "Monsters University";
 			// 
-			// pictureBox2
-			// 
-			this.pictureBox2.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-			this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-			this.pictureBox2.Location = new System.Drawing.Point(40, 61);
-			this.pictureBox2.Name = "pictureBox2";
-			this.pictureBox2.Size = new System.Drawing.Size(92, 135);
-			this.pictureBox2.SizeMode = Wisej.Web.PictureBoxSizeMode.Zoom;
-			// 
-			// label8
-			// 
-			this.label8.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Right)));
-			this.label8.Location = new System.Drawing.Point(146, 170);
-			this.label8.Name = "label8";
-			this.label8.Size = new System.Drawing.Size(265, 63);
-			this.label8.TabIndex = 16;
-			this.label8.Text = "When former U.N. investigator Gerry Lane (Brad Pitt) and his family get stuck in " +
-    "urban gridlock, he senses that it\'s no ordinary traffic jam";
-			// 
-			// label9
-			// 
-			this.label9.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Right)));
-			this.label9.AutoSize = true;
-			this.label9.Location = new System.Drawing.Point(146, 148);
-			this.label9.Name = "label9";
-			this.label9.Size = new System.Drawing.Size(73, 16);
-			this.label9.TabIndex = 15;
-			this.label9.Text = "Movie Info:";
-			// 
-			// label10
-			// 
-			this.label10.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Right)));
-			this.label10.AutoSize = true;
-			this.label10.Location = new System.Drawing.Point(146, 93);
-			this.label10.Name = "label10";
-			this.label10.Size = new System.Drawing.Size(50, 16);
-			this.label10.TabIndex = 14;
-			this.label10.Text = "Rating:";
-			// 
-			// label11
-			// 
-			this.label11.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Right)));
-			this.label11.AutoSize = true;
-			this.label11.Font = new System.Drawing.Font("default", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-			this.label11.Location = new System.Drawing.Point(146, 67);
-			this.label11.Name = "label11";
-			this.label11.Size = new System.Drawing.Size(104, 20);
-			this.label11.TabIndex = 13;
-			this.label11.Text = "World War Z";
-			// 
-			// ejRating2
-			// 
-			this.ejRating2.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Right)));
-			this.ejRating2.Location = new System.Drawing.Point(146, 115);
-			this.ejRating2.Name = "ejRating2";
-			this.ejRating2.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":4}")));
-			this.ejRating2.Size = new System.Drawing.Size(144, 27);
-			this.ejRating2.TabIndex = 17;
-			this.ejRating2.Text = "ejRating2";
-			// 
 			// pictureBox3
 			// 
-			this.pictureBox3.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
+			this.pictureBox3.Anchor = Wisej.Web.AnchorStyles.Top;
 			this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
 			this.pictureBox3.Location = new System.Drawing.Point(40, 59);
 			this.pictureBox3.Name = "pictureBox3";
@@ -266,7 +276,7 @@
 			// 
 			// label12
 			// 
-			this.label12.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Right)));
+			this.label12.Anchor = Wisej.Web.AnchorStyles.Top;
 			this.label12.Location = new System.Drawing.Point(146, 170);
 			this.label12.Name = "label12";
 			this.label12.Size = new System.Drawing.Size(265, 61);
@@ -276,7 +286,7 @@
 			// 
 			// label13
 			// 
-			this.label13.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Right)));
+			this.label13.Anchor = Wisej.Web.AnchorStyles.Top;
 			this.label13.AutoSize = true;
 			this.label13.Location = new System.Drawing.Point(146, 148);
 			this.label13.Name = "label13";
@@ -286,7 +296,7 @@
 			// 
 			// label14
 			// 
-			this.label14.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Right)));
+			this.label14.Anchor = Wisej.Web.AnchorStyles.Top;
 			this.label14.AutoSize = true;
 			this.label14.Location = new System.Drawing.Point(146, 93);
 			this.label14.Name = "label14";
@@ -296,7 +306,7 @@
 			// 
 			// label15
 			// 
-			this.label15.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Right)));
+			this.label15.Anchor = Wisej.Web.AnchorStyles.Top;
 			this.label15.AutoSize = true;
 			this.label15.Font = new System.Drawing.Font("default", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
 			this.label15.Location = new System.Drawing.Point(146, 67);
@@ -307,13 +317,55 @@
 			// 
 			// ejRating3
 			// 
-			this.ejRating3.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Right)));
+			this.ejRating3.Anchor = Wisej.Web.AnchorStyles.Top;
 			this.ejRating3.Location = new System.Drawing.Point(146, 115);
 			this.ejRating3.Name = "ejRating3";
 			this.ejRating3.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":4}")));
 			this.ejRating3.Size = new System.Drawing.Size(144, 27);
 			this.ejRating3.TabIndex = 17;
 			this.ejRating3.Text = "ejRating3";
+			// 
+			// numericUpDownMaxValue
+			// 
+			this.numericUpDownMaxValue.AutoSize = false;
+			this.numericUpDownMaxValue.Label.Size = 50;
+			this.numericUpDownMaxValue.Label.SizeType = Wisej.Web.SizeType.Percent;
+			this.numericUpDownMaxValue.Label.Text = "Max Value";
+			this.numericUpDownMaxValue.Location = new System.Drawing.Point(28, 42);
+			this.numericUpDownMaxValue.Maximum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+			this.numericUpDownMaxValue.Name = "numericUpDownMaxValue";
+			this.numericUpDownMaxValue.Size = new System.Drawing.Size(195, 60);
+			this.numericUpDownMaxValue.TabIndex = 2;
+			this.numericUpDownMaxValue.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+			// 
+			// numericUpDownIncrementStep
+			// 
+			this.numericUpDownIncrementStep.AutoSize = false;
+			this.numericUpDownIncrementStep.Label.Size = 50;
+			this.numericUpDownIncrementStep.Label.SizeType = Wisej.Web.SizeType.Percent;
+			this.numericUpDownIncrementStep.Label.Text = "Increment Step";
+			this.numericUpDownIncrementStep.Location = new System.Drawing.Point(28, 127);
+			this.numericUpDownIncrementStep.Maximum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+			this.numericUpDownIncrementStep.Name = "numericUpDownIncrementStep";
+			this.numericUpDownIncrementStep.Size = new System.Drawing.Size(195, 60);
+			this.numericUpDownIncrementStep.TabIndex = 3;
+			this.numericUpDownIncrementStep.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
 			// 
 			// ejRating
 			// 
@@ -326,10 +378,12 @@
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.tabPage2.ResumeLayout(false);
 			this.tabPage2.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
 			this.tabPage3.ResumeLayout(false);
 			this.tabPage3.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.numericUpDownMaxValue)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.numericUpDownIncrementStep)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -359,5 +413,7 @@
 		private Label label14;
 		private Label label15;
 		private Syncfusion.ejRating ejRating3;
+		private NumericUpDown numericUpDownMaxValue;
+		private NumericUpDown numericUpDownIncrementStep;
 	}
 }

@@ -10,9 +10,11 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 			InitializeComponent();
 		}
 
-		private void button1_Click(object sender, EventArgs e)
+		private async void button1_Click(object sender, EventArgs e)
 		{
-			AlertBox.Show(this.ejAutocomplete1.Value);
+			var selectedVal = await this.ejAutocomplete1.Widget.getValueAsync();
+
+			AlertBox.Show(selectedVal);
 		}
 	}
 }

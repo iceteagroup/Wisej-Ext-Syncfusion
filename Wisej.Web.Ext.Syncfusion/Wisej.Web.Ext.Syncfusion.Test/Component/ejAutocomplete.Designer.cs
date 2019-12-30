@@ -62,8 +62,7 @@
 			// 
 			// ejAutocomplete1
 			// 
-			this.ejAutocomplete1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
+			this.ejAutocomplete1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
 			this.ejAutocomplete1.Location = new System.Drawing.Point(126, 141);
 			this.ejAutocomplete1.Name = "ejAutocomplete1";
 			this.ejAutocomplete1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejAutocomplete1.Options"))));

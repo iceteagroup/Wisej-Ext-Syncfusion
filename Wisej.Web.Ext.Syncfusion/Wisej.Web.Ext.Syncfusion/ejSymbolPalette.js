@@ -41,3 +41,13 @@ this.resizeWidget = function () {
 		});
 	}
 };
+
+// Returns a data map that can be converted to JSON.
+this.filterEventData = function (args) {
+
+	return {
+		changeType: args.changeType,
+		oldElementName: args.oldElement.name,
+		newElementName: args.newElement.name
+	}
+};

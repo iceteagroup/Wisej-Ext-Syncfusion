@@ -32,7 +32,8 @@
 			Wisej.Web.Ext.Syncfusion.ejBase.WidgetTemplate widgetTemplate1 = new Wisej.Web.Ext.Syncfusion.ejBase.WidgetTemplate();
 			this.ejSymbolPalette1 = new Wisej.Web.Ext.Syncfusion.ejSymbolPalette();
 			this.ejDiagram1 = new Wisej.Web.Ext.Syncfusion.ejDiagram();
-			this.label4 = new Wisej.Web.Label();
+			this.checkBoxShowPaletteItemName = new Wisej.Web.CheckBox();
+			this.checkBoxAllowDrag = new Wisej.Web.CheckBox();
 			this.groupBox1.SuspendLayout();
 			this.panel.SuspendLayout();
 			this.SuspendLayout();
@@ -44,6 +45,18 @@
 			// linkAPI
 			// 
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejslider";
+			// 
+			// groupBox1
+			// 
+			this.groupBox1.Controls.Add(this.checkBoxAllowDrag);
+			this.groupBox1.Controls.Add(this.checkBoxShowPaletteItemName);
+			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBoxShowPaletteItemName, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBoxAllowDrag, 0);
+			// 
+			// buttonUpdate
+			// 
+			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
@@ -81,28 +94,37 @@
 			this.ejDiagram1.Size = new System.Drawing.Size(191, 307);
 			this.ejDiagram1.TabIndex = 1;
 			this.ejDiagram1.Text = "ejDiagram1";
-			this.ejDiagram1.WidgetEvent += new Wisej.Web.WidgetEventHandler(this.ejDiagram1_WidgetEvent);
 			this.ejDiagram1.Appear += new System.EventHandler(this.ejDiagram1_Appear);
 			// 
-			// label4
+			// checkBoxShowPaletteItemName
 			// 
-			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(462, 123);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(316, 16);
-			this.label4.TabIndex = 8;
-			this.label4.Text = "Note: Issue with titles and images on SymbolPalette";
+			this.checkBoxShowPaletteItemName.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBoxShowPaletteItemName.AutoSize = false;
+			this.checkBoxShowPaletteItemName.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBoxShowPaletteItemName.Checked = true;
+			this.checkBoxShowPaletteItemName.CheckState = Wisej.Web.CheckState.Checked;
+			this.checkBoxShowPaletteItemName.Location = new System.Drawing.Point(28, 47);
+			this.checkBoxShowPaletteItemName.Name = "checkBoxShowPaletteItemName";
+			this.checkBoxShowPaletteItemName.Size = new System.Drawing.Size(195, 38);
+			this.checkBoxShowPaletteItemName.TabIndex = 9;
+			this.checkBoxShowPaletteItemName.Text = "Show Palette Item Text";
+			// 
+			// checkBoxAllowDrag
+			// 
+			this.checkBoxAllowDrag.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBoxAllowDrag.AutoSize = false;
+			this.checkBoxAllowDrag.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBoxAllowDrag.Checked = true;
+			this.checkBoxAllowDrag.CheckState = Wisej.Web.CheckState.Checked;
+			this.checkBoxAllowDrag.Location = new System.Drawing.Point(28, 129);
+			this.checkBoxAllowDrag.Name = "checkBoxAllowDrag";
+			this.checkBoxAllowDrag.Size = new System.Drawing.Size(195, 38);
+			this.checkBoxAllowDrag.TabIndex = 10;
+			this.checkBoxAllowDrag.Text = "Allow Drag";
 			// 
 			// ejSymbolPalette
 			// 
-			this.Controls.Add(this.label4);
 			this.Name = "ejSymbolPalette";
-			this.Controls.SetChildIndex(this.linkDocs, 0);
-			this.Controls.SetChildIndex(this.linkAPI, 0);
-			this.Controls.SetChildIndex(this.linkDemo, 0);
-			this.Controls.SetChildIndex(this.groupBox1, 0);
-			this.Controls.SetChildIndex(this.panel, 0);
-			this.Controls.SetChildIndex(this.label4, 0);
 			this.groupBox1.ResumeLayout(false);
 			this.panel.ResumeLayout(false);
 			this.ResumeLayout(false);
@@ -114,6 +136,7 @@
 
 		private Syncfusion.ejSymbolPalette ejSymbolPalette1;
 		private Syncfusion.ejDiagram ejDiagram1;
-		private Label label4;
+		private CheckBox checkBoxShowPaletteItemName;
+		private CheckBox checkBoxAllowDrag;
 	}
 }

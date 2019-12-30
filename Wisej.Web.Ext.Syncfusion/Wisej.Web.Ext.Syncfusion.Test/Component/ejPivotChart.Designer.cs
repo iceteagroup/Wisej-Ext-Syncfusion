@@ -33,8 +33,11 @@
 			this.buttonLoad = new Wisej.Web.Upload();
 			this.buttonExportExcel = new Wisej.Web.Button();
 			this.buttonSaveJson = new Wisej.Web.Button();
+			this.checkBoxEnable3D = new Wisej.Web.CheckBox();
+			this.numericUpDownRotation = new Wisej.Web.NumericUpDown();
 			this.groupBox1.SuspendLayout();
 			this.panel.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.numericUpDownRotation)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// linkDocs
@@ -47,6 +50,8 @@
 			// 
 			// groupBox1
 			// 
+			this.groupBox1.Controls.Add(this.numericUpDownRotation);
+			this.groupBox1.Controls.Add(this.checkBoxEnable3D);
 			this.groupBox1.Controls.Add(this.buttonSaveJson);
 			this.groupBox1.Controls.Add(this.buttonLoad);
 			this.groupBox1.Controls.Add(this.buttonExportExcel);
@@ -54,6 +59,12 @@
 			this.groupBox1.Controls.SetChildIndex(this.buttonExportExcel, 0);
 			this.groupBox1.Controls.SetChildIndex(this.buttonLoad, 0);
 			this.groupBox1.Controls.SetChildIndex(this.buttonSaveJson, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBoxEnable3D, 0);
+			this.groupBox1.Controls.SetChildIndex(this.numericUpDownRotation, 0);
+			// 
+			// buttonUpdate
+			// 
+			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
@@ -105,11 +116,39 @@
 			this.buttonSaveJson.TabIndex = 12;
 			this.buttonSaveJson.Click += new System.EventHandler(this.buttonSaveJson_Click);
 			// 
+			// checkBoxEnable3D
+			// 
+			this.checkBoxEnable3D.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBoxEnable3D.AutoSize = false;
+			this.checkBoxEnable3D.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBoxEnable3D.Location = new System.Drawing.Point(28, 36);
+			this.checkBoxEnable3D.Name = "checkBoxEnable3D";
+			this.checkBoxEnable3D.Size = new System.Drawing.Size(195, 38);
+			this.checkBoxEnable3D.TabIndex = 13;
+			this.checkBoxEnable3D.Text = "Enable 3D";
+			// 
+			// numericUpDownRotation
+			// 
+			this.numericUpDownRotation.AutoSize = false;
+			this.numericUpDownRotation.Label.Size = 50;
+			this.numericUpDownRotation.Label.SizeType = Wisej.Web.SizeType.Percent;
+			this.numericUpDownRotation.Label.Text = "Rotation";
+			this.numericUpDownRotation.Location = new System.Drawing.Point(28, 80);
+			this.numericUpDownRotation.Maximum = new decimal(new int[] {
+            360,
+            0,
+            0,
+            0});
+			this.numericUpDownRotation.Name = "numericUpDownRotation";
+			this.numericUpDownRotation.Size = new System.Drawing.Size(195, 60);
+			this.numericUpDownRotation.TabIndex = 14;
+			// 
 			// ejPivotChart
 			// 
 			this.Name = "ejPivotChart";
 			this.groupBox1.ResumeLayout(false);
 			this.panel.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.numericUpDownRotation)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -121,5 +160,7 @@
 		private Upload buttonLoad;
 		private Button buttonExportExcel;
 		private Button buttonSaveJson;
+		private CheckBox checkBoxEnable3D;
+		private NumericUpDown numericUpDownRotation;
 	}
 }

@@ -50,5 +50,13 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 				}
 			}
 		}
+
+		private void buttonUpdate_Click(object sender, EventArgs e)
+		{
+			this.ejPivotChart1.Options.enable3D = this.checkBoxEnable3D.Checked;
+			this.ejPivotChart1.Options.rotation = this.numericUpDownRotation.Value;
+
+			this.ejPivotChart1.Update();
+		}
 	}
 }

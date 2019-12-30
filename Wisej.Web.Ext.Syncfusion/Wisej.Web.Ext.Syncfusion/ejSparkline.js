@@ -19,20 +19,11 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
-/**
- * Resizes the hosted widget to always fit our container.
- */
-resizeWidget = function () {
+// Returns a data map that can be converted to JSON.
+this.filterEventData = function (args) {
 
-	//if (this.widget) {
-	//	var bounds = this.getBounds();
-	//	if (bounds) {
-	//		this.widget.option({
-	//			size: {
-	//				width: bounds.width,
-	//				height: bounds.height
-	//			}
-	//		});
-	//	}
-	//}
+	return {
+		pointIndex: args.pointIndex,
+		seriesType: args.seriesType
+	}
 };

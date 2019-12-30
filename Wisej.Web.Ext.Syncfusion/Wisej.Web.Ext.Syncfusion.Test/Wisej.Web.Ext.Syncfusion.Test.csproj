@@ -22,8 +22,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <TargetFrameworkProfile />
-    <Use64BitIISExpress>
-    </Use64BitIISExpress>
+    <Use64BitIISExpress>true</Use64BitIISExpress>
     <ProjectGuid>{D36DDFDB-AC1B-4E75-96F9-4113A54F9D5C}</ProjectGuid>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -220,8 +219,11 @@
     <Content Include="Images\Kanban\7.png" />
     <Content Include="Images\Kanban\8.png" />
     <Content Include="Images\Kanban\9.png" />
+    <Content Include="Images\logo-wisej-white.png" />
     <Content Include="Images\MediaPlayer\hqdefault.jpg" />
     <Content Include="Images\MediaPlayer\mqdefault.jpg" />
+    <Content Include="Images\mos.png" />
+    <Content Include="Images\mu.jpg" />
     <Content Include="Images\nature.jpg" />
     <Content Include="Images\night.jpg" />
     <Content Include="Images\sculpture.jpg" />
@@ -241,6 +243,7 @@
     <Content Include="Images\Tile\pictures.png" />
     <Content Include="Images\Tile\sports.png" />
     <Content Include="Images\Tile\weather.png" />
+    <Content Include="Images\wwz.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

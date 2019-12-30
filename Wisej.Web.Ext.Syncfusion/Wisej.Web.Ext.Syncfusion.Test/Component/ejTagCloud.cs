@@ -29,7 +29,5 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 
 			Application.Play(MessageBoxIcon.Information);
 		}
-
-		
 	}
 }

@@ -73,8 +73,7 @@
 			// 
 			// ejTimePicker1
 			// 
-			this.ejTimePicker1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
+			this.ejTimePicker1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
 			this.ejTimePicker1.Location = new System.Drawing.Point(126, 141);
 			this.ejTimePicker1.Name = "ejTimePicker1";
 			this.ejTimePicker1.Size = new System.Drawing.Size(200, 30);

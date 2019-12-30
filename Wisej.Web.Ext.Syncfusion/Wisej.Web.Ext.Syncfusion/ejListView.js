@@ -26,3 +26,14 @@ this.initWidget = function () {
 
 	this.container.style.boxSizing = "border-box";
 };
+
+// Returns a data map that can be converted to JSON.
+this.filterEventData = function (args) {
+
+	return {
+		text: args.text,
+		index: args.index,
+		isChecked: args.isChecked,
+		checkedItemsText: args.checkedItemsText
+	}
+};

@@ -40,7 +40,7 @@ namespace Wisej.Web.Ext.Syncfusion
 		public ejSymbolPalette(object options) : base("ejSymbolPalette", options)
 		{
 			this.WidgetWiredEvents = new[] {
-				"selectionChanged"
+				"selectionChange"
 			};
 		}
 	}

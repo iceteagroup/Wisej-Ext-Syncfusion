@@ -79,6 +79,7 @@
 			// 
 			// ejRotator1
 			// 
+			this.ejRotator1.Anchor = Wisej.Web.AnchorStyles.None;
 			this.ejRotator1.Location = new System.Drawing.Point(37, 31);
 			this.ejRotator1.Name = "ejRotator1";
 			this.ejRotator1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejRotator1.Options"))));
@@ -91,7 +92,7 @@
 			this.checkBox1.AutoSize = false;
 			this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBox1.Checked = true;
-			this.checkBox1.CheckState = ((Wisej.Web.CheckState)(Wisej.Web.CheckState.Checked));
+			this.checkBox1.CheckState = Wisej.Web.CheckState.Checked;
 			this.checkBox1.Location = new System.Drawing.Point(28, 32);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(183, 38);
@@ -104,7 +105,7 @@
 			this.checkBox2.AutoSize = false;
 			this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBox2.Checked = true;
-			this.checkBox2.CheckState = ((Wisej.Web.CheckState)(Wisej.Web.CheckState.Checked));
+			this.checkBox2.CheckState = Wisej.Web.CheckState.Checked;
 			this.checkBox2.Location = new System.Drawing.Point(28, 76);
 			this.checkBox2.Name = "checkBox2";
 			this.checkBox2.Size = new System.Drawing.Size(183, 38);

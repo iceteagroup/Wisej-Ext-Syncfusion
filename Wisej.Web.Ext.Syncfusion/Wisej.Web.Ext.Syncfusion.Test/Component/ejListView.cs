@@ -10,12 +10,11 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 		public ejListView()
 		{
 			InitializeComponent();
-
 		}
 
 		private void buttonAddNewItem_Click(object sender, EventArgs e)
 		{
-			this.ejListView1.Widget.addItem(this.textBoxAddNewItem.Text, 0);
+			this.ejListView1.Widget.addItem("hi", 0);
 
 			this.ejListView1.Update();
 		}

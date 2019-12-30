@@ -29,14 +29,14 @@
 		private void InitializeComponent()
 		{
 			this.panel1 = new Wisej.Web.Panel();
+			this.ejNumericTextbox1 = new Wisej.Web.Ext.Syncfusion.ejNumericTextbox();
 			this.label4 = new Wisej.Web.Label();
 			this.panel2 = new Wisej.Web.Panel();
+			this.ejPercentageTextbox1 = new Wisej.Web.Ext.Syncfusion.ejPercentageTextbox();
 			this.label5 = new Wisej.Web.Label();
 			this.panel4 = new Wisej.Web.Panel();
-			this.label7 = new Wisej.Web.Label();
-			this.ejNumericTextbox1 = new Wisej.Web.Ext.Syncfusion.ejNumericTextbox();
-			this.ejPercentageTextbox1 = new Wisej.Web.Ext.Syncfusion.ejPercentageTextbox();
 			this.ejMaskEdit1 = new Wisej.Web.Ext.Syncfusion.ejMaskEdit();
+			this.label7 = new Wisej.Web.Label();
 			this.groupBox1.SuspendLayout();
 			this.panel.SuspendLayout();
 			this.panel1.SuspendLayout();
@@ -65,6 +65,7 @@
 			// 
 			// panel1
 			// 
+			this.panel1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
 			this.panel1.Controls.Add(this.ejNumericTextbox1);
 			this.panel1.Controls.Add(this.label4);
 			this.panel1.Location = new System.Drawing.Point(126, 26);
@@ -73,8 +74,21 @@
 			this.panel1.TabIndex = 0;
 			this.panel1.TabStop = true;
 			// 
+			// ejNumericTextbox1
+			// 
+			this.ejNumericTextbox1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+			this.ejNumericTextbox1.Location = new System.Drawing.Point(3, 25);
+			this.ejNumericTextbox1.Name = "ejNumericTextbox1";
+			this.ejNumericTextbox1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"name\":\"numeric\",\"value\":35,\"minValue\":0,\"width\":\"100%\"}")));
+			this.ejNumericTextbox1.Size = new System.Drawing.Size(194, 30);
+			this.ejNumericTextbox1.TabIndex = 1;
+			this.ejNumericTextbox1.Text = "ejNumericTextbox1";
+			// 
 			// label4
 			// 
+			this.label4.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
 			this.label4.AutoSize = true;
 			this.label4.Location = new System.Drawing.Point(3, 3);
 			this.label4.Name = "label4";
@@ -84,6 +98,7 @@
 			// 
 			// panel2
 			// 
+			this.panel2.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
 			this.panel2.Controls.Add(this.ejPercentageTextbox1);
 			this.panel2.Controls.Add(this.label5);
 			this.panel2.Location = new System.Drawing.Point(126, 129);
@@ -92,8 +107,21 @@
 			this.panel2.TabIndex = 1;
 			this.panel2.TabStop = true;
 			// 
+			// ejPercentageTextbox1
+			// 
+			this.ejPercentageTextbox1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+			this.ejPercentageTextbox1.Location = new System.Drawing.Point(3, 25);
+			this.ejPercentageTextbox1.Name = "ejPercentageTextbox1";
+			this.ejPercentageTextbox1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"name\":\"percentage\",\"value\":3,\"minValue\":0,\"width\":\"100%\"}")));
+			this.ejPercentageTextbox1.Size = new System.Drawing.Size(194, 30);
+			this.ejPercentageTextbox1.TabIndex = 1;
+			this.ejPercentageTextbox1.Text = "ejPercentageTextbox1";
+			// 
 			// label5
 			// 
+			this.label5.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
 			this.label5.AutoSize = true;
 			this.label5.Location = new System.Drawing.Point(3, 3);
 			this.label5.Name = "label5";
@@ -103,6 +131,7 @@
 			// 
 			// panel4
 			// 
+			this.panel4.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
 			this.panel4.Controls.Add(this.ejMaskEdit1);
 			this.panel4.Controls.Add(this.label7);
 			this.panel4.Location = new System.Drawing.Point(126, 232);
@@ -111,35 +140,10 @@
 			this.panel4.TabIndex = 1;
 			this.panel4.TabStop = true;
 			// 
-			// label7
-			// 
-			this.label7.AutoSize = true;
-			this.label7.Location = new System.Drawing.Point(3, 3);
-			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(98, 16);
-			this.label7.TabIndex = 0;
-			this.label7.Text = "Phone Number";
-			// 
-			// ejNumericTextbox1
-			// 
-			this.ejNumericTextbox1.Location = new System.Drawing.Point(3, 25);
-			this.ejNumericTextbox1.Name = "ejNumericTextbox1";
-			this.ejNumericTextbox1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"name\":\"numeric\",\"value\":35,\"minValue\":0,\"width\":\"100%\"}")));
-			this.ejNumericTextbox1.Size = new System.Drawing.Size(194, 30);
-			this.ejNumericTextbox1.TabIndex = 1;
-			this.ejNumericTextbox1.Text = "ejNumericTextbox1";
-			// 
-			// ejPercentageTextbox1
-			// 
-			this.ejPercentageTextbox1.Location = new System.Drawing.Point(3, 25);
-			this.ejPercentageTextbox1.Name = "ejPercentageTextbox1";
-			this.ejPercentageTextbox1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"name\":\"percentage\",\"value\":3,\"minValue\":0,\"width\":\"100%\"}")));
-			this.ejPercentageTextbox1.Size = new System.Drawing.Size(194, 30);
-			this.ejPercentageTextbox1.TabIndex = 1;
-			this.ejPercentageTextbox1.Text = "ejPercentageTextbox1";
-			// 
 			// ejMaskEdit1
 			// 
+			this.ejMaskEdit1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
 			this.ejMaskEdit1.Location = new System.Drawing.Point(3, 25);
 			this.ejMaskEdit1.Name = "ejMaskEdit1";
 			this.ejMaskEdit1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"name\":\"mask\",\"inputMode\":\"Text\",\"value\":\"4242422424\",\"maskFormat\":\"99 999-99999" +
@@ -147,6 +151,17 @@
 			this.ejMaskEdit1.Size = new System.Drawing.Size(195, 30);
 			this.ejMaskEdit1.TabIndex = 1;
 			this.ejMaskEdit1.Text = "ejMaskEdit1";
+			// 
+			// label7
+			// 
+			this.label7.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+			this.label7.AutoSize = true;
+			this.label7.Location = new System.Drawing.Point(3, 3);
+			this.label7.Name = "label7";
+			this.label7.Size = new System.Drawing.Size(98, 16);
+			this.label7.TabIndex = 0;
+			this.label7.Text = "Phone Number";
 			// 
 			// ejTextBox
 			// 

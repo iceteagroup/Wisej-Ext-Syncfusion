@@ -41,3 +41,15 @@ this.resizeWidget = function () {
 		} catch (ex) { }
 	}
 };
+
+// Returns a data map that can be converted to JSON.
+this.filterEventData = function (args) {
+
+	return {
+		altKey: args.altKey,
+		shiftKey: args.shiftKey,
+		sourcePath: args.sourcePath,
+		targetPath: args.targetPath,
+		targetFolder: args.targetFolder,
+	}
+};

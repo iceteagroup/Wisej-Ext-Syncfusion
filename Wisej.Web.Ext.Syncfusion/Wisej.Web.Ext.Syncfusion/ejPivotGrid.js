@@ -26,3 +26,19 @@ this.initWidget = function () {
 
 	this.container.style.boxSizing = "border-box";
 };
+
+/**
+ * Resizes the hosted widget to always fit our container.
+ */
+this.resizeWidget = function () {
+
+	if (this.widget) {
+		var bounds = this.getBounds();
+		this.widget.option({
+			size: {
+				width: bounds.width - 2,
+				height: bounds.height - 2,
+			}
+		});
+	}
+};

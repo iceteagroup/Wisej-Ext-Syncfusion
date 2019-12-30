@@ -41,6 +41,7 @@ namespace Wisej.Web.Ext.Syncfusion
 		internal const string DEFAULT_THEME = "default-theme";
 		internal const string NAMESPACE = "Wisej.Web.Ext.Syncfusion";
 		internal const string RESOURCES_ROOT = "Wisej.Web.Ext.Syncfusion.Syncfusion";
+		internal const string THEMENAME_KEY = "Wisej.Web.Ext.Syncfusion.ThemeName";
 
 		#region Constructors
 
@@ -108,15 +109,15 @@ namespace Wisej.Web.Ext.Syncfusion
 		/// </summary>
 		public static string Theme
 		{
-			get { return _theme; }
+			get { return Application.Session[THEMENAME_KEY] ?? DEFAULT_THEME; }
 			set
 			{
 				if (String.IsNullOrEmpty(value))
 					value = DEFAULT_THEME;
 
-				if (_theme != value)
+				if (Theme != value)
 				{
-					_theme = value;
+					Application.Session[THEMENAME_KEY] = value;
 
 					foreach (ejBase widget in Application.FindComponents(c => c is ejBase))
 					{
@@ -126,7 +127,6 @@ namespace Wisej.Web.Ext.Syncfusion
 				}
 			}
 		}
-		private static string _theme = DEFAULT_THEME;
 
 		/// <summary>
 		/// Returns or sets the configuration options;

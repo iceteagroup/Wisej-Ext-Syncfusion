@@ -31,3 +31,16 @@ this.resizeWidget = function () {
 
 	this.widget.windowonresize();
 };
+
+// Returns a data map that can be converted to JSON.
+this.filterEventData = function (args) {
+
+	return {
+		value: args.value,
+		cellIndex: args.cellIndex,
+		columnName: args.columnName,
+		isForeignKey: args.isForeignKey,
+		previousValue: args.previousValue,
+		previousRowCellIndex: args.previousRowCellIndex
+	}
+};

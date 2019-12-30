@@ -62,12 +62,11 @@ namespace Wisej.Web.Ext.Syncfusion
 		public string Value
 		{
 			get {
-				var ret = "";
-				Eval("getValue", (r) => { ret = r; });
-				return ret;
+				return this.Options.value;
 			}
 			set {
-				Call("setValue", value);
+				this.Options.value = value;
+				this.Update();
 			}
 		}
 	}

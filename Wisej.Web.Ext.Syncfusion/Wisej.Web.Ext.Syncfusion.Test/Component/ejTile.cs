@@ -8,6 +8,14 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 		public ejTile()
 		{
 			InitializeComponent();
+
+			ejTile1.Widget.mouseDown += new WidgetEventHandler(ejTile_WidgetEvent);
+			ejTile2.Widget.mouseDown += new WidgetEventHandler(ejTile_WidgetEvent);
+			ejTile3.Widget.mouseDown += new WidgetEventHandler(ejTile_WidgetEvent);
+			ejTile4.Widget.mouseDown += new WidgetEventHandler(ejTile_WidgetEvent);
+			ejTile5.Widget.mouseDown += new WidgetEventHandler(ejTile_WidgetEvent);
+			ejTile6.Widget.mouseDown += new WidgetEventHandler(ejTile_WidgetEvent);
+
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
@@ -26,6 +34,15 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 			this.ejTile6.Update();
 
 
+		}
+
+		private void ejTile_WidgetEvent(object sender, WidgetEventArgs e)
+		{
+			AlertBox.Show(
+				$"<b>{e.Type}</b><br/>{JSON.Stringify(e.Data)}",
+				MessageBoxIcon.Information);
+
+			Application.Play(MessageBoxIcon.Information);
 		}
 	}
 }

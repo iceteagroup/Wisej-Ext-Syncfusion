@@ -46,6 +46,7 @@ namespace Wisej.Web.Ext.Syncfusion
 				"doubleClick",
 				"drillDownBack",
 				"drillDownClick",
+				"legendItemClick",
 				"pointRegionClick",
 				"pointRegionMouseMove"
 			};

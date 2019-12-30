@@ -31,8 +31,11 @@
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ejPager));
 			this.ejPager1 = new Wisej.Web.Ext.Syncfusion.ejPager();
 			this.ejRotator1 = new Wisej.Web.Ext.Syncfusion.ejRotator();
+			this.buttonGoToFirstPage = new Wisej.Web.Button();
+			this.numericSelectedPage = new Wisej.Web.NumericUpDown();
 			this.groupBox1.SuspendLayout();
 			this.panel.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.numericSelectedPage)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// linkDocs
@@ -43,10 +46,23 @@
 			// 
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejpager";
 			// 
+			// groupBox1
+			// 
+			this.groupBox1.Controls.Add(this.numericSelectedPage);
+			this.groupBox1.Controls.Add(this.buttonGoToFirstPage);
+			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
+			this.groupBox1.Controls.SetChildIndex(this.buttonGoToFirstPage, 0);
+			this.groupBox1.Controls.SetChildIndex(this.numericSelectedPage, 0);
+			// 
+			// buttonUpdate
+			// 
+			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
+			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejRotator1);
 			this.panel.Controls.Add(this.ejPager1);
+			this.panel.Size = new System.Drawing.Size(695, 452);
 			// 
 			// linkDemo
 			// 
@@ -56,29 +72,61 @@
 			// ejPager1
 			// 
 			this.ejPager1.Anchor = Wisej.Web.AnchorStyles.None;
-			this.ejPager1.Location = new System.Drawing.Point(20, 250);
+			this.ejPager1.Location = new System.Drawing.Point(31, 380);
 			this.ejPager1.Name = "ejPager1";
 			this.ejPager1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"pageSize\":1,\"totalPages\":6,\"totalRecordsCount\":6,\"pageCount\":3,\"isResponsive\":t" +
         "rue}")));
-			this.ejPager1.Size = new System.Drawing.Size(412, 44);
+			this.ejPager1.Size = new System.Drawing.Size(630, 44);
 			this.ejPager1.TabIndex = 3;
 			this.ejPager1.Text = "ejPager1";
 			// 
 			// ejRotator1
 			// 
 			this.ejRotator1.Anchor = Wisej.Web.AnchorStyles.None;
-			this.ejRotator1.Location = new System.Drawing.Point(20, 20);
+			this.ejRotator1.Location = new System.Drawing.Point(31, 26);
 			this.ejRotator1.Name = "ejRotator1";
 			this.ejRotator1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejRotator1.Options"))));
-			this.ejRotator1.Size = new System.Drawing.Size(412, 224);
+			this.ejRotator1.Size = new System.Drawing.Size(630, 353);
 			this.ejRotator1.TabIndex = 2;
 			this.ejRotator1.Text = "ejRotator1";
+			// 
+			// buttonGoToFirstPage
+			// 
+			this.buttonGoToFirstPage.Location = new System.Drawing.Point(22, 32);
+			this.buttonGoToFirstPage.Name = "buttonGoToFirstPage";
+			this.buttonGoToFirstPage.Size = new System.Drawing.Size(201, 30);
+			this.buttonGoToFirstPage.TabIndex = 1;
+			this.buttonGoToFirstPage.Text = "Go To First Page";
+			this.buttonGoToFirstPage.Click += new System.EventHandler(this.buttonGoToFirstPage_Click);
+			// 
+			// numericSelectedPage
+			// 
+			this.numericSelectedPage.AutoSize = false;
+			this.numericSelectedPage.Label.Size = 50;
+			this.numericSelectedPage.Label.SizeType = Wisej.Web.SizeType.Percent;
+			this.numericSelectedPage.Label.Text = "Selected Page";
+			this.numericSelectedPage.Location = new System.Drawing.Point(22, 104);
+			this.numericSelectedPage.Maximum = new decimal(new int[] {
+            6,
+            0,
+            0,
+            0});
+			this.numericSelectedPage.Name = "numericSelectedPage";
+			this.numericSelectedPage.Size = new System.Drawing.Size(201, 60);
+			this.numericSelectedPage.TabIndex = 3;
+			this.numericSelectedPage.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
 			// 
 			// ejPager
 			// 
 			this.Name = "ejPager";
+			this.Size = new System.Drawing.Size(1104, 642);
 			this.groupBox1.ResumeLayout(false);
 			this.panel.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.numericSelectedPage)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -88,5 +136,7 @@
 
 		private Syncfusion.ejPager ejPager1;
 		private Syncfusion.ejRotator ejRotator1;
+		private Button buttonGoToFirstPage;
+		private NumericUpDown numericSelectedPage;
 	}
 }
