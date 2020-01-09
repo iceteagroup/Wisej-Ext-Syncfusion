@@ -28,7 +28,7 @@ The library and test are in progress - we are adding every available widget to t
 All the integrated widgets have 3 types of members: options, methods, and events. The options (you'll find them under "members" in the documentation) are represented by a single javascript map. Methods are javascript functions. Events in the Syncfusion widgets are callback methods defined in the options map.
 
 ### Options
-When using the ej classes in your .NET Wisej application, you have access to the entire set of options using a single property Options. It is a dynamic .NET object and you can use it directly or assign it.
+When using the ej classes in your .NET Wisej application, you have access to the entire set of options using a single property, Options. It is a dynamic .NET object and you can use it directly or assign it.
 
 When you set the Options using the designer, you can simply copy and paste (and edit) any JSON string.
 
@@ -74,16 +74,14 @@ You will find the complete set of options at the Syncfusion docs site linked bel
 ### Methods
 All the methods exposed by the javascript ej1 widget are available to your .NET extension class as C# or VB.NET methods using the new *Widget* object. All methods are also available as async methods with the "Async" suffix.
 
-Note: When using VB.NET you need to use *Option Strict Off* to allow the .NET dynamic compiler handle the calls into the *Widget* object.
+Note: When using VB.NET you need to use *Option Strict Off* to allow the .NET dynamic compiler to handle the calls into the *Widget* object.
 
 ~~~
-
 // C#
 this.ejSpreadsheet1.Widget.setReadOnly("B3");
 
 ' VB.NET
 Me.EjSpreadsheet1.Widget.setReadOnly("B3")
-
 ~~~
 
 However, some methods may return values that are not immediately usable in .NET, or you need to use several methods together in a single javascript function in a way that wouldn't make sense from the server. When you need to add a method to your ej widget instance, or your derived class, use the **WidgetFunctions** property in the designer (can be used at runtime as well) to register a new javascript function.
