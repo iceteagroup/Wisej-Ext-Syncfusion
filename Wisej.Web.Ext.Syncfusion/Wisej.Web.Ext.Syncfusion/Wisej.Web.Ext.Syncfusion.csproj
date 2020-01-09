@@ -152,6 +152,9 @@
     <Compile Include="ejRecurrenceEditor.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="ejRichTextEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="ejRotator.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -215,6 +218,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ejRichTextEditor.js">
+      <DependentUpon>ejRichTextEditor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Syncfusion\external\jquery-3.4.1.min.js" />
     <EmbeddedResource Include="Syncfusion\external\jquery.validate.min.js" />
     <EmbeddedResource Include="Syncfusion\assets\css\mobile\android-theme\ej.mobile.android-core.min.css" />

@@ -602,9 +602,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\Development\2.1\bin\Wisej.Framework.dll</HintPath>
     </Reference>
-    <Reference Include="Wisej.Framework.Design">
-      <HintPath>..\..\..\..\..\Development\2.1\bin\Wisej.Framework.Design.dll</HintPath>
-    </Reference>
     <Reference Include="Wisej.Web.Ext.Syncfusion, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\bin\Wisej.Web.Ext.Syncfusion.dll</HintPath>

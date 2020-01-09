@@ -65,14 +65,12 @@
 			this.ejTreeMap1.Size = new System.Drawing.Size(415, 276);
 			this.ejTreeMap1.Text = "ejTreeMap1";
 			widgetTemplate1.Id = "headertemplate";
-			widgetTemplate1.Template = "<div style=\"margin-top:3px;\">\r\n            <label style=\"color:gray;font-size:16p" +
-    "x;font-weight:normal;margin-left:5px;\" id=\"Label1\">{{:header}}</label><br />    " +
-    "        \r\n      </div>";
+			widgetTemplate1.Template = "<div style=\"margin-top:3px;\">\r\n    <label style=\"color:gray;font-size:16px;font-w" +
+    "eight:normal;margin-left:5px;\" id=\"Label1\">{{:header}}</label><br />\r\n</div>";
 			widgetTemplate1.Type = "application/jsrender";
 			widgetTemplate2.Id = "labeltemplate";
-			widgetTemplate2.Template = "<div style=\"background-color: transparent;\">\r\n            <label style=\"color:bla" +
-    "ck;font-size:large;font-weight:normal;\" >{{:Country}}</label><br />            \r" +
-    "\n        </div> ";
+			widgetTemplate2.Template = "<div style=\"background-color: transparent;\">\r\n    <label style=\"color:black;font-" +
+    "size:large;font-weight:normal;\" >{{:Country}}</label><br />\r\n</div> ";
 			widgetTemplate2.Type = "application/jsrender";
 			widgetTemplate3.Id = "template";
 			widgetTemplate3.Template = resources.GetString("widgetTemplate3.Template");
