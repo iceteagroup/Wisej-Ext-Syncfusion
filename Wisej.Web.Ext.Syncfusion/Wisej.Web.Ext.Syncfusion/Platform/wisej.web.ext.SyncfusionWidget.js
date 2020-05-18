@@ -95,6 +95,9 @@ qx.Class.define("wisej.web.ext.SyncfusionWidget", {
 				this.container = this.container.firstChild;
 			}
 
+			if (this.filterOptions)
+				this.filterOptions(options);
+
 			this._registerEventHandlers(options);
 			var className = this.getWidgetClass();
 			this.widget = $(this.container)[className](options).data(className);
@@ -119,6 +122,10 @@ qx.Class.define("wisej.web.ext.SyncfusionWidget", {
 		 * @param old {Map} Previous options map (optional).
 		 */
 		update: function (options, old) {
+
+			if (this.filterOptions)
+				this.filterOptions(options, old);
+
 			this.widget.option(options);
 		},
 
@@ -180,13 +187,13 @@ qx.Class.define("wisej.web.ext.SyncfusionWidget", {
 
 				if (!me.widget) {
 					var args = Array.prototype.slice.call(arguments);
-					this.addListenerOnce('initialized', function (e) {
+					me.addListenerOnce("initialized", function (e) {
 						func.apply(me, args);
 					});
 					return;
 				}
 
-				func.apply(me, arguments);
+				return func.apply(me, arguments);
 			};
 
 			return wrapper;
@@ -234,6 +241,8 @@ qx.Class.define("wisej.web.ext.SyncfusionWidget", {
 			var me = this;
 			function callback(args) {
 
+				args.container = me;
+
 				if (handler)
 					handler.call(this, args);
 
@@ -254,7 +263,29 @@ qx.Class.define("wisej.web.ext.SyncfusionWidget", {
 			return callback;
 		},
 
-		// Returns a data map that can be converted to JSON.
+		/**
+		 * Initializes a function specified in the widgetFunctions array
+		 * without waiting for the widget to be initialized.
+		 */
+		initFunction: function (name) {
+
+			if (typeof (name) === "function")
+				return name;
+
+			if (typeof (name) === "string") {
+
+				var functions = this.getWidgetFunctions();
+				for (var i = 0; i < functions.length; i++) {
+					if (functions[i].name == name) {
+						return new Function(functions[i].source);
+					}
+				}
+			}
+		},
+
+		/**
+		 * Returns a data map that can be converted to JSON.
+		 */
 		filterEventData: function (args) {
 			return { };
 		},
@@ -312,6 +343,16 @@ qx.Class.define("wisej.web.ext.SyncfusionWidget", {
 
 			if (this.initWidget)
 				this.initWidget();
+		},
+
+		/**
+		 * Destroys the wrapped widget.
+		 */
+		_onDestroyed: function () {
+			if (this.widget) {
+				this.widget.destroy();
+				this.widget = null;
+			}
 		},
 
 		// handles the "focus" event to try and set the

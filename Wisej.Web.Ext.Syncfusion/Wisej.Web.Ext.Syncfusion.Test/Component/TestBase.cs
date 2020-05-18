@@ -14,7 +14,6 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 		}
 
 		protected LinkLabel linkDocs;
-		private ImageList imageList1;
 		private System.ComponentModel.IContainer components;
 		protected LinkLabel linkAPI;
 		protected GroupBox groupBox1;
@@ -23,13 +22,13 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 		private Label label1;
 		private Label label2;
 		private Label label3;
+		private ImageList imageList1;
 		protected LinkLabel linkDemo;
 
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
 			this.linkDocs = new Wisej.Web.LinkLabel();
-			this.imageList1 = new Wisej.Web.ImageList(this.components);
 			this.linkAPI = new Wisej.Web.LinkLabel();
 			this.linkDemo = new Wisej.Web.LinkLabel();
 			this.groupBox1 = new Wisej.Web.GroupBox();
@@ -38,6 +37,7 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 			this.label1 = new Wisej.Web.Label();
 			this.label2 = new Wisej.Web.Label();
 			this.label3 = new Wisej.Web.Label();
+			this.imageList1 = new Wisej.Web.ImageList(this.components);
 			this.groupBox1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -53,10 +53,6 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 			this.linkDocs.Text = "https://help.syncfusion.com/js/overview";
 			this.linkDocs.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.linkDocs.LinkClicked += new Wisej.Web.LinkLabelLinkClickedEventHandler(this.linkDocs_LinkClicked);
-			// 
-			// imageList1
-			// 
-			this.imageList1.ImageSize = new System.Drawing.Size(32, 16);
 			// 
 			// linkAPI
 			// 
@@ -144,6 +140,10 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 			this.label3.TabIndex = 7;
 			this.label3.Text = "DEMO:";
 			this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// imageList1
+			// 
+			this.imageList1.ImageSize = new System.Drawing.Size(32, 16);
 			// 
 			// TestBase
 			// 

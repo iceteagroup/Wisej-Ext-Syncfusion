@@ -44,8 +44,14 @@ this.getHtml = function()
  */
 this.setHtml = function (value) {
 
-	if (this.widget)
+	if (this.widget) {
 		this.widget.setHtml(value);
+	}
+	else {
+		this.addListenerOnce("initialized", function (e) {
+			this.setHtml(value);
+		});
+	}
 }
 
 /**

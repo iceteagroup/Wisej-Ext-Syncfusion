@@ -27,6 +27,7 @@ using System.Drawing;
 using System.Drawing.Design;
 using System.Dynamic;
 using System.IO;
+using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using Wisej.Base;
 using Wisej.Core;
@@ -217,6 +218,7 @@ namespace Wisej.Web.Ext.Syncfusion
 		[DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
 		public override List<Package> Packages
 		{
+			[MethodImpl(MethodImplOptions.NoInlining)]
 			get
 			{
 				var packages = base.Packages;
@@ -347,6 +349,8 @@ namespace Wisej.Web.Ext.Syncfusion
 		[DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
 		public override string InitScript
 		{
+			// disable inlining or we lose the calling assembly in GetResourceString().
+			[MethodImpl(MethodImplOptions.NoInlining)]
 			get { return this.GetResourceString($"{NAMESPACE}.{this.GetControlType().Name}"); }
 			set { }
 		}

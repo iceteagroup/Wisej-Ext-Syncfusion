@@ -596,7 +596,7 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Wisej.Ext.MaterialDesign">
-      <HintPath>..\..\..\..\2.0\Wisej.Ext.MaterialDesign\bin\Wisej.Ext.MaterialDesign.dll</HintPath>
+      <HintPath>..\..\..\..\2.1\Wisej.Ext.MaterialDesign\bin\Wisej.Ext.MaterialDesign.dll</HintPath>
     </Reference>
     <Reference Include="Wisej.Framework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=17bef35e11b84171, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>

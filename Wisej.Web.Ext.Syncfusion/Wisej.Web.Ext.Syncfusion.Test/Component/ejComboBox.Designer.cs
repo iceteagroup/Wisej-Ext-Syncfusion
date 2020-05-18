@@ -67,7 +67,7 @@
 			// 
 			// ejComboBox1
 			// 
-			this.ejComboBox1.Anchor = Wisej.Web.AnchorStyles.Left;
+			this.ejComboBox1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
 			this.ejComboBox1.Location = new System.Drawing.Point(101, 141);
 			this.ejComboBox1.Name = "ejComboBox1";
 			this.ejComboBox1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejComboBox1.Options"))));

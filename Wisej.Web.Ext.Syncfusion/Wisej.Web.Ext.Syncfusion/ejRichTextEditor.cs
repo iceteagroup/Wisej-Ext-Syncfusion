@@ -18,6 +18,8 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 
+using Wisej.Core;
+
 namespace Wisej.Web.Ext.Syncfusion
 {
 	/// <summary>
@@ -40,7 +42,7 @@ namespace Wisej.Web.Ext.Syncfusion
 		/// <param name="options">Initial set of options.</param>
 		public ejRichTextEditor(object options) : base("ejRTE", "<textarea style='width:100%;height:100%'>", options)
 		{
-			this.WidgetWiredEvents = new[] { "change" };
+			this.WidgetWiredEvents = new[] { "change", "execute" };
 		}
 
 		/// <summary>
@@ -59,6 +61,22 @@ namespace Wisej.Web.Ext.Syncfusion
 						Call("setHtml", value);
 				}
 			}
+		}
+
+		/// <summary>
+		/// Causes the control to update the corresponding client side widget.When in design
+		/// mode, causes the rendered control to update its entire surface in the designer.
+		/// </summary>
+		public override void Update()
+		{
+			// overridden to update the HTML editor when the user reloads the page.
+			if (((IWisejControl)this).IsNew)
+			{
+				if (this.Text != "")
+					Call("setHtml", this.Text);
+			}
+
+			base.Update();
 		}
 
 		/// <summary>

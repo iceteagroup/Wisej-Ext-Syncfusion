@@ -30,9 +30,9 @@ this.initWidget = function () {
 			importMapper: serviceUrl
 		},
 		exportSettings: {
-			excelUrl: serviceUrl + "&format=xlsx",
-			csvUrl: serviceUrl + "&format=csv",
-			pdfUrl: serviceUrl + "&format=pdf"
+			excelUrl: serviceUrl + "?format=xlsx",
+			csvUrl: serviceUrl + "?format=csv",
+			pdfUrl: serviceUrl + "?format=pdf"
 		},
 	});
 };
