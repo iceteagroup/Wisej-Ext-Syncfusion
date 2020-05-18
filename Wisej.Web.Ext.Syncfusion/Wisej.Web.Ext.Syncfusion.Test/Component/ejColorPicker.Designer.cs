@@ -28,79 +28,79 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ejColorPicker1 = new Wisej.Web.Ext.Syncfusion.ejColorPicker();
-            this.textBoxColor = new Wisej.Web.TextBox();
-            this.label4 = new Wisej.Web.Label();
-            this.groupBox1.SuspendLayout();
-            this.panel.SuspendLayout();
-            this.SuspendLayout();
-            // 
-            // linkDocs
-            // 
-            this.linkDocs.Text = "https://help.syncfusion.com/js/colorpicker/overview";
-            // 
-            // linkAPI
-            // 
-            this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejcolorpicker";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.textBoxColor);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.textBoxColor, 0);
-            // 
-            // buttonUpdate
-            // 
-            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
-            // 
-            // panel
-            // 
-            this.panel.Controls.Add(this.label4);
-            this.panel.Controls.Add(this.ejColorPicker1);
-            // 
-            // linkDemo
-            // 
-            this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/bootstrap/colorpicker";
-            // 
-            // ejColorPicker1
-            // 
-            this.ejColorPicker1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.ejColorPicker1.Location = new System.Drawing.Point(192, 147);
-            this.ejColorPicker1.Name = "ejColorPicker1";
-            this.ejColorPicker1.Size = new System.Drawing.Size(113, 37);
-            this.ejColorPicker1.TabIndex = 2;
-            this.ejColorPicker1.Text = "Choose Color";
-            this.ejColorPicker1.WidgetEvent += new Wisej.Web.WidgetEventHandler(this.ejColorPicker1_WidgetEvent);            
-            // 
-            // textBox1
-            // 
-            this.textBoxColor.AutoSize = false;
-            this.textBoxColor.Label.Size = 50;
-            this.textBoxColor.Label.SizeType = Wisej.Web.SizeType.Percent;
-            this.textBoxColor.Label.Text = "Value (prefix with #)";
-            this.textBoxColor.Location = new System.Drawing.Point(28, 32);
-            this.textBoxColor.Name = "textBox1";
-            this.textBoxColor.Size = new System.Drawing.Size(200, 60);
-            this.textBoxColor.TabIndex = 2;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = Wisej.Web.AnchorStyles.None;
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(192, 125);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(90, 16);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Choose Color";
-            // 
-            // ejColorPicker
-            // 
-            this.Name = "ejColorPicker";
-            this.groupBox1.ResumeLayout(false);
-            this.panel.ResumeLayout(false);
-            this.panel.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+			this.ejColorPicker1 = new Wisej.Web.Ext.Syncfusion.ejColorPicker();
+			this.textBoxColor = new Wisej.Web.TextBox();
+			this.label4 = new Wisej.Web.Label();
+			this.groupBox1.SuspendLayout();
+			this.panel.SuspendLayout();
+			this.SuspendLayout();
+			// 
+			// linkDocs
+			// 
+			this.linkDocs.Text = "https://help.syncfusion.com/js/colorpicker/overview";
+			// 
+			// linkAPI
+			// 
+			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejcolorpicker";
+			// 
+			// groupBox1
+			// 
+			this.groupBox1.Controls.Add(this.textBoxColor);
+			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
+			this.groupBox1.Controls.SetChildIndex(this.textBoxColor, 0);
+			// 
+			// buttonUpdate
+			// 
+			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
+			// 
+			// panel
+			// 
+			this.panel.Controls.Add(this.label4);
+			this.panel.Controls.Add(this.ejColorPicker1);
+			// 
+			// linkDemo
+			// 
+			this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/bootstrap/colorpicker";
+			// 
+			// ejColorPicker1
+			// 
+			this.ejColorPicker1.Anchor = Wisej.Web.AnchorStyles.None;
+			this.ejColorPicker1.Location = new System.Drawing.Point(192, 147);
+			this.ejColorPicker1.Name = "ejColorPicker1";
+			this.ejColorPicker1.Size = new System.Drawing.Size(113, 37);
+			this.ejColorPicker1.TabIndex = 2;
+			this.ejColorPicker1.Text = "Choose Color";
+			this.ejColorPicker1.WidgetEvent += new Wisej.Web.WidgetEventHandler(this.ejColorPicker1_WidgetEvent);
+			// 
+			// textBoxColor
+			// 
+			this.textBoxColor.AutoSize = false;
+			this.textBoxColor.Label.Size = 50;
+			this.textBoxColor.Label.SizeType = Wisej.Web.SizeType.Percent;
+			this.textBoxColor.LabelText = "Value (prefix with #)";
+			this.textBoxColor.Location = new System.Drawing.Point(28, 32);
+			this.textBoxColor.Name = "textBoxColor";
+			this.textBoxColor.Size = new System.Drawing.Size(200, 60);
+			this.textBoxColor.TabIndex = 2;
+			// 
+			// label4
+			// 
+			this.label4.Anchor = Wisej.Web.AnchorStyles.None;
+			this.label4.AutoSize = true;
+			this.label4.Location = new System.Drawing.Point(192, 125);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(83, 15);
+			this.label4.TabIndex = 1;
+			this.label4.Text = "Choose Color";
+			// 
+			// ejColorPicker
+			// 
+			this.Name = "ejColorPicker";
+			this.groupBox1.ResumeLayout(false);
+			this.panel.ResumeLayout(false);
+			this.panel.PerformLayout();
+			this.ResumeLayout(false);
+			this.PerformLayout();
 
         }
 

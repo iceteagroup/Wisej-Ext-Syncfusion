@@ -91,17 +91,18 @@
 			this.ejCircularGauge1.Name = "ejCircularGauge1";
 			this.ejCircularGauge1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejCircularGauge1.Options"))));
 			this.ejCircularGauge1.Size = new System.Drawing.Size(296, 290);
+			this.ejCircularGauge1.TabIndex = 0;
 			this.ejCircularGauge1.Text = "ejCircularGauge1";
 			this.ejCircularGauge1.Value = 50;
 			// 
-			// numericUpDown1
+			// numericUpDownVal
 			// 
 			this.numericUpDownVal.AutoSize = false;
 			this.numericUpDownVal.Label.Size = 50;
 			this.numericUpDownVal.Label.SizeType = Wisej.Web.SizeType.Percent;
-			this.numericUpDownVal.Label.Text = "Value";
+			this.numericUpDownVal.LabelText = "Value";
 			this.numericUpDownVal.Location = new System.Drawing.Point(28, 41);
-			this.numericUpDownVal.Name = "numericUpDown1";
+			this.numericUpDownVal.Name = "numericUpDownVal";
 			this.numericUpDownVal.Size = new System.Drawing.Size(195, 60);
 			this.numericUpDownVal.TabIndex = 1;
 			this.numericUpDownVal.Value = new decimal(new int[] {
@@ -110,13 +111,13 @@
             0,
             0});
 			// 
-			// trackBar1
+			// trackBarDistanceFromScale
 			// 
 			this.trackBarDistanceFromScale.Location = new System.Drawing.Point(28, 146);
 			this.trackBarDistanceFromScale.Maximum = 0;
 			this.trackBarDistanceFromScale.Minimum = -30;
-			this.trackBarDistanceFromScale.Name = "trackBar1";
-			this.trackBarDistanceFromScale.Size = new System.Drawing.Size(195, 36);
+			this.trackBarDistanceFromScale.Name = "trackBarDistanceFromScale";
+			this.trackBarDistanceFromScale.Size = new System.Drawing.Size(195, 34);
 			this.trackBarDistanceFromScale.TabIndex = 2;
 			this.trackBarDistanceFromScale.Value = -30;
 			// 
@@ -125,7 +126,7 @@
 			this.label4.AutoSize = true;
 			this.label4.Location = new System.Drawing.Point(28, 124);
 			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(103, 16);
+			this.label4.Size = new System.Drawing.Size(96, 15);
 			this.label4.TabIndex = 3;
 			this.label4.Text = "Range Distance";
 			// 
@@ -134,29 +135,29 @@
 			this.label5.AutoSize = true;
 			this.label5.Location = new System.Drawing.Point(28, 214);
 			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(77, 16);
+			this.label5.Size = new System.Drawing.Size(71, 15);
 			this.label5.TabIndex = 5;
 			this.label5.Text = "Range Size";
 			// 
-			// trackBar2
+			// trackBarSize
 			// 
 			this.trackBarSize.Location = new System.Drawing.Point(28, 236);
 			this.trackBarSize.Maximum = 12;
 			this.trackBarSize.Minimum = 2;
-			this.trackBarSize.Name = "trackBar2";
-			this.trackBarSize.Size = new System.Drawing.Size(195, 36);
+			this.trackBarSize.Name = "trackBarSize";
+			this.trackBarSize.Size = new System.Drawing.Size(195, 34);
 			this.trackBarSize.TabIndex = 4;
 			this.trackBarSize.Value = 2;
 			// 
-			// checkBox1
+			// checkBoxShowTicks
 			// 
 			this.checkBoxShowTicks.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBoxShowTicks.AutoSize = false;
 			this.checkBoxShowTicks.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBoxShowTicks.Checked = true;
-			this.checkBoxShowTicks.CheckState = ((Wisej.Web.CheckState)(Wisej.Web.CheckState.Checked));
+			this.checkBoxShowTicks.CheckState = Wisej.Web.CheckState.Checked;
 			this.checkBoxShowTicks.Location = new System.Drawing.Point(28, 309);
-			this.checkBoxShowTicks.Name = "checkBox1";
+			this.checkBoxShowTicks.Name = "checkBoxShowTicks";
 			this.checkBoxShowTicks.Size = new System.Drawing.Size(183, 38);
 			this.checkBoxShowTicks.TabIndex = 6;
 			this.checkBoxShowTicks.Text = "Show Ticks";

@@ -84,23 +84,24 @@
 			this.ejGantt1.Name = "ejGantt1";
 			this.ejGantt1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejGantt1.Options"))));
 			this.ejGantt1.Size = new System.Drawing.Size(593, 467);
+			this.ejGantt1.TabIndex = 0;
 			this.ejGantt1.Text = "ejGantt1";
 			// 
-			// textBox1
+			// textBoxScheduleStartDate
 			// 
 			this.textBoxScheduleStartDate.AutoSize = false;
 			this.textBoxScheduleStartDate.InputType.Type = Wisej.Web.TextBoxType.Date;
 			this.textBoxScheduleStartDate.Label.Size = 50;
 			this.textBoxScheduleStartDate.Label.SizeType = Wisej.Web.SizeType.Percent;
-			this.textBoxScheduleStartDate.Label.Text = "Schedule Start Date";
+			this.textBoxScheduleStartDate.LabelText = "Schedule Start Date";
 			this.textBoxScheduleStartDate.Location = new System.Drawing.Point(28, 36);
-			this.textBoxScheduleStartDate.Name = "textBox1";
+			this.textBoxScheduleStartDate.Name = "textBoxScheduleStartDate";
 			this.textBoxScheduleStartDate.Size = new System.Drawing.Size(195, 60);
 			this.textBoxScheduleStartDate.TabIndex = 3;
 			this.textBoxScheduleStartDate.Text = "2019-02-17";
 			this.textBoxScheduleStartDate.Watermark = "Select date...";
 			// 
-			// checkBox1
+			// checkBoxShowProgressStatus
 			// 
 			this.checkBoxShowProgressStatus.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBoxShowProgressStatus.AutoSize = false;
@@ -108,12 +109,12 @@
 			this.checkBoxShowProgressStatus.Checked = true;
 			this.checkBoxShowProgressStatus.CheckState = Wisej.Web.CheckState.Checked;
 			this.checkBoxShowProgressStatus.Location = new System.Drawing.Point(28, 224);
-			this.checkBoxShowProgressStatus.Name = "checkBox1";
+			this.checkBoxShowProgressStatus.Name = "checkBoxShowProgressStatus";
 			this.checkBoxShowProgressStatus.Size = new System.Drawing.Size(195, 22);
 			this.checkBoxShowProgressStatus.TabIndex = 6;
 			this.checkBoxShowProgressStatus.Text = "Show Progress Status";
 			// 
-			// checkBox2
+			// checkBoxShowColumnOptions
 			// 
 			this.checkBoxShowColumnOptions.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBoxShowColumnOptions.AutoSize = false;
@@ -121,20 +122,20 @@
 			this.checkBoxShowColumnOptions.Checked = true;
 			this.checkBoxShowColumnOptions.CheckState = Wisej.Web.CheckState.Checked;
 			this.checkBoxShowColumnOptions.Location = new System.Drawing.Point(28, 280);
-			this.checkBoxShowColumnOptions.Name = "checkBox2";
+			this.checkBoxShowColumnOptions.Name = "checkBoxShowColumnOptions";
 			this.checkBoxShowColumnOptions.Size = new System.Drawing.Size(195, 22);
 			this.checkBoxShowColumnOptions.TabIndex = 7;
 			this.checkBoxShowColumnOptions.Text = "Show Column Options";
 			// 
-			// textBox2
+			// textBoxScheduleEndDate
 			// 
 			this.textBoxScheduleEndDate.AutoSize = false;
 			this.textBoxScheduleEndDate.InputType.Type = Wisej.Web.TextBoxType.Date;
 			this.textBoxScheduleEndDate.Label.Size = 50;
 			this.textBoxScheduleEndDate.Label.SizeType = Wisej.Web.SizeType.Percent;
-			this.textBoxScheduleEndDate.Label.Text = "Schedule End Date";
+			this.textBoxScheduleEndDate.LabelText = "Schedule End Date";
 			this.textBoxScheduleEndDate.Location = new System.Drawing.Point(28, 130);
-			this.textBoxScheduleEndDate.Name = "textBox2";
+			this.textBoxScheduleEndDate.Name = "textBoxScheduleEndDate";
 			this.textBoxScheduleEndDate.Size = new System.Drawing.Size(195, 60);
 			this.textBoxScheduleEndDate.TabIndex = 9;
 			this.textBoxScheduleEndDate.Text = "2017-03-20";

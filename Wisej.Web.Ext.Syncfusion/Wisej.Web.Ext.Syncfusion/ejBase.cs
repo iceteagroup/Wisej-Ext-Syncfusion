@@ -151,6 +151,7 @@ namespace Wisej.Web.Ext.Syncfusion
 		[MergableProperty(false)]
 		[SRCategory("CatBehavior")]
 		[SRDescription("WidgetOptionsDescr")]
+		[WisejSerializerOptions(WisejSerializerOptions.None)]
 		public override dynamic Options
 		{
 			get { return base.Options; }

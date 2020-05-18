@@ -33,6 +33,8 @@
 			this.buttonClear = new Wisej.Web.Button();
 			this.buttonUndo = new Wisej.Web.Button();
 			this.buttonRedo = new Wisej.Web.Button();
+			this.checkBox2 = new Wisej.Web.CheckBox();
+			this.checkBox1 = new Wisej.Web.CheckBox();
 			this.groupBox1.SuspendLayout();
 			this.panel.SuspendLayout();
 			this.SuspendLayout();
@@ -47,19 +49,30 @@
 			// 
 			// groupBox1
 			// 
+			this.groupBox1.Controls.Add(this.checkBox1);
+			this.groupBox1.Controls.Add(this.checkBox2);
 			this.groupBox1.Controls.Add(this.buttonRedo);
 			this.groupBox1.Controls.Add(this.buttonUndo);
 			this.groupBox1.Controls.Add(this.buttonClear);
 			this.groupBox1.Controls.Add(this.button1);
+			this.groupBox1.Size = new System.Drawing.Size(250, 360);
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
 			this.groupBox1.Controls.SetChildIndex(this.button1, 0);
 			this.groupBox1.Controls.SetChildIndex(this.buttonClear, 0);
 			this.groupBox1.Controls.SetChildIndex(this.buttonUndo, 0);
 			this.groupBox1.Controls.SetChildIndex(this.buttonRedo, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBox2, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
+			// 
+			// buttonUpdate
+			// 
+			this.buttonUpdate.Location = new System.Drawing.Point(28, 279);
+			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejSignature1);
+			this.panel.Size = new System.Drawing.Size(455, 360);
 			// 
 			// linkDemo
 			// 
@@ -75,13 +88,13 @@
 			this.ejSignature1.Location = new System.Drawing.Point(23, 19);
 			this.ejSignature1.Name = "ejSignature1";
 			this.ejSignature1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"isResponsive\":true,\"strokeWidth\":3}")));
-			this.ejSignature1.Size = new System.Drawing.Size(407, 274);
+			this.ejSignature1.Size = new System.Drawing.Size(407, 319);
 			this.ejSignature1.TabIndex = 1;
 			this.ejSignature1.Text = "ejSignature1";
 			// 
 			// button1
 			// 
-			this.button1.Location = new System.Drawing.Point(28, 59);
+			this.button1.Location = new System.Drawing.Point(28, 138);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(195, 30);
 			this.button1.TabIndex = 1;
@@ -90,7 +103,7 @@
 			// 
 			// buttonClear
 			// 
-			this.buttonClear.Location = new System.Drawing.Point(28, 114);
+			this.buttonClear.Location = new System.Drawing.Point(28, 181);
 			this.buttonClear.Name = "buttonClear";
 			this.buttonClear.Size = new System.Drawing.Size(195, 30);
 			this.buttonClear.TabIndex = 2;
@@ -101,7 +114,7 @@
 			// 
 			this.buttonUndo.Display = Wisej.Web.Display.Icon;
 			this.buttonUndo.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/undo-button.svg";
-			this.buttonUndo.Location = new System.Drawing.Point(28, 162);
+			this.buttonUndo.Location = new System.Drawing.Point(28, 224);
 			this.buttonUndo.Name = "buttonUndo";
 			this.buttonUndo.Size = new System.Drawing.Size(42, 42);
 			this.buttonUndo.TabIndex = 9;
@@ -111,15 +124,38 @@
 			// 
 			this.buttonRedo.Display = Wisej.Web.Display.Icon;
 			this.buttonRedo.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/refresh-button-1.svg";
-			this.buttonRedo.Location = new System.Drawing.Point(76, 162);
+			this.buttonRedo.Location = new System.Drawing.Point(76, 224);
 			this.buttonRedo.Name = "buttonRedo";
 			this.buttonRedo.Size = new System.Drawing.Size(42, 42);
 			this.buttonRedo.TabIndex = 10;
 			this.buttonRedo.Click += new System.EventHandler(this.buttonRedo_Click);
 			// 
+			// checkBox2
+			// 
+			this.checkBox2.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBox2.AutoSize = false;
+			this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBox2.Location = new System.Drawing.Point(28, 36);
+			this.checkBox2.Name = "checkBox2";
+			this.checkBox2.Size = new System.Drawing.Size(195, 38);
+			this.checkBox2.TabIndex = 11;
+			this.checkBox2.Text = "Save With Background";
+			// 
+			// checkBox1
+			// 
+			this.checkBox1.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBox1.AutoSize = false;
+			this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBox1.Location = new System.Drawing.Point(28, 87);
+			this.checkBox1.Name = "checkBox1";
+			this.checkBox1.Size = new System.Drawing.Size(195, 38);
+			this.checkBox1.TabIndex = 12;
+			this.checkBox1.Text = "Show Rounded Corner";
+			// 
 			// ejSignature
 			// 
 			this.Name = "ejSignature";
+			this.Size = new System.Drawing.Size(864, 550);
 			this.groupBox1.ResumeLayout(false);
 			this.panel.ResumeLayout(false);
 			this.ResumeLayout(false);
@@ -134,5 +170,7 @@
 		private Button buttonClear;
 		private Button buttonRedo;
 		private Button buttonUndo;
+		private CheckBox checkBox1;
+		private CheckBox checkBox2;
 	}
 }

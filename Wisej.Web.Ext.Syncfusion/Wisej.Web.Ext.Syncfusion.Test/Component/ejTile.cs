@@ -20,6 +20,11 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
+			this.ejTile8.Options.allowSelection = this.checkBox2.Checked;
+			this.ejTile8.Options.showRoundedCorner = this.checkBox3.Checked;
+			this.ejTile8.Options.imagePosition = this.comboBox1.SelectedItem;
+			this.ejTile8.Update();
+
 			this.ejTile5.Options.badge = new {
 				enabled = true,
 				value = (int)this.numericUpDown1.Value

@@ -40,7 +40,13 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			this.ejGrid1.Options.editSettings.allowEditing = this.checkBoxAllowEditing.Checked;
+			this.ejGrid1.Options.editSettings.allowEditing = this.checkBox1.Checked;
+			this.ejGrid1.Options.allowCellMerging = this.checkBox2.Checked;
+			this.ejGrid1.Options.allowGrouping = this.checkBox3.Checked;
+			this.ejGrid1.Options.allowKeyboardNavigation = this.checkBox4.Checked;
+			this.ejGrid1.Options.allowFiltering = this.checkBox5.Checked;
+			this.ejGrid1.Options.allowSorting = this.checkBox6.Checked;
+			this.ejGrid1.Options.allowMultiSorting = this.checkBox7.Checked;
 
 			this.ejGrid1.Update();
 		}

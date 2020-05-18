@@ -16,5 +16,17 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 
 			AlertBox.Show(selectedVal);
 		}
+
+		private void buttonUpdate_Click(object sender, EventArgs e)
+		{
+			this.ejAutocomplete1.Options.autoFocus = this.checkBox1.Checked;
+			this.ejAutocomplete1.Options.caseSensitiveSearch = this.checkBox2.Checked;
+			this.ejAutocomplete1.Options.highlightSearch = this.checkBox3.Checked;
+			this.ejAutocomplete1.Options.showEmptyResultText = this.checkBox4.Checked;
+			this.ejAutocomplete1.Options.showResetIcon = this.checkBox5.Checked;
+			this.ejAutocomplete1.Options.showPopupButton = this.checkBox6.Checked;
+
+			this.ejAutocomplete1.Update();
+		}
 	}
 }

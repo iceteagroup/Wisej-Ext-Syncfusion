@@ -23,8 +23,17 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			this.ejSparkline1.Options.type = this.comboBoxChartType.Text.ToLower();
-			this.ejSparkline1.Options.enableCanvasRendering = this.checkBoxCanvasRendering.Checked;
+			this.ejSparkline1.Options.type = this.comboBox1.SelectedItem.ToString().ToLower();
+			this.ejSparkline1.Options.markerSettings = new
+			{
+				visible = this.checkBox2.Checked,
+				fill = "black"
+			};
+			this.ejSparkline1.Options.axisLineSettings = new
+			{
+				visible = this.checkBox3.Checked,
+				color = "black"
+			};
 
 			this.ejSparkline1.Update();
 		}

@@ -31,8 +31,12 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			this.ejTreeView1.Options.autoCheck = this.checkBoxAutoCheck.Checked;
-			this.ejTreeView1.Options.showCheckbox = this.checkBoxShowCheckbox.Checked;
+			this.ejTreeView1.Options.autoCheck = this.checkBox1.Checked;
+			this.ejTreeView1.Options.showCheckbox = this.checkBox2.Checked;
+			this.ejTreeView1.Options.allowDragAndDrop = this.checkBox3.Checked;
+			this.ejTreeView1.Options.allowEditing = this.checkBox4.Checked;
+			this.ejTreeView1.Options.allowKeyboardNavigation = this.checkBox5.Checked;
+			this.ejTreeView1.Options.allowMultiSelection = this.checkBox6.Checked;
 
 			this.ejTreeView1.Update();
 		}

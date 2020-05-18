@@ -28,8 +28,10 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			this.ejSymbolPalette1.Options.allowDrag = this.checkBoxAllowDrag.Checked;
-			this.ejSymbolPalette1.Options.showPaletteItemText = this.checkBoxShowPaletteItemName.Checked;
+			this.ejSymbolPalette1.Options.allowDrag = this.checkBox2.Checked;
+			this.ejSymbolPalette1.Options.showPaletteItemText = this.checkBox1.Checked;
+			this.ejSymbolPalette1.Options.previewHeight = this.numericUpDown1.Value;
+			this.ejSymbolPalette1.Options.headerHeight = this.numericUpDown2.Value;
 
 			this.ejSymbolPalette1.Update();
 		}

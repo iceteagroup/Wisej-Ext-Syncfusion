@@ -120,7 +120,7 @@
   <data name="ejDiagram1.Options" xml:space="preserve">
     <value>{"pageSettings":{"pageOrientation":"landscape","pageBackgroundColor":"transparent","scrollLimit":"diagram"},"layout":{"type":"none"},"nodeTemplate":"nodeTemplate","defaultSettings":{"node":{"borderColor":"#000000","labels":[{"fontColor":"white"}],"type":"flow","width":90,"height":40},"connector":{"segments":[{"type":"orthogonal"}],"lineWidth":1,"constraints":350974}},"enableContextMenu":true}</value>
   </data>
-  <data name="widgetTemplate1.Template" xml:space="preserve">
+  <data name="widgetTemplate2.Template" xml:space="preserve">
     <value>function nodeTemplate(diagram, node)
 {
     debugger;
@@ -136,8 +136,9 @@
   <metadata name="$this.RulerSnapLines" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
-        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EHAQAAAAABAAAAAAAAAAQU
-        U3lzdGVtLkRyYXdpbmcuUG9pbnQCAAAACw==
+        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EHAQAAAAABAAAAAQAAAAQU
+        U3lzdGVtLkRyYXdpbmcuUG9pbnQCAAAABf3///8UU3lzdGVtLkRyYXdpbmcuUG9pbnQCAAAAAXgBeQAA
+        CAgCAAAAAAAAANQAAAAL
 </value>
   </metadata>
 </root>

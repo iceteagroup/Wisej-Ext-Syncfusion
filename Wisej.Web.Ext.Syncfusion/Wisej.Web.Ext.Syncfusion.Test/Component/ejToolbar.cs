@@ -21,5 +21,13 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 
 			Application.Play(MessageBoxIcon.Information);
 		}
+
+		private void buttonUpdate_Click(object sender, EventArgs e)
+		{
+			this.ejToolbar1.Options.enableSeparator = this.checkBox1.Checked;
+			this.ejToolbar1.Options.showRoundedCorner = this.checkBox2.Checked;
+
+			this.ejToolbar1.Update();
+		}
 	}
 }

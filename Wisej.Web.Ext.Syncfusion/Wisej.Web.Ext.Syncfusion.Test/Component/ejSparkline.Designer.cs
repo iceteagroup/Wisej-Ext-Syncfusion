@@ -29,8 +29,9 @@
 		private void InitializeComponent()
 		{
 			this.ejSparkline1 = new Wisej.Web.Ext.Syncfusion.ejSparkline();
-			this.comboBoxChartType = new Wisej.Web.ComboBox();
-			this.checkBoxCanvasRendering = new Wisej.Web.CheckBox();
+			this.comboBox1 = new Wisej.Web.ComboBox();
+			this.checkBox2 = new Wisej.Web.CheckBox();
+			this.checkBox3 = new Wisej.Web.CheckBox();
 			this.groupBox1.SuspendLayout();
 			this.panel.SuspendLayout();
 			this.SuspendLayout();
@@ -45,19 +46,24 @@
 			// 
 			// groupBox1
 			// 
-			this.groupBox1.Controls.Add(this.checkBoxCanvasRendering);
-			this.groupBox1.Controls.Add(this.comboBoxChartType);
+			this.groupBox1.Controls.Add(this.checkBox3);
+			this.groupBox1.Controls.Add(this.checkBox2);
+			this.groupBox1.Controls.Add(this.comboBox1);
+			this.groupBox1.Size = new System.Drawing.Size(250, 370);
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-			this.groupBox1.Controls.SetChildIndex(this.comboBoxChartType, 0);
-			this.groupBox1.Controls.SetChildIndex(this.checkBoxCanvasRendering, 0);
+			this.groupBox1.Controls.SetChildIndex(this.comboBox1, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBox2, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBox3, 0);
 			// 
 			// buttonUpdate
 			// 
+			this.buttonUpdate.Location = new System.Drawing.Point(28, 284);
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejSparkline1);
+			this.panel.Size = new System.Drawing.Size(455, 370);
 			// 
 			// linkDemo
 			// 
@@ -75,44 +81,54 @@
 			this.ejSparkline1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"isResponsive\":true,\"dataSource\":[2,6,-1,1,12,5,-2,7,-3,5,8,10],\"negativePointCo" +
         "lor\":\"red\",\"highPointColor\":\"blue\",\"tooltip\":{\"visible\":true,\"font\":{\"size\":\"12p" +
         "x\"}},\"type\":\"column\"}")));
-			this.ejSparkline1.Size = new System.Drawing.Size(380, 247);
+			this.ejSparkline1.Size = new System.Drawing.Size(380, 302);
 			this.ejSparkline1.TabIndex = 1;
 			this.ejSparkline1.Text = "ejSparkline1";
 			// 
-			// comboBoxChartType
+			// comboBox1
 			// 
-			this.comboBoxChartType.AutoSize = false;
-			this.comboBoxChartType.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
-			this.comboBoxChartType.Items.AddRange(new object[] {
+			this.comboBox1.AutoSize = false;
+			this.comboBox1.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+			this.comboBox1.Items.AddRange(new object[] {
             "Line",
             "WinLoss",
             "Column",
             "Area"});
-			this.comboBoxChartType.Label.Size = 50;
-			this.comboBoxChartType.Label.SizeType = Wisej.Web.SizeType.Percent;
-			this.comboBoxChartType.Label.Text = "Chart Type";
-			this.comboBoxChartType.Location = new System.Drawing.Point(28, 34);
-			this.comboBoxChartType.Name = "comboBoxChartType";
-			this.comboBoxChartType.Size = new System.Drawing.Size(195, 60);
-			this.comboBoxChartType.TabIndex = 4;
-			this.comboBoxChartType.Text = "Line";
+			this.comboBox1.Label.Size = 50;
+			this.comboBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
+			this.comboBox1.LabelText = "Chart Type";
+			this.comboBox1.Location = new System.Drawing.Point(28, 186);
+			this.comboBox1.Name = "comboBox1";
+			this.comboBox1.Size = new System.Drawing.Size(195, 60);
+			this.comboBox1.TabIndex = 4;
+			this.comboBox1.Text = "Line";
 			// 
-			// checkBoxCanvasRendering
+			// checkBox2
 			// 
-			this.checkBoxCanvasRendering.Appearance = Wisej.Web.Appearance.Switch;
-			this.checkBoxCanvasRendering.AutoSize = false;
-			this.checkBoxCanvasRendering.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBoxCanvasRendering.Checked = true;
-			this.checkBoxCanvasRendering.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBoxCanvasRendering.Location = new System.Drawing.Point(28, 140);
-			this.checkBoxCanvasRendering.Name = "checkBoxCanvasRendering";
-			this.checkBoxCanvasRendering.Size = new System.Drawing.Size(195, 38);
-			this.checkBoxCanvasRendering.TabIndex = 7;
-			this.checkBoxCanvasRendering.Text = "Canvas Rendering";
+			this.checkBox2.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBox2.AutoSize = false;
+			this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBox2.Location = new System.Drawing.Point(28, 34);
+			this.checkBox2.Name = "checkBox2";
+			this.checkBox2.Size = new System.Drawing.Size(195, 38);
+			this.checkBox2.TabIndex = 8;
+			this.checkBox2.Text = "Marker Visible";
+			// 
+			// checkBox3
+			// 
+			this.checkBox3.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBox3.AutoSize = false;
+			this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBox3.Location = new System.Drawing.Point(28, 110);
+			this.checkBox3.Name = "checkBox3";
+			this.checkBox3.Size = new System.Drawing.Size(195, 38);
+			this.checkBox3.TabIndex = 9;
+			this.checkBox3.Text = "Axis Line Visible";
 			// 
 			// ejSparkline
 			// 
 			this.Name = "ejSparkline";
+			this.Size = new System.Drawing.Size(864, 560);
 			this.groupBox1.ResumeLayout(false);
 			this.panel.ResumeLayout(false);
 			this.ResumeLayout(false);
@@ -123,7 +139,8 @@
 		#endregion
 
 		private Syncfusion.ejSparkline ejSparkline1;
-		private ComboBox comboBoxChartType;
-		private CheckBox checkBoxCanvasRendering;
+		private ComboBox comboBox1;
+		private CheckBox checkBox3;
+		private CheckBox checkBox2;
 	}
 }

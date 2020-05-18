@@ -14,6 +14,7 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
+			this.ejTagCloud1.Options.showTitle = this.checkBox1.Checked;
 			this.ejTagCloud1.Options.format = this.comboBoxFormat.Text;
 			this.ejTagCloud1.Options.minFontSize = $"{this.numericUpDownMinimumFontSize.Value}px";
 			this.ejTagCloud1.Options.maxFontSize = $"{this.numericUpDownMaximumFontSize.Value}px";

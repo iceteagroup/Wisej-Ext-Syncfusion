@@ -33,6 +33,7 @@
 			this.numericUpDownMinimumFontSize = new Wisej.Web.NumericUpDown();
 			this.numericUpDownMaximumFontSize = new Wisej.Web.NumericUpDown();
 			this.comboBoxFormat = new Wisej.Web.ComboBox();
+			this.checkBox1 = new Wisej.Web.CheckBox();
 			this.groupBox1.SuspendLayout();
 			this.panel.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDownMinimumFontSize)).BeginInit();
@@ -49,24 +50,26 @@
 			// 
 			// groupBox1
 			// 
+			this.groupBox1.Controls.Add(this.checkBox1);
 			this.groupBox1.Controls.Add(this.comboBoxFormat);
 			this.groupBox1.Controls.Add(this.numericUpDownMaximumFontSize);
 			this.groupBox1.Controls.Add(this.numericUpDownMinimumFontSize);
-			this.groupBox1.Size = new System.Drawing.Size(250, 359);
+			this.groupBox1.Size = new System.Drawing.Size(250, 398);
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
 			this.groupBox1.Controls.SetChildIndex(this.numericUpDownMinimumFontSize, 0);
 			this.groupBox1.Controls.SetChildIndex(this.numericUpDownMaximumFontSize, 0);
 			this.groupBox1.Controls.SetChildIndex(this.comboBoxFormat, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
 			// 
 			// buttonUpdate
 			// 
-			this.buttonUpdate.Location = new System.Drawing.Point(28, 278);
+			this.buttonUpdate.Location = new System.Drawing.Point(28, 314);
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejTagCloud1);
-			this.panel.Size = new System.Drawing.Size(455, 359);
+			this.panel.Size = new System.Drawing.Size(455, 398);
 			// 
 			// linkDemo
 			// 
@@ -81,7 +84,8 @@
 			this.ejTagCloud1.Location = new System.Drawing.Point(19, 17);
 			this.ejTagCloud1.Name = "ejTagCloud1";
 			this.ejTagCloud1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejTagCloud1.Options"))));
-			this.ejTagCloud1.Size = new System.Drawing.Size(415, 323);
+			this.ejTagCloud1.Size = new System.Drawing.Size(415, 362);
+			this.ejTagCloud1.TabIndex = 0;
 			this.ejTagCloud1.Text = "ejTagCloud1";
 			// 
 			// numericUpDownMinimumFontSize
@@ -94,8 +98,8 @@
             0});
 			this.numericUpDownMinimumFontSize.Label.Size = 50;
 			this.numericUpDownMinimumFontSize.Label.SizeType = Wisej.Web.SizeType.Percent;
-			this.numericUpDownMinimumFontSize.Label.Text = "Minimum Font Size";
-			this.numericUpDownMinimumFontSize.Location = new System.Drawing.Point(28, 44);
+			this.numericUpDownMinimumFontSize.LabelText = "Minimum Font Size";
+			this.numericUpDownMinimumFontSize.Location = new System.Drawing.Point(28, 89);
 			this.numericUpDownMinimumFontSize.Maximum = new decimal(new int[] {
             40,
             0,
@@ -125,8 +129,8 @@
             0});
 			this.numericUpDownMaximumFontSize.Label.Size = 50;
 			this.numericUpDownMaximumFontSize.Label.SizeType = Wisej.Web.SizeType.Percent;
-			this.numericUpDownMaximumFontSize.Label.Text = "Maximum Font Size";
-			this.numericUpDownMaximumFontSize.Location = new System.Drawing.Point(28, 120);
+			this.numericUpDownMaximumFontSize.LabelText = "Maximum Font Size";
+			this.numericUpDownMaximumFontSize.Location = new System.Drawing.Point(28, 164);
 			this.numericUpDownMaximumFontSize.Maximum = new decimal(new int[] {
             60,
             0,
@@ -155,17 +159,30 @@
             "List"});
 			this.comboBoxFormat.Label.Size = 50;
 			this.comboBoxFormat.Label.SizeType = Wisej.Web.SizeType.Percent;
-			this.comboBoxFormat.Label.Text = "Format";
-			this.comboBoxFormat.Location = new System.Drawing.Point(28, 196);
+			this.comboBoxFormat.LabelText = "Format";
+			this.comboBoxFormat.Location = new System.Drawing.Point(28, 239);
 			this.comboBoxFormat.Name = "comboBoxFormat";
 			this.comboBoxFormat.Size = new System.Drawing.Size(195, 60);
 			this.comboBoxFormat.TabIndex = 6;
 			this.comboBoxFormat.Text = "Cloud";
 			// 
+			// checkBox1
+			// 
+			this.checkBox1.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBox1.AutoSize = false;
+			this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBox1.Checked = true;
+			this.checkBox1.CheckState = Wisej.Web.CheckState.Checked;
+			this.checkBox1.Location = new System.Drawing.Point(28, 36);
+			this.checkBox1.Name = "checkBox1";
+			this.checkBox1.Size = new System.Drawing.Size(195, 38);
+			this.checkBox1.TabIndex = 9;
+			this.checkBox1.Text = "Show Title";
+			// 
 			// ejTagCloud
 			// 
 			this.Name = "ejTagCloud";
-			this.Size = new System.Drawing.Size(864, 549);
+			this.Size = new System.Drawing.Size(864, 588);
 			this.groupBox1.ResumeLayout(false);
 			this.panel.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDownMinimumFontSize)).EndInit();
@@ -181,5 +198,6 @@
 		private NumericUpDown numericUpDownMaximumFontSize;
 		private NumericUpDown numericUpDownMinimumFontSize;
 		private ComboBox comboBoxFormat;
+		private CheckBox checkBox1;
 	}
 }

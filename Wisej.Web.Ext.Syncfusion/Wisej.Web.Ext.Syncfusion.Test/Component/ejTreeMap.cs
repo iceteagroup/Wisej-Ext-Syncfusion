@@ -21,5 +21,15 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 
 			Application.Play(MessageBoxIcon.Information);
 		}
+
+		private void buttonUpdate_Click(object sender, EventArgs e)
+		{
+			this.ejTreeMap1.Options.enableGradient = this.checkBox2.Checked;
+			this.ejTreeMap1.Options.highlightOnSelection = this.checkBox3.Checked;
+			this.ejTreeMap1.Options.itemsLayoutMode = this.comboBox1.SelectedItem;
+			this.ejTreeMap1.Options.groupSelectionMode = this.comboBox2.SelectedItem;
+
+			this.ejTreeMap1.Update();
+		}
 	}
 }

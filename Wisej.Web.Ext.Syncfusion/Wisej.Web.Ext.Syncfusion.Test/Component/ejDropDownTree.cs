@@ -16,9 +16,12 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			this.ejDropDownTree1.Options.enableFilterSearch = this.checkBoxEnableFilterSearch.Checked;
-			this.ejDropDownTree1.Options.treeViewSettings.showCheckbox = this.checkBoxShowCheckbox.Checked;
-			this.ejDropDownTree1.Options.popupSettings.height = $"{this.numericUpDownPopupHeight.Value}px";
+			this.ejDropDownTree1.Options.showRoundedCorner = this.checkBox1.Checked;
+			this.ejDropDownTree1.Options.popupSettings = new 
+			{ 
+				showPopupOnLoad = this.checkBox2.Checked,
+				height = $"{this.numericUpDownPopupHeight.Value}px"
+			};
 
 			this.ejDropDownTree1.Update();
 		}

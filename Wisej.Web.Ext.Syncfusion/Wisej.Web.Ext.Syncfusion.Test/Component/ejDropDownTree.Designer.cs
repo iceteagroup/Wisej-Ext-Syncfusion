@@ -30,9 +30,10 @@
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ejDropDownTree));
 			this.ejDropDownTree1 = new Wisej.Web.Ext.Syncfusion.ejDropDownTree();
-			this.checkBoxShowCheckbox = new Wisej.Web.CheckBox();
-			this.checkBoxEnableFilterSearch = new Wisej.Web.CheckBox();
+			this.checkBox1 = new Wisej.Web.CheckBox();
+			this.checkBox2 = new Wisej.Web.CheckBox();
 			this.numericUpDownPopupHeight = new Wisej.Web.NumericUpDown();
+			this.checkBox3 = new Wisej.Web.CheckBox();
 			this.groupBox1.SuspendLayout();
 			this.panel.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDownPopupHeight)).BeginInit();
@@ -48,21 +49,26 @@
 			// 
 			// groupBox1
 			// 
+			this.groupBox1.Controls.Add(this.checkBox3);
 			this.groupBox1.Controls.Add(this.numericUpDownPopupHeight);
-			this.groupBox1.Controls.Add(this.checkBoxEnableFilterSearch);
-			this.groupBox1.Controls.Add(this.checkBoxShowCheckbox);
+			this.groupBox1.Controls.Add(this.checkBox2);
+			this.groupBox1.Controls.Add(this.checkBox1);
+			this.groupBox1.Size = new System.Drawing.Size(250, 437);
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-			this.groupBox1.Controls.SetChildIndex(this.checkBoxShowCheckbox, 0);
-			this.groupBox1.Controls.SetChildIndex(this.checkBoxEnableFilterSearch, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBox2, 0);
 			this.groupBox1.Controls.SetChildIndex(this.numericUpDownPopupHeight, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBox3, 0);
 			// 
 			// buttonUpdate
 			// 
+			this.buttonUpdate.Location = new System.Drawing.Point(28, 354);
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejDropDownTree1);
+			this.panel.Size = new System.Drawing.Size(455, 444);
 			// 
 			// linkDemo
 			// 
@@ -73,39 +79,36 @@
 			// ejDropDownTree1
 			// 
 			this.ejDropDownTree1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
-			this.ejDropDownTree1.Location = new System.Drawing.Point(126, 141);
+			this.ejDropDownTree1.Location = new System.Drawing.Point(126, 206);
 			this.ejDropDownTree1.Name = "ejDropDownTree1";
 			this.ejDropDownTree1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejDropDownTree1.Options"))));
 			this.ejDropDownTree1.Size = new System.Drawing.Size(200, 30);
+			this.ejDropDownTree1.TabIndex = 0;
 			this.ejDropDownTree1.Text = "ejDropDownTree1";
 			// 
 			// checkBox1
 			// 
-			this.checkBoxShowCheckbox.Appearance = Wisej.Web.Appearance.Switch;
-			this.checkBoxShowCheckbox.AutoSize = false;
-			this.checkBoxShowCheckbox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBoxShowCheckbox.Checked = true;
-			this.checkBoxShowCheckbox.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBoxShowCheckbox.Location = new System.Drawing.Point(28, 36);
-			this.checkBoxShowCheckbox.Name = "checkBox1";
-			this.checkBoxShowCheckbox.Size = new System.Drawing.Size(195, 38);
-			this.checkBoxShowCheckbox.TabIndex = 7;
-			this.checkBoxShowCheckbox.Text = "Multi-Select";
+			this.checkBox1.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBox1.AutoSize = false;
+			this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBox1.Location = new System.Drawing.Point(28, 36);
+			this.checkBox1.Name = "checkBox1";
+			this.checkBox1.Size = new System.Drawing.Size(195, 38);
+			this.checkBox1.TabIndex = 7;
+			this.checkBox1.Text = "Show Rounded Corner";
 			// 
 			// checkBox2
 			// 
-			this.checkBoxEnableFilterSearch.Appearance = Wisej.Web.Appearance.Switch;
-			this.checkBoxEnableFilterSearch.AutoSize = false;
-			this.checkBoxEnableFilterSearch.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBoxEnableFilterSearch.Checked = true;
-			this.checkBoxEnableFilterSearch.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBoxEnableFilterSearch.Location = new System.Drawing.Point(28, 94);
-			this.checkBoxEnableFilterSearch.Name = "checkBox2";
-			this.checkBoxEnableFilterSearch.Size = new System.Drawing.Size(195, 38);
-			this.checkBoxEnableFilterSearch.TabIndex = 8;
-			this.checkBoxEnableFilterSearch.Text = "Enable Filter Search";
+			this.checkBox2.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBox2.AutoSize = false;
+			this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBox2.Location = new System.Drawing.Point(28, 110);
+			this.checkBox2.Name = "checkBox2";
+			this.checkBox2.Size = new System.Drawing.Size(195, 38);
+			this.checkBox2.TabIndex = 8;
+			this.checkBox2.Text = "Show Popup on Load";
 			// 
-			// numericUpDown1
+			// numericUpDownPopupHeight
 			// 
 			this.numericUpDownPopupHeight.AutoSize = false;
 			this.numericUpDownPopupHeight.Increment = new decimal(new int[] {
@@ -115,14 +118,14 @@
             0});
 			this.numericUpDownPopupHeight.Label.Size = 50;
 			this.numericUpDownPopupHeight.Label.SizeType = Wisej.Web.SizeType.Percent;
-			this.numericUpDownPopupHeight.Label.Text = "Popup Height";
-			this.numericUpDownPopupHeight.Location = new System.Drawing.Point(28, 142);
+			this.numericUpDownPopupHeight.LabelText = "Popup Height";
+			this.numericUpDownPopupHeight.Location = new System.Drawing.Point(28, 258);
 			this.numericUpDownPopupHeight.Maximum = new decimal(new int[] {
             300,
             0,
             0,
             0});
-			this.numericUpDownPopupHeight.Name = "numericUpDown1";
+			this.numericUpDownPopupHeight.Name = "numericUpDownPopupHeight";
 			this.numericUpDownPopupHeight.Size = new System.Drawing.Size(195, 60);
 			this.numericUpDownPopupHeight.TabIndex = 9;
 			this.numericUpDownPopupHeight.Value = new decimal(new int[] {
@@ -131,9 +134,23 @@
             0,
             0});
 			// 
+			// checkBox3
+			// 
+			this.checkBox3.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBox3.AutoSize = false;
+			this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBox3.Checked = true;
+			this.checkBox3.CheckState = Wisej.Web.CheckState.Checked;
+			this.checkBox3.Location = new System.Drawing.Point(28, 184);
+			this.checkBox3.Name = "checkBox3";
+			this.checkBox3.Size = new System.Drawing.Size(195, 38);
+			this.checkBox3.TabIndex = 10;
+			this.checkBox3.Text = "Allow Keyboard Navigation";
+			// 
 			// ejDropDownTree
 			// 
 			this.Name = "ejDropDownTree";
+			this.Size = new System.Drawing.Size(864, 634);
 			this.groupBox1.ResumeLayout(false);
 			this.panel.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDownPopupHeight)).EndInit();
@@ -145,8 +162,9 @@
 		#endregion
 
 		private Syncfusion.ejDropDownTree ejDropDownTree1;
-		private CheckBox checkBoxShowCheckbox;
-		private CheckBox checkBoxEnableFilterSearch;
+		private CheckBox checkBox1;
+		private CheckBox checkBox2;
 		private NumericUpDown numericUpDownPopupHeight;
+		private CheckBox checkBox3;
 	}
 }

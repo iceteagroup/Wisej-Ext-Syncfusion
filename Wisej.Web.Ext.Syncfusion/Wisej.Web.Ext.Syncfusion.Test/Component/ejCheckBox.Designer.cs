@@ -43,6 +43,9 @@
 			this.label6 = new Wisej.Web.Label();
 			this.ejCheckBox8 = new Wisej.Web.Ext.Syncfusion.ejCheckBox();
 			this.ejCheckBox9 = new Wisej.Web.Ext.Syncfusion.ejCheckBox();
+			this.label7 = new Wisej.Web.Label();
+			this.checkBox2 = new Wisej.Web.CheckBox();
+			this.checkBox1 = new Wisej.Web.CheckBox();
 			this.groupBox1.SuspendLayout();
 			this.panel.SuspendLayout();
 			this.panel1.SuspendLayout();
@@ -57,6 +60,21 @@
 			// linkAPI
 			// 
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejcheckbox";
+			// 
+			// groupBox1
+			// 
+			this.groupBox1.Controls.Add(this.checkBox1);
+			this.groupBox1.Controls.Add(this.checkBox2);
+			this.groupBox1.Controls.Add(this.label7);
+			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
+			this.groupBox1.Controls.SetChildIndex(this.label7, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBox2, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
+			// 
+			// buttonUpdate
+			// 
+			this.buttonUpdate.Location = new System.Drawing.Point(28, 232);
+			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
@@ -81,7 +99,6 @@
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(350, 71);
 			this.panel1.TabIndex = 9;
-			this.panel1.TabStop = true;
 			// 
 			// ejCheckBox6
 			// 
@@ -98,7 +115,7 @@
 			this.label4.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
 			this.label4.Location = new System.Drawing.Point(3, 13);
 			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(61, 16);
+			this.label4.Size = new System.Drawing.Size(55, 15);
 			this.label4.TabIndex = 3;
 			this.label4.Text = "Hobbies";
 			// 
@@ -133,7 +150,6 @@
 			this.panel2.Name = "panel2";
 			this.panel2.Size = new System.Drawing.Size(350, 71);
 			this.panel2.TabIndex = 10;
-			this.panel2.TabStop = true;
 			// 
 			// ejCheckBox3
 			// 
@@ -150,7 +166,7 @@
 			this.label5.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
 			this.label5.Location = new System.Drawing.Point(3, 13);
 			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(164, 16);
+			this.label5.Size = new System.Drawing.Size(155, 15);
 			this.label5.TabIndex = 3;
 			this.label5.Text = "Favorite Search Engines";
 			// 
@@ -185,7 +201,6 @@
 			this.panel3.Name = "panel3";
 			this.panel3.Size = new System.Drawing.Size(350, 71);
 			this.panel3.TabIndex = 11;
-			this.panel3.TabStop = true;
 			// 
 			// ejCheckBox7
 			// 
@@ -202,7 +217,7 @@
 			this.label6.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
 			this.label6.Location = new System.Drawing.Point(3, 13);
 			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(167, 16);
+			this.label6.Size = new System.Drawing.Size(158, 15);
 			this.label6.TabIndex = 3;
 			this.label6.Text = "Favorite Social Networks";
 			// 
@@ -224,6 +239,36 @@
 			this.ejCheckBox9.Size = new System.Drawing.Size(70, 33);
 			this.ejCheckBox9.TabIndex = 2;
 			this.ejCheckBox9.Text = "ejCheckBox9";
+			// 
+			// label7
+			// 
+			this.label7.Location = new System.Drawing.Point(28, 36);
+			this.label7.Name = "label7";
+			this.label7.Size = new System.Drawing.Size(195, 45);
+			this.label7.TabIndex = 1;
+			this.label7.Text = "Note: Properties change \"Music\" CheckBox";
+			// 
+			// checkBox2
+			// 
+			this.checkBox2.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBox2.AutoSize = false;
+			this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBox2.Location = new System.Drawing.Point(28, 112);
+			this.checkBox2.Name = "checkBox2";
+			this.checkBox2.Size = new System.Drawing.Size(195, 29);
+			this.checkBox2.TabIndex = 6;
+			this.checkBox2.Text = "Enable Tri State";
+			// 
+			// checkBox1
+			// 
+			this.checkBox1.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBox1.AutoSize = false;
+			this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBox1.Location = new System.Drawing.Point(28, 172);
+			this.checkBox1.Name = "checkBox1";
+			this.checkBox1.Size = new System.Drawing.Size(195, 29);
+			this.checkBox1.TabIndex = 7;
+			this.checkBox1.Text = "Show Rounded Corner";
 			// 
 			// ejCheckBox
 			// 
@@ -258,5 +303,8 @@
 		private Label label6;
 		private Syncfusion.ejCheckBox ejCheckBox8;
 		private Syncfusion.ejCheckBox ejCheckBox9;
+		private Label label7;
+		private CheckBox checkBox1;
+		private CheckBox checkBox2;
 	}
 }

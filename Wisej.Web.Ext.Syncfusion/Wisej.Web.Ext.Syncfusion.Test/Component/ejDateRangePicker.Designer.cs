@@ -72,31 +72,32 @@
 			this.ejDateRangePicker1.Name = "ejDateRangePicker1";
 			this.ejDateRangePicker1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":\"1/1/2020 - 1/15/2020\"}")));
 			this.ejDateRangePicker1.Size = new System.Drawing.Size(200, 30);
+			this.ejDateRangePicker1.TabIndex = 0;
 			this.ejDateRangePicker1.Text = "ejDateRangePicker1";
 			// 
-			// textBox1
+			// textBoxStartDay
 			// 
 			this.textBoxStartDay.AutoSize = false;
 			this.textBoxStartDay.InputType.Type = Wisej.Web.TextBoxType.Date;
 			this.textBoxStartDay.Label.Size = 50;
 			this.textBoxStartDay.Label.SizeType = Wisej.Web.SizeType.Percent;
-			this.textBoxStartDay.Label.Text = "Start Date";
+			this.textBoxStartDay.LabelText = "Start Date";
 			this.textBoxStartDay.Location = new System.Drawing.Point(28, 43);
-			this.textBoxStartDay.Name = "textBox1";
+			this.textBoxStartDay.Name = "textBoxStartDay";
 			this.textBoxStartDay.Size = new System.Drawing.Size(195, 60);
 			this.textBoxStartDay.TabIndex = 2;
 			this.textBoxStartDay.Text = "2020-01-01";
 			this.textBoxStartDay.Watermark = "Select date...";
 			// 
-			// textBox2
+			// textBoxEndDay
 			// 
 			this.textBoxEndDay.AutoSize = false;
 			this.textBoxEndDay.InputType.Type = Wisej.Web.TextBoxType.Date;
 			this.textBoxEndDay.Label.Size = 50;
 			this.textBoxEndDay.Label.SizeType = Wisej.Web.SizeType.Percent;
-			this.textBoxEndDay.Label.Text = "End Date";
+			this.textBoxEndDay.LabelText = "End Date";
 			this.textBoxEndDay.Location = new System.Drawing.Point(28, 127);
-			this.textBoxEndDay.Name = "textBox2";
+			this.textBoxEndDay.Name = "textBoxEndDay";
 			this.textBoxEndDay.Size = new System.Drawing.Size(195, 60);
 			this.textBoxEndDay.TabIndex = 3;
 			this.textBoxEndDay.Text = "2020-01-15";

@@ -21,8 +21,14 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 		{
 			LoadData();
 
-			this.ejDiagram1.Options.enableContextMenu = this.checkBoxEnableContextMenu.Checked;
-			this.ejDiagram1.Options.constraints = this.checkBoxConstraints.Checked ? 6 : 0;
+			this.ejDiagram1.Options.enableContextMenu = this.checkBox2.Checked;
+			this.ejDiagram1.Options.constraints = this.checkBox1.Checked ? 6 : 0;
+			this.ejDiagram1.Options.enableAutoScroll = this.checkBox3.Checked;
+			this.ejDiagram1.Options.bridgeDirection = this.comboBox2.SelectedItem.ToString().ToLower();
+			this.ejDiagram1.Options.layout = new
+			{
+				type = this.comboBox1.SelectedItem.ToString().ToLower()
+			};
 
 			this.ejDiagram1.Update();
 		}

@@ -34,7 +34,7 @@
 			this.checkBox2 = new Wisej.Web.CheckBox();
 			this.comboBox1 = new Wisej.Web.ComboBox();
 			this.buttonPlay = new Wisej.Web.Button();
-			this.buttonPause = new Wisej.Web.Button();
+			this.button1 = new Wisej.Web.Button();
 			this.groupBox1.SuspendLayout();
 			this.panel.SuspendLayout();
 			this.SuspendLayout();
@@ -49,7 +49,7 @@
 			// 
 			// groupBox1
 			// 
-			this.groupBox1.Controls.Add(this.buttonPause);
+			this.groupBox1.Controls.Add(this.button1);
 			this.groupBox1.Controls.Add(this.buttonPlay);
 			this.groupBox1.Controls.Add(this.comboBox1);
 			this.groupBox1.Controls.Add(this.checkBox2);
@@ -60,7 +60,7 @@
 			this.groupBox1.Controls.SetChildIndex(this.checkBox2, 0);
 			this.groupBox1.Controls.SetChildIndex(this.comboBox1, 0);
 			this.groupBox1.Controls.SetChildIndex(this.buttonPlay, 0);
-			this.groupBox1.Controls.SetChildIndex(this.buttonPause, 0);
+			this.groupBox1.Controls.SetChildIndex(this.button1, 0);
 			// 
 			// buttonUpdate
 			// 
@@ -84,6 +84,7 @@
 			this.ejRotator1.Name = "ejRotator1";
 			this.ejRotator1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejRotator1.Options"))));
 			this.ejRotator1.Size = new System.Drawing.Size(630, 380);
+			this.ejRotator1.TabIndex = 0;
 			this.ejRotator1.Text = "ejRotator1";
 			// 
 			// checkBox1
@@ -93,7 +94,7 @@
 			this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBox1.Checked = true;
 			this.checkBox1.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBox1.Location = new System.Drawing.Point(28, 32);
+			this.checkBox1.Location = new System.Drawing.Point(28, 36);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(183, 38);
 			this.checkBox1.TabIndex = 7;
@@ -106,7 +107,7 @@
 			this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBox2.Checked = true;
 			this.checkBox2.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBox2.Location = new System.Drawing.Point(28, 76);
+			this.checkBox2.Location = new System.Drawing.Point(28, 91);
 			this.checkBox2.Name = "checkBox2";
 			this.checkBox2.Size = new System.Drawing.Size(183, 38);
 			this.checkBox2.TabIndex = 8;
@@ -122,8 +123,8 @@
             "SlowSlide"});
 			this.comboBox1.Label.Size = 50;
 			this.comboBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
-			this.comboBox1.Label.Text = "Animation Type";
-			this.comboBox1.Location = new System.Drawing.Point(28, 120);
+			this.comboBox1.LabelText = "Animation Type";
+			this.comboBox1.Location = new System.Drawing.Point(28, 146);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(195, 60);
 			this.comboBox1.TabIndex = 9;
@@ -133,21 +134,21 @@
 			// 
 			this.buttonPlay.Display = Wisej.Web.Display.Icon;
 			this.buttonPlay.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/play-arrow.svg";
-			this.buttonPlay.Location = new System.Drawing.Point(28, 198);
+			this.buttonPlay.Location = new System.Drawing.Point(28, 223);
 			this.buttonPlay.Name = "buttonPlay";
 			this.buttonPlay.Size = new System.Drawing.Size(42, 42);
 			this.buttonPlay.TabIndex = 10;
 			this.buttonPlay.Click += new System.EventHandler(this.buttonPlay_Click);
 			// 
-			// buttonPause
+			// button1
 			// 
-			this.buttonPause.Display = Wisej.Web.Display.Icon;
-			this.buttonPause.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/pause-button.svg";
-			this.buttonPause.Location = new System.Drawing.Point(76, 198);
-			this.buttonPause.Name = "buttonPause";
-			this.buttonPause.Size = new System.Drawing.Size(42, 42);
-			this.buttonPause.TabIndex = 11;
-			this.buttonPause.Click += new System.EventHandler(this.buttonPause_Click);
+			this.button1.Display = Wisej.Web.Display.Icon;
+			this.button1.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/pause-button.svg";
+			this.button1.Location = new System.Drawing.Point(76, 223);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(42, 42);
+			this.button1.TabIndex = 11;
+			this.button1.Click += new System.EventHandler(this.buttonPause_Click);
 			// 
 			// ejRotator
 			// 
@@ -167,6 +168,6 @@
 		private CheckBox checkBox1;
 		private ComboBox comboBox1;
 		private Button buttonPlay;
-		private Button buttonPause;
+		private Button button1;
 	}
 }

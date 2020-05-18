@@ -15,8 +15,12 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			this.ejKanban1.Options.selectionType = this.comboBoxSelectionType.Text;
-			this.ejKanban1.Options.allowDragAndDrop = this.checkBoxAllowDragAndDrop.Checked;
+			this.ejKanban1.Options.selectionType = this.comboBox1.Text;
+			this.ejKanban1.Options.allowDragAndDrop = this.checkBox1.Checked;
+			this.ejKanban1.Options.allowTitle = this.checkBox2.Checked;
+			this.ejKanban1.Options.allowSearching = this.checkBox3.Checked;
+			this.ejKanban1.Options.allowFiltering = this.checkBox4.Checked;
+			this.ejKanban1.Options.allowPrinting = this.checkBox5.Checked;
 
 			this.ejKanban1.Update();
 		}

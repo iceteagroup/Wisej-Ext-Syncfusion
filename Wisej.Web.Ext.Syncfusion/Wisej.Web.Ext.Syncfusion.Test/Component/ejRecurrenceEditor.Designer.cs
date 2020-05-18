@@ -30,9 +30,13 @@
 		{
 			this.ejRecurrenceEditor1 = new Wisej.Web.Ext.Syncfusion.ejRecurrenceEditor();
 			this.buttonGenerateRule = new Wisej.Web.Button();
-			this.checkBoxEnableSpinners = new Wisej.Web.CheckBox();
+			this.checkBox1 = new Wisej.Web.CheckBox();
+			this.dateTimePicker1 = new Wisej.Web.DateTimePicker();
+			this.dateTimePicker2 = new Wisej.Web.DateTimePicker();
+			this.numericUpDown1 = new Wisej.Web.NumericUpDown();
 			this.groupBox1.SuspendLayout();
 			this.panel.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// linkDocs
@@ -45,19 +49,28 @@
 			// 
 			// groupBox1
 			// 
-			this.groupBox1.Controls.Add(this.checkBoxEnableSpinners);
+			this.groupBox1.Controls.Add(this.numericUpDown1);
+			this.groupBox1.Controls.Add(this.dateTimePicker2);
+			this.groupBox1.Controls.Add(this.dateTimePicker1);
+			this.groupBox1.Controls.Add(this.checkBox1);
 			this.groupBox1.Controls.Add(this.buttonGenerateRule);
+			this.groupBox1.Size = new System.Drawing.Size(250, 427);
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
 			this.groupBox1.Controls.SetChildIndex(this.buttonGenerateRule, 0);
-			this.groupBox1.Controls.SetChildIndex(this.checkBoxEnableSpinners, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
+			this.groupBox1.Controls.SetChildIndex(this.dateTimePicker1, 0);
+			this.groupBox1.Controls.SetChildIndex(this.dateTimePicker2, 0);
+			this.groupBox1.Controls.SetChildIndex(this.numericUpDown1, 0);
 			// 
 			// buttonUpdate
 			// 
+			this.buttonUpdate.Location = new System.Drawing.Point(28, 341);
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejRecurrenceEditor1);
+			this.panel.Size = new System.Drawing.Size(455, 427);
 			// 
 			// linkDemo
 			// 
@@ -66,41 +79,90 @@
 			// 
 			// ejRecurrenceEditor1
 			// 
-			this.ejRecurrenceEditor1.Anchor = Wisej.Web.AnchorStyles.None;
+			this.ejRecurrenceEditor1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
+            | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
 			this.ejRecurrenceEditor1.BorderStyle = Wisej.Web.BorderStyle.Solid;
-			this.ejRecurrenceEditor1.Location = new System.Drawing.Point(45, 9);
+			this.ejRecurrenceEditor1.Location = new System.Drawing.Point(45, 65);
 			this.ejRecurrenceEditor1.Name = "ejRecurrenceEditor1";
 			this.ejRecurrenceEditor1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"selectedRecurrenceType\":1,\"isResponsive\":true}")));
 			this.ejRecurrenceEditor1.Size = new System.Drawing.Size(362, 294);
+			this.ejRecurrenceEditor1.TabIndex = 0;
 			this.ejRecurrenceEditor1.Text = "ejRecurrenceEditor1";
 			// 
 			// buttonGenerateRule
 			// 
-			this.buttonGenerateRule.Location = new System.Drawing.Point(28, 134);
+			this.buttonGenerateRule.Location = new System.Drawing.Point(28, 288);
 			this.buttonGenerateRule.Name = "buttonGenerateRule";
 			this.buttonGenerateRule.Size = new System.Drawing.Size(195, 30);
 			this.buttonGenerateRule.TabIndex = 3;
 			this.buttonGenerateRule.Text = "Generate Rule";
 			this.buttonGenerateRule.Click += new System.EventHandler(this.buttonGenerateRule_Click);
 			// 
-			// checkBoxEnableSpinners
+			// checkBox1
 			// 
-			this.checkBoxEnableSpinners.Appearance = Wisej.Web.Appearance.Switch;
-			this.checkBoxEnableSpinners.AutoSize = false;
-			this.checkBoxEnableSpinners.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBoxEnableSpinners.Checked = true;
-			this.checkBoxEnableSpinners.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBoxEnableSpinners.Location = new System.Drawing.Point(28, 42);
-			this.checkBoxEnableSpinners.Name = "checkBoxEnableSpinners";
-			this.checkBoxEnableSpinners.Size = new System.Drawing.Size(195, 38);
-			this.checkBoxEnableSpinners.TabIndex = 8;
-			this.checkBoxEnableSpinners.Text = "Enable Spinners";
+			this.checkBox1.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBox1.AutoSize = false;
+			this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBox1.Checked = true;
+			this.checkBox1.CheckState = Wisej.Web.CheckState.Checked;
+			this.checkBox1.Location = new System.Drawing.Point(28, 35);
+			this.checkBox1.Name = "checkBox1";
+			this.checkBox1.Size = new System.Drawing.Size(195, 38);
+			this.checkBox1.TabIndex = 8;
+			this.checkBox1.Text = "Enable Spinners";
+			// 
+			// dateTimePicker1
+			// 
+			this.dateTimePicker1.Checked = false;
+			this.dateTimePicker1.LabelText = "Max Date";
+			this.dateTimePicker1.Location = new System.Drawing.Point(28, 96);
+			this.dateTimePicker1.Name = "dateTimePicker1";
+			this.dateTimePicker1.Size = new System.Drawing.Size(195, 41);
+			this.dateTimePicker1.TabIndex = 9;
+			this.dateTimePicker1.Value = new System.DateTime(2020, 5, 18, 15, 25, 37, 9);
+			// 
+			// dateTimePicker2
+			// 
+			this.dateTimePicker2.Checked = false;
+			this.dateTimePicker2.LabelText = "MinDate";
+			this.dateTimePicker2.Location = new System.Drawing.Point(28, 160);
+			this.dateTimePicker2.Name = "dateTimePicker2";
+			this.dateTimePicker2.Size = new System.Drawing.Size(195, 41);
+			this.dateTimePicker2.TabIndex = 10;
+			this.dateTimePicker2.Value = new System.DateTime(2020, 5, 18, 15, 25, 38, 739);
+			// 
+			// numericUpDown1
+			// 
+			this.numericUpDown1.LabelText = "Selected Recurrence Type";
+			this.numericUpDown1.Location = new System.Drawing.Point(28, 224);
+			this.numericUpDown1.Maximum = new decimal(new int[] {
+            4,
+            0,
+            0,
+            0});
+			this.numericUpDown1.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+			this.numericUpDown1.Name = "numericUpDown1";
+			this.numericUpDown1.Size = new System.Drawing.Size(195, 41);
+			this.numericUpDown1.TabIndex = 11;
+			this.numericUpDown1.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
 			// 
 			// ejRecurrenceEditor
 			// 
 			this.Name = "ejRecurrenceEditor";
+			this.Size = new System.Drawing.Size(864, 617);
 			this.groupBox1.ResumeLayout(false);
+			this.groupBox1.PerformLayout();
 			this.panel.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -110,6 +172,9 @@
 
 		private Syncfusion.ejRecurrenceEditor ejRecurrenceEditor1;
 		private Button buttonGenerateRule;
-		private CheckBox checkBoxEnableSpinners;
+		private CheckBox checkBox1;
+		private NumericUpDown numericUpDown1;
+		private DateTimePicker dateTimePicker2;
+		private DateTimePicker dateTimePicker1;
 	}
 }

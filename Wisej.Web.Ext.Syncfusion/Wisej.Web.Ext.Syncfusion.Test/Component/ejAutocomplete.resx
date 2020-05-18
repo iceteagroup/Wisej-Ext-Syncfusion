@@ -118,13 +118,14 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ejAutocomplete1.Options" xml:space="preserve">
-    <value>{"width":"100%","watermarkText":"Select a car","dataSource":["Audi S6","Austin-Healey","Alfa Romeo","Aston Martin","BMW 7","Bentley Mulsanne","Bugatti Veyron","Chevrolet Camaro","Cadillac","Duesenberg J","Dodge Sprinter","Elantra","Excavator","Ford Boss 302","Ferrari 360","Ford Thunderbird","GAZ Siber","Honda S2000","Hyundai Santro","Isuzu Swift","Infiniti Skyline","Jaguar XJS","Kia Sedona EX","Koenigsegg Agera","Lotus Esprit","Lamborghini Diablo","Mercedes-Benz","Mercury Coupe","Maruti Alto 800","Nissan Qashqai","Oldsmobile S98","Opel Superboss","Porsche 356","Pontiac Sunbird","Scion SRS/SC/SD","Saab Sportcombi","Subaru Sambar","Suzuki Swift","Triumph Spitfire","Toyota 2000GT","Volvo P1800","Volkswagen Shirako"]}</value>
+    <value>{"watermarkText":"Select a car","dataSource":["Audi S6","Austin-Healey","Alfa Romeo","Aston Martin","BMW 7","Bentley Mulsanne","Bugatti Veyron","Chevrolet Camaro","Cadillac","Duesenberg J","Dodge Sprinter","Elantra","Excavator","Ford Boss 302","Ferrari 360","Ford Thunderbird","GAZ Siber","Honda S2000","Hyundai Santro","Isuzu Swift","Infiniti Skyline","Jaguar XJS","Kia Sedona EX","Koenigsegg Agera","Lotus Esprit","Lamborghini Diablo","Mercedes-Benz","Mercury Coupe","Maruti Alto 800","Nissan Qashqai","Oldsmobile S98","Opel Superboss","Porsche 356","Pontiac Sunbird","Scion SRS/SC/SD","Saab Sportcombi","Subaru Sambar","Suzuki Swift","Triumph Spitfire","Toyota 2000GT","Volvo P1800","Volkswagen Shirako"]}</value>
   </data>
   <metadata name="$this.RulerSnapLines" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
-        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EHAQAAAAABAAAAAAAAAAQU
-        U3lzdGVtLkRyYXdpbmcuUG9pbnQCAAAACw==
+        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EHAQAAAAABAAAAAQAAAAQU
+        U3lzdGVtLkRyYXdpbmcuUG9pbnQCAAAABf3///8UU3lzdGVtLkRyYXdpbmcuUG9pbnQCAAAAAXgBeQAA
+        CAgCAAAAAAAAANQAAAAL
 </value>
   </metadata>
 </root>

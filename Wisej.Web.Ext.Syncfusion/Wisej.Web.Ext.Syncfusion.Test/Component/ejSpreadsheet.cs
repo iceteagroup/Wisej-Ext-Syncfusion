@@ -20,9 +20,14 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 		{
 			this.ejSpreadsheet1.Options.showRibbon = this.checkBox1.Checked;
 			this.ejSpreadsheet1.Options.allowEditing = this.checkBox2.Checked;
+			this.ejSpreadsheet1.Options.allowAutoCellType = this.checkBox3.Checked;
+			this.ejSpreadsheet1.Options.allowAutoFill = this.checkBox4.Checked;
+			this.ejSpreadsheet1.Options.enablePivotTable = this.checkBox5.Checked;
+			this.ejSpreadsheet1.Options.formatSettings = new { 
+				allowCellBorder = this.checkBox6.Checked
+			};
 
 			this.ejSpreadsheet1.Update();
-
 		}
 
 		private void buttonLoad_Uploaded(object sender, UploadedEventArgs e)

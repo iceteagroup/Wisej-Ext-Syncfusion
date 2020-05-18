@@ -40,5 +40,13 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 		{
 			this.ejSignature1.Widget.undo();
 		}
+
+		private void buttonUpdate_Click(object sender, EventArgs e)
+		{
+			this.ejSignature1.Options.saveWithBackground = this.checkBox1.Checked;
+			this.ejSignature1.Options.showRoundedCorner = this.checkBox2.Checked;
+
+			this.ejSignature1.Update();
+		}
 	}
 }

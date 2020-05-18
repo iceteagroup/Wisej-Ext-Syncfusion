@@ -10,6 +10,9 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 			InitializeComponent();
 
 			this.ejRecurrenceEditor1.Widget.change += new WidgetEventHandler(ejRecurrenceEditor1_WidgetEvent);
+
+			//this.dateTimePicker1.Value = this.dateTimePicker1.MaxDate;
+			//this.dateTimePicker2.Value = this.dateTimePicker2.MinDate;
 		}
 
 		private void ejRecurrenceEditor1_WidgetEvent(object sender, WidgetEventArgs e)
@@ -30,7 +33,10 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			this.ejRecurrenceEditor1.Widget.enableSpinners = this.checkBoxEnableSpinners.Checked;
+			this.ejRecurrenceEditor1.Options.enableSpinners = this.checkBox1.Checked;
+			this.ejRecurrenceEditor1.Options.maxDate = this.dateTimePicker1.ToString();
+			this.ejRecurrenceEditor1.Options.minDate = this.dateTimePicker2.ToString();
+			this.ejRecurrenceEditor1.Options.selectedRecurrenceType = this.numericUpDown1.Value;
 
 			this.ejRecurrenceEditor1.Update();
 		}

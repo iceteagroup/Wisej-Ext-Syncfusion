@@ -31,5 +31,10 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 
 			Application.Play(MessageBoxIcon.Information);
 		}
+
+		private void buttonSave_Click(object sender, EventArgs e)
+		{
+			this.ejLinearGauge1.Widget.exportImage("ejLinearGauge", "jpeg");
+		}
 	}
 }

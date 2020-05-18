@@ -73,26 +73,27 @@
 			this.ejDateTimePicker1.Name = "ejDateTimePicker1";
 			this.ejDateTimePicker1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":\"2020-01-01 00:00:00\"}")));
 			this.ejDateTimePicker1.Size = new System.Drawing.Size(200, 30);
+			this.ejDateTimePicker1.TabIndex = 0;
 			this.ejDateTimePicker1.Text = "ejDateTimePicker1";
 			// 
-			// textBox1
+			// textBoxDateTimeFormat
 			// 
 			this.textBoxDateTimeFormat.AutoSize = false;
 			this.textBoxDateTimeFormat.Label.Size = 50;
 			this.textBoxDateTimeFormat.Label.SizeType = Wisej.Web.SizeType.Percent;
-			this.textBoxDateTimeFormat.Label.Text = "Date Time Format";
+			this.textBoxDateTimeFormat.LabelText = "Date Time Format";
 			this.textBoxDateTimeFormat.Location = new System.Drawing.Point(28, 43);
-			this.textBoxDateTimeFormat.Name = "textBox1";
+			this.textBoxDateTimeFormat.Name = "textBoxDateTimeFormat";
 			this.textBoxDateTimeFormat.Size = new System.Drawing.Size(195, 60);
 			this.textBoxDateTimeFormat.TabIndex = 2;
 			this.textBoxDateTimeFormat.Text = "M/d/yyyy h:mm tt";
 			// 
-			// numericUpDown1
+			// numericUpDownStartDay
 			// 
 			this.numericUpDownStartDay.AutoSize = false;
 			this.numericUpDownStartDay.Label.Size = 50;
 			this.numericUpDownStartDay.Label.SizeType = Wisej.Web.SizeType.Percent;
-			this.numericUpDownStartDay.Label.Text = "Start Day";
+			this.numericUpDownStartDay.LabelText = "Start Day";
 			this.numericUpDownStartDay.Location = new System.Drawing.Point(28, 138);
 			this.numericUpDownStartDay.Maximum = new decimal(new int[] {
             7,
@@ -104,7 +105,7 @@
             0,
             0,
             0});
-			this.numericUpDownStartDay.Name = "numericUpDown1";
+			this.numericUpDownStartDay.Name = "numericUpDownStartDay";
 			this.numericUpDownStartDay.Size = new System.Drawing.Size(195, 60);
 			this.numericUpDownStartDay.TabIndex = 3;
 			this.numericUpDownStartDay.Value = new decimal(new int[] {

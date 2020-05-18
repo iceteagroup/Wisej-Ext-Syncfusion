@@ -77,10 +77,11 @@
 			this.ejFileExplorer1.Name = "ejFileExplorer1";
 			this.ejFileExplorer1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"showFooter\":true,\"showToolbar\":true,\"layout\":\"tile\",\"path\":\"/\"}")));
 			this.ejFileExplorer1.Size = new System.Drawing.Size(400, 270);
+			this.ejFileExplorer1.TabIndex = 0;
 			this.ejFileExplorer1.Text = "ejFileExplorer1";
 			this.ejFileExplorer1.WebRequest += new Wisej.Web.WebRequestHandler(this.ejFileExplorer1_WebRequest);
 			// 
-			// checkBox2
+			// checkBoxShowToolbar
 			// 
 			this.checkBoxShowToolbar.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBoxShowToolbar.AutoSize = false;
@@ -89,12 +90,12 @@
 			this.checkBoxShowToolbar.CheckState = Wisej.Web.CheckState.Checked;
 			this.checkBoxShowToolbar.Location = new System.Drawing.Point(28, 63);
 			this.checkBoxShowToolbar.Margin = new Wisej.Web.Padding(3, 10, 3, 3);
-			this.checkBoxShowToolbar.Name = "checkBox2";
+			this.checkBoxShowToolbar.Name = "checkBoxShowToolbar";
 			this.checkBoxShowToolbar.Size = new System.Drawing.Size(195, 22);
 			this.checkBoxShowToolbar.TabIndex = 6;
 			this.checkBoxShowToolbar.Text = "Show Toolbar";
 			// 
-			// checkBox1
+			// checkBoxShowFooter
 			// 
 			this.checkBoxShowFooter.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBoxShowFooter.AutoSize = false;
@@ -102,12 +103,12 @@
 			this.checkBoxShowFooter.Checked = true;
 			this.checkBoxShowFooter.CheckState = Wisej.Web.CheckState.Checked;
 			this.checkBoxShowFooter.Location = new System.Drawing.Point(28, 28);
-			this.checkBoxShowFooter.Name = "checkBox1";
+			this.checkBoxShowFooter.Name = "checkBoxShowFooter";
 			this.checkBoxShowFooter.Size = new System.Drawing.Size(195, 22);
 			this.checkBoxShowFooter.TabIndex = 5;
 			this.checkBoxShowFooter.Text = "Show Footer";
 			// 
-			// comboBox1
+			// comboBoxLayout
 			// 
 			this.comboBoxLayout.AutoSize = false;
 			this.comboBoxLayout.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
@@ -117,9 +118,9 @@
             "LargeIcons"});
 			this.comboBoxLayout.Label.Size = 50;
 			this.comboBoxLayout.Label.SizeType = Wisej.Web.SizeType.Percent;
-			this.comboBoxLayout.Label.Text = "Layout";
+			this.comboBoxLayout.LabelText = "Layout";
 			this.comboBoxLayout.Location = new System.Drawing.Point(28, 104);
-			this.comboBoxLayout.Name = "comboBox1";
+			this.comboBoxLayout.Name = "comboBoxLayout";
 			this.comboBoxLayout.Size = new System.Drawing.Size(195, 60);
 			this.comboBoxLayout.TabIndex = 7;
 			this.comboBoxLayout.Text = "Tile";

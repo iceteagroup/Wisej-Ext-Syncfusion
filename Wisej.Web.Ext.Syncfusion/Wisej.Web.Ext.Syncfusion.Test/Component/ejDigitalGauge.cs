@@ -16,7 +16,7 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			this.ejDigitalGauge1.Widget.setValue(0,this.textBoxVal.Text);
+			this.ejDigitalGauge1.Widget.setValue(0,this.textBox1.Text);
 			this.ejDigitalGauge1.Options.items[0].segmentSettings.spacing = this.trackBarSegmentSpacing.Value;
 			this.ejDigitalGauge1.Options.items[0].characterSettings.spacing = this.trackBarCharSpacing.Value;
 

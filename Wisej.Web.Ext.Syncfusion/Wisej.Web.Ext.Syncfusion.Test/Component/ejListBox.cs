@@ -48,7 +48,12 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			this.ejListBox1.Options.virtualScrollMode = this.comboBoxVirtualScrollMode.Text.ToLower();
+			this.ejListBox1.Options.virtualScrollMode = this.comboBox1.Text.ToLower();
+			this.ejListBox1.Options.allowDrag = this.checkBox1.Checked;
+			this.ejListBox1.Options.allowDrop = this.checkBox2.Checked;
+			this.ejListBox1.Options.allowMultiSelection = this.checkBox3.Checked;
+			this.ejListBox1.Options.showCheckbox = this.checkBox4.Checked;
+			this.ejListBox1.Options.enableIncrementalSearch = this.checkBox5.Checked;
 
 			this.ejListBox1.Update();
 		}

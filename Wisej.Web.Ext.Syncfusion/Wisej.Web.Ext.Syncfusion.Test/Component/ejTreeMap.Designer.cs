@@ -33,6 +33,10 @@
 			Wisej.Web.Ext.Syncfusion.ejBase.WidgetTemplate widgetTemplate2 = new Wisej.Web.Ext.Syncfusion.ejBase.WidgetTemplate();
 			Wisej.Web.Ext.Syncfusion.ejBase.WidgetTemplate widgetTemplate3 = new Wisej.Web.Ext.Syncfusion.ejBase.WidgetTemplate();
 			this.ejTreeMap1 = new Wisej.Web.Ext.Syncfusion.ejTreeMap();
+			this.checkBox2 = new Wisej.Web.CheckBox();
+			this.checkBox3 = new Wisej.Web.CheckBox();
+			this.comboBox1 = new Wisej.Web.ComboBox();
+			this.comboBox2 = new Wisej.Web.ComboBox();
 			this.groupBox1.SuspendLayout();
 			this.panel.SuspendLayout();
 			this.SuspendLayout();
@@ -45,9 +49,28 @@
 			// 
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejtreemap#members";
 			// 
+			// groupBox1
+			// 
+			this.groupBox1.Controls.Add(this.comboBox2);
+			this.groupBox1.Controls.Add(this.comboBox1);
+			this.groupBox1.Controls.Add(this.checkBox3);
+			this.groupBox1.Controls.Add(this.checkBox2);
+			this.groupBox1.Size = new System.Drawing.Size(250, 359);
+			this.groupBox1.Controls.SetChildIndex(this.checkBox2, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBox3, 0);
+			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
+			this.groupBox1.Controls.SetChildIndex(this.comboBox1, 0);
+			this.groupBox1.Controls.SetChildIndex(this.comboBox2, 0);
+			// 
+			// buttonUpdate
+			// 
+			this.buttonUpdate.Location = new System.Drawing.Point(28, 274);
+			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
+			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejTreeMap1);
+			this.panel.Size = new System.Drawing.Size(455, 359);
 			// 
 			// linkDemo
 			// 
@@ -62,7 +85,8 @@
 			this.ejTreeMap1.Location = new System.Drawing.Point(19, 18);
 			this.ejTreeMap1.Name = "ejTreeMap1";
 			this.ejTreeMap1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejTreeMap1.Options"))));
-			this.ejTreeMap1.Size = new System.Drawing.Size(415, 276);
+			this.ejTreeMap1.Size = new System.Drawing.Size(415, 320);
+			this.ejTreeMap1.TabIndex = 0;
 			this.ejTreeMap1.Text = "ejTreeMap1";
 			widgetTemplate1.Id = "headertemplate";
 			widgetTemplate1.Template = "<div style=\"margin-top:3px;\">\r\n    <label style=\"color:gray;font-size:16px;font-w" +
@@ -80,10 +104,64 @@
         widgetTemplate2,
         widgetTemplate3};
 			// 
+			// checkBox2
+			// 
+			this.checkBox2.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBox2.AutoSize = false;
+			this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBox2.Checked = true;
+			this.checkBox2.CheckState = Wisej.Web.CheckState.Checked;
+			this.checkBox2.Location = new System.Drawing.Point(28, 36);
+			this.checkBox2.Name = "checkBox2";
+			this.checkBox2.Size = new System.Drawing.Size(195, 30);
+			this.checkBox2.TabIndex = 10;
+			this.checkBox2.Text = "Enable Gradient";
+			// 
+			// checkBox3
+			// 
+			this.checkBox3.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBox3.AutoSize = false;
+			this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBox3.Location = new System.Drawing.Point(28, 90);
+			this.checkBox3.Name = "checkBox3";
+			this.checkBox3.Size = new System.Drawing.Size(195, 30);
+			this.checkBox3.TabIndex = 11;
+			this.checkBox3.Text = "Highlight on Selection";
+			// 
+			// comboBox1
+			// 
+			this.comboBox1.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+			this.comboBox1.Items.AddRange(new object[] {
+            "squarified",
+            "sliceanddicehorizontal",
+            "sliceanddicevertical",
+            "sliceanddiceauto"});
+			this.comboBox1.LabelText = "Items Layout Mode";
+			this.comboBox1.Location = new System.Drawing.Point(28, 144);
+			this.comboBox1.Name = "comboBox1";
+			this.comboBox1.Size = new System.Drawing.Size(195, 41);
+			this.comboBox1.TabIndex = 12;
+			this.comboBox1.Text = "Squarified";
+			// 
+			// comboBox2
+			// 
+			this.comboBox2.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+			this.comboBox2.Items.AddRange(new object[] {
+            "default",
+            "multiple"});
+			this.comboBox2.LabelText = "Group Selection Mode";
+			this.comboBox2.Location = new System.Drawing.Point(28, 209);
+			this.comboBox2.Name = "comboBox2";
+			this.comboBox2.Size = new System.Drawing.Size(195, 41);
+			this.comboBox2.TabIndex = 13;
+			this.comboBox2.Text = "default";
+			// 
 			// ejTreeMap
 			// 
 			this.Name = "ejTreeMap";
+			this.Size = new System.Drawing.Size(864, 549);
 			this.groupBox1.ResumeLayout(false);
+			this.groupBox1.PerformLayout();
 			this.panel.ResumeLayout(false);
 			this.ResumeLayout(false);
 			this.PerformLayout();
@@ -93,5 +171,9 @@
 		#endregion
 
 		private Syncfusion.ejTreeMap ejTreeMap1;
+		private CheckBox checkBox2;
+		private CheckBox checkBox3;
+		private ComboBox comboBox2;
+		private ComboBox comboBox1;
 	}
 }

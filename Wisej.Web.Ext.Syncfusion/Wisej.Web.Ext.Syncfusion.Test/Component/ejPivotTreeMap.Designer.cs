@@ -31,6 +31,7 @@
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ejPivotTreeMap));
 			this.ejPivotTreeMap1 = new Wisej.Web.Ext.Syncfusion.ejPivotTreeMap();
 			this.label4 = new Wisej.Web.Label();
+			this.buttonSave = new Wisej.Web.Button();
 			this.groupBox1.SuspendLayout();
 			this.panel.SuspendLayout();
 			this.SuspendLayout();
@@ -42,6 +43,12 @@
 			// linkAPI
 			// 
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejpivottreemap";
+			// 
+			// groupBox1
+			// 
+			this.groupBox1.Controls.Add(this.buttonSave);
+			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
+			this.groupBox1.Controls.SetChildIndex(this.buttonSave, 0);
 			// 
 			// panel
 			// 
@@ -62,6 +69,7 @@
 			this.ejPivotTreeMap1.Name = "ejPivotTreeMap1";
 			this.ejPivotTreeMap1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejPivotTreeMap1.Options"))));
 			this.ejPivotTreeMap1.Size = new System.Drawing.Size(424, 285);
+			this.ejPivotTreeMap1.TabIndex = 0;
 			this.ejPivotTreeMap1.Text = "ejPivotTreeMap1";
 			// 
 			// label4
@@ -69,9 +77,19 @@
 			this.label4.AutoSize = true;
 			this.label4.Location = new System.Drawing.Point(382, 129);
 			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(332, 16);
+			this.label4.Size = new System.Drawing.Size(318, 15);
 			this.label4.TabIndex = 8;
 			this.label4.Text = "Note: Issue with hover and has an external datasource";
+			// 
+			// buttonSave
+			// 
+			this.buttonSave.Display = Wisej.Web.Display.Icon;
+			this.buttonSave.ImageSource = "icon-save";
+			this.buttonSave.Location = new System.Drawing.Point(28, 186);
+			this.buttonSave.Name = "buttonSave";
+			this.buttonSave.Size = new System.Drawing.Size(42, 42);
+			this.buttonSave.TabIndex = 9;
+			this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
 			// 
 			// ejPivotTreeMap
 			// 
@@ -94,5 +112,6 @@
 
 		private Syncfusion.ejPivotTreeMap ejPivotTreeMap1;
 		private Label label4;
+		private Button buttonSave;
 	}
 }

@@ -24,8 +24,9 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			this.ejRating1.Options.maxValue = this.numericUpDownMaxValue.Value;
-			this.ejRating1.Options.incrementStep = this.numericUpDownIncrementStep.Value;
+			this.ejRating1.Options.maxValue = this.numericUpDown1.Value;
+			this.ejRating1.Options.incrementStep = this.numericUpDown2.Value;
+			this.ejRating1.Options.precision = this.comboBox1.SelectedItem.ToString().ToLower();
 
 			this.ejRating1.Update();
 		}

@@ -32,7 +32,12 @@
 			this.ejListBox1 = new Wisej.Web.Ext.Syncfusion.ejListBox();
 			this.buttonLoad = new Wisej.Web.Upload();
 			this.buttonSave = new Wisej.Web.Button();
-			this.comboBoxVirtualScrollMode = new Wisej.Web.ComboBox();
+			this.comboBox1 = new Wisej.Web.ComboBox();
+			this.checkBox1 = new Wisej.Web.CheckBox();
+			this.checkBox2 = new Wisej.Web.CheckBox();
+			this.checkBox3 = new Wisej.Web.CheckBox();
+			this.checkBox4 = new Wisej.Web.CheckBox();
+			this.checkBox5 = new Wisej.Web.CheckBox();
 			this.groupBox1.SuspendLayout();
 			this.panel.SuspendLayout();
 			this.SuspendLayout();
@@ -47,24 +52,34 @@
 			// 
 			// groupBox1
 			// 
-			this.groupBox1.Controls.Add(this.comboBoxVirtualScrollMode);
+			this.groupBox1.Controls.Add(this.checkBox5);
+			this.groupBox1.Controls.Add(this.checkBox4);
+			this.groupBox1.Controls.Add(this.checkBox3);
+			this.groupBox1.Controls.Add(this.checkBox2);
+			this.groupBox1.Controls.Add(this.checkBox1);
+			this.groupBox1.Controls.Add(this.comboBox1);
 			this.groupBox1.Controls.Add(this.buttonLoad);
 			this.groupBox1.Controls.Add(this.buttonSave);
-			this.groupBox1.Size = new System.Drawing.Size(250, 326);
+			this.groupBox1.Size = new System.Drawing.Size(250, 508);
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
 			this.groupBox1.Controls.SetChildIndex(this.buttonSave, 0);
 			this.groupBox1.Controls.SetChildIndex(this.buttonLoad, 0);
-			this.groupBox1.Controls.SetChildIndex(this.comboBoxVirtualScrollMode, 0);
+			this.groupBox1.Controls.SetChildIndex(this.comboBox1, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBox2, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBox3, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBox4, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBox5, 0);
 			// 
 			// buttonUpdate
 			// 
-			this.buttonUpdate.Location = new System.Drawing.Point(28, 245);
+			this.buttonUpdate.Location = new System.Drawing.Point(28, 426);
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejListBox1);
-			this.panel.Size = new System.Drawing.Size(455, 326);
+			this.panel.Size = new System.Drawing.Size(455, 508);
 			// 
 			// linkDemo
 			// 
@@ -79,7 +94,8 @@
 			this.ejListBox1.Location = new System.Drawing.Point(143, 16);
 			this.ejListBox1.Name = "ejListBox1";
 			this.ejListBox1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejListBox1.Options"))));
-			this.ejListBox1.Size = new System.Drawing.Size(167, 291);
+			this.ejListBox1.Size = new System.Drawing.Size(167, 473);
+			this.ejListBox1.TabIndex = 0;
 			this.ejListBox1.Text = "ejListBox1";
 			// 
 			// buttonLoad
@@ -87,7 +103,7 @@
 			this.buttonLoad.AllowedFileTypes = ".json";
 			this.buttonLoad.HideValue = true;
 			this.buttonLoad.ImageSource = "icon-file";
-			this.buttonLoad.Location = new System.Drawing.Point(28, 182);
+			this.buttonLoad.Location = new System.Drawing.Point(28, 370);
 			this.buttonLoad.Name = "buttonLoad";
 			this.buttonLoad.Size = new System.Drawing.Size(42, 42);
 			this.buttonLoad.TabIndex = 12;
@@ -97,32 +113,87 @@
 			// 
 			this.buttonSave.Display = Wisej.Web.Display.Icon;
 			this.buttonSave.ImageSource = "icon-save";
-			this.buttonSave.Location = new System.Drawing.Point(76, 182);
+			this.buttonSave.Location = new System.Drawing.Point(76, 370);
 			this.buttonSave.Name = "buttonSave";
 			this.buttonSave.Size = new System.Drawing.Size(42, 42);
 			this.buttonSave.TabIndex = 11;
 			this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
 			// 
-			// comboBoxVirtualScrollMode
+			// comboBox1
 			// 
-			this.comboBoxVirtualScrollMode.AutoSize = false;
-			this.comboBoxVirtualScrollMode.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
-			this.comboBoxVirtualScrollMode.Items.AddRange(new object[] {
+			this.comboBox1.AutoSize = false;
+			this.comboBox1.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+			this.comboBox1.Items.AddRange(new object[] {
             "Continuous",
             "Normal"});
-			this.comboBoxVirtualScrollMode.Label.Size = 50;
-			this.comboBoxVirtualScrollMode.Label.SizeType = Wisej.Web.SizeType.Percent;
-			this.comboBoxVirtualScrollMode.Label.Text = "Virtual Scroll Mode";
-			this.comboBoxVirtualScrollMode.Location = new System.Drawing.Point(28, 41);
-			this.comboBoxVirtualScrollMode.Name = "comboBoxVirtualScrollMode";
-			this.comboBoxVirtualScrollMode.Size = new System.Drawing.Size(195, 60);
-			this.comboBoxVirtualScrollMode.TabIndex = 13;
-			this.comboBoxVirtualScrollMode.Text = "Normal";
+			this.comboBox1.Label.Size = 50;
+			this.comboBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
+			this.comboBox1.LabelText = "Virtual Scroll Mode";
+			this.comboBox1.Location = new System.Drawing.Point(28, 296);
+			this.comboBox1.Name = "comboBox1";
+			this.comboBox1.Size = new System.Drawing.Size(195, 60);
+			this.comboBox1.TabIndex = 13;
+			this.comboBox1.Text = "Normal";
+			// 
+			// checkBox1
+			// 
+			this.checkBox1.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBox1.AutoSize = false;
+			this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBox1.Location = new System.Drawing.Point(28, 36);
+			this.checkBox1.Name = "checkBox1";
+			this.checkBox1.Size = new System.Drawing.Size(195, 38);
+			this.checkBox1.TabIndex = 14;
+			this.checkBox1.Text = "Allow Drag";
+			// 
+			// checkBox2
+			// 
+			this.checkBox2.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBox2.AutoSize = false;
+			this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBox2.Location = new System.Drawing.Point(28, 88);
+			this.checkBox2.Name = "checkBox2";
+			this.checkBox2.Size = new System.Drawing.Size(195, 38);
+			this.checkBox2.TabIndex = 15;
+			this.checkBox2.Text = "Allow Drop";
+			// 
+			// checkBox3
+			// 
+			this.checkBox3.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBox3.AutoSize = false;
+			this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBox3.Location = new System.Drawing.Point(28, 140);
+			this.checkBox3.Name = "checkBox3";
+			this.checkBox3.Size = new System.Drawing.Size(195, 38);
+			this.checkBox3.TabIndex = 16;
+			this.checkBox3.Text = "Allow MultiSelection";
+			// 
+			// checkBox4
+			// 
+			this.checkBox4.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBox4.AutoSize = false;
+			this.checkBox4.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBox4.Location = new System.Drawing.Point(28, 192);
+			this.checkBox4.Name = "checkBox4";
+			this.checkBox4.Size = new System.Drawing.Size(195, 38);
+			this.checkBox4.TabIndex = 17;
+			this.checkBox4.Text = "Show Checkbox";
+			// 
+			// checkBox5
+			// 
+			this.checkBox5.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBox5.AutoSize = false;
+			this.checkBox5.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBox5.Location = new System.Drawing.Point(28, 244);
+			this.checkBox5.Name = "checkBox5";
+			this.checkBox5.Size = new System.Drawing.Size(195, 38);
+			this.checkBox5.TabIndex = 18;
+			this.checkBox5.Text = "Enable Incremental Search";
 			// 
 			// ejListBox
 			// 
 			this.Name = "ejListBox";
-			this.Size = new System.Drawing.Size(864, 516);
+			this.Size = new System.Drawing.Size(864, 698);
 			this.groupBox1.ResumeLayout(false);
 			this.panel.ResumeLayout(false);
 			this.ResumeLayout(false);
@@ -135,6 +206,11 @@
 		private Syncfusion.ejListBox ejListBox1;
 		private Upload buttonLoad;
 		private Button buttonSave;
-		private ComboBox comboBoxVirtualScrollMode;
+		private ComboBox comboBox1;
+		private CheckBox checkBox5;
+		private CheckBox checkBox4;
+		private CheckBox checkBox3;
+		private CheckBox checkBox2;
+		private CheckBox checkBox1;
 	}
 }

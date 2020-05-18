@@ -33,6 +33,8 @@
 			this.numericUpDownVal = new Wisej.Web.NumericUpDown();
 			this.comboBoxOrientation = new Wisej.Web.ComboBox();
 			this.comboBoxLabelPosition = new Wisej.Web.ComboBox();
+			this.checkBox1 = new Wisej.Web.CheckBox();
+			this.buttonSave = new Wisej.Web.Button();
 			this.groupBox1.SuspendLayout();
 			this.panel.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDownVal)).BeginInit();
@@ -48,24 +50,28 @@
 			// 
 			// groupBox1
 			// 
+			this.groupBox1.Controls.Add(this.buttonSave);
+			this.groupBox1.Controls.Add(this.checkBox1);
 			this.groupBox1.Controls.Add(this.comboBoxLabelPosition);
 			this.groupBox1.Controls.Add(this.comboBoxOrientation);
 			this.groupBox1.Controls.Add(this.numericUpDownVal);
-			this.groupBox1.Size = new System.Drawing.Size(250, 407);
+			this.groupBox1.Size = new System.Drawing.Size(250, 468);
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
 			this.groupBox1.Controls.SetChildIndex(this.numericUpDownVal, 0);
 			this.groupBox1.Controls.SetChildIndex(this.comboBoxOrientation, 0);
 			this.groupBox1.Controls.SetChildIndex(this.comboBoxLabelPosition, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
+			this.groupBox1.Controls.SetChildIndex(this.buttonSave, 0);
 			// 
 			// buttonUpdate
 			// 
-			this.buttonUpdate.Location = new System.Drawing.Point(28, 326);
+			this.buttonUpdate.Location = new System.Drawing.Point(28, 386);
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejLinearGauge1);
-			this.panel.Size = new System.Drawing.Size(455, 407);
+			this.panel.Size = new System.Drawing.Size(455, 468);
 			// 
 			// linkDemo
 			// 
@@ -81,17 +87,18 @@
 			this.ejLinearGauge1.Location = new System.Drawing.Point(69, 17);
 			this.ejLinearGauge1.Name = "ejLinearGauge1";
 			this.ejLinearGauge1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejLinearGauge1.Options"))));
-			this.ejLinearGauge1.Size = new System.Drawing.Size(314, 370);
+			this.ejLinearGauge1.Size = new System.Drawing.Size(314, 431);
+			this.ejLinearGauge1.TabIndex = 0;
 			this.ejLinearGauge1.Text = "ejLinearGauge1";
 			// 
-			// numValue
+			// numericUpDownVal
 			// 
 			this.numericUpDownVal.AutoSize = false;
 			this.numericUpDownVal.Label.Size = 50;
 			this.numericUpDownVal.Label.SizeType = Wisej.Web.SizeType.Percent;
-			this.numericUpDownVal.Label.Text = "Value";
-			this.numericUpDownVal.Location = new System.Drawing.Point(28, 48);
-			this.numericUpDownVal.Name = "numValue";
+			this.numericUpDownVal.LabelText = "Value";
+			this.numericUpDownVal.Location = new System.Drawing.Point(28, 92);
+			this.numericUpDownVal.Name = "numericUpDownVal";
 			this.numericUpDownVal.Size = new System.Drawing.Size(195, 60);
 			this.numericUpDownVal.TabIndex = 2;
 			this.numericUpDownVal.Value = new decimal(new int[] {
@@ -100,7 +107,7 @@
             0,
             0});
 			// 
-			// cmbOrientation
+			// comboBoxOrientation
 			// 
 			this.comboBoxOrientation.AutoSize = false;
 			this.comboBoxOrientation.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
@@ -109,14 +116,14 @@
             "Horizontal"});
 			this.comboBoxOrientation.Label.Size = 50;
 			this.comboBoxOrientation.Label.SizeType = Wisej.Web.SizeType.Percent;
-			this.comboBoxOrientation.Label.Text = "Orientation";
-			this.comboBoxOrientation.Location = new System.Drawing.Point(25, 137);
-			this.comboBoxOrientation.Name = "cmbOrientation";
-			this.comboBoxOrientation.Size = new System.Drawing.Size(200, 60);
+			this.comboBoxOrientation.LabelText = "Orientation";
+			this.comboBoxOrientation.Location = new System.Drawing.Point(28, 170);
+			this.comboBoxOrientation.Name = "comboBoxOrientation";
+			this.comboBoxOrientation.Size = new System.Drawing.Size(195, 60);
 			this.comboBoxOrientation.TabIndex = 3;
 			this.comboBoxOrientation.Text = "Vertical";
 			// 
-			// cmbLabelPosition
+			// comboBoxLabelPosition
 			// 
 			this.comboBoxLabelPosition.AutoSize = false;
 			this.comboBoxLabelPosition.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
@@ -127,17 +134,40 @@
             "Bottom"});
 			this.comboBoxLabelPosition.Label.Size = 50;
 			this.comboBoxLabelPosition.Label.SizeType = Wisej.Web.SizeType.Percent;
-			this.comboBoxLabelPosition.Label.Text = "Outer Custom Label Position";
-			this.comboBoxLabelPosition.Location = new System.Drawing.Point(23, 226);
-			this.comboBoxLabelPosition.Name = "cmbLabelPosition";
-			this.comboBoxLabelPosition.Size = new System.Drawing.Size(200, 60);
+			this.comboBoxLabelPosition.LabelText = "Outer Custom Label Position";
+			this.comboBoxLabelPosition.Location = new System.Drawing.Point(28, 248);
+			this.comboBoxLabelPosition.Name = "comboBoxLabelPosition";
+			this.comboBoxLabelPosition.Size = new System.Drawing.Size(195, 60);
 			this.comboBoxLabelPosition.TabIndex = 4;
 			this.comboBoxLabelPosition.Text = "Bottom";
+			// 
+			// checkBox1
+			// 
+			this.checkBox1.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBox1.AutoSize = false;
+			this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBox1.Checked = true;
+			this.checkBox1.CheckState = Wisej.Web.CheckState.Checked;
+			this.checkBox1.Location = new System.Drawing.Point(28, 36);
+			this.checkBox1.Name = "checkBox1";
+			this.checkBox1.Size = new System.Drawing.Size(195, 38);
+			this.checkBox1.TabIndex = 13;
+			this.checkBox1.Text = "Enable Marker Point Animation";
+			// 
+			// buttonSave
+			// 
+			this.buttonSave.Display = Wisej.Web.Display.Icon;
+			this.buttonSave.ImageSource = "icon-save";
+			this.buttonSave.Location = new System.Drawing.Point(28, 326);
+			this.buttonSave.Name = "buttonSave";
+			this.buttonSave.Size = new System.Drawing.Size(42, 42);
+			this.buttonSave.TabIndex = 14;
+			this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
 			// 
 			// ejLinearGauge
 			// 
 			this.Name = "ejLinearGauge";
-			this.Size = new System.Drawing.Size(864, 597);
+			this.Size = new System.Drawing.Size(864, 658);
 			this.groupBox1.ResumeLayout(false);
 			this.panel.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDownVal)).EndInit();
@@ -152,5 +182,7 @@
 		private NumericUpDown numericUpDownVal;
 		private ComboBox comboBoxOrientation;
 		private ComboBox comboBoxLabelPosition;
+		private CheckBox checkBox1;
+		private Button buttonSave;
 	}
 }

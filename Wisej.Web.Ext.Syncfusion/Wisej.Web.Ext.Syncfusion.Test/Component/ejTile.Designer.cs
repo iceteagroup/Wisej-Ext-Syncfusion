@@ -46,6 +46,10 @@
 			this.ejTile13 = new Wisej.Web.Ext.Syncfusion.ejTile();
 			this.checkBox1 = new Wisej.Web.CheckBox();
 			this.numericUpDown1 = new Wisej.Web.NumericUpDown();
+			this.label4 = new Wisej.Web.Label();
+			this.checkBox2 = new Wisej.Web.CheckBox();
+			this.comboBox1 = new Wisej.Web.ComboBox();
+			this.checkBox3 = new Wisej.Web.CheckBox();
 			this.groupBox1.SuspendLayout();
 			this.panel.SuspendLayout();
 			this.flowLayoutPanel1.SuspendLayout();
@@ -63,14 +67,24 @@
 			// 
 			// groupBox1
 			// 
+			this.groupBox1.Controls.Add(this.checkBox3);
+			this.groupBox1.Controls.Add(this.comboBox1);
+			this.groupBox1.Controls.Add(this.checkBox2);
+			this.groupBox1.Controls.Add(this.label4);
 			this.groupBox1.Controls.Add(this.numericUpDown1);
 			this.groupBox1.Controls.Add(this.checkBox1);
+			this.groupBox1.Size = new System.Drawing.Size(250, 471);
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
 			this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
 			this.groupBox1.Controls.SetChildIndex(this.numericUpDown1, 0);
+			this.groupBox1.Controls.SetChildIndex(this.label4, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBox2, 0);
+			this.groupBox1.Controls.SetChildIndex(this.comboBox1, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBox3, 0);
 			// 
 			// buttonUpdate
 			// 
+			this.buttonUpdate.Location = new System.Drawing.Point(28, 388);
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
@@ -97,7 +111,6 @@
 			this.flowLayoutPanel1.Name = "flowLayoutPanel1";
 			this.flowLayoutPanel1.Size = new System.Drawing.Size(150, 150);
 			this.flowLayoutPanel1.TabIndex = 7;
-			this.flowLayoutPanel1.TabStop = true;
 			// 
 			// ejTile2
 			// 
@@ -159,7 +172,6 @@
 			this.flowLayoutPanel2.Name = "flowLayoutPanel2";
 			this.flowLayoutPanel2.Size = new System.Drawing.Size(573, 377);
 			this.flowLayoutPanel2.TabIndex = 8;
-			this.flowLayoutPanel2.TabStop = true;
 			// 
 			// ejTile8
 			// 
@@ -262,7 +274,7 @@
 			this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBox1.Checked = true;
 			this.checkBox1.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBox1.Location = new System.Drawing.Point(28, 52);
+			this.checkBox1.Location = new System.Drawing.Point(28, 88);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(195, 38);
 			this.checkBox1.TabIndex = 7;
@@ -273,8 +285,8 @@
 			this.numericUpDown1.AutoSize = false;
 			this.numericUpDown1.Label.Size = 50;
 			this.numericUpDown1.Label.SizeType = Wisej.Web.SizeType.Percent;
-			this.numericUpDown1.Label.Text = "Badge";
-			this.numericUpDown1.Location = new System.Drawing.Point(28, 109);
+			this.numericUpDown1.LabelText = "Badge";
+			this.numericUpDown1.Location = new System.Drawing.Point(28, 253);
 			this.numericUpDown1.Name = "numericUpDown1";
 			this.numericUpDown1.Size = new System.Drawing.Size(195, 60);
 			this.numericUpDown1.TabIndex = 8;
@@ -284,11 +296,65 @@
             0,
             0});
 			// 
+			// label4
+			// 
+			this.label4.Location = new System.Drawing.Point(28, 36);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(184, 35);
+			this.label4.TabIndex = 9;
+			this.label4.Text = "Note: Property changes affect \"Games\" tile";
+			// 
+			// checkBox2
+			// 
+			this.checkBox2.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBox2.AutoSize = false;
+			this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBox2.Checked = true;
+			this.checkBox2.CheckState = Wisej.Web.CheckState.Checked;
+			this.checkBox2.Location = new System.Drawing.Point(28, 143);
+			this.checkBox2.Name = "checkBox2";
+			this.checkBox2.Size = new System.Drawing.Size(195, 38);
+			this.checkBox2.TabIndex = 10;
+			this.checkBox2.Text = "Allow Selection";
+			// 
+			// comboBox1
+			// 
+			this.comboBox1.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+			this.comboBox1.Items.AddRange(new object[] {
+            "Center",
+            "TopCenter",
+            "BottomCenter",
+            "RightCenter",
+            "LeftCenter",
+            "TopLeft",
+            "TopRight",
+            "BottomRight",
+            "BottomLeft",
+            "Fill"});
+			this.comboBox1.LabelText = "Image Position";
+			this.comboBox1.Location = new System.Drawing.Point(28, 330);
+			this.comboBox1.Name = "comboBox1";
+			this.comboBox1.Size = new System.Drawing.Size(195, 41);
+			this.comboBox1.TabIndex = 11;
+			this.comboBox1.Text = "Center";
+			// 
+			// checkBox3
+			// 
+			this.checkBox3.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBox3.AutoSize = false;
+			this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBox3.Location = new System.Drawing.Point(28, 198);
+			this.checkBox3.Name = "checkBox3";
+			this.checkBox3.Size = new System.Drawing.Size(195, 38);
+			this.checkBox3.TabIndex = 12;
+			this.checkBox3.Text = "Show Rounded Corner";
+			// 
 			// ejTile
 			// 
 			this.Name = "ejTile";
 			this.Size = new System.Drawing.Size(1066, 661);
 			this.groupBox1.ResumeLayout(false);
+			this.groupBox1.PerformLayout();
 			this.panel.ResumeLayout(false);
 			this.flowLayoutPanel1.ResumeLayout(false);
 			this.flowLayoutPanel2.ResumeLayout(false);
@@ -318,5 +384,9 @@
 		private Syncfusion.ejTile ejTile13;
 		private CheckBox checkBox1;
 		private NumericUpDown numericUpDown1;
+		private CheckBox checkBox3;
+		private ComboBox comboBox1;
+		private CheckBox checkBox2;
+		private Label label4;
 	}
 }

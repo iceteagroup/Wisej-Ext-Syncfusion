@@ -82,9 +82,10 @@
 			this.ejChart1.Name = "ejChart1";
 			this.ejChart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejChart1.Options"))));
 			this.ejChart1.Size = new System.Drawing.Size(345, 367);
+			this.ejChart1.TabIndex = 0;
 			this.ejChart1.Text = "ejChart1";
 			// 
-			// comboBox1
+			// comboBoxLegendAlignment
 			// 
 			this.comboBoxLegendAlignment.AutoSize = false;
 			this.comboBoxLegendAlignment.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
@@ -94,21 +95,21 @@
             "Far"});
 			this.comboBoxLegendAlignment.Label.Size = 50;
 			this.comboBoxLegendAlignment.Label.SizeType = Wisej.Web.SizeType.Percent;
-			this.comboBoxLegendAlignment.Label.Text = "Legend Alignment";
+			this.comboBoxLegendAlignment.LabelText = "Legend Alignment";
 			this.comboBoxLegendAlignment.Location = new System.Drawing.Point(25, 44);
-			this.comboBoxLegendAlignment.Name = "comboBox1";
+			this.comboBoxLegendAlignment.Name = "comboBoxLegendAlignment";
 			this.comboBoxLegendAlignment.Size = new System.Drawing.Size(195, 60);
 			this.comboBoxLegendAlignment.TabIndex = 3;
 			this.comboBoxLegendAlignment.Text = "Center";
 			// 
-			// textBox1
+			// textBoxTitle
 			// 
 			this.textBoxTitle.AutoSize = false;
 			this.textBoxTitle.Label.Size = 50;
 			this.textBoxTitle.Label.SizeType = Wisej.Web.SizeType.Percent;
-			this.textBoxTitle.Label.Text = "Chart Title";
+			this.textBoxTitle.LabelText = "Chart Title";
 			this.textBoxTitle.Location = new System.Drawing.Point(25, 124);
-			this.textBoxTitle.Name = "textBox1";
+			this.textBoxTitle.Name = "textBoxTitle";
 			this.textBoxTitle.Size = new System.Drawing.Size(195, 60);
 			this.textBoxTitle.TabIndex = 4;
 			this.textBoxTitle.Text = "Efficiency of oil-fired power production";

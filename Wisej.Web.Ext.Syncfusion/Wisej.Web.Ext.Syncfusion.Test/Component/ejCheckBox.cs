@@ -28,5 +28,13 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 
 			Application.Play(MessageBoxIcon.Information);
 		}
+
+		private void buttonUpdate_Click(object sender, EventArgs e)
+		{
+			this.ejCheckBox1.Options.enableTriState = this.checkBox2.Checked;
+			this.ejCheckBox1.Options.showRoundedCorner = this.checkBox1.Checked;
+
+			this.ejCheckBox1.Update();
+		}
 	}
 }

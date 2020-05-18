@@ -28,6 +28,10 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
 			this.ejSchedule1.Options.showWeekend = this.checkBox1.Checked;
+			this.ejSchedule1.Options.allowDelete = this.checkBox2.Checked;
+			this.ejSchedule1.Options.allowKeyboardNavigation = this.checkBox3.Checked;
+			this.ejSchedule1.Options.allowInline = this.checkBox4.Checked;
+			this.ejSchedule1.Options.showAppointmentNavigator = this.checkBox5.Checked;
 			this.ejSchedule1.Options.currentView = this.comboBox1.Text.ToLowerInvariant();
 			this.ejSchedule1.Options.orientation = this.comboBox2.Text.ToLowerInvariant();
 
