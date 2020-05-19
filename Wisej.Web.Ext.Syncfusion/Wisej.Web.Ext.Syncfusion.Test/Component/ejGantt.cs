@@ -15,11 +15,17 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			this.ejGantt1.Options.showColumnOptions = this.checkBoxShowColumnOptions.Checked;
-			this.ejGantt1.Options.showProgressStatus = this.checkBoxShowProgressStatus.Checked;
-			this.ejGantt1.Options.scheduleEndDate = DateTime.Parse(this.textBoxScheduleEndDate.Text).ToShortDateString();
-			this.ejGantt1.Options.scheduleStartDate = DateTime.Parse(this.textBoxScheduleStartDate.Text).ToShortDateString();
-			
+			this.ejGantt1.Options.showProgressStatus = this.checkBox1.Checked;
+			this.ejGantt1.Options.showColumnOptions = this.checkBox2.Checked;
+			this.ejGantt1.Options.allowGanttChartEditing = this.checkBox3.Checked;
+			this.ejGantt1.Options.enableCollapseAll = this.checkBox4.Checked;
+			this.ejGantt1.Options.enableContextMenu = this.checkBox5.Checked;
+			this.ejGantt1.Options.enableWBS = this.checkBox6.Checked;
+			this.ejGantt1.Options.highlightNonWorkingTime = this.checkBox7.Checked;
+			this.ejGantt1.Options.scheduleStartDate = DateTime.Parse(this.textBox1.Text).ToString("MM/dd/yyyy");
+			this.ejGantt1.Options.scheduleEndDate = DateTime.Parse(this.textBox2.Text).ToString("MM/dd/yyyy");
+			this.ejGantt1.Options.viewtype = this.comboBox1.SelectedItem.ToString().ToLower();
+
 			this.ejGantt1.Update();
 		}
 

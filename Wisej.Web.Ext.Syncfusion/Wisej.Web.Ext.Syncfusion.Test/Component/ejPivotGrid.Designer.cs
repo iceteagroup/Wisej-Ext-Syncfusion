@@ -30,10 +30,10 @@
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ejPivotGrid));
 			this.ejPivotGrid1 = new Wisej.Web.Ext.Syncfusion.ejPivotGrid();
-			this.checkBoxCellClick = new Wisej.Web.CheckBox();
-			this.checkBoxShowRowHeaderItems = new Wisej.Web.CheckBox();
-			this.checkBoxColumnGrandTotal = new Wisej.Web.CheckBox();
-			this.checkBoxShowColumnHeaderItems = new Wisej.Web.CheckBox();
+			this.checkBox1 = new Wisej.Web.CheckBox();
+			this.checkBox2 = new Wisej.Web.CheckBox();
+			this.checkBox4 = new Wisej.Web.CheckBox();
+			this.checkBoxShow3 = new Wisej.Web.CheckBox();
 			this.buttonSave = new Wisej.Web.Button();
 			this.buttonLoad = new Wisej.Web.Upload();
 			this.groupBox1.SuspendLayout();
@@ -52,16 +52,16 @@
 			// 
 			this.groupBox1.Controls.Add(this.buttonSave);
 			this.groupBox1.Controls.Add(this.buttonLoad);
-			this.groupBox1.Controls.Add(this.checkBoxShowColumnHeaderItems);
-			this.groupBox1.Controls.Add(this.checkBoxColumnGrandTotal);
-			this.groupBox1.Controls.Add(this.checkBoxShowRowHeaderItems);
-			this.groupBox1.Controls.Add(this.checkBoxCellClick);
+			this.groupBox1.Controls.Add(this.checkBoxShow3);
+			this.groupBox1.Controls.Add(this.checkBox4);
+			this.groupBox1.Controls.Add(this.checkBox2);
+			this.groupBox1.Controls.Add(this.checkBox1);
 			this.groupBox1.Size = new System.Drawing.Size(250, 429);
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-			this.groupBox1.Controls.SetChildIndex(this.checkBoxCellClick, 0);
-			this.groupBox1.Controls.SetChildIndex(this.checkBoxShowRowHeaderItems, 0);
-			this.groupBox1.Controls.SetChildIndex(this.checkBoxColumnGrandTotal, 0);
-			this.groupBox1.Controls.SetChildIndex(this.checkBoxShowColumnHeaderItems, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBox2, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBox4, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBoxShow3, 0);
 			this.groupBox1.Controls.SetChildIndex(this.buttonLoad, 0);
 			this.groupBox1.Controls.SetChildIndex(this.buttonSave, 0);
 			// 
@@ -90,59 +90,60 @@
 			this.ejPivotGrid1.Name = "ejPivotGrid1";
 			this.ejPivotGrid1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejPivotGrid1.Options"))));
 			this.ejPivotGrid1.Size = new System.Drawing.Size(415, 395);
+			this.ejPivotGrid1.TabIndex = 0;
 			this.ejPivotGrid1.Text = "ejPivotGrid1";
 			// 
-			// checkBoxCellClick
+			// checkBox1
 			// 
-			this.checkBoxCellClick.Appearance = Wisej.Web.Appearance.Switch;
-			this.checkBoxCellClick.AutoSize = false;
-			this.checkBoxCellClick.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBoxCellClick.Checked = true;
-			this.checkBoxCellClick.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBoxCellClick.Location = new System.Drawing.Point(28, 38);
-			this.checkBoxCellClick.Name = "checkBoxCellClick";
-			this.checkBoxCellClick.Size = new System.Drawing.Size(195, 38);
-			this.checkBoxCellClick.TabIndex = 8;
-			this.checkBoxCellClick.Text = "Enable Cell Click";
+			this.checkBox1.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBox1.AutoSize = false;
+			this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBox1.Checked = true;
+			this.checkBox1.CheckState = Wisej.Web.CheckState.Checked;
+			this.checkBox1.Location = new System.Drawing.Point(28, 36);
+			this.checkBox1.Name = "checkBox1";
+			this.checkBox1.Size = new System.Drawing.Size(195, 38);
+			this.checkBox1.TabIndex = 8;
+			this.checkBox1.Text = "Enable Cell Click";
 			// 
-			// checkBoxShowRowHeaderItems
+			// checkBox2
 			// 
-			this.checkBoxShowRowHeaderItems.Appearance = Wisej.Web.Appearance.Switch;
-			this.checkBoxShowRowHeaderItems.AutoSize = false;
-			this.checkBoxShowRowHeaderItems.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBoxShowRowHeaderItems.Checked = true;
-			this.checkBoxShowRowHeaderItems.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBoxShowRowHeaderItems.Location = new System.Drawing.Point(28, 99);
-			this.checkBoxShowRowHeaderItems.Name = "checkBoxShowRowHeaderItems";
-			this.checkBoxShowRowHeaderItems.Size = new System.Drawing.Size(195, 38);
-			this.checkBoxShowRowHeaderItems.TabIndex = 9;
-			this.checkBoxShowRowHeaderItems.Text = "Show Header Row Items";
+			this.checkBox2.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBox2.AutoSize = false;
+			this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBox2.Checked = true;
+			this.checkBox2.CheckState = Wisej.Web.CheckState.Checked;
+			this.checkBox2.Location = new System.Drawing.Point(28, 99);
+			this.checkBox2.Name = "checkBox2";
+			this.checkBox2.Size = new System.Drawing.Size(195, 38);
+			this.checkBox2.TabIndex = 9;
+			this.checkBox2.Text = "Show Header Row Items";
 			// 
-			// checkBoxColumnGrandTotal
+			// checkBox4
 			// 
-			this.checkBoxColumnGrandTotal.Appearance = Wisej.Web.Appearance.Switch;
-			this.checkBoxColumnGrandTotal.AutoSize = false;
-			this.checkBoxColumnGrandTotal.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBoxColumnGrandTotal.Checked = true;
-			this.checkBoxColumnGrandTotal.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBoxColumnGrandTotal.Location = new System.Drawing.Point(28, 221);
-			this.checkBoxColumnGrandTotal.Name = "checkBoxColumnGrandTotal";
-			this.checkBoxColumnGrandTotal.Size = new System.Drawing.Size(195, 38);
-			this.checkBoxColumnGrandTotal.TabIndex = 10;
-			this.checkBoxColumnGrandTotal.Text = "Column Grand Total";
+			this.checkBox4.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBox4.AutoSize = false;
+			this.checkBox4.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBox4.Checked = true;
+			this.checkBox4.CheckState = Wisej.Web.CheckState.Checked;
+			this.checkBox4.Location = new System.Drawing.Point(28, 221);
+			this.checkBox4.Name = "checkBox4";
+			this.checkBox4.Size = new System.Drawing.Size(195, 38);
+			this.checkBox4.TabIndex = 10;
+			this.checkBox4.Text = "Column Grand Total";
 			// 
-			// checkBoxShowColumnHeaderItems
+			// checkBoxShow3
 			// 
-			this.checkBoxShowColumnHeaderItems.Appearance = Wisej.Web.Appearance.Switch;
-			this.checkBoxShowColumnHeaderItems.AutoSize = false;
-			this.checkBoxShowColumnHeaderItems.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBoxShowColumnHeaderItems.Checked = true;
-			this.checkBoxShowColumnHeaderItems.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBoxShowColumnHeaderItems.Location = new System.Drawing.Point(28, 160);
-			this.checkBoxShowColumnHeaderItems.Name = "checkBoxShowColumnHeaderItems";
-			this.checkBoxShowColumnHeaderItems.Size = new System.Drawing.Size(195, 38);
-			this.checkBoxShowColumnHeaderItems.TabIndex = 11;
-			this.checkBoxShowColumnHeaderItems.Text = "Show Header Row Items";
+			this.checkBoxShow3.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBoxShow3.AutoSize = false;
+			this.checkBoxShow3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBoxShow3.Checked = true;
+			this.checkBoxShow3.CheckState = Wisej.Web.CheckState.Checked;
+			this.checkBoxShow3.Location = new System.Drawing.Point(28, 160);
+			this.checkBoxShow3.Name = "checkBoxShow3";
+			this.checkBoxShow3.Size = new System.Drawing.Size(195, 38);
+			this.checkBoxShow3.TabIndex = 11;
+			this.checkBoxShow3.Text = "Show Header Row Items";
 			// 
 			// buttonSave
 			// 
@@ -180,10 +181,10 @@
 		#endregion
 
 		private Syncfusion.ejPivotGrid ejPivotGrid1;
-		private CheckBox checkBoxShowColumnHeaderItems;
-		private CheckBox checkBoxColumnGrandTotal;
-		private CheckBox checkBoxShowRowHeaderItems;
-		private CheckBox checkBoxCellClick;
+		private CheckBox checkBoxShow3;
+		private CheckBox checkBox4;
+		private CheckBox checkBox2;
+		private CheckBox checkBox1;
 		private Button buttonSave;
 		private Upload buttonLoad;
 	}

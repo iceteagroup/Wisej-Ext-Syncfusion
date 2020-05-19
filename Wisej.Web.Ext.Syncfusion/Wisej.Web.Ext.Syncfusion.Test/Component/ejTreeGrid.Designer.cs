@@ -60,7 +60,7 @@
 			this.groupBox1.Controls.Add(this.buttonGetSelectedCells);
 			this.groupBox1.Controls.Add(this.checkBox2);
 			this.groupBox1.Controls.Add(this.checkBox1);
-			this.groupBox1.Size = new System.Drawing.Size(250, 451);
+			this.groupBox1.Size = new System.Drawing.Size(250, 553);
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
 			this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
 			this.groupBox1.Controls.SetChildIndex(this.checkBox2, 0);
@@ -73,13 +73,13 @@
 			// 
 			// buttonUpdate
 			// 
-			this.buttonUpdate.Location = new System.Drawing.Point(28, 364);
+			this.buttonUpdate.Location = new System.Drawing.Point(28, 460);
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejTreeGrid1);
-			this.panel.Size = new System.Drawing.Size(455, 451);
+			this.panel.Size = new System.Drawing.Size(455, 553);
 			// 
 			// linkDemo
 			// 
@@ -94,7 +94,7 @@
 			this.ejTreeGrid1.Location = new System.Drawing.Point(19, 18);
 			this.ejTreeGrid1.Name = "ejTreeGrid1";
 			this.ejTreeGrid1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejTreeGrid1.Options"))));
-			this.ejTreeGrid1.Size = new System.Drawing.Size(415, 412);
+			this.ejTreeGrid1.Size = new System.Drawing.Size(415, 514);
 			this.ejTreeGrid1.TabIndex = 0;
 			this.ejTreeGrid1.Text = "ejTreeGrid1";
 			// 
@@ -116,7 +116,7 @@
 			this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBox2.Checked = true;
 			this.checkBox2.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBox2.Location = new System.Drawing.Point(28, 77);
+			this.checkBox2.Location = new System.Drawing.Point(28, 89);
 			this.checkBox2.Name = "checkBox2";
 			this.checkBox2.Size = new System.Drawing.Size(195, 30);
 			this.checkBox2.TabIndex = 9;
@@ -124,7 +124,7 @@
 			// 
 			// buttonGetSelectedCells
 			// 
-			this.buttonGetSelectedCells.Location = new System.Drawing.Point(28, 323);
+			this.buttonGetSelectedCells.Location = new System.Drawing.Point(28, 407);
 			this.buttonGetSelectedCells.Name = "buttonGetSelectedCells";
 			this.buttonGetSelectedCells.Size = new System.Drawing.Size(195, 30);
 			this.buttonGetSelectedCells.TabIndex = 10;
@@ -136,7 +136,7 @@
 			this.checkBox3.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBox3.AutoSize = false;
 			this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox3.Location = new System.Drawing.Point(28, 118);
+			this.checkBox3.Location = new System.Drawing.Point(28, 142);
 			this.checkBox3.Name = "checkBox3";
 			this.checkBox3.Size = new System.Drawing.Size(195, 30);
 			this.checkBox3.TabIndex = 11;
@@ -147,7 +147,7 @@
 			this.checkBox4.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBox4.AutoSize = false;
 			this.checkBox4.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox4.Location = new System.Drawing.Point(28, 159);
+			this.checkBox4.Location = new System.Drawing.Point(28, 195);
 			this.checkBox4.Name = "checkBox4";
 			this.checkBox4.Size = new System.Drawing.Size(195, 30);
 			this.checkBox4.TabIndex = 12;
@@ -158,7 +158,7 @@
 			this.checkBox5.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBox5.AutoSize = false;
 			this.checkBox5.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox5.Location = new System.Drawing.Point(28, 200);
+			this.checkBox5.Location = new System.Drawing.Point(28, 248);
 			this.checkBox5.Name = "checkBox5";
 			this.checkBox5.Size = new System.Drawing.Size(195, 30);
 			this.checkBox5.TabIndex = 13;
@@ -169,7 +169,7 @@
 			this.checkBox6.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBox6.AutoSize = false;
 			this.checkBox6.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox6.Location = new System.Drawing.Point(28, 241);
+			this.checkBox6.Location = new System.Drawing.Point(28, 301);
 			this.checkBox6.Name = "checkBox6";
 			this.checkBox6.Size = new System.Drawing.Size(195, 30);
 			this.checkBox6.TabIndex = 14;
@@ -182,7 +182,7 @@
 			this.checkBox7.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBox7.Checked = true;
 			this.checkBox7.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBox7.Location = new System.Drawing.Point(28, 282);
+			this.checkBox7.Location = new System.Drawing.Point(28, 354);
 			this.checkBox7.Name = "checkBox7";
 			this.checkBox7.Size = new System.Drawing.Size(195, 30);
 			this.checkBox7.TabIndex = 15;
@@ -191,7 +191,7 @@
 			// ejTreeGrid
 			// 
 			this.Name = "ejTreeGrid";
-			this.Size = new System.Drawing.Size(864, 641);
+			this.Size = new System.Drawing.Size(864, 743);
 			this.groupBox1.ResumeLayout(false);
 			this.panel.ResumeLayout(false);
 			this.ResumeLayout(false);

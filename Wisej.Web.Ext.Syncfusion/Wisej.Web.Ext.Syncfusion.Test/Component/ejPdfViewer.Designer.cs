@@ -34,9 +34,13 @@
 			this.label4 = new Wisej.Web.Label();
 			this.trackBar1 = new Wisej.Web.TrackBar();
 			this.buttonLoad = new Wisej.Web.Upload();
+			this.flexLayoutPanel1 = new Wisej.Web.FlexLayoutPanel();
+			this.checkBox3 = new Wisej.Web.CheckBox();
+			this.checkBox4 = new Wisej.Web.CheckBox();
 			this.groupBox1.SuspendLayout();
 			this.panel.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+			this.flexLayoutPanel1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// linkDocs
@@ -49,28 +53,30 @@
 			// 
 			// groupBox1
 			// 
+			this.groupBox1.Controls.Add(this.checkBox4);
+			this.groupBox1.Controls.Add(this.checkBox3);
+			this.groupBox1.Controls.Add(this.flexLayoutPanel1);
 			this.groupBox1.Controls.Add(this.buttonLoad);
-			this.groupBox1.Controls.Add(this.label4);
-			this.groupBox1.Controls.Add(this.trackBar1);
 			this.groupBox1.Controls.Add(this.checkBox2);
 			this.groupBox1.Controls.Add(this.checkBox1);
-			this.groupBox1.Size = new System.Drawing.Size(250, 350);
-			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
+			this.groupBox1.Size = new System.Drawing.Size(250, 488);
 			this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
 			this.groupBox1.Controls.SetChildIndex(this.checkBox2, 0);
-			this.groupBox1.Controls.SetChildIndex(this.trackBar1, 0);
-			this.groupBox1.Controls.SetChildIndex(this.label4, 0);
 			this.groupBox1.Controls.SetChildIndex(this.buttonLoad, 0);
+			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
+			this.groupBox1.Controls.SetChildIndex(this.flexLayoutPanel1, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBox3, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBox4, 0);
 			// 
 			// buttonUpdate
 			// 
-			this.buttonUpdate.Location = new System.Drawing.Point(28, 269);
+			this.buttonUpdate.Location = new System.Drawing.Point(28, 400);
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejPdfViewer1);
-			this.panel.Size = new System.Drawing.Size(455, 379);
+			this.panel.Size = new System.Drawing.Size(455, 488);
 			// 
 			// linkDemo
 			// 
@@ -85,7 +91,8 @@
 			this.ejPdfViewer1.Name = "ejPdfViewer1";
 			this.ejPdfViewer1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"enableHighlightAnnotation\":true,\"enableTextMarkupAnnotations\":true,\"enableStrik" +
         "ethroughAnnotation\":true,\"enableSignature\":false}")));
-			this.ejPdfViewer1.Size = new System.Drawing.Size(395, 321);
+			this.ejPdfViewer1.Size = new System.Drawing.Size(395, 430);
+			this.ejPdfViewer1.TabIndex = 0;
 			this.ejPdfViewer1.Text = "ejPdfViewer1";
 			this.ejPdfViewer1.Initialized += new System.EventHandler(this.ejPdfViewer1_Initialized);
 			this.ejPdfViewer1.WebRequest += new Wisej.Web.WebRequestHandler(this.ejPdfViewer1_WebRequest);
@@ -97,7 +104,7 @@
 			this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBox1.Checked = true;
 			this.checkBox1.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBox1.Location = new System.Drawing.Point(28, 29);
+			this.checkBox1.Location = new System.Drawing.Point(28, 36);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(195, 31);
 			this.checkBox1.TabIndex = 2;
@@ -108,7 +115,7 @@
 			this.checkBox2.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBox2.AutoSize = false;
 			this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox2.Location = new System.Drawing.Point(28, 66);
+			this.checkBox2.Location = new System.Drawing.Point(28, 88);
 			this.checkBox2.Name = "checkBox2";
 			this.checkBox2.Size = new System.Drawing.Size(195, 31);
 			this.checkBox2.TabIndex = 3;
@@ -117,19 +124,19 @@
 			// label4
 			// 
 			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(28, 113);
+			this.label4.Location = new System.Drawing.Point(6, 6);
 			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(108, 16);
+			this.label4.Size = new System.Drawing.Size(101, 15);
 			this.label4.TabIndex = 5;
 			this.label4.Text = "Zoom (50-400%)";
 			// 
 			// trackBar1
 			// 
-			this.trackBar1.Location = new System.Drawing.Point(28, 135);
+			this.trackBar1.Location = new System.Drawing.Point(6, 27);
 			this.trackBar1.Maximum = 400;
 			this.trackBar1.Minimum = 50;
 			this.trackBar1.Name = "trackBar1";
-			this.trackBar1.Size = new System.Drawing.Size(195, 36);
+			this.trackBar1.Size = new System.Drawing.Size(195, 34);
 			this.trackBar1.TabIndex = 4;
 			this.trackBar1.TickFrequency = 25;
 			this.trackBar1.Value = 100;
@@ -139,20 +146,56 @@
 			this.buttonLoad.AllowedFileTypes = ".pdf";
 			this.buttonLoad.HideValue = true;
 			this.buttonLoad.ImageSource = "icon-file";
-			this.buttonLoad.Location = new System.Drawing.Point(28, 189);
+			this.buttonLoad.Location = new System.Drawing.Point(28, 337);
 			this.buttonLoad.Name = "buttonLoad";
 			this.buttonLoad.Size = new System.Drawing.Size(42, 42);
 			this.buttonLoad.TabIndex = 7;
 			this.buttonLoad.Uploaded += new Wisej.Web.UploadedEventHandler(this.buttonLoad_Uploaded);
 			// 
+			// flexLayoutPanel1
+			// 
+			this.flexLayoutPanel1.Controls.Add(this.label4);
+			this.flexLayoutPanel1.Controls.Add(this.trackBar1);
+			this.flexLayoutPanel1.Location = new System.Drawing.Point(22, 244);
+			this.flexLayoutPanel1.Name = "flexLayoutPanel1";
+			this.flexLayoutPanel1.Size = new System.Drawing.Size(207, 72);
+			this.flexLayoutPanel1.TabIndex = 8;
+			// 
+			// checkBox3
+			// 
+			this.checkBox3.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBox3.AutoSize = false;
+			this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBox3.Checked = true;
+			this.checkBox3.CheckState = Wisej.Web.CheckState.Checked;
+			this.checkBox3.Location = new System.Drawing.Point(28, 140);
+			this.checkBox3.Name = "checkBox3";
+			this.checkBox3.Size = new System.Drawing.Size(195, 31);
+			this.checkBox3.TabIndex = 9;
+			this.checkBox3.Text = "Enable Text Selection";
+			// 
+			// checkBox4
+			// 
+			this.checkBox4.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBox4.AutoSize = false;
+			this.checkBox4.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBox4.Checked = true;
+			this.checkBox4.CheckState = Wisej.Web.CheckState.Checked;
+			this.checkBox4.Location = new System.Drawing.Point(28, 192);
+			this.checkBox4.Name = "checkBox4";
+			this.checkBox4.Size = new System.Drawing.Size(195, 31);
+			this.checkBox4.TabIndex = 11;
+			this.checkBox4.Text = "Enable Hyperlink";
+			// 
 			// ejPdfViewer
 			// 
 			this.Name = "ejPdfViewer";
-			this.Size = new System.Drawing.Size(864, 569);
+			this.Size = new System.Drawing.Size(864, 678);
 			this.groupBox1.ResumeLayout(false);
-			this.groupBox1.PerformLayout();
 			this.panel.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+			this.flexLayoutPanel1.ResumeLayout(false);
+			this.flexLayoutPanel1.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -166,5 +209,8 @@
 		private Label label4;
 		private TrackBar trackBar1;
 		private Upload buttonLoad;
+		private FlexLayoutPanel flexLayoutPanel1;
+		private CheckBox checkBox4;
+		private CheckBox checkBox3;
 	}
 }

@@ -29,9 +29,12 @@
 		private void InitializeComponent()
 		{
 			this.ejDatePicker1 = new Wisej.Web.Ext.Syncfusion.ejDatePicker();
-			this.checkBoxEnableStrictMode = new Wisej.Web.CheckBox();
-			this.checkBoxShowOtherMonths = new Wisej.Web.CheckBox();
-			this.checkBoxAllowDrillDown = new Wisej.Web.CheckBox();
+			this.checkBox1 = new Wisej.Web.CheckBox();
+			this.checkBox2 = new Wisej.Web.CheckBox();
+			this.checkBox3 = new Wisej.Web.CheckBox();
+			this.checkBox4 = new Wisej.Web.CheckBox();
+			this.checkBox5 = new Wisej.Web.CheckBox();
+			this.checkBox6 = new Wisej.Web.CheckBox();
 			this.groupBox1.SuspendLayout();
 			this.panel.SuspendLayout();
 			this.SuspendLayout();
@@ -46,24 +49,30 @@
 			// 
 			// groupBox1
 			// 
-			this.groupBox1.Controls.Add(this.checkBoxAllowDrillDown);
-			this.groupBox1.Controls.Add(this.checkBoxShowOtherMonths);
-			this.groupBox1.Controls.Add(this.checkBoxEnableStrictMode);
-			this.groupBox1.Size = new System.Drawing.Size(250, 396);
+			this.groupBox1.Controls.Add(this.checkBox6);
+			this.groupBox1.Controls.Add(this.checkBox5);
+			this.groupBox1.Controls.Add(this.checkBox4);
+			this.groupBox1.Controls.Add(this.checkBox3);
+			this.groupBox1.Controls.Add(this.checkBox2);
+			this.groupBox1.Controls.Add(this.checkBox1);
+			this.groupBox1.Size = new System.Drawing.Size(250, 444);
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-			this.groupBox1.Controls.SetChildIndex(this.checkBoxEnableStrictMode, 0);
-			this.groupBox1.Controls.SetChildIndex(this.checkBoxShowOtherMonths, 0);
-			this.groupBox1.Controls.SetChildIndex(this.checkBoxAllowDrillDown, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBox2, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBox3, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBox4, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBox5, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBox6, 0);
 			// 
 			// buttonUpdate
 			// 
-			this.buttonUpdate.Location = new System.Drawing.Point(28, 315);
+			this.buttonUpdate.Location = new System.Drawing.Point(28, 360);
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejDatePicker1);
-			this.panel.Size = new System.Drawing.Size(455, 396);
+			this.panel.Size = new System.Drawing.Size(455, 444);
 			// 
 			// linkDemo
 			// 
@@ -74,56 +83,93 @@
 			// ejDatePicker1
 			// 
 			this.ejDatePicker1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
-			this.ejDatePicker1.Location = new System.Drawing.Point(126, 182);
+			this.ejDatePicker1.Location = new System.Drawing.Point(126, 206);
 			this.ejDatePicker1.Name = "ejDatePicker1";
 			this.ejDatePicker1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":\"1/1/2020\",\"showOtherMonths\":true,\"enableStrictMode\":true}")));
 			this.ejDatePicker1.Size = new System.Drawing.Size(200, 30);
 			this.ejDatePicker1.TabIndex = 0;
 			this.ejDatePicker1.Text = "ejDatePicker1";
 			// 
-			// checkBoxEnableStrictMode
+			// checkBox1
 			// 
-			this.checkBoxEnableStrictMode.Appearance = Wisej.Web.Appearance.Switch;
-			this.checkBoxEnableStrictMode.AutoSize = false;
-			this.checkBoxEnableStrictMode.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBoxEnableStrictMode.Checked = true;
-			this.checkBoxEnableStrictMode.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBoxEnableStrictMode.Location = new System.Drawing.Point(28, 41);
-			this.checkBoxEnableStrictMode.Name = "checkBoxEnableStrictMode";
-			this.checkBoxEnableStrictMode.Size = new System.Drawing.Size(195, 38);
-			this.checkBoxEnableStrictMode.TabIndex = 9;
-			this.checkBoxEnableStrictMode.Text = "Strict Mode";
+			this.checkBox1.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBox1.AutoSize = false;
+			this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBox1.Checked = true;
+			this.checkBox1.CheckState = Wisej.Web.CheckState.Checked;
+			this.checkBox1.Location = new System.Drawing.Point(28, 36);
+			this.checkBox1.Name = "checkBox1";
+			this.checkBox1.Size = new System.Drawing.Size(195, 38);
+			this.checkBox1.TabIndex = 9;
+			this.checkBox1.Text = "Strict Mode";
 			// 
-			// checkBoxShowOtherMonths
+			// checkBox2
 			// 
-			this.checkBoxShowOtherMonths.Appearance = Wisej.Web.Appearance.Switch;
-			this.checkBoxShowOtherMonths.AutoSize = false;
-			this.checkBoxShowOtherMonths.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBoxShowOtherMonths.Checked = true;
-			this.checkBoxShowOtherMonths.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBoxShowOtherMonths.Location = new System.Drawing.Point(28, 110);
-			this.checkBoxShowOtherMonths.Name = "checkBoxShowOtherMonths";
-			this.checkBoxShowOtherMonths.Size = new System.Drawing.Size(195, 38);
-			this.checkBoxShowOtherMonths.TabIndex = 11;
-			this.checkBoxShowOtherMonths.Text = "Show Other Months";
+			this.checkBox2.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBox2.AutoSize = false;
+			this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBox2.Checked = true;
+			this.checkBox2.CheckState = Wisej.Web.CheckState.Checked;
+			this.checkBox2.Location = new System.Drawing.Point(28, 90);
+			this.checkBox2.Name = "checkBox2";
+			this.checkBox2.Size = new System.Drawing.Size(195, 38);
+			this.checkBox2.TabIndex = 11;
+			this.checkBox2.Text = "Show Other Months";
 			// 
-			// checkBoxAllowDrillDown
+			// checkBox3
 			// 
-			this.checkBoxAllowDrillDown.Appearance = Wisej.Web.Appearance.Switch;
-			this.checkBoxAllowDrillDown.AutoSize = false;
-			this.checkBoxAllowDrillDown.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBoxAllowDrillDown.Checked = true;
-			this.checkBoxAllowDrillDown.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBoxAllowDrillDown.Location = new System.Drawing.Point(28, 179);
-			this.checkBoxAllowDrillDown.Name = "checkBoxAllowDrillDown";
-			this.checkBoxAllowDrillDown.Size = new System.Drawing.Size(195, 38);
-			this.checkBoxAllowDrillDown.TabIndex = 12;
-			this.checkBoxAllowDrillDown.Text = "Allow Drill Down";
+			this.checkBox3.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBox3.AutoSize = false;
+			this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBox3.Checked = true;
+			this.checkBox3.CheckState = Wisej.Web.CheckState.Checked;
+			this.checkBox3.Location = new System.Drawing.Point(28, 144);
+			this.checkBox3.Name = "checkBox3";
+			this.checkBox3.Size = new System.Drawing.Size(195, 38);
+			this.checkBox3.TabIndex = 12;
+			this.checkBox3.Text = "Allow Drill Down";
+			// 
+			// checkBox4
+			// 
+			this.checkBox4.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBox4.AutoSize = false;
+			this.checkBox4.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBox4.Location = new System.Drawing.Point(28, 198);
+			this.checkBox4.Name = "checkBox4";
+			this.checkBox4.Size = new System.Drawing.Size(195, 38);
+			this.checkBox4.TabIndex = 13;
+			this.checkBox4.Text = "Display Inline";
+			// 
+			// checkBox5
+			// 
+			this.checkBox5.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBox5.AutoSize = false;
+			this.checkBox5.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBox5.Checked = true;
+			this.checkBox5.CheckState = Wisej.Web.CheckState.Checked;
+			this.checkBox5.Location = new System.Drawing.Point(28, 252);
+			this.checkBox5.Name = "checkBox5";
+			this.checkBox5.Size = new System.Drawing.Size(195, 38);
+			this.checkBox5.TabIndex = 14;
+			this.checkBox5.Text = "Show Disabled Range";
+			// 
+			// checkBox6
+			// 
+			this.checkBox6.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBox6.AutoSize = false;
+			this.checkBox6.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBox6.Checked = true;
+			this.checkBox6.CheckState = Wisej.Web.CheckState.Checked;
+			this.checkBox6.Location = new System.Drawing.Point(28, 306);
+			this.checkBox6.Name = "checkBox6";
+			this.checkBox6.Size = new System.Drawing.Size(195, 38);
+			this.checkBox6.TabIndex = 15;
+			this.checkBox6.Text = "Show Footer";
 			// 
 			// ejDatePicker
 			// 
 			this.Name = "ejDatePicker";
-			this.Size = new System.Drawing.Size(864, 586);
+			this.Size = new System.Drawing.Size(864, 634);
 			this.groupBox1.ResumeLayout(false);
 			this.panel.ResumeLayout(false);
 			this.ResumeLayout(false);
@@ -134,8 +180,11 @@
 		#endregion
 
 		private Syncfusion.ejDatePicker ejDatePicker1;
-		private CheckBox checkBoxEnableStrictMode;
-		private CheckBox checkBoxShowOtherMonths;
-		private CheckBox checkBoxAllowDrillDown;
+		private CheckBox checkBox1;
+		private CheckBox checkBox2;
+		private CheckBox checkBox3;
+		private CheckBox checkBox6;
+		private CheckBox checkBox5;
+		private CheckBox checkBox4;
 	}
 }

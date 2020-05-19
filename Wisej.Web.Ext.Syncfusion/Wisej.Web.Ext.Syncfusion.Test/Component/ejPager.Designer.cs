@@ -56,6 +56,7 @@
 			// 
 			// buttonUpdate
 			// 
+			this.buttonUpdate.Location = new System.Drawing.Point(28, 233);
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
@@ -92,9 +93,9 @@
 			// 
 			// buttonGoToFirstPage
 			// 
-			this.buttonGoToFirstPage.Location = new System.Drawing.Point(22, 32);
+			this.buttonGoToFirstPage.Location = new System.Drawing.Point(28, 150);
 			this.buttonGoToFirstPage.Name = "buttonGoToFirstPage";
-			this.buttonGoToFirstPage.Size = new System.Drawing.Size(201, 30);
+			this.buttonGoToFirstPage.Size = new System.Drawing.Size(195, 30);
 			this.buttonGoToFirstPage.TabIndex = 1;
 			this.buttonGoToFirstPage.Text = "Go To First Page";
 			this.buttonGoToFirstPage.Click += new System.EventHandler(this.buttonGoToFirstPage_Click);
@@ -104,15 +105,15 @@
 			this.numericSelectedPage.AutoSize = false;
 			this.numericSelectedPage.Label.Size = 50;
 			this.numericSelectedPage.Label.SizeType = Wisej.Web.SizeType.Percent;
-			this.numericSelectedPage.Label.Text = "Selected Page";
-			this.numericSelectedPage.Location = new System.Drawing.Point(22, 104);
+			this.numericSelectedPage.LabelText = "Selected Page";
+			this.numericSelectedPage.Location = new System.Drawing.Point(28, 37);
 			this.numericSelectedPage.Maximum = new decimal(new int[] {
             6,
             0,
             0,
             0});
 			this.numericSelectedPage.Name = "numericSelectedPage";
-			this.numericSelectedPage.Size = new System.Drawing.Size(201, 60);
+			this.numericSelectedPage.Size = new System.Drawing.Size(195, 60);
 			this.numericSelectedPage.TabIndex = 3;
 			this.numericSelectedPage.Value = new decimal(new int[] {
             1,

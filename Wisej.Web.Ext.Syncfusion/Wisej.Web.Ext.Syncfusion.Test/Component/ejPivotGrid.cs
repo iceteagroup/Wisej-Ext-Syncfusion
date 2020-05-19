@@ -17,10 +17,10 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			this.ejPivotGrid1.Options.enableCellClick = this.checkBoxCellClick.Checked;
-			this.ejPivotGrid1.Options.enableColumnGrandTotal = this.checkBoxColumnGrandTotal.Checked;
-			this.ejPivotGrid1.Options.headerSettings.showRowItems = this.checkBoxShowRowHeaderItems.Checked;
-			this.ejPivotGrid1.Options.headerSettings.showColumnItems = this.checkBoxShowColumnHeaderItems.Checked;
+			this.ejPivotGrid1.Options.enableCellClick = this.checkBox1.Checked;
+			this.ejPivotGrid1.Options.enableColumnGrandTotal = this.checkBox4.Checked;
+			this.ejPivotGrid1.Options.headerSettings.showRowItems = this.checkBox2.Checked;
+			this.ejPivotGrid1.Options.headerSettings.showColumnItems = this.checkBoxShow3.Checked;
 
 			this.ejPivotGrid1.Update();
 		}

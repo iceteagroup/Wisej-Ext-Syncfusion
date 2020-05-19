@@ -53,8 +53,16 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			this.ejPivotChart1.Options.enable3D = this.checkBoxEnable3D.Checked;
+			this.ejPivotChart1.Options.enable3D = this.checkBox1.Checked;
+			this.ejPivotChart1.Options.zooming = new 
+			{ 
+				enableScrollbar = this.checkBox2.Checked
+			};
 			this.ejPivotChart1.Options.rotation = this.numericUpDownRotation.Value;
+			this.ejPivotChart1.Options.commonSeriesOptions = new
+			{
+				type = this.comboBox1.SelectedItem.ToString().ToLower()
+			};
 
 			this.ejPivotChart1.Update();
 		}

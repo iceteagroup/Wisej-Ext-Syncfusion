@@ -14,7 +14,7 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 
 		private void buttonAddNewItem_Click(object sender, EventArgs e)
 		{
-			this.ejListView1.Widget.addItem("hi", 0);
+			this.ejListView1.Widget.addItem(new { text = "My New Item" }, 0, "");
 
 			this.ejListView1.Update();
 		}
@@ -29,6 +29,15 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 		private void buttonClearSelected_Click(object sender, EventArgs e)
 		{
 			this.ejListView1.Widget.unCheckAllItem();
+
+			this.ejListView1.Update();
+		}
+
+		private void buttonUpdate_Click(object sender, EventArgs e)
+		{
+			this.ejListView1.Options.enableCheckMark = this.checkBox1.Checked;
+			this.ejListView1.Options.enableFiltering = this.checkBox2.Checked;
+			this.ejListView1.Options.enableGroupList = this.checkBox3.Checked;
 
 			this.ejListView1.Update();
 		}

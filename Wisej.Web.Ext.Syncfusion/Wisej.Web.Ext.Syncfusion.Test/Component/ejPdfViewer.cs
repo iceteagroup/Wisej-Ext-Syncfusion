@@ -83,6 +83,8 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 			this.ejPdfViewer1.Options.enableTextMarkupAnnotations = this.checkBox1.Checked;
 			this.ejPdfViewer1.Options.enableStrikethroughAnnotation = this.checkBox1.Checked;
 			this.ejPdfViewer1.Options.enableSignature = this.checkBox2.Checked;
+			this.ejPdfViewer1.Options.enableTextSelection = this.checkBox3.Checked;
+			this.ejPdfViewer1.Options.enableHyperlink = this.checkBox4.Checked;
 
 			this.ejPdfViewer1.Widget.zoomTo((int)this.trackBar1.Value);
 			this.ejPdfViewer1.Update();

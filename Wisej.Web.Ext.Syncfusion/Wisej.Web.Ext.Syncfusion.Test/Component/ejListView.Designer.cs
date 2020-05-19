@@ -34,8 +34,13 @@
 			this.buttonAddNewItem = new Wisej.Web.Button();
 			this.buttonGetSelectedItems = new Wisej.Web.Button();
 			this.buttonClearSelected = new Wisej.Web.Button();
+			this.panel1 = new Wisej.Web.Panel();
+			this.checkBox1 = new Wisej.Web.CheckBox();
+			this.checkBox2 = new Wisej.Web.CheckBox();
+			this.checkBox3 = new Wisej.Web.CheckBox();
 			this.groupBox1.SuspendLayout();
 			this.panel.SuspendLayout();
+			this.panel1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// linkDocs
@@ -48,25 +53,30 @@
 			// 
 			// groupBox1
 			// 
+			this.groupBox1.Controls.Add(this.checkBox3);
+			this.groupBox1.Controls.Add(this.checkBox2);
+			this.groupBox1.Controls.Add(this.checkBox1);
+			this.groupBox1.Controls.Add(this.panel1);
 			this.groupBox1.Controls.Add(this.buttonClearSelected);
 			this.groupBox1.Controls.Add(this.buttonGetSelectedItems);
-			this.groupBox1.Controls.Add(this.buttonAddNewItem);
-			this.groupBox1.Controls.Add(this.textBoxAddNewItem);
-			this.groupBox1.Size = new System.Drawing.Size(250, 467);
-			this.groupBox1.Controls.SetChildIndex(this.textBoxAddNewItem, 0);
+			this.groupBox1.Size = new System.Drawing.Size(250, 590);
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-			this.groupBox1.Controls.SetChildIndex(this.buttonAddNewItem, 0);
 			this.groupBox1.Controls.SetChildIndex(this.buttonGetSelectedItems, 0);
 			this.groupBox1.Controls.SetChildIndex(this.buttonClearSelected, 0);
+			this.groupBox1.Controls.SetChildIndex(this.panel1, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBox2, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBox3, 0);
 			// 
 			// buttonUpdate
 			// 
-			this.buttonUpdate.Location = new System.Drawing.Point(28, 386);
+			this.buttonUpdate.Location = new System.Drawing.Point(28, 505);
+			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejListView1);
-			this.panel.Size = new System.Drawing.Size(455, 467);
+			this.panel.Size = new System.Drawing.Size(455, 590);
 			// 
 			// linkDemo
 			// 
@@ -81,7 +91,8 @@
 			this.ejListView1.Location = new System.Drawing.Point(32, 34);
 			this.ejListView1.Name = "ejListView1";
 			this.ejListView1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejListView1.Options"))));
-			this.ejListView1.Size = new System.Drawing.Size(389, 397);
+			this.ejListView1.Size = new System.Drawing.Size(389, 520);
+			this.ejListView1.TabIndex = 0;
 			this.ejListView1.Text = "ejListView1";
 			// 
 			// textBoxAddNewItem
@@ -89,8 +100,8 @@
 			this.textBoxAddNewItem.AutoSize = false;
 			this.textBoxAddNewItem.Label.Size = 50;
 			this.textBoxAddNewItem.Label.SizeType = Wisej.Web.SizeType.Percent;
-			this.textBoxAddNewItem.Label.Text = "Add New Item";
-			this.textBoxAddNewItem.Location = new System.Drawing.Point(28, 35);
+			this.textBoxAddNewItem.LabelText = "Add New Item";
+			this.textBoxAddNewItem.Location = new System.Drawing.Point(3, 3);
 			this.textBoxAddNewItem.Name = "textBoxAddNewItem";
 			this.textBoxAddNewItem.Size = new System.Drawing.Size(195, 60);
 			this.textBoxAddNewItem.TabIndex = 2;
@@ -98,7 +109,7 @@
 			// 
 			// buttonAddNewItem
 			// 
-			this.buttonAddNewItem.Location = new System.Drawing.Point(28, 101);
+			this.buttonAddNewItem.Location = new System.Drawing.Point(2, 69);
 			this.buttonAddNewItem.Name = "buttonAddNewItem";
 			this.buttonAddNewItem.Size = new System.Drawing.Size(195, 30);
 			this.buttonAddNewItem.TabIndex = 3;
@@ -107,7 +118,7 @@
 			// 
 			// buttonGetSelectedItems
 			// 
-			this.buttonGetSelectedItems.Location = new System.Drawing.Point(28, 196);
+			this.buttonGetSelectedItems.Location = new System.Drawing.Point(28, 381);
 			this.buttonGetSelectedItems.Name = "buttonGetSelectedItems";
 			this.buttonGetSelectedItems.Size = new System.Drawing.Size(195, 30);
 			this.buttonGetSelectedItems.TabIndex = 4;
@@ -116,19 +127,64 @@
 			// 
 			// buttonClearSelected
 			// 
-			this.buttonClearSelected.Location = new System.Drawing.Point(28, 291);
+			this.buttonClearSelected.Location = new System.Drawing.Point(28, 443);
 			this.buttonClearSelected.Name = "buttonClearSelected";
 			this.buttonClearSelected.Size = new System.Drawing.Size(195, 30);
 			this.buttonClearSelected.TabIndex = 5;
 			this.buttonClearSelected.Text = "Clear Selected Items";
 			this.buttonClearSelected.Click += new System.EventHandler(this.buttonClearSelected_Click);
 			// 
+			// panel1
+			// 
+			this.panel1.Controls.Add(this.textBoxAddNewItem);
+			this.panel1.Controls.Add(this.buttonAddNewItem);
+			this.panel1.Location = new System.Drawing.Point(28, 246);
+			this.panel1.Name = "panel1";
+			this.panel1.Size = new System.Drawing.Size(201, 103);
+			this.panel1.TabIndex = 6;
+			// 
+			// checkBox1
+			// 
+			this.checkBox1.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBox1.AutoSize = false;
+			this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBox1.Checked = true;
+			this.checkBox1.CheckState = Wisej.Web.CheckState.Checked;
+			this.checkBox1.Location = new System.Drawing.Point(28, 36);
+			this.checkBox1.Name = "checkBox1";
+			this.checkBox1.Size = new System.Drawing.Size(195, 38);
+			this.checkBox1.TabIndex = 15;
+			this.checkBox1.Text = "Enable CheckMark";
+			// 
+			// checkBox2
+			// 
+			this.checkBox2.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBox2.AutoSize = false;
+			this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBox2.Location = new System.Drawing.Point(28, 106);
+			this.checkBox2.Name = "checkBox2";
+			this.checkBox2.Size = new System.Drawing.Size(195, 38);
+			this.checkBox2.TabIndex = 16;
+			this.checkBox2.Text = "Enable Filtering";
+			// 
+			// checkBox3
+			// 
+			this.checkBox3.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBox3.AutoSize = false;
+			this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBox3.Location = new System.Drawing.Point(28, 176);
+			this.checkBox3.Name = "checkBox3";
+			this.checkBox3.Size = new System.Drawing.Size(195, 38);
+			this.checkBox3.TabIndex = 17;
+			this.checkBox3.Text = "Enable Group List";
+			// 
 			// ejListView
 			// 
 			this.Name = "ejListView";
-			this.Size = new System.Drawing.Size(864, 657);
+			this.Size = new System.Drawing.Size(864, 780);
 			this.groupBox1.ResumeLayout(false);
 			this.panel.ResumeLayout(false);
+			this.panel1.ResumeLayout(false);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -141,5 +197,9 @@
 		private Button buttonAddNewItem;
 		private Button buttonGetSelectedItems;
 		private Button buttonClearSelected;
+		private Panel panel1;
+		private CheckBox checkBox1;
+		private CheckBox checkBox3;
+		private CheckBox checkBox2;
 	}
 }

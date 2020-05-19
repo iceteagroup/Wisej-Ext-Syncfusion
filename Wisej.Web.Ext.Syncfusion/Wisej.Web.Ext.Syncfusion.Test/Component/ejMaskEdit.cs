@@ -15,7 +15,10 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			this.ejMaskEdit1.Options.inputMode = this.comboBoxInputMode.Text;
+			this.ejMaskEdit1.Options.hidePromptOnLeave = this.checkBox1.Checked;
+			this.ejMaskEdit1.Options.showPromptChar = this.checkBox2.Checked;
+			this.ejMaskEdit1.Options.inputMode = this.comboBox1.Text;
+			this.ejMaskEdit1.Options.customCharacter = this.textBox1.Text;
 
 			this.ejMaskEdit1.Update();
 		}

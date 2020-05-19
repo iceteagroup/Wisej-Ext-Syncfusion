@@ -18,6 +18,8 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
 			this.ejDateRangePicker1.Options.value = $"{DateTime.Parse(this.textBoxStartDay.Text).ToShortDateString()} - {DateTime.Parse(this.textBoxEndDay.Text).ToShortDateString()}";
+			this.ejDateRangePicker1.Options.allowEdit = this.checkBox1.Checked;
+			this.ejDateRangePicker1.Options.enableTimePicker = this.checkBox2.Checked;
 
 			this.ejDateRangePicker1.Update();
 		}
