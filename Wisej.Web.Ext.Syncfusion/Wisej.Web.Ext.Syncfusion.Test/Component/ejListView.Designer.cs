@@ -45,10 +45,12 @@
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "https://help.syncfusion.com/js/listview/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejlistview";
 			// 
 			// groupBox1
@@ -71,16 +73,19 @@
 			// buttonUpdate
 			// 
 			this.buttonUpdate.Location = new System.Drawing.Point(28, 505);
+			this.buttonUpdate.TabIndex = 6;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejListView1);
 			this.panel.Size = new System.Drawing.Size(455, 590);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
 			this.linkDemo.Size = new System.Drawing.Size(532, 24);
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/flatlight/listview/DefaultFunctionalities";
 			// 
 			// ejListView1
@@ -104,7 +109,7 @@
 			this.textBoxAddNewItem.Location = new System.Drawing.Point(3, 3);
 			this.textBoxAddNewItem.Name = "textBoxAddNewItem";
 			this.textBoxAddNewItem.Size = new System.Drawing.Size(195, 60);
-			this.textBoxAddNewItem.TabIndex = 2;
+			this.textBoxAddNewItem.TabIndex = 0;
 			this.textBoxAddNewItem.Text = "Top 1000 Albums";
 			// 
 			// buttonAddNewItem
@@ -112,7 +117,7 @@
 			this.buttonAddNewItem.Location = new System.Drawing.Point(2, 69);
 			this.buttonAddNewItem.Name = "buttonAddNewItem";
 			this.buttonAddNewItem.Size = new System.Drawing.Size(195, 30);
-			this.buttonAddNewItem.TabIndex = 3;
+			this.buttonAddNewItem.TabIndex = 1;
 			this.buttonAddNewItem.Text = "Add Item";
 			this.buttonAddNewItem.Click += new System.EventHandler(this.buttonAddNewItem_Click);
 			// 
@@ -141,7 +146,7 @@
 			this.panel1.Location = new System.Drawing.Point(28, 246);
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(201, 103);
-			this.panel1.TabIndex = 6;
+			this.panel1.TabIndex = 3;
 			// 
 			// checkBox1
 			// 
@@ -153,7 +158,7 @@
 			this.checkBox1.Location = new System.Drawing.Point(28, 36);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(195, 38);
-			this.checkBox1.TabIndex = 15;
+			this.checkBox1.TabIndex = 0;
 			this.checkBox1.Text = "Enable CheckMark";
 			// 
 			// checkBox2
@@ -164,7 +169,7 @@
 			this.checkBox2.Location = new System.Drawing.Point(28, 106);
 			this.checkBox2.Name = "checkBox2";
 			this.checkBox2.Size = new System.Drawing.Size(195, 38);
-			this.checkBox2.TabIndex = 16;
+			this.checkBox2.TabIndex = 1;
 			this.checkBox2.Text = "Enable Filtering";
 			// 
 			// checkBox3
@@ -175,7 +180,7 @@
 			this.checkBox3.Location = new System.Drawing.Point(28, 176);
 			this.checkBox3.Name = "checkBox3";
 			this.checkBox3.Size = new System.Drawing.Size(195, 38);
-			this.checkBox3.TabIndex = 17;
+			this.checkBox3.TabIndex = 2;
 			this.checkBox3.Text = "Enable Group List";
 			// 
 			// ejListView

@@ -38,10 +38,12 @@
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "https://help.syncfusion.com/js/combobox/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejcombobox";
 			// 
 			// groupBox1
@@ -54,15 +56,18 @@
 			// 
 			// buttonUpdate
 			// 
+			this.buttonUpdate.TabIndex = 2;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejComboBox1);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
 			this.linkDemo.Size = new System.Drawing.Size(518, 24);
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/bootstrap/combobox/DefaultFunctionalities";
 			// 
 			// ejComboBox1
@@ -85,7 +90,7 @@
 			this.checkBoxAutofill.Location = new System.Drawing.Point(28, 36);
 			this.checkBoxAutofill.Name = "checkBoxAutofill";
 			this.checkBoxAutofill.Size = new System.Drawing.Size(195, 38);
-			this.checkBoxAutofill.TabIndex = 8;
+			this.checkBoxAutofill.TabIndex = 0;
 			this.checkBoxAutofill.Text = "Autofill";
 			// 
 			// checkBoxShowClearButton
@@ -95,10 +100,10 @@
 			this.checkBoxShowClearButton.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBoxShowClearButton.Checked = true;
 			this.checkBoxShowClearButton.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBoxShowClearButton.Location = new System.Drawing.Point(28, 96);
+			this.checkBoxShowClearButton.Location = new System.Drawing.Point(28, 135);
 			this.checkBoxShowClearButton.Name = "checkBoxShowClearButton";
 			this.checkBoxShowClearButton.Size = new System.Drawing.Size(195, 38);
-			this.checkBoxShowClearButton.TabIndex = 9;
+			this.checkBoxShowClearButton.TabIndex = 1;
 			this.checkBoxShowClearButton.Text = "Show Clear Button";
 			// 
 			// ejComboBox

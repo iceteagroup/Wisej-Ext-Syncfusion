@@ -43,10 +43,12 @@
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "https://help.syncfusion.com/js/spreadsheet/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejspreadsheet";
 			// 
 			// groupBox1
@@ -73,16 +75,19 @@
 			// buttonUpdate
 			// 
 			this.buttonUpdate.Location = new System.Drawing.Point(28, 454);
+			this.buttonUpdate.TabIndex = 8;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejSpreadsheet1);
 			this.panel.Size = new System.Drawing.Size(455, 544);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
 			this.linkDemo.Size = new System.Drawing.Size(558, 24);
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/bootstrap/spreadsheet/defaultfunctionaliti" +
     "es";
 			// 
@@ -108,7 +113,7 @@
 			this.checkBox1.Location = new System.Drawing.Point(28, 36);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(195, 30);
-			this.checkBox1.TabIndex = 6;
+			this.checkBox1.TabIndex = 0;
 			this.checkBox1.Text = "Show Ribbon";
 			// 
 			// checkBox2
@@ -121,7 +126,7 @@
 			this.checkBox2.Location = new System.Drawing.Point(28, 94);
 			this.checkBox2.Name = "checkBox2";
 			this.checkBox2.Size = new System.Drawing.Size(195, 30);
-			this.checkBox2.TabIndex = 7;
+			this.checkBox2.TabIndex = 1;
 			this.checkBox2.Text = "Allow Editing";
 			// 
 			// buttonLoad
@@ -132,7 +137,7 @@
 			this.buttonLoad.Location = new System.Drawing.Point(28, 384);
 			this.buttonLoad.Name = "buttonLoad";
 			this.buttonLoad.Size = new System.Drawing.Size(42, 42);
-			this.buttonLoad.TabIndex = 9;
+			this.buttonLoad.TabIndex = 6;
 			this.buttonLoad.Uploaded += new Wisej.Web.UploadedEventHandler(this.buttonLoad_Uploaded);
 			// 
 			// buttonSave
@@ -142,7 +147,7 @@
 			this.buttonSave.Location = new System.Drawing.Point(76, 384);
 			this.buttonSave.Name = "buttonSave";
 			this.buttonSave.Size = new System.Drawing.Size(42, 42);
-			this.buttonSave.TabIndex = 8;
+			this.buttonSave.TabIndex = 7;
 			this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
 			// 
 			// checkBox3
@@ -153,7 +158,7 @@
 			this.checkBox3.Location = new System.Drawing.Point(28, 152);
 			this.checkBox3.Name = "checkBox3";
 			this.checkBox3.Size = new System.Drawing.Size(195, 30);
-			this.checkBox3.TabIndex = 10;
+			this.checkBox3.TabIndex = 2;
 			this.checkBox3.Text = "Allow Auto Cell Type";
 			// 
 			// checkBox4
@@ -166,7 +171,7 @@
 			this.checkBox4.Location = new System.Drawing.Point(28, 210);
 			this.checkBox4.Name = "checkBox4";
 			this.checkBox4.Size = new System.Drawing.Size(195, 30);
-			this.checkBox4.TabIndex = 11;
+			this.checkBox4.TabIndex = 3;
 			this.checkBox4.Text = "Allow AutoFill";
 			// 
 			// checkBox5
@@ -177,7 +182,7 @@
 			this.checkBox5.Location = new System.Drawing.Point(28, 268);
 			this.checkBox5.Name = "checkBox5";
 			this.checkBox5.Size = new System.Drawing.Size(195, 30);
-			this.checkBox5.TabIndex = 12;
+			this.checkBox5.TabIndex = 4;
 			this.checkBox5.Text = "Enable Pivot Table";
 			// 
 			// checkBox6
@@ -190,7 +195,7 @@
 			this.checkBox6.Location = new System.Drawing.Point(28, 326);
 			this.checkBox6.Name = "checkBox6";
 			this.checkBox6.Size = new System.Drawing.Size(195, 30);
-			this.checkBox6.TabIndex = 13;
+			this.checkBox6.TabIndex = 5;
 			this.checkBox6.Text = "Allow Cell Border";
 			// 
 			// ejSpreadsheet

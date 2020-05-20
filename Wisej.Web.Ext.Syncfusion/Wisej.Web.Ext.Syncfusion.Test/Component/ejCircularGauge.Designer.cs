@@ -45,10 +45,12 @@
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "https://help.syncfusion.com/js/circulargauge/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejcirculargauge";
 			// 
 			// groupBox1
@@ -71,16 +73,19 @@
 			// buttonUpdate
 			// 
 			this.buttonUpdate.Location = new System.Drawing.Point(28, 391);
+			this.buttonUpdate.TabIndex = 6;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejCircularGauge1);
 			this.panel.Size = new System.Drawing.Size(455, 472);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
 			this.linkDemo.Size = new System.Drawing.Size(509, 24);
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/flatlight/radialgauge/defaultfunctionaliti" +
     "es";
 			// 
@@ -101,10 +106,10 @@
 			this.numericUpDownVal.Label.Size = 50;
 			this.numericUpDownVal.Label.SizeType = Wisej.Web.SizeType.Percent;
 			this.numericUpDownVal.LabelText = "Value";
-			this.numericUpDownVal.Location = new System.Drawing.Point(28, 41);
+			this.numericUpDownVal.Location = new System.Drawing.Point(28, 36);
 			this.numericUpDownVal.Name = "numericUpDownVal";
 			this.numericUpDownVal.Size = new System.Drawing.Size(195, 60);
-			this.numericUpDownVal.TabIndex = 1;
+			this.numericUpDownVal.TabIndex = 0;
 			this.numericUpDownVal.Value = new decimal(new int[] {
             50,
             0,
@@ -127,7 +132,7 @@
 			this.label4.Location = new System.Drawing.Point(28, 124);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(96, 15);
-			this.label4.TabIndex = 3;
+			this.label4.TabIndex = 1;
 			this.label4.Text = "Range Distance";
 			// 
 			// label5
@@ -136,7 +141,7 @@
 			this.label5.Location = new System.Drawing.Point(28, 214);
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(71, 15);
-			this.label5.TabIndex = 5;
+			this.label5.TabIndex = 3;
 			this.label5.Text = "Range Size";
 			// 
 			// trackBarSize
@@ -159,7 +164,7 @@
 			this.checkBoxShowTicks.Location = new System.Drawing.Point(28, 309);
 			this.checkBoxShowTicks.Name = "checkBoxShowTicks";
 			this.checkBoxShowTicks.Size = new System.Drawing.Size(183, 38);
-			this.checkBoxShowTicks.TabIndex = 6;
+			this.checkBoxShowTicks.TabIndex = 5;
 			this.checkBoxShowTicks.Text = "Show Ticks";
 			// 
 			// ejCircularGauge

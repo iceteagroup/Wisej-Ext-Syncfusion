@@ -41,10 +41,12 @@
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "https://help.syncfusion.com/js/signature/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejsignature";
 			// 
 			// groupBox1
@@ -67,16 +69,19 @@
 			// buttonUpdate
 			// 
 			this.buttonUpdate.Location = new System.Drawing.Point(28, 279);
+			this.buttonUpdate.TabIndex = 6;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejSignature1);
 			this.panel.Size = new System.Drawing.Size(455, 360);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
 			this.linkDemo.Size = new System.Drawing.Size(616, 24);
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/flatlight/signature/DefaultFunctionalities" +
     "";
 			// 
@@ -89,7 +94,7 @@
 			this.ejSignature1.Name = "ejSignature1";
 			this.ejSignature1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"isResponsive\":true,\"strokeWidth\":3}")));
 			this.ejSignature1.Size = new System.Drawing.Size(407, 319);
-			this.ejSignature1.TabIndex = 1;
+			this.ejSignature1.TabIndex = 0;
 			this.ejSignature1.Text = "ejSignature1";
 			// 
 			// button1
@@ -97,7 +102,7 @@
 			this.button1.Location = new System.Drawing.Point(28, 138);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(195, 30);
-			this.button1.TabIndex = 1;
+			this.button1.TabIndex = 2;
 			this.button1.Text = "Save Image";
 			this.button1.Click += new System.EventHandler(this.buttonSave_Click);
 			// 
@@ -106,7 +111,7 @@
 			this.buttonClear.Location = new System.Drawing.Point(28, 181);
 			this.buttonClear.Name = "buttonClear";
 			this.buttonClear.Size = new System.Drawing.Size(195, 30);
-			this.buttonClear.TabIndex = 2;
+			this.buttonClear.TabIndex = 3;
 			this.buttonClear.Text = "Clear";
 			this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
 			// 
@@ -117,7 +122,7 @@
 			this.buttonUndo.Location = new System.Drawing.Point(28, 224);
 			this.buttonUndo.Name = "buttonUndo";
 			this.buttonUndo.Size = new System.Drawing.Size(42, 42);
-			this.buttonUndo.TabIndex = 9;
+			this.buttonUndo.TabIndex = 4;
 			this.buttonUndo.Click += new System.EventHandler(this.buttonUndo_Click);
 			// 
 			// buttonRedo
@@ -127,7 +132,7 @@
 			this.buttonRedo.Location = new System.Drawing.Point(76, 224);
 			this.buttonRedo.Name = "buttonRedo";
 			this.buttonRedo.Size = new System.Drawing.Size(42, 42);
-			this.buttonRedo.TabIndex = 10;
+			this.buttonRedo.TabIndex = 5;
 			this.buttonRedo.Click += new System.EventHandler(this.buttonRedo_Click);
 			// 
 			// checkBox2
@@ -138,7 +143,7 @@
 			this.checkBox2.Location = new System.Drawing.Point(28, 36);
 			this.checkBox2.Name = "checkBox2";
 			this.checkBox2.Size = new System.Drawing.Size(195, 38);
-			this.checkBox2.TabIndex = 11;
+			this.checkBox2.TabIndex = 0;
 			this.checkBox2.Text = "Save With Background";
 			// 
 			// checkBox1
@@ -149,7 +154,7 @@
 			this.checkBox1.Location = new System.Drawing.Point(28, 87);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(195, 38);
-			this.checkBox1.TabIndex = 12;
+			this.checkBox1.TabIndex = 1;
 			this.checkBox1.Text = "Show Rounded Corner";
 			// 
 			// ejSignature

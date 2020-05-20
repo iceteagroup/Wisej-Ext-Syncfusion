@@ -40,10 +40,12 @@
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "https://help.syncfusion.com/js/pager/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejpager";
 			// 
 			// groupBox1
@@ -57,6 +59,7 @@
 			// buttonUpdate
 			// 
 			this.buttonUpdate.Location = new System.Drawing.Point(28, 233);
+			this.buttonUpdate.TabIndex = 2;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
@@ -64,10 +67,12 @@
 			this.panel.Controls.Add(this.ejRotator1);
 			this.panel.Controls.Add(this.ejPager1);
 			this.panel.Size = new System.Drawing.Size(695, 452);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
 			this.linkDemo.Size = new System.Drawing.Size(519, 24);
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/bootstrap/pager/DefaultFunctionalities";
 			// 
 			// ejPager1
@@ -78,7 +83,7 @@
 			this.ejPager1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"pageSize\":1,\"totalPages\":6,\"totalRecordsCount\":6,\"pageCount\":3,\"isResponsive\":t" +
         "rue}")));
 			this.ejPager1.Size = new System.Drawing.Size(630, 44);
-			this.ejPager1.TabIndex = 3;
+			this.ejPager1.TabIndex = 1;
 			this.ejPager1.Text = "ejPager1";
 			// 
 			// ejRotator1
@@ -88,7 +93,7 @@
 			this.ejRotator1.Name = "ejRotator1";
 			this.ejRotator1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejRotator1.Options"))));
 			this.ejRotator1.Size = new System.Drawing.Size(630, 353);
-			this.ejRotator1.TabIndex = 2;
+			this.ejRotator1.TabIndex = 0;
 			this.ejRotator1.Text = "ejRotator1";
 			// 
 			// buttonGoToFirstPage
@@ -114,7 +119,7 @@
             0});
 			this.numericSelectedPage.Name = "numericSelectedPage";
 			this.numericSelectedPage.Size = new System.Drawing.Size(195, 60);
-			this.numericSelectedPage.TabIndex = 3;
+			this.numericSelectedPage.TabIndex = 0;
 			this.numericSelectedPage.Value = new decimal(new int[] {
             1,
             0,

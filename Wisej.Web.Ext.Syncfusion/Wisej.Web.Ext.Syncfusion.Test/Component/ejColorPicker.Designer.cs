@@ -37,10 +37,12 @@
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "https://help.syncfusion.com/js/colorpicker/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejcolorpicker";
 			// 
 			// groupBox1
@@ -51,15 +53,18 @@
 			// 
 			// buttonUpdate
 			// 
+			this.buttonUpdate.TabIndex = 1;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.label4);
 			this.panel.Controls.Add(this.ejColorPicker1);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/bootstrap/colorpicker";
 			// 
 			// ejColorPicker1
@@ -68,7 +73,7 @@
 			this.ejColorPicker1.Location = new System.Drawing.Point(192, 147);
 			this.ejColorPicker1.Name = "ejColorPicker1";
 			this.ejColorPicker1.Size = new System.Drawing.Size(113, 37);
-			this.ejColorPicker1.TabIndex = 2;
+			this.ejColorPicker1.TabIndex = 1;
 			this.ejColorPicker1.Text = "Choose Color";
 			this.ejColorPicker1.WidgetEvent += new Wisej.Web.WidgetEventHandler(this.ejColorPicker1_WidgetEvent);
 			// 
@@ -81,7 +86,7 @@
 			this.textBoxColor.Location = new System.Drawing.Point(28, 32);
 			this.textBoxColor.Name = "textBoxColor";
 			this.textBoxColor.Size = new System.Drawing.Size(200, 60);
-			this.textBoxColor.TabIndex = 2;
+			this.textBoxColor.TabIndex = 0;
 			// 
 			// label4
 			// 
@@ -90,7 +95,7 @@
 			this.label4.Location = new System.Drawing.Point(192, 125);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(83, 15);
-			this.label4.TabIndex = 1;
+			this.label4.TabIndex = 0;
 			this.label4.Text = "Choose Color";
 			// 
 			// ejColorPicker

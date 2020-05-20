@@ -46,10 +46,12 @@
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "https://help.syncfusion.com/js/gantt/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejgantt";
 			// 
 			// groupBox1
@@ -80,16 +82,19 @@
 			// buttonUpdate
 			// 
 			this.buttonUpdate.Location = new System.Drawing.Point(28, 717);
+			this.buttonUpdate.TabIndex = 10;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejGantt1);
 			this.panel.Size = new System.Drawing.Size(601, 806);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
 			this.linkDemo.Size = new System.Drawing.Size(576, 24);
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/flatlight/gantt/Sorting/DefaultFunctionali" +
     "ties";
 			// 
@@ -115,7 +120,7 @@
 			this.textBox1.Location = new System.Drawing.Point(28, 463);
 			this.textBox1.Name = "textBox1";
 			this.textBox1.Size = new System.Drawing.Size(195, 60);
-			this.textBox1.TabIndex = 3;
+			this.textBox1.TabIndex = 7;
 			this.textBox1.Text = "2017-02-23";
 			this.textBox1.Watermark = "Select date...";
 			// 
@@ -129,7 +134,7 @@
 			this.checkBox1.Location = new System.Drawing.Point(28, 36);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(195, 30);
-			this.checkBox1.TabIndex = 6;
+			this.checkBox1.TabIndex = 0;
 			this.checkBox1.Text = "Show Progress Status";
 			// 
 			// checkBox2
@@ -142,7 +147,7 @@
 			this.checkBox2.Location = new System.Drawing.Point(28, 97);
 			this.checkBox2.Name = "checkBox2";
 			this.checkBox2.Size = new System.Drawing.Size(195, 30);
-			this.checkBox2.TabIndex = 7;
+			this.checkBox2.TabIndex = 1;
 			this.checkBox2.Text = "Show Column Options";
 			// 
 			// textBox2
@@ -155,7 +160,7 @@
 			this.textBox2.Location = new System.Drawing.Point(28, 554);
 			this.textBox2.Name = "textBox2";
 			this.textBox2.Size = new System.Drawing.Size(195, 60);
-			this.textBox2.TabIndex = 9;
+			this.textBox2.TabIndex = 8;
 			this.textBox2.Text = "2017-03-20";
 			this.textBox2.Watermark = "Select date...";
 			// 
@@ -167,7 +172,7 @@
 			this.checkBox3.Location = new System.Drawing.Point(28, 158);
 			this.checkBox3.Name = "checkBox3";
 			this.checkBox3.Size = new System.Drawing.Size(195, 30);
-			this.checkBox3.TabIndex = 10;
+			this.checkBox3.TabIndex = 2;
 			this.checkBox3.Text = "Allow Gantt Chart Editing";
 			// 
 			// checkBox4
@@ -178,7 +183,7 @@
 			this.checkBox4.Location = new System.Drawing.Point(28, 219);
 			this.checkBox4.Name = "checkBox4";
 			this.checkBox4.Size = new System.Drawing.Size(195, 30);
-			this.checkBox4.TabIndex = 11;
+			this.checkBox4.TabIndex = 3;
 			this.checkBox4.Text = "Enable Collapse All";
 			// 
 			// checkBox5
@@ -189,7 +194,7 @@
 			this.checkBox5.Location = new System.Drawing.Point(28, 280);
 			this.checkBox5.Name = "checkBox5";
 			this.checkBox5.Size = new System.Drawing.Size(195, 30);
-			this.checkBox5.TabIndex = 12;
+			this.checkBox5.TabIndex = 4;
 			this.checkBox5.Text = "Enable Context Menu";
 			// 
 			// checkBox6
@@ -200,7 +205,7 @@
 			this.checkBox6.Location = new System.Drawing.Point(28, 341);
 			this.checkBox6.Name = "checkBox6";
 			this.checkBox6.Size = new System.Drawing.Size(195, 30);
-			this.checkBox6.TabIndex = 13;
+			this.checkBox6.TabIndex = 5;
 			this.checkBox6.Text = "Enable WBS";
 			// 
 			// checkBox7
@@ -211,7 +216,7 @@
 			this.checkBox7.Location = new System.Drawing.Point(28, 402);
 			this.checkBox7.Name = "checkBox7";
 			this.checkBox7.Size = new System.Drawing.Size(195, 30);
-			this.checkBox7.TabIndex = 14;
+			this.checkBox7.TabIndex = 6;
 			this.checkBox7.Text = "Highlight Non-Working Time";
 			// 
 			// comboBox1
@@ -224,7 +229,7 @@
 			this.comboBox1.Location = new System.Drawing.Point(28, 645);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(195, 41);
-			this.comboBox1.TabIndex = 15;
+			this.comboBox1.TabIndex = 9;
 			this.comboBox1.Text = "ProjectView";
 			// 
 			// ejGantt

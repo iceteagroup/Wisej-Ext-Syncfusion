@@ -44,10 +44,12 @@
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "https://help.syncfusion.com/js/slider/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejslider";
 			// 
 			// groupBox1
@@ -66,6 +68,7 @@
 			// buttonUpdate
 			// 
 			this.buttonUpdate.Location = new System.Drawing.Point(28, 322);
+			this.buttonUpdate.TabIndex = 4;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
@@ -73,10 +76,12 @@
 			this.panel.Controls.Add(this.ejDiagram1);
 			this.panel.Controls.Add(this.ejSymbolPalette1);
 			this.panel.Size = new System.Drawing.Size(455, 404);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
 			this.linkDemo.Size = new System.Drawing.Size(586, 24);
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/flatlight/diagram/GettingStarted/SymbolPal" +
     "ette";
 			// 
@@ -88,7 +93,7 @@
 			this.ejSymbolPalette1.Name = "ejSymbolPalette1";
 			this.ejSymbolPalette1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejSymbolPalette1.Options"))));
 			this.ejSymbolPalette1.Size = new System.Drawing.Size(250, 396);
-			this.ejSymbolPalette1.TabIndex = 2;
+			this.ejSymbolPalette1.TabIndex = 0;
 			this.ejSymbolPalette1.Text = "ejSymbolPalette1";
 			widgetTemplate1.Id = "svgTemplate";
 			widgetTemplate1.Template = resources.GetString("widgetTemplate1.Template");
@@ -117,7 +122,7 @@
 			this.checkBox1.Location = new System.Drawing.Point(28, 36);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(195, 38);
-			this.checkBox1.TabIndex = 9;
+			this.checkBox1.TabIndex = 0;
 			this.checkBox1.Text = "Show Palette Item Text";
 			// 
 			// checkBox2
@@ -130,7 +135,7 @@
 			this.checkBox2.Location = new System.Drawing.Point(28, 106);
 			this.checkBox2.Name = "checkBox2";
 			this.checkBox2.Size = new System.Drawing.Size(195, 38);
-			this.checkBox2.TabIndex = 10;
+			this.checkBox2.TabIndex = 1;
 			this.checkBox2.Text = "Allow Drag";
 			// 
 			// numericUpDown1
@@ -144,7 +149,7 @@
             0});
 			this.numericUpDown1.Name = "numericUpDown1";
 			this.numericUpDown1.Size = new System.Drawing.Size(195, 41);
-			this.numericUpDown1.TabIndex = 11;
+			this.numericUpDown1.TabIndex = 2;
 			this.numericUpDown1.Value = new decimal(new int[] {
             100,
             0,
@@ -157,7 +162,7 @@
 			this.numericUpDown2.Location = new System.Drawing.Point(28, 249);
 			this.numericUpDown2.Name = "numericUpDown2";
 			this.numericUpDown2.Size = new System.Drawing.Size(195, 41);
-			this.numericUpDown2.TabIndex = 12;
+			this.numericUpDown2.TabIndex = 3;
 			this.numericUpDown2.Value = new decimal(new int[] {
             30,
             0,

@@ -43,10 +43,12 @@
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "https://help.syncfusion.com/js/fileexplorer/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejfileexplorer";
 			// 
 			// groupBox1
@@ -59,7 +61,7 @@
 			this.groupBox1.Controls.Add(this.comboBox1);
 			this.groupBox1.Controls.Add(this.checkBox2);
 			this.groupBox1.Controls.Add(this.checkBox1);
-			this.groupBox1.Size = new System.Drawing.Size(250, 598);
+			this.groupBox1.Size = new System.Drawing.Size(250, 626);
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
 			this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
 			this.groupBox1.Controls.SetChildIndex(this.checkBox2, 0);
@@ -72,17 +74,20 @@
 			// 
 			// buttonUpdate
 			// 
-			this.buttonUpdate.Location = new System.Drawing.Point(28, 507);
+			this.buttonUpdate.Location = new System.Drawing.Point(28, 531);
+			this.buttonUpdate.TabIndex = 8;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejFileExplorer1);
-			this.panel.Size = new System.Drawing.Size(455, 598);
+			this.panel.Size = new System.Drawing.Size(455, 626);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
 			this.linkDemo.Size = new System.Drawing.Size(536, 24);
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/bootstrap/fileexplorer/DefaultFunctionalit" +
     "ies";
 			// 
@@ -94,7 +99,7 @@
 			this.ejFileExplorer1.Location = new System.Drawing.Point(26, 21);
 			this.ejFileExplorer1.Name = "ejFileExplorer1";
 			this.ejFileExplorer1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"showFooter\":true,\"showToolbar\":true,\"layout\":\"tile\",\"path\":\"/\"}")));
-			this.ejFileExplorer1.Size = new System.Drawing.Size(400, 553);
+			this.ejFileExplorer1.Size = new System.Drawing.Size(400, 581);
 			this.ejFileExplorer1.TabIndex = 0;
 			this.ejFileExplorer1.Text = "ejFileExplorer1";
 			this.ejFileExplorer1.WebRequest += new Wisej.Web.WebRequestHandler(this.ejFileExplorer1_WebRequest);
@@ -106,11 +111,11 @@
 			this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBox2.Checked = true;
 			this.checkBox2.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBox2.Location = new System.Drawing.Point(28, 92);
+			this.checkBox2.Location = new System.Drawing.Point(28, 95);
 			this.checkBox2.Margin = new Wisej.Web.Padding(3, 10, 3, 3);
 			this.checkBox2.Name = "checkBox2";
 			this.checkBox2.Size = new System.Drawing.Size(195, 30);
-			this.checkBox2.TabIndex = 6;
+			this.checkBox2.TabIndex = 1;
 			this.checkBox2.Text = "Show Toolbar";
 			// 
 			// checkBox1
@@ -123,7 +128,7 @@
 			this.checkBox1.Location = new System.Drawing.Point(28, 37);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(195, 30);
-			this.checkBox1.TabIndex = 5;
+			this.checkBox1.TabIndex = 0;
 			this.checkBox1.Text = "Show Footer";
 			// 
 			// comboBox1
@@ -137,7 +142,7 @@
 			this.comboBox1.Label.Size = 50;
 			this.comboBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
 			this.comboBox1.LabelText = "Layout";
-			this.comboBox1.Location = new System.Drawing.Point(28, 422);
+			this.comboBox1.Location = new System.Drawing.Point(28, 443);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(195, 60);
 			this.comboBox1.TabIndex = 7;
@@ -150,11 +155,11 @@
 			this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBox3.Checked = true;
 			this.checkBox3.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBox3.Location = new System.Drawing.Point(28, 147);
+			this.checkBox3.Location = new System.Drawing.Point(28, 153);
 			this.checkBox3.Margin = new Wisej.Web.Padding(3, 10, 3, 3);
 			this.checkBox3.Name = "checkBox3";
 			this.checkBox3.Size = new System.Drawing.Size(195, 30);
-			this.checkBox3.TabIndex = 8;
+			this.checkBox3.TabIndex = 2;
 			this.checkBox3.Text = "Allow Keyboard Navigation";
 			// 
 			// checkBox4
@@ -164,11 +169,11 @@
 			this.checkBox4.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBox4.Checked = true;
 			this.checkBox4.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBox4.Location = new System.Drawing.Point(28, 202);
+			this.checkBox4.Location = new System.Drawing.Point(28, 211);
 			this.checkBox4.Margin = new Wisej.Web.Padding(3, 10, 3, 3);
 			this.checkBox4.Name = "checkBox4";
 			this.checkBox4.Size = new System.Drawing.Size(195, 30);
-			this.checkBox4.TabIndex = 9;
+			this.checkBox4.TabIndex = 3;
 			this.checkBox4.Text = "Allow Multi Selection";
 			// 
 			// checkBox5
@@ -178,11 +183,11 @@
 			this.checkBox5.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBox5.Checked = true;
 			this.checkBox5.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBox5.Location = new System.Drawing.Point(28, 257);
+			this.checkBox5.Location = new System.Drawing.Point(28, 269);
 			this.checkBox5.Margin = new Wisej.Web.Padding(3, 10, 3, 3);
 			this.checkBox5.Name = "checkBox5";
 			this.checkBox5.Size = new System.Drawing.Size(195, 30);
-			this.checkBox5.TabIndex = 10;
+			this.checkBox5.TabIndex = 4;
 			this.checkBox5.Text = "Show Checkbox";
 			// 
 			// checkBox6
@@ -192,11 +197,11 @@
 			this.checkBox6.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBox6.Checked = true;
 			this.checkBox6.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBox6.Location = new System.Drawing.Point(28, 312);
+			this.checkBox6.Location = new System.Drawing.Point(28, 327);
 			this.checkBox6.Margin = new Wisej.Web.Padding(3, 10, 3, 3);
 			this.checkBox6.Name = "checkBox6";
 			this.checkBox6.Size = new System.Drawing.Size(195, 30);
-			this.checkBox6.TabIndex = 11;
+			this.checkBox6.TabIndex = 5;
 			this.checkBox6.Text = "Show Context Menu";
 			// 
 			// checkBox7
@@ -206,17 +211,17 @@
 			this.checkBox7.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBox7.Checked = true;
 			this.checkBox7.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBox7.Location = new System.Drawing.Point(28, 367);
+			this.checkBox7.Location = new System.Drawing.Point(28, 385);
 			this.checkBox7.Margin = new Wisej.Web.Padding(3, 10, 3, 3);
 			this.checkBox7.Name = "checkBox7";
 			this.checkBox7.Size = new System.Drawing.Size(195, 30);
-			this.checkBox7.TabIndex = 12;
+			this.checkBox7.TabIndex = 6;
 			this.checkBox7.Text = "Show Thumbnail";
 			// 
 			// ejFileExplorer
 			// 
 			this.Name = "ejFileExplorer";
-			this.Size = new System.Drawing.Size(864, 788);
+			this.Size = new System.Drawing.Size(864, 816);
 			this.groupBox1.ResumeLayout(false);
 			this.panel.ResumeLayout(false);
 			this.ResumeLayout(false);

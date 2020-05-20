@@ -43,10 +43,12 @@
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "https://help.syncfusion.com/js/treemap/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejtreemap#members";
 			// 
 			// groupBox1
@@ -65,15 +67,18 @@
 			// buttonUpdate
 			// 
 			this.buttonUpdate.Location = new System.Drawing.Point(28, 274);
+			this.buttonUpdate.TabIndex = 4;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejTreeMap1);
 			this.panel.Size = new System.Drawing.Size(455, 359);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/bootstrap/treemap/FlatCollection";
 			// 
 			// ejTreeMap1
@@ -114,7 +119,7 @@
 			this.checkBox2.Location = new System.Drawing.Point(28, 36);
 			this.checkBox2.Name = "checkBox2";
 			this.checkBox2.Size = new System.Drawing.Size(195, 30);
-			this.checkBox2.TabIndex = 10;
+			this.checkBox2.TabIndex = 0;
 			this.checkBox2.Text = "Enable Gradient";
 			// 
 			// checkBox3
@@ -125,7 +130,7 @@
 			this.checkBox3.Location = new System.Drawing.Point(28, 90);
 			this.checkBox3.Name = "checkBox3";
 			this.checkBox3.Size = new System.Drawing.Size(195, 30);
-			this.checkBox3.TabIndex = 11;
+			this.checkBox3.TabIndex = 1;
 			this.checkBox3.Text = "Highlight on Selection";
 			// 
 			// comboBox1
@@ -140,7 +145,7 @@
 			this.comboBox1.Location = new System.Drawing.Point(28, 144);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(195, 41);
-			this.comboBox1.TabIndex = 12;
+			this.comboBox1.TabIndex = 2;
 			this.comboBox1.Text = "Squarified";
 			// 
 			// comboBox2
@@ -153,7 +158,7 @@
 			this.comboBox2.Location = new System.Drawing.Point(28, 209);
 			this.comboBox2.Name = "comboBox2";
 			this.comboBox2.Size = new System.Drawing.Size(195, 41);
-			this.comboBox2.TabIndex = 13;
+			this.comboBox2.TabIndex = 3;
 			this.comboBox2.Text = "default";
 			// 
 			// ejTreeMap

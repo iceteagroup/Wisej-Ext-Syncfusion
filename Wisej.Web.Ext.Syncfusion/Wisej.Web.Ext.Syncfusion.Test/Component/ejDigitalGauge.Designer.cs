@@ -46,10 +46,12 @@
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "https://help.syncfusion.com/js/digitalgauge/ove";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejdigitalgauge";
 			// 
 			// groupBox1
@@ -66,16 +68,19 @@
 			// buttonUpdate
 			// 
 			this.buttonUpdate.Location = new System.Drawing.Point(28, 356);
+			this.buttonUpdate.TabIndex = 3;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejDigitalGauge1);
 			this.panel.Size = new System.Drawing.Size(455, 437);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
 			this.linkDemo.Size = new System.Drawing.Size(582, 24);
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/flatlight/digitalgauge/DefaultFunctionalit" +
     "ies";
 			// 
@@ -102,7 +107,7 @@
 			this.textBox1.Location = new System.Drawing.Point(28, 36);
 			this.textBox1.Name = "textBox1";
 			this.textBox1.Size = new System.Drawing.Size(195, 60);
-			this.textBox1.TabIndex = 2;
+			this.textBox1.TabIndex = 0;
 			this.textBox1.Text = "123456789";
 			// 
 			// label4
@@ -111,7 +116,7 @@
 			this.label4.Location = new System.Drawing.Point(3, 3);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(106, 15);
-			this.label4.TabIndex = 5;
+			this.label4.TabIndex = 0;
 			this.label4.Text = "Segment Spacing";
 			// 
 			// trackBarSegmentSpacing
@@ -121,7 +126,7 @@
 			this.trackBarSegmentSpacing.Minimum = -2;
 			this.trackBarSegmentSpacing.Name = "trackBarSegmentSpacing";
 			this.trackBarSegmentSpacing.Size = new System.Drawing.Size(195, 34);
-			this.trackBarSegmentSpacing.TabIndex = 4;
+			this.trackBarSegmentSpacing.TabIndex = 1;
 			// 
 			// label5
 			// 
@@ -129,7 +134,7 @@
 			this.label5.Location = new System.Drawing.Point(3, 3);
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(111, 15);
-			this.label5.TabIndex = 7;
+			this.label5.TabIndex = 0;
 			this.label5.Text = "Character Spacing";
 			// 
 			// trackBarCharSpacing
@@ -139,7 +144,7 @@
 			this.trackBarCharSpacing.Minimum = 1;
 			this.trackBarCharSpacing.Name = "trackBarCharSpacing";
 			this.trackBarCharSpacing.Size = new System.Drawing.Size(195, 34);
-			this.trackBarCharSpacing.TabIndex = 6;
+			this.trackBarCharSpacing.TabIndex = 1;
 			this.trackBarCharSpacing.Value = 2;
 			// 
 			// panel1
@@ -149,7 +154,7 @@
 			this.panel1.Location = new System.Drawing.Point(24, 140);
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(203, 64);
-			this.panel1.TabIndex = 8;
+			this.panel1.TabIndex = 1;
 			// 
 			// panel2
 			// 
@@ -158,7 +163,7 @@
 			this.panel2.Location = new System.Drawing.Point(24, 248);
 			this.panel2.Name = "panel2";
 			this.panel2.Size = new System.Drawing.Size(203, 64);
-			this.panel2.TabIndex = 9;
+			this.panel2.TabIndex = 2;
 			// 
 			// ejDigitalGauge
 			// 

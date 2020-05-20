@@ -46,10 +46,12 @@
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "https://help.syncfusion.com/js/sunburstchart/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejsunburstchart";
 			// 
 			// groupBox1
@@ -72,16 +74,19 @@
 			// buttonUpdate
 			// 
 			this.buttonUpdate.Location = new System.Drawing.Point(28, 411);
+			this.buttonUpdate.TabIndex = 6;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejSunburstChart1);
 			this.panel.Size = new System.Drawing.Size(455, 494);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
 			this.linkDemo.Size = new System.Drawing.Size(488, 24);
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/flatlight/sunburst/Default";
 			// 
 			// ejSunburstChart1
@@ -107,7 +112,7 @@
             0});
 			this.numericUpDown1.Name = "numericUpDown1";
 			this.numericUpDown1.Size = new System.Drawing.Size(195, 41);
-			this.numericUpDown1.TabIndex = 1;
+			this.numericUpDown1.TabIndex = 2;
 			// 
 			// numericUpDown2
 			// 
@@ -120,7 +125,7 @@
             0});
 			this.numericUpDown2.Name = "numericUpDown2";
 			this.numericUpDown2.Size = new System.Drawing.Size(195, 41);
-			this.numericUpDown2.TabIndex = 2;
+			this.numericUpDown2.TabIndex = 3;
 			this.numericUpDown2.Value = new decimal(new int[] {
             360,
             0,
@@ -144,7 +149,7 @@
             0});
 			this.numericUpDown3.Name = "numericUpDown3";
 			this.numericUpDown3.Size = new System.Drawing.Size(195, 41);
-			this.numericUpDown3.TabIndex = 3;
+			this.numericUpDown3.TabIndex = 4;
 			this.numericUpDown3.Value = new decimal(new int[] {
             1,
             0,
@@ -168,7 +173,7 @@
             0});
 			this.numericUpDown4.Name = "numericUpDown4";
 			this.numericUpDown4.Size = new System.Drawing.Size(195, 41);
-			this.numericUpDown4.TabIndex = 4;
+			this.numericUpDown4.TabIndex = 5;
 			this.numericUpDown4.Value = new decimal(new int[] {
             2,
             0,
@@ -185,7 +190,7 @@
 			this.checkBox1.Location = new System.Drawing.Point(28, 36);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(195, 38);
-			this.checkBox1.TabIndex = 10;
+			this.checkBox1.TabIndex = 0;
 			this.checkBox1.Text = "Legend Visible";
 			// 
 			// comboBox1
@@ -200,7 +205,7 @@
 			this.comboBox1.Location = new System.Drawing.Point(28, 96);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(195, 41);
-			this.comboBox1.TabIndex = 11;
+			this.comboBox1.TabIndex = 1;
 			this.comboBox1.Text = "Top";
 			// 
 			// ejSunburstChart

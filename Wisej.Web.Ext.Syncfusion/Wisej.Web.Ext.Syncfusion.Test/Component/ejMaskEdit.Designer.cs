@@ -42,10 +42,12 @@
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "https://help.syncfusion.com/js/maskedit/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejmaskedit";
 			// 
 			// groupBox1
@@ -64,15 +66,18 @@
 			// buttonUpdate
 			// 
 			this.buttonUpdate.Location = new System.Drawing.Point(28, 347);
+			this.buttonUpdate.TabIndex = 4;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.panel1);
 			this.panel.Size = new System.Drawing.Size(455, 430);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "N/A";
 			// 
 			// ejMaskEdit1
@@ -82,7 +87,7 @@
 			this.ejMaskEdit1.Name = "ejMaskEdit1";
 			this.ejMaskEdit1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"watermarkText\":\"Enter password\",\"inputMode\":\"Password\"}")));
 			this.ejMaskEdit1.Size = new System.Drawing.Size(200, 30);
-			this.ejMaskEdit1.TabIndex = 2;
+			this.ejMaskEdit1.TabIndex = 1;
 			this.ejMaskEdit1.Text = "ejMaskEdit1";
 			// 
 			// label4
@@ -91,7 +96,7 @@
 			this.label4.Location = new System.Drawing.Point(3, 3);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(105, 15);
-			this.label4.TabIndex = 1;
+			this.label4.TabIndex = 0;
 			this.label4.Text = "Password Format";
 			// 
 			// panel1
@@ -102,9 +107,9 @@
 			this.panel1.Location = new System.Drawing.Point(122, 184);
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(208, 61);
-			this.panel1.TabIndex = 2;
+			this.panel1.TabIndex = 0;
 			// 
-			// comboBoxInputMode
+			// comboBox1
 			// 
 			this.comboBox1.AutoSize = false;
 			this.comboBox1.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
@@ -115,9 +120,9 @@
 			this.comboBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
 			this.comboBox1.LabelText = "Input Mode";
 			this.comboBox1.Location = new System.Drawing.Point(28, 172);
-			this.comboBox1.Name = "comboBoxInputMode";
+			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(195, 60);
-			this.comboBox1.TabIndex = 3;
+			this.comboBox1.TabIndex = 2;
 			this.comboBox1.Text = "Password";
 			// 
 			// textBox1
@@ -127,7 +132,7 @@
 			this.textBox1.MaxLength = 1;
 			this.textBox1.Name = "textBox1";
 			this.textBox1.Size = new System.Drawing.Size(195, 41);
-			this.textBox1.TabIndex = 4;
+			this.textBox1.TabIndex = 3;
 			this.textBox1.Text = "*";
 			// 
 			// checkBox1
@@ -138,7 +143,7 @@
 			this.checkBox1.Location = new System.Drawing.Point(28, 36);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(195, 31);
-			this.checkBox1.TabIndex = 5;
+			this.checkBox1.TabIndex = 0;
 			this.checkBox1.Text = "Hide Prompt on Leave";
 			// 
 			// checkBox2
@@ -151,7 +156,7 @@
 			this.checkBox2.Location = new System.Drawing.Point(28, 104);
 			this.checkBox2.Name = "checkBox2";
 			this.checkBox2.Size = new System.Drawing.Size(195, 31);
-			this.checkBox2.TabIndex = 6;
+			this.checkBox2.TabIndex = 1;
 			this.checkBox2.Text = "Show Prompt Char";
 			// 
 			// ejMaskEdit

@@ -29,7 +29,7 @@
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ejDiagram));
-			Wisej.Web.Ext.Syncfusion.ejBase.WidgetTemplate widgetTemplate2 = new Wisej.Web.Ext.Syncfusion.ejBase.WidgetTemplate();
+			Wisej.Web.Ext.Syncfusion.ejBase.WidgetTemplate widgetTemplate1 = new Wisej.Web.Ext.Syncfusion.ejBase.WidgetTemplate();
 			this.ejDiagram1 = new Wisej.Web.Ext.Syncfusion.ejDiagram();
 			this.checkBox1 = new Wisej.Web.CheckBox();
 			this.checkBox2 = new Wisej.Web.CheckBox();
@@ -44,10 +44,12 @@
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "https://help.syncfusion.com/js/diagram/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejdiagram";
 			// 
 			// groupBox1
@@ -72,15 +74,18 @@
 			// buttonUpdate
 			// 
 			this.buttonUpdate.Location = new System.Drawing.Point(28, 400);
+			this.buttonUpdate.TabIndex = 7;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejDiagram1);
 			this.panel.Size = new System.Drawing.Size(455, 483);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/flatlight/diagram/defaultfunctionalities";
 			// 
 			// ejDiagram1
@@ -94,11 +99,11 @@
 			this.ejDiagram1.Size = new System.Drawing.Size(404, 427);
 			this.ejDiagram1.TabIndex = 0;
 			this.ejDiagram1.Text = "ejDiagram1";
-			widgetTemplate2.Id = "template1";
-			widgetTemplate2.Template = resources.GetString("widgetTemplate2.Template");
-			widgetTemplate2.Type = "text/javascript";
+			widgetTemplate1.Id = "template1";
+			widgetTemplate1.Template = resources.GetString("widgetTemplate1.Template");
+			widgetTemplate1.Type = "text/javascript";
 			this.ejDiagram1.WidgetTemplates = new Wisej.Web.Ext.Syncfusion.ejBase.WidgetTemplate[] {
-        widgetTemplate2};
+        widgetTemplate1};
 			this.ejDiagram1.Appear += new System.EventHandler(this.ejDiagram1_Appear);
 			// 
 			// checkBox1
@@ -111,7 +116,7 @@
 			this.checkBox1.Location = new System.Drawing.Point(28, 37);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(195, 31);
-			this.checkBox1.TabIndex = 1;
+			this.checkBox1.TabIndex = 0;
 			this.checkBox1.Text = "Editable";
 			// 
 			// checkBox2
@@ -124,7 +129,7 @@
 			this.checkBox2.Location = new System.Drawing.Point(28, 86);
 			this.checkBox2.Name = "checkBox2";
 			this.checkBox2.Size = new System.Drawing.Size(195, 31);
-			this.checkBox2.TabIndex = 2;
+			this.checkBox2.TabIndex = 1;
 			this.checkBox2.Text = "Context Menu";
 			// 
 			// comboBox1
@@ -151,7 +156,7 @@
 			this.buttonSave.Location = new System.Drawing.Point(76, 340);
 			this.buttonSave.Name = "buttonSave";
 			this.buttonSave.Size = new System.Drawing.Size(42, 42);
-			this.buttonSave.TabIndex = 5;
+			this.buttonSave.TabIndex = 6;
 			this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
 			// 
 			// buttonLoad
@@ -162,7 +167,7 @@
 			this.buttonLoad.Location = new System.Drawing.Point(28, 340);
 			this.buttonLoad.Name = "buttonLoad";
 			this.buttonLoad.Size = new System.Drawing.Size(42, 42);
-			this.buttonLoad.TabIndex = 6;
+			this.buttonLoad.TabIndex = 5;
 			this.buttonLoad.Uploaded += new Wisej.Web.UploadedEventHandler(this.buttonLoad_Uploaded);
 			// 
 			// comboBox2
@@ -180,7 +185,7 @@
 			this.comboBox2.Location = new System.Drawing.Point(28, 262);
 			this.comboBox2.Name = "comboBox2";
 			this.comboBox2.Size = new System.Drawing.Size(195, 60);
-			this.comboBox2.TabIndex = 7;
+			this.comboBox2.TabIndex = 4;
 			this.comboBox2.Text = "Top";
 			// 
 			// checkBox3
@@ -193,7 +198,7 @@
 			this.checkBox3.Location = new System.Drawing.Point(28, 135);
 			this.checkBox3.Name = "checkBox3";
 			this.checkBox3.Size = new System.Drawing.Size(195, 31);
-			this.checkBox3.TabIndex = 8;
+			this.checkBox3.TabIndex = 2;
 			this.checkBox3.Text = "Enable AutoScroll";
 			// 
 			// ejDiagram

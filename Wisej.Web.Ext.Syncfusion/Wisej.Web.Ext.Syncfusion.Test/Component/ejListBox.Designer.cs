@@ -44,10 +44,12 @@
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "https://help.syncfusion.com/js/listbox/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejlistbox";
 			// 
 			// groupBox1
@@ -74,16 +76,19 @@
 			// buttonUpdate
 			// 
 			this.buttonUpdate.Location = new System.Drawing.Point(28, 426);
+			this.buttonUpdate.TabIndex = 8;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejListBox1);
 			this.panel.Size = new System.Drawing.Size(455, 508);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
 			this.linkDemo.Size = new System.Drawing.Size(543, 24);
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/flatlight/listbox/DefaultFunctionalities";
 			// 
 			// ejListBox1
@@ -106,7 +111,7 @@
 			this.buttonLoad.Location = new System.Drawing.Point(28, 370);
 			this.buttonLoad.Name = "buttonLoad";
 			this.buttonLoad.Size = new System.Drawing.Size(42, 42);
-			this.buttonLoad.TabIndex = 12;
+			this.buttonLoad.TabIndex = 6;
 			this.buttonLoad.Uploaded += new Wisej.Web.UploadedEventHandler(this.buttonLoad_Uploaded);
 			// 
 			// buttonSave
@@ -116,7 +121,7 @@
 			this.buttonSave.Location = new System.Drawing.Point(76, 370);
 			this.buttonSave.Name = "buttonSave";
 			this.buttonSave.Size = new System.Drawing.Size(42, 42);
-			this.buttonSave.TabIndex = 11;
+			this.buttonSave.TabIndex = 7;
 			this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
 			// 
 			// comboBox1
@@ -132,7 +137,7 @@
 			this.comboBox1.Location = new System.Drawing.Point(28, 296);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(195, 60);
-			this.comboBox1.TabIndex = 13;
+			this.comboBox1.TabIndex = 5;
 			this.comboBox1.Text = "Normal";
 			// 
 			// checkBox1
@@ -143,7 +148,7 @@
 			this.checkBox1.Location = new System.Drawing.Point(28, 36);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(195, 38);
-			this.checkBox1.TabIndex = 14;
+			this.checkBox1.TabIndex = 0;
 			this.checkBox1.Text = "Allow Drag";
 			// 
 			// checkBox2
@@ -154,7 +159,7 @@
 			this.checkBox2.Location = new System.Drawing.Point(28, 88);
 			this.checkBox2.Name = "checkBox2";
 			this.checkBox2.Size = new System.Drawing.Size(195, 38);
-			this.checkBox2.TabIndex = 15;
+			this.checkBox2.TabIndex = 1;
 			this.checkBox2.Text = "Allow Drop";
 			// 
 			// checkBox3
@@ -165,7 +170,7 @@
 			this.checkBox3.Location = new System.Drawing.Point(28, 140);
 			this.checkBox3.Name = "checkBox3";
 			this.checkBox3.Size = new System.Drawing.Size(195, 38);
-			this.checkBox3.TabIndex = 16;
+			this.checkBox3.TabIndex = 2;
 			this.checkBox3.Text = "Allow MultiSelection";
 			// 
 			// checkBox4
@@ -176,7 +181,7 @@
 			this.checkBox4.Location = new System.Drawing.Point(28, 192);
 			this.checkBox4.Name = "checkBox4";
 			this.checkBox4.Size = new System.Drawing.Size(195, 38);
-			this.checkBox4.TabIndex = 17;
+			this.checkBox4.TabIndex = 3;
 			this.checkBox4.Text = "Show Checkbox";
 			// 
 			// checkBox5
@@ -187,7 +192,7 @@
 			this.checkBox5.Location = new System.Drawing.Point(28, 244);
 			this.checkBox5.Name = "checkBox5";
 			this.checkBox5.Size = new System.Drawing.Size(195, 38);
-			this.checkBox5.TabIndex = 18;
+			this.checkBox5.TabIndex = 4;
 			this.checkBox5.Text = "Enable Incremental Search";
 			// 
 			// ejListBox

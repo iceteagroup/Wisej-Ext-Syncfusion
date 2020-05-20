@@ -59,10 +59,12 @@
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "https://help.syncfusion.com/js/tile/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejtile";
 			// 
 			// groupBox1
@@ -85,16 +87,19 @@
 			// buttonUpdate
 			// 
 			this.buttonUpdate.Location = new System.Drawing.Point(28, 388);
+			this.buttonUpdate.TabIndex = 6;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.flowLayoutPanel2);
 			this.panel.Size = new System.Drawing.Size(657, 471);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
 			this.linkDemo.Size = new System.Drawing.Size(528, 24);
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/flatlight/tileview/DefaultFunctionalities";
 			// 
 			// flowLayoutPanel1
@@ -118,7 +123,7 @@
 			this.ejTile2.Name = "ejTile2";
 			this.ejTile2.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"imageUrl\":\"Images/Tile/alerts.png\",\"tileSize\":\"small\",\"text\":\"ejTile2\"}")));
 			this.ejTile2.Size = new System.Drawing.Size(70, 70);
-			this.ejTile2.TabIndex = 1;
+			this.ejTile2.TabIndex = 0;
 			this.ejTile2.Text = "ejTile2";
 			// 
 			// ejTile4
@@ -129,7 +134,7 @@
 			this.ejTile4.Name = "ejTile4";
 			this.ejTile4.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"imageUrl\":\"Images/Tile/camera.png\",\"text\":\"ejTile4\"}")));
 			this.ejTile4.Size = new System.Drawing.Size(70, 70);
-			this.ejTile4.TabIndex = 4;
+			this.ejTile4.TabIndex = 2;
 			this.ejTile4.Text = "ejTile4";
 			// 
 			// ejTile3
@@ -139,7 +144,7 @@
 			this.ejTile3.Name = "ejTile3";
 			this.ejTile3.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"imageUrl\":\"Images/Tile/bing.png\",\"text\":\"ejTile3\"}")));
 			this.ejTile3.Size = new System.Drawing.Size(70, 70);
-			this.ejTile3.TabIndex = 2;
+			this.ejTile3.TabIndex = 1;
 			this.ejTile3.Text = "ejTile3";
 			// 
 			// ejTile5
@@ -149,7 +154,7 @@
 			this.ejTile5.Name = "ejTile5";
 			this.ejTile5.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"imageUrl\":\"Images/Tile/messages.png\",\"text\":\"ejTile5\"}")));
 			this.ejTile5.Size = new System.Drawing.Size(70, 70);
-			this.ejTile5.TabIndex = 5;
+			this.ejTile5.TabIndex = 3;
 			this.ejTile5.Text = "ejTile5";
 			// 
 			// flowLayoutPanel2
@@ -171,7 +176,7 @@
 			this.flowLayoutPanel2.Location = new System.Drawing.Point(41, 46);
 			this.flowLayoutPanel2.Name = "flowLayoutPanel2";
 			this.flowLayoutPanel2.Size = new System.Drawing.Size(573, 377);
-			this.flowLayoutPanel2.TabIndex = 8;
+			this.flowLayoutPanel2.TabIndex = 0;
 			// 
 			// ejTile8
 			// 
@@ -180,7 +185,7 @@
 			this.ejTile8.Name = "ejTile8";
 			this.ejTile8.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"imageUrl\":\"Images/Tile/games.png\",\"tileSize\":\"medium\",\"text\":\"Games\"}")));
 			this.ejTile8.Size = new System.Drawing.Size(150, 150);
-			this.ejTile8.TabIndex = 9;
+			this.ejTile8.TabIndex = 0;
 			this.ejTile8.Text = "Games";
 			// 
 			// ejTile1
@@ -190,7 +195,7 @@
 			this.ejTile1.Name = "ejTile1";
 			this.ejTile1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejTile1.Options"))));
 			this.ejTile1.Size = new System.Drawing.Size(150, 150);
-			this.ejTile1.TabIndex = 3;
+			this.ejTile1.TabIndex = 5;
 			this.ejTile1.Text = "People";
 			// 
 			// ejTile7
@@ -201,7 +206,7 @@
 			this.ejTile7.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"imageUrl\":\"Images/Tile/people_2.png\",\"imagePosition\":\"fill\",\"tileSize\":\"medium\"" +
         ",\"text\":\"Contacts\"}")));
 			this.ejTile7.Size = new System.Drawing.Size(150, 150);
-			this.ejTile7.TabIndex = 8;
+			this.ejTile7.TabIndex = 1;
 			this.ejTile7.Text = "Contacts";
 			// 
 			// ejTile9
@@ -211,7 +216,7 @@
 			this.ejTile9.Name = "ejTile9";
 			this.ejTile9.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"imageUrl\":\"Images/Tile/pictures.png\",\"tileSize\":\"medium\",\"text\":\"Photos\"}")));
 			this.ejTile9.Size = new System.Drawing.Size(150, 150);
-			this.ejTile9.TabIndex = 10;
+			this.ejTile9.TabIndex = 6;
 			this.ejTile9.Text = "Photos";
 			// 
 			// ejTile10
@@ -221,7 +226,7 @@
 			this.ejTile10.Name = "ejTile10";
 			this.ejTile10.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"imageUrl\":\"Images/Tile/camera.png\",\"tileSize\":\"medium\",\"text\":\"Camera\"}")));
 			this.ejTile10.Size = new System.Drawing.Size(150, 150);
-			this.ejTile10.TabIndex = 11;
+			this.ejTile10.TabIndex = 8;
 			this.ejTile10.Text = "Camera";
 			// 
 			// ejTile11
@@ -232,7 +237,7 @@
 			this.ejTile11.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"imageUrl\":\"Images/Tile/sports.png\",\"tileSize\":\"wide\",\"imagePosition\":\"fill\",\"te" +
         "xt\":\"Sports\"}")));
 			this.ejTile11.Size = new System.Drawing.Size(310, 150);
-			this.ejTile11.TabIndex = 12;
+			this.ejTile11.TabIndex = 2;
 			this.ejTile11.Text = "Sports";
 			// 
 			// ejTile6
@@ -242,7 +247,7 @@
 			this.ejTile6.Name = "ejTile6";
 			this.ejTile6.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejTile6.Options"))));
 			this.ejTile6.Size = new System.Drawing.Size(310, 150);
-			this.ejTile6.TabIndex = 6;
+			this.ejTile6.TabIndex = 3;
 			this.ejTile6.Text = "Weather";
 			// 
 			// ejTile12
@@ -253,7 +258,7 @@
 			this.ejTile12.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"imageUrl\":\"Images/Tile/music.png\",\"tileSize\":\"medium\",\"imagePosition\":\"center\"," +
         "\"text\":\"Music\"}")));
 			this.ejTile12.Size = new System.Drawing.Size(150, 150);
-			this.ejTile12.TabIndex = 13;
+			this.ejTile12.TabIndex = 9;
 			this.ejTile12.Text = "Music";
 			// 
 			// ejTile13
@@ -264,7 +269,7 @@
 			this.ejTile13.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"imageUrl\":\"Images/Tile/alerts.png\",\"tileSize\":\"medium\",\"imagePosition\":\"center\"" +
         ",\"text\":\"Notifications\"}")));
 			this.ejTile13.Size = new System.Drawing.Size(150, 150);
-			this.ejTile13.TabIndex = 14;
+			this.ejTile13.TabIndex = 4;
 			this.ejTile13.Text = "Notifications";
 			// 
 			// checkBox1
@@ -277,7 +282,7 @@
 			this.checkBox1.Location = new System.Drawing.Point(28, 88);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(195, 38);
-			this.checkBox1.TabIndex = 7;
+			this.checkBox1.TabIndex = 1;
 			this.checkBox1.Text = "Live Tile";
 			// 
 			// numericUpDown1
@@ -289,7 +294,7 @@
 			this.numericUpDown1.Location = new System.Drawing.Point(28, 253);
 			this.numericUpDown1.Name = "numericUpDown1";
 			this.numericUpDown1.Size = new System.Drawing.Size(195, 60);
-			this.numericUpDown1.TabIndex = 8;
+			this.numericUpDown1.TabIndex = 4;
 			this.numericUpDown1.Value = new decimal(new int[] {
             50,
             0,
@@ -301,7 +306,7 @@
 			this.label4.Location = new System.Drawing.Point(28, 36);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(184, 35);
-			this.label4.TabIndex = 9;
+			this.label4.TabIndex = 0;
 			this.label4.Text = "Note: Property changes affect \"Games\" tile";
 			// 
 			// checkBox2
@@ -314,7 +319,7 @@
 			this.checkBox2.Location = new System.Drawing.Point(28, 143);
 			this.checkBox2.Name = "checkBox2";
 			this.checkBox2.Size = new System.Drawing.Size(195, 38);
-			this.checkBox2.TabIndex = 10;
+			this.checkBox2.TabIndex = 2;
 			this.checkBox2.Text = "Allow Selection";
 			// 
 			// comboBox1
@@ -335,7 +340,7 @@
 			this.comboBox1.Location = new System.Drawing.Point(28, 330);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(195, 41);
-			this.comboBox1.TabIndex = 11;
+			this.comboBox1.TabIndex = 5;
 			this.comboBox1.Text = "Center";
 			// 
 			// checkBox3
@@ -346,7 +351,7 @@
 			this.checkBox3.Location = new System.Drawing.Point(28, 198);
 			this.checkBox3.Name = "checkBox3";
 			this.checkBox3.Size = new System.Drawing.Size(195, 38);
-			this.checkBox3.TabIndex = 12;
+			this.checkBox3.TabIndex = 3;
 			this.checkBox3.Text = "Show Rounded Corner";
 			// 
 			// ejTile

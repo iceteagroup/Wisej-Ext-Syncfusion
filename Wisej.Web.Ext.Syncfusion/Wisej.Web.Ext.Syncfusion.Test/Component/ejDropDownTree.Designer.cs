@@ -41,10 +41,12 @@
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "https://help.syncfusion.com/js/dropdowntree/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejdropdowntree";
 			// 
 			// groupBox1
@@ -63,16 +65,19 @@
 			// buttonUpdate
 			// 
 			this.buttonUpdate.Location = new System.Drawing.Point(28, 354);
+			this.buttonUpdate.TabIndex = 4;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejDropDownTree1);
 			this.panel.Size = new System.Drawing.Size(455, 444);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
 			this.linkDemo.Size = new System.Drawing.Size(553, 24);
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/flatlight/dropdowntree/DefaultFunctionalit" +
     "ies";
 			// 
@@ -94,7 +99,7 @@
 			this.checkBox1.Location = new System.Drawing.Point(28, 36);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(195, 38);
-			this.checkBox1.TabIndex = 7;
+			this.checkBox1.TabIndex = 0;
 			this.checkBox1.Text = "Show Rounded Corner";
 			// 
 			// checkBox2
@@ -105,7 +110,7 @@
 			this.checkBox2.Location = new System.Drawing.Point(28, 110);
 			this.checkBox2.Name = "checkBox2";
 			this.checkBox2.Size = new System.Drawing.Size(195, 38);
-			this.checkBox2.TabIndex = 8;
+			this.checkBox2.TabIndex = 1;
 			this.checkBox2.Text = "Show Popup on Load";
 			// 
 			// numericUpDownPopupHeight
@@ -127,7 +132,7 @@
             0});
 			this.numericUpDownPopupHeight.Name = "numericUpDownPopupHeight";
 			this.numericUpDownPopupHeight.Size = new System.Drawing.Size(195, 60);
-			this.numericUpDownPopupHeight.TabIndex = 9;
+			this.numericUpDownPopupHeight.TabIndex = 3;
 			this.numericUpDownPopupHeight.Value = new decimal(new int[] {
             152,
             0,
@@ -144,7 +149,7 @@
 			this.checkBox3.Location = new System.Drawing.Point(28, 184);
 			this.checkBox3.Name = "checkBox3";
 			this.checkBox3.Size = new System.Drawing.Size(195, 38);
-			this.checkBox3.TabIndex = 10;
+			this.checkBox3.TabIndex = 2;
 			this.checkBox3.Text = "Allow Keyboard Navigation";
 			// 
 			// ejDropDownTree

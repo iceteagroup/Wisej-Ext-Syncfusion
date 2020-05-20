@@ -41,10 +41,12 @@
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "N/A";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejrecurrenceeditor";
 			// 
 			// groupBox1
@@ -65,16 +67,19 @@
 			// buttonUpdate
 			// 
 			this.buttonUpdate.Location = new System.Drawing.Point(28, 341);
+			this.buttonUpdate.TabIndex = 5;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejRecurrenceEditor1);
 			this.panel.Size = new System.Drawing.Size(455, 427);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
 			this.linkDemo.Size = new System.Drawing.Size(520, 24);
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/flatlight/schedule/RecurrenceEditor";
 			// 
 			// ejRecurrenceEditor1
@@ -95,7 +100,7 @@
 			this.buttonGenerateRule.Location = new System.Drawing.Point(28, 288);
 			this.buttonGenerateRule.Name = "buttonGenerateRule";
 			this.buttonGenerateRule.Size = new System.Drawing.Size(195, 30);
-			this.buttonGenerateRule.TabIndex = 3;
+			this.buttonGenerateRule.TabIndex = 4;
 			this.buttonGenerateRule.Text = "Generate Rule";
 			this.buttonGenerateRule.Click += new System.EventHandler(this.buttonGenerateRule_Click);
 			// 
@@ -109,7 +114,7 @@
 			this.checkBox1.Location = new System.Drawing.Point(28, 35);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(195, 38);
-			this.checkBox1.TabIndex = 8;
+			this.checkBox1.TabIndex = 0;
 			this.checkBox1.Text = "Enable Spinners";
 			// 
 			// dateTimePicker1
@@ -119,7 +124,7 @@
 			this.dateTimePicker1.Location = new System.Drawing.Point(28, 96);
 			this.dateTimePicker1.Name = "dateTimePicker1";
 			this.dateTimePicker1.Size = new System.Drawing.Size(195, 41);
-			this.dateTimePicker1.TabIndex = 9;
+			this.dateTimePicker1.TabIndex = 1;
 			this.dateTimePicker1.Value = new System.DateTime(2020, 5, 18, 15, 25, 37, 9);
 			// 
 			// dateTimePicker2
@@ -129,7 +134,7 @@
 			this.dateTimePicker2.Location = new System.Drawing.Point(28, 160);
 			this.dateTimePicker2.Name = "dateTimePicker2";
 			this.dateTimePicker2.Size = new System.Drawing.Size(195, 41);
-			this.dateTimePicker2.TabIndex = 10;
+			this.dateTimePicker2.TabIndex = 2;
 			this.dateTimePicker2.Value = new System.DateTime(2020, 5, 18, 15, 25, 38, 739);
 			// 
 			// numericUpDown1
@@ -148,7 +153,7 @@
             0});
 			this.numericUpDown1.Name = "numericUpDown1";
 			this.numericUpDown1.Size = new System.Drawing.Size(195, 41);
-			this.numericUpDown1.TabIndex = 11;
+			this.numericUpDown1.TabIndex = 3;
 			this.numericUpDown1.Value = new decimal(new int[] {
             1,
             0,

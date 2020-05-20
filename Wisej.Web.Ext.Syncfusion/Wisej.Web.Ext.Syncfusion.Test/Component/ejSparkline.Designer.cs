@@ -38,10 +38,12 @@
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "https://help.syncfusion.com/js/sparkline/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejsparkline";
 			// 
 			// groupBox1
@@ -58,16 +60,19 @@
 			// buttonUpdate
 			// 
 			this.buttonUpdate.Location = new System.Drawing.Point(28, 284);
+			this.buttonUpdate.TabIndex = 3;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejSparkline1);
 			this.panel.Size = new System.Drawing.Size(455, 370);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
 			this.linkDemo.Size = new System.Drawing.Size(583, 24);
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/flatlight/sparkline/DefaultFunctionalities" +
     "";
 			// 
@@ -82,7 +87,7 @@
         "lor\":\"red\",\"highPointColor\":\"blue\",\"tooltip\":{\"visible\":true,\"font\":{\"size\":\"12p" +
         "x\"}},\"type\":\"column\"}")));
 			this.ejSparkline1.Size = new System.Drawing.Size(380, 302);
-			this.ejSparkline1.TabIndex = 1;
+			this.ejSparkline1.TabIndex = 0;
 			this.ejSparkline1.Text = "ejSparkline1";
 			// 
 			// comboBox1
@@ -100,7 +105,7 @@
 			this.comboBox1.Location = new System.Drawing.Point(28, 186);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(195, 60);
-			this.comboBox1.TabIndex = 4;
+			this.comboBox1.TabIndex = 2;
 			this.comboBox1.Text = "Line";
 			// 
 			// checkBox2
@@ -111,7 +116,7 @@
 			this.checkBox2.Location = new System.Drawing.Point(28, 34);
 			this.checkBox2.Name = "checkBox2";
 			this.checkBox2.Size = new System.Drawing.Size(195, 38);
-			this.checkBox2.TabIndex = 8;
+			this.checkBox2.TabIndex = 0;
 			this.checkBox2.Text = "Marker Visible";
 			// 
 			// checkBox3
@@ -122,7 +127,7 @@
 			this.checkBox3.Location = new System.Drawing.Point(28, 110);
 			this.checkBox3.Name = "checkBox3";
 			this.checkBox3.Size = new System.Drawing.Size(195, 38);
-			this.checkBox3.TabIndex = 9;
+			this.checkBox3.TabIndex = 1;
 			this.checkBox3.Text = "Axis Line Visible";
 			// 
 			// ejSparkline

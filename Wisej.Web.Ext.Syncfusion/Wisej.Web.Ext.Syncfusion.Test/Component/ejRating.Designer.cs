@@ -71,10 +71,12 @@
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "https://help.syncfusion.com/js/rating/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejrating";
 			// 
 			// groupBox1
@@ -95,16 +97,19 @@
 			// buttonUpdate
 			// 
 			this.buttonUpdate.Location = new System.Drawing.Point(28, 360);
+			this.buttonUpdate.TabIndex = 5;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.tabControl1);
 			this.panel.Size = new System.Drawing.Size(455, 446);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
 			this.linkDemo.Size = new System.Drawing.Size(554, 24);
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/flatlight/rating/DefaultFunctionalities";
 			// 
 			// tabControl1
@@ -117,7 +122,7 @@
 			this.tabControl1.Name = "tabControl1";
 			this.tabControl1.PageInsets = new Wisej.Web.Padding(1, 35, 1, 1);
 			this.tabControl1.Size = new System.Drawing.Size(453, 444);
-			this.tabControl1.TabIndex = 6;
+			this.tabControl1.TabIndex = 0;
 			// 
 			// tabPage1
 			// 
@@ -385,7 +390,7 @@
 			this.checkBox1.Location = new System.Drawing.Point(28, 99);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(195, 38);
-			this.checkBox1.TabIndex = 9;
+			this.checkBox1.TabIndex = 1;
 			this.checkBox1.Text = "Allow Reset";
 			// 
 			// comboBox1
@@ -399,7 +404,7 @@
 			this.comboBox1.Location = new System.Drawing.Point(28, 294);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(195, 41);
-			this.comboBox1.TabIndex = 10;
+			this.comboBox1.TabIndex = 4;
 			this.comboBox1.Text = "full";
 			// 
 			// label16
@@ -407,7 +412,7 @@
 			this.label16.Location = new System.Drawing.Point(28, 36);
 			this.label16.Name = "label16";
 			this.label16.Size = new System.Drawing.Size(195, 38);
-			this.label16.TabIndex = 11;
+			this.label16.TabIndex = 0;
 			this.label16.Text = "Note: Property changes only affect \"Man of Steel\" rating";
 			// 
 			// ejRating

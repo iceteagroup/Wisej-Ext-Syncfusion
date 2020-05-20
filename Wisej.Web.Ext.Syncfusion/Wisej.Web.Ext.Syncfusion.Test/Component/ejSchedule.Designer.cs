@@ -43,10 +43,12 @@
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "https://help.syncfusion.com/js/schedule/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejschedule";
 			// 
 			// groupBox1
@@ -71,16 +73,19 @@
 			// buttonUpdate
 			// 
 			this.buttonUpdate.Location = new System.Drawing.Point(28, 426);
+			this.buttonUpdate.TabIndex = 7;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejSchedule1);
 			this.panel.Size = new System.Drawing.Size(455, 516);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
 			this.linkDemo.Size = new System.Drawing.Size(546, 24);
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/bootstrap/schedule/AppointmentCategorize";
 			// 
 			// ejSchedule1
@@ -111,7 +116,7 @@
 			this.comboBox1.Location = new System.Drawing.Point(28, 274);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(195, 60);
-			this.comboBox1.TabIndex = 4;
+			this.comboBox1.TabIndex = 5;
 			this.comboBox1.Text = "Week";
 			// 
 			// comboBox2
@@ -127,7 +132,7 @@
 			this.comboBox2.Location = new System.Drawing.Point(28, 350);
 			this.comboBox2.Name = "comboBox2";
 			this.comboBox2.Size = new System.Drawing.Size(195, 60);
-			this.comboBox2.TabIndex = 5;
+			this.comboBox2.TabIndex = 6;
 			this.comboBox2.Text = "Vertical";
 			// 
 			// checkBox1
@@ -140,7 +145,7 @@
 			this.checkBox1.Location = new System.Drawing.Point(28, 36);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(195, 31);
-			this.checkBox1.TabIndex = 6;
+			this.checkBox1.TabIndex = 0;
 			this.checkBox1.Text = "Non-Working Days";
 			// 
 			// checkBox2
@@ -153,7 +158,7 @@
 			this.checkBox2.Location = new System.Drawing.Point(28, 83);
 			this.checkBox2.Name = "checkBox2";
 			this.checkBox2.Size = new System.Drawing.Size(195, 31);
-			this.checkBox2.TabIndex = 7;
+			this.checkBox2.TabIndex = 1;
 			this.checkBox2.Text = "Allow Delete";
 			// 
 			// checkBox3
@@ -166,7 +171,7 @@
 			this.checkBox3.Location = new System.Drawing.Point(28, 130);
 			this.checkBox3.Name = "checkBox3";
 			this.checkBox3.Size = new System.Drawing.Size(195, 31);
-			this.checkBox3.TabIndex = 8;
+			this.checkBox3.TabIndex = 2;
 			this.checkBox3.Text = "Allow Keyboard Navigation";
 			// 
 			// checkBox4
@@ -177,7 +182,7 @@
 			this.checkBox4.Location = new System.Drawing.Point(28, 177);
 			this.checkBox4.Name = "checkBox4";
 			this.checkBox4.Size = new System.Drawing.Size(195, 31);
-			this.checkBox4.TabIndex = 9;
+			this.checkBox4.TabIndex = 3;
 			this.checkBox4.Text = "Allow Inline";
 			// 
 			// checkBox5
@@ -190,7 +195,7 @@
 			this.checkBox5.Location = new System.Drawing.Point(28, 224);
 			this.checkBox5.Name = "checkBox5";
 			this.checkBox5.Size = new System.Drawing.Size(195, 34);
-			this.checkBox5.TabIndex = 10;
+			this.checkBox5.TabIndex = 4;
 			this.checkBox5.Text = "Show Appointment Navigator";
 			// 
 			// ejSchedule

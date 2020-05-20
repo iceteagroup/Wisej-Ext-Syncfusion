@@ -44,10 +44,12 @@
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "https://help.syncfusion.com/js/dropdownlist/dropdownlist";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejdropdownlist";
 			// 
 			// groupBox1
@@ -59,7 +61,7 @@
 			this.groupBox1.Controls.Add(this.checkBox3);
 			this.groupBox1.Controls.Add(this.checkBox2);
 			this.groupBox1.Controls.Add(this.checkBox1);
-			this.groupBox1.Size = new System.Drawing.Size(250, 430);
+			this.groupBox1.Size = new System.Drawing.Size(250, 571);
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
 			this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
 			this.groupBox1.Controls.SetChildIndex(this.checkBox2, 0);
@@ -71,29 +73,32 @@
 			// 
 			// buttonUpdate
 			// 
-			this.buttonUpdate.Location = new System.Drawing.Point(28, 341);
+			this.buttonUpdate.Location = new System.Drawing.Point(28, 474);
+			this.buttonUpdate.TabIndex = 7;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejDropDownList2);
 			this.panel.Controls.Add(this.ejDropDownList1);
-			this.panel.Size = new System.Drawing.Size(455, 430);
+			this.panel.Size = new System.Drawing.Size(455, 571);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
 			this.linkDemo.Size = new System.Drawing.Size(554, 24);
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/bootstrap/dropdownlist/defaultfunctionalit" +
     "ies";
 			// 
 			// ejDropDownList1
 			// 
 			this.ejDropDownList1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
-			this.ejDropDownList1.Location = new System.Drawing.Point(101, 164);
+			this.ejDropDownList1.Location = new System.Drawing.Point(101, 234);
 			this.ejDropDownList1.Name = "ejDropDownList1";
 			this.ejDropDownList1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejDropDownList1.Options"))));
 			this.ejDropDownList1.Size = new System.Drawing.Size(250, 30);
-			this.ejDropDownList1.TabIndex = 3;
+			this.ejDropDownList1.TabIndex = 0;
 			this.ejDropDownList1.Text = "ejDropDownList1";
 			this.ejDropDownList1.WidgetEvent += new Wisej.Web.WidgetEventHandler(this.ejDropDownList_WidgetEvent);
 			// 
@@ -102,7 +107,7 @@
 			this.checkBox1.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBox1.AutoSize = false;
 			this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox1.Location = new System.Drawing.Point(28, 89);
+			this.checkBox1.Location = new System.Drawing.Point(28, 108);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(195, 30);
 			this.checkBox1.TabIndex = 1;
@@ -113,7 +118,7 @@
 			this.checkBox2.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBox2.AutoSize = false;
 			this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox2.Location = new System.Drawing.Point(28, 131);
+			this.checkBox2.Location = new System.Drawing.Point(28, 169);
 			this.checkBox2.Margin = new Wisej.Web.Padding(3, 10, 3, 3);
 			this.checkBox2.Name = "checkBox2";
 			this.checkBox2.Size = new System.Drawing.Size(195, 30);
@@ -125,7 +130,7 @@
 			this.checkBox3.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBox3.AutoSize = false;
 			this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox3.Location = new System.Drawing.Point(28, 173);
+			this.checkBox3.Location = new System.Drawing.Point(28, 230);
 			this.checkBox3.Margin = new Wisej.Web.Padding(3, 10, 3, 3);
 			this.checkBox3.Name = "checkBox3";
 			this.checkBox3.Size = new System.Drawing.Size(195, 30);
@@ -137,7 +142,7 @@
 			this.checkBox4.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBox4.AutoSize = false;
 			this.checkBox4.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox4.Location = new System.Drawing.Point(28, 215);
+			this.checkBox4.Location = new System.Drawing.Point(28, 291);
 			this.checkBox4.Margin = new Wisej.Web.Padding(3, 10, 3, 3);
 			this.checkBox4.Name = "checkBox4";
 			this.checkBox4.Size = new System.Drawing.Size(195, 30);
@@ -147,11 +152,11 @@
 			// ejDropDownList2
 			// 
 			this.ejDropDownList2.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
-			this.ejDropDownList2.Location = new System.Drawing.Point(101, 234);
+			this.ejDropDownList2.Location = new System.Drawing.Point(101, 304);
 			this.ejDropDownList2.Name = "ejDropDownList2";
 			this.ejDropDownList2.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejDropDownList2.Options"))));
 			this.ejDropDownList2.Size = new System.Drawing.Size(250, 30);
-			this.ejDropDownList2.TabIndex = 2;
+			this.ejDropDownList2.TabIndex = 1;
 			this.ejDropDownList2.Text = "ejDropDownList2";
 			this.ejDropDownList2.WidgetEvent += new Wisej.Web.WidgetEventHandler(this.ejDropDownList_WidgetEvent);
 			// 
@@ -160,7 +165,7 @@
 			this.checkBox5.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBox5.AutoSize = false;
 			this.checkBox5.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox5.Location = new System.Drawing.Point(28, 257);
+			this.checkBox5.Location = new System.Drawing.Point(28, 352);
 			this.checkBox5.Margin = new Wisej.Web.Padding(3, 10, 3, 3);
 			this.checkBox5.Name = "checkBox5";
 			this.checkBox5.Size = new System.Drawing.Size(195, 30);
@@ -172,7 +177,7 @@
 			this.checkBox6.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBox6.AutoSize = false;
 			this.checkBox6.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox6.Location = new System.Drawing.Point(28, 299);
+			this.checkBox6.Location = new System.Drawing.Point(28, 413);
 			this.checkBox6.Margin = new Wisej.Web.Padding(3, 10, 3, 3);
 			this.checkBox6.Name = "checkBox6";
 			this.checkBox6.Size = new System.Drawing.Size(195, 30);
@@ -184,13 +189,13 @@
 			this.label4.Location = new System.Drawing.Point(28, 41);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(195, 36);
-			this.label4.TabIndex = 7;
+			this.label4.TabIndex = 0;
 			this.label4.Text = "Note: The property options only affect the top list.";
 			// 
 			// ejDropDownList
 			// 
 			this.Name = "ejDropDownList";
-			this.Size = new System.Drawing.Size(864, 620);
+			this.Size = new System.Drawing.Size(864, 761);
 			this.groupBox1.ResumeLayout(false);
 			this.panel.ResumeLayout(false);
 			this.ResumeLayout(false);

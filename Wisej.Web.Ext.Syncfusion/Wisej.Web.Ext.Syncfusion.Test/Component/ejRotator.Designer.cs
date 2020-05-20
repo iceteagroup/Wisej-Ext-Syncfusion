@@ -41,10 +41,12 @@
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "https://help.syncfusion.com/js/rotator/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejrotator";
 			// 
 			// groupBox1
@@ -65,16 +67,19 @@
 			// buttonUpdate
 			// 
 			this.buttonUpdate.Location = new System.Drawing.Point(28, 282);
+			this.buttonUpdate.TabIndex = 4;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejRotator1);
 			this.panel.Size = new System.Drawing.Size(696, 450);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
 			this.linkDemo.Size = new System.Drawing.Size(508, 24);
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/bootstrap/rotator/DefaultFunctionalities";
 			// 
 			// ejRotator1
@@ -97,7 +102,7 @@
 			this.checkBox1.Location = new System.Drawing.Point(28, 36);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(183, 38);
-			this.checkBox1.TabIndex = 7;
+			this.checkBox1.TabIndex = 0;
 			this.checkBox1.Text = "Show Caption";
 			// 
 			// checkBox2
@@ -110,7 +115,7 @@
 			this.checkBox2.Location = new System.Drawing.Point(28, 91);
 			this.checkBox2.Name = "checkBox2";
 			this.checkBox2.Size = new System.Drawing.Size(183, 38);
-			this.checkBox2.TabIndex = 8;
+			this.checkBox2.TabIndex = 1;
 			this.checkBox2.Text = "Show Play Button";
 			// 
 			// comboBox1
@@ -127,7 +132,7 @@
 			this.comboBox1.Location = new System.Drawing.Point(28, 146);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(195, 60);
-			this.comboBox1.TabIndex = 9;
+			this.comboBox1.TabIndex = 2;
 			this.comboBox1.Text = "Slide";
 			// 
 			// buttonPlay
@@ -137,7 +142,7 @@
 			this.buttonPlay.Location = new System.Drawing.Point(28, 223);
 			this.buttonPlay.Name = "buttonPlay";
 			this.buttonPlay.Size = new System.Drawing.Size(42, 42);
-			this.buttonPlay.TabIndex = 10;
+			this.buttonPlay.TabIndex = 3;
 			this.buttonPlay.Click += new System.EventHandler(this.buttonPlay_Click);
 			// 
 			// button1
@@ -147,7 +152,7 @@
 			this.button1.Location = new System.Drawing.Point(76, 223);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(42, 42);
-			this.button1.TabIndex = 11;
+			this.button1.TabIndex = 5;
 			this.button1.Click += new System.EventHandler(this.buttonPause_Click);
 			// 
 			// ejRotator

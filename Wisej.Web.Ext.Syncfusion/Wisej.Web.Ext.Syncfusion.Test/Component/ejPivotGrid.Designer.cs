@@ -42,10 +42,12 @@
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "https://help.syncfusion.com/js/pivotgrid/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejpivotgrid";
 			// 
 			// groupBox1
@@ -68,16 +70,19 @@
 			// buttonUpdate
 			// 
 			this.buttonUpdate.Location = new System.Drawing.Point(28, 348);
+			this.buttonUpdate.TabIndex = 5;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejPivotGrid1);
 			this.panel.Size = new System.Drawing.Size(455, 429);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
 			this.linkDemo.Size = new System.Drawing.Size(566, 24);
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/flatlight/pivotgrid/relational/defaultfunc" +
     "tionalities";
 			// 
@@ -103,7 +108,7 @@
 			this.checkBox1.Location = new System.Drawing.Point(28, 36);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(195, 38);
-			this.checkBox1.TabIndex = 8;
+			this.checkBox1.TabIndex = 0;
 			this.checkBox1.Text = "Enable Cell Click";
 			// 
 			// checkBox2
@@ -116,7 +121,7 @@
 			this.checkBox2.Location = new System.Drawing.Point(28, 99);
 			this.checkBox2.Name = "checkBox2";
 			this.checkBox2.Size = new System.Drawing.Size(195, 38);
-			this.checkBox2.TabIndex = 9;
+			this.checkBox2.TabIndex = 1;
 			this.checkBox2.Text = "Show Header Row Items";
 			// 
 			// checkBox4
@@ -129,7 +134,7 @@
 			this.checkBox4.Location = new System.Drawing.Point(28, 221);
 			this.checkBox4.Name = "checkBox4";
 			this.checkBox4.Size = new System.Drawing.Size(195, 38);
-			this.checkBox4.TabIndex = 10;
+			this.checkBox4.TabIndex = 3;
 			this.checkBox4.Text = "Column Grand Total";
 			// 
 			// checkBoxShow3
@@ -142,7 +147,7 @@
 			this.checkBoxShow3.Location = new System.Drawing.Point(28, 160);
 			this.checkBoxShow3.Name = "checkBoxShow3";
 			this.checkBoxShow3.Size = new System.Drawing.Size(195, 38);
-			this.checkBoxShow3.TabIndex = 11;
+			this.checkBoxShow3.TabIndex = 2;
 			this.checkBoxShow3.Text = "Show Header Row Items";
 			// 
 			// buttonSave
@@ -152,7 +157,7 @@
 			this.buttonSave.Location = new System.Drawing.Point(76, 282);
 			this.buttonSave.Name = "buttonSave";
 			this.buttonSave.Size = new System.Drawing.Size(42, 42);
-			this.buttonSave.TabIndex = 15;
+			this.buttonSave.TabIndex = 6;
 			this.buttonSave.Visible = false;
 			this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
 			// 
@@ -164,7 +169,7 @@
 			this.buttonLoad.Location = new System.Drawing.Point(28, 282);
 			this.buttonLoad.Name = "buttonLoad";
 			this.buttonLoad.Size = new System.Drawing.Size(42, 42);
-			this.buttonLoad.TabIndex = 14;
+			this.buttonLoad.TabIndex = 4;
 			this.buttonLoad.Uploaded += new Wisej.Web.UploadedEventHandler(this.buttonLoad_Uploaded);
 			// 
 			// ejPivotGrid

@@ -43,10 +43,12 @@
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "https://help.syncfusion.com/js/bulletgraph/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejbulletgraph";
 			// 
 			// groupBox1
@@ -64,7 +66,8 @@
 			// 
 			// buttonUpdate
 			// 
-			this.buttonUpdate.Location = new System.Drawing.Point(28, 314);
+			this.buttonUpdate.Location = new System.Drawing.Point(28, 313);
+			this.buttonUpdate.TabIndex = 4;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
@@ -72,10 +75,12 @@
 			this.panel.Controls.Add(this.ejBulletGraph2);
 			this.panel.Controls.Add(this.ejBulletGraph1);
 			this.panel.Size = new System.Drawing.Size(666, 395);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
 			this.linkDemo.Size = new System.Drawing.Size(516, 24);
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/bootstrap/bulletgraph/DefaultFunctionaliti" +
     "es";
 			// 
@@ -85,7 +90,7 @@
 			this.ejBulletGraph1.Name = "ejBulletGraph1";
 			this.ejBulletGraph1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejBulletGraph1.Options"))));
 			this.ejBulletGraph1.Size = new System.Drawing.Size(596, 83);
-			this.ejBulletGraph1.TabIndex = 5;
+			this.ejBulletGraph1.TabIndex = 0;
 			this.ejBulletGraph1.Text = "ejBulletGraph1";
 			// 
 			// ejBulletGraph2
@@ -94,14 +99,14 @@
 			this.ejBulletGraph2.Name = "ejBulletGraph2";
 			this.ejBulletGraph2.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejBulletGraph2.Options"))));
 			this.ejBulletGraph2.Size = new System.Drawing.Size(606, 83);
-			this.ejBulletGraph2.TabIndex = 2;
+			this.ejBulletGraph2.TabIndex = 1;
 			this.ejBulletGraph2.Text = "ejBulletGraph2";
 			// 
 			// numericUpDownVal
 			// 
 			this.numericUpDownVal.AutoSize = false;
 			this.numericUpDownVal.LabelText = "Revenue Value";
-			this.numericUpDownVal.Location = new System.Drawing.Point(28, 109);
+			this.numericUpDownVal.Location = new System.Drawing.Point(28, 97);
 			this.numericUpDownVal.Maximum = new decimal(new int[] {
             10,
             0,
@@ -109,7 +114,7 @@
             0});
 			this.numericUpDownVal.Name = "numericUpDownVal";
 			this.numericUpDownVal.Size = new System.Drawing.Size(195, 41);
-			this.numericUpDownVal.TabIndex = 2;
+			this.numericUpDownVal.TabIndex = 1;
 			this.numericUpDownVal.Value = new decimal(new int[] {
             8,
             0,
@@ -120,7 +125,7 @@
 			// 
 			this.numericUpDownCompMeasureVal.AutoSize = false;
 			this.numericUpDownCompMeasureVal.LabelText = "Revenue Comparative Value";
-			this.numericUpDownCompMeasureVal.Location = new System.Drawing.Point(28, 187);
+			this.numericUpDownCompMeasureVal.Location = new System.Drawing.Point(28, 169);
 			this.numericUpDownCompMeasureVal.Maximum = new decimal(new int[] {
             10,
             0,
@@ -128,7 +133,7 @@
             0});
 			this.numericUpDownCompMeasureVal.Name = "numericUpDownCompMeasureVal";
 			this.numericUpDownCompMeasureVal.Size = new System.Drawing.Size(195, 41);
-			this.numericUpDownCompMeasureVal.TabIndex = 3;
+			this.numericUpDownCompMeasureVal.TabIndex = 2;
 			this.numericUpDownCompMeasureVal.Value = new decimal(new int[] {
             5,
             0,
@@ -142,10 +147,10 @@
             "Forward",
             "Backward"});
 			this.comboBox1.LabelText = "Flow Direction";
-			this.comboBox1.Location = new System.Drawing.Point(28, 264);
+			this.comboBox1.Location = new System.Drawing.Point(28, 241);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(195, 41);
-			this.comboBox1.TabIndex = 4;
+			this.comboBox1.TabIndex = 3;
 			// 
 			// checkBox1
 			// 
@@ -154,10 +159,10 @@
 			this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBox1.Checked = true;
 			this.checkBox1.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBox1.Location = new System.Drawing.Point(28, 49);
+			this.checkBox1.Location = new System.Drawing.Point(28, 36);
 			this.checkBox1.Name = "checkBox1";
-			this.checkBox1.Size = new System.Drawing.Size(195, 31);
-			this.checkBox1.TabIndex = 5;
+			this.checkBox1.Size = new System.Drawing.Size(195, 30);
+			this.checkBox1.TabIndex = 0;
 			this.checkBox1.Text = "Apply Range Stroke to Labels";
 			// 
 			// ejBulletGraph

@@ -39,10 +39,12 @@
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "https://help.syncfusion.com/js/barcode/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejbarcode";
 			// 
 			// groupBox1
@@ -61,25 +63,28 @@
 			// buttonUpdate
 			// 
 			this.buttonUpdate.Location = new System.Drawing.Point(28, 308);
+			this.buttonUpdate.TabIndex = 4;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejBarcode1);
 			this.panel.Size = new System.Drawing.Size(455, 393);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/bootstrap/barcode/qrbarcode";
 			// 
 			// textBox3
 			// 
 			this.textBox3.AutoSize = false;
 			this.textBox3.LabelText = "Text";
-			this.textBox3.Location = new System.Drawing.Point(28, 174);
+			this.textBox3.Location = new System.Drawing.Point(28, 172);
 			this.textBox3.Name = "textBox3";
 			this.textBox3.Size = new System.Drawing.Size(195, 41);
-			this.textBox3.TabIndex = 1;
+			this.textBox3.TabIndex = 2;
 			this.textBox3.Text = "HTTP://WISEJ.COM";
 			// 
 			// ejBarcode1
@@ -110,29 +115,29 @@
             "Code128B",
             "Code128C"});
 			this.comboBox1.LabelText = "Symbology";
-			this.comboBox1.Location = new System.Drawing.Point(28, 241);
+			this.comboBox1.Location = new System.Drawing.Point(28, 240);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(195, 41);
-			this.comboBox1.TabIndex = 2;
+			this.comboBox1.TabIndex = 3;
 			this.comboBox1.Text = "QRBarcode";
 			// 
 			// textBox1
 			// 
 			this.textBox1.InputType.Type = Wisej.Web.TextBoxType.Color;
 			this.textBox1.LabelText = "Dark Bar Color";
-			this.textBox1.Location = new System.Drawing.Point(28, 40);
+			this.textBox1.Location = new System.Drawing.Point(28, 36);
 			this.textBox1.Name = "textBox1";
 			this.textBox1.Size = new System.Drawing.Size(195, 41);
-			this.textBox1.TabIndex = 3;
+			this.textBox1.TabIndex = 0;
 			// 
 			// textBox2
 			// 
 			this.textBox2.InputType.Type = Wisej.Web.TextBoxType.Color;
 			this.textBox2.LabelText = "Light Bar Color";
-			this.textBox2.Location = new System.Drawing.Point(28, 107);
+			this.textBox2.Location = new System.Drawing.Point(28, 104);
 			this.textBox2.Name = "textBox2";
 			this.textBox2.Size = new System.Drawing.Size(195, 41);
-			this.textBox2.TabIndex = 4;
+			this.textBox2.TabIndex = 1;
 			// 
 			// ejBarcode
 			// 

@@ -45,10 +45,12 @@
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "https://help.syncfusion.com/js/grid/getting-started";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejgrid";
 			// 
 			// groupBox1
@@ -62,7 +64,7 @@
 			this.groupBox1.Controls.Add(this.checkBox1);
 			this.groupBox1.Controls.Add(this.buttonLoad);
 			this.groupBox1.Controls.Add(this.buttonSave);
-			this.groupBox1.Size = new System.Drawing.Size(250, 501);
+			this.groupBox1.Size = new System.Drawing.Size(250, 569);
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
 			this.groupBox1.Controls.SetChildIndex(this.buttonSave, 0);
 			this.groupBox1.Controls.SetChildIndex(this.buttonLoad, 0);
@@ -76,17 +78,20 @@
 			// 
 			// buttonUpdate
 			// 
-			this.buttonUpdate.Location = new System.Drawing.Point(28, 416);
+			this.buttonUpdate.Location = new System.Drawing.Point(28, 480);
+			this.buttonUpdate.TabIndex = 9;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejGrid1);
-			this.panel.Size = new System.Drawing.Size(455, 505);
+			this.panel.Size = new System.Drawing.Size(455, 569);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
 			this.linkDemo.Size = new System.Drawing.Size(547, 24);
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/flatlight/grid/DefaultFunctionalities";
 			// 
 			// buttonLoad
@@ -94,20 +99,20 @@
 			this.buttonLoad.AllowedFileTypes = ".json";
 			this.buttonLoad.HideValue = true;
 			this.buttonLoad.ImageSource = "icon-file";
-			this.buttonLoad.Location = new System.Drawing.Point(28, 365);
+			this.buttonLoad.Location = new System.Drawing.Point(28, 421);
 			this.buttonLoad.Name = "buttonLoad";
 			this.buttonLoad.Size = new System.Drawing.Size(42, 42);
-			this.buttonLoad.TabIndex = 10;
+			this.buttonLoad.TabIndex = 7;
 			this.buttonLoad.Uploaded += new Wisej.Web.UploadedEventHandler(this.buttonLoad_Uploaded);
 			// 
 			// buttonSave
 			// 
 			this.buttonSave.Display = Wisej.Web.Display.Icon;
 			this.buttonSave.ImageSource = "icon-save";
-			this.buttonSave.Location = new System.Drawing.Point(76, 365);
+			this.buttonSave.Location = new System.Drawing.Point(76, 421);
 			this.buttonSave.Name = "buttonSave";
 			this.buttonSave.Size = new System.Drawing.Size(42, 42);
-			this.buttonSave.TabIndex = 9;
+			this.buttonSave.TabIndex = 8;
 			this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
 			// 
 			// ejGrid1
@@ -118,7 +123,7 @@
 			this.ejGrid1.Location = new System.Drawing.Point(3, 3);
 			this.ejGrid1.Name = "ejGrid1";
 			this.ejGrid1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejGrid1.Options"))));
-			this.ejGrid1.Size = new System.Drawing.Size(447, 497);
+			this.ejGrid1.Size = new System.Drawing.Size(447, 561);
 			this.ejGrid1.TabIndex = 0;
 			this.ejGrid1.Text = "ejGrid1";
 			// 
@@ -132,7 +137,7 @@
 			this.checkBox1.Location = new System.Drawing.Point(28, 36);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(195, 38);
-			this.checkBox1.TabIndex = 11;
+			this.checkBox1.TabIndex = 0;
 			this.checkBox1.Text = "Editable";
 			// 
 			// checkBox2
@@ -140,10 +145,10 @@
 			this.checkBox2.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBox2.AutoSize = false;
 			this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox2.Location = new System.Drawing.Point(28, 83);
+			this.checkBox2.Location = new System.Drawing.Point(28, 91);
 			this.checkBox2.Name = "checkBox2";
 			this.checkBox2.Size = new System.Drawing.Size(195, 38);
-			this.checkBox2.TabIndex = 12;
+			this.checkBox2.TabIndex = 1;
 			this.checkBox2.Text = "Allow Cell Merging";
 			// 
 			// checkBox3
@@ -151,10 +156,10 @@
 			this.checkBox3.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBox3.AutoSize = false;
 			this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox3.Location = new System.Drawing.Point(28, 130);
+			this.checkBox3.Location = new System.Drawing.Point(28, 146);
 			this.checkBox3.Name = "checkBox3";
 			this.checkBox3.Size = new System.Drawing.Size(195, 38);
-			this.checkBox3.TabIndex = 13;
+			this.checkBox3.TabIndex = 2;
 			this.checkBox3.Text = "Allow Grouping";
 			// 
 			// checkBox4
@@ -164,10 +169,10 @@
 			this.checkBox4.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBox4.Checked = true;
 			this.checkBox4.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBox4.Location = new System.Drawing.Point(28, 177);
+			this.checkBox4.Location = new System.Drawing.Point(28, 201);
 			this.checkBox4.Name = "checkBox4";
 			this.checkBox4.Size = new System.Drawing.Size(195, 38);
-			this.checkBox4.TabIndex = 14;
+			this.checkBox4.TabIndex = 3;
 			this.checkBox4.Text = "Allow Keyboard Navigation";
 			// 
 			// checkBox5
@@ -175,10 +180,10 @@
 			this.checkBox5.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBox5.AutoSize = false;
 			this.checkBox5.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox5.Location = new System.Drawing.Point(28, 224);
+			this.checkBox5.Location = new System.Drawing.Point(28, 256);
 			this.checkBox5.Name = "checkBox5";
 			this.checkBox5.Size = new System.Drawing.Size(195, 38);
-			this.checkBox5.TabIndex = 15;
+			this.checkBox5.TabIndex = 4;
 			this.checkBox5.Text = "Allow Filtering";
 			// 
 			// checkBox7
@@ -186,10 +191,10 @@
 			this.checkBox7.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBox7.AutoSize = false;
 			this.checkBox7.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox7.Location = new System.Drawing.Point(28, 318);
+			this.checkBox7.Location = new System.Drawing.Point(28, 366);
 			this.checkBox7.Name = "checkBox7";
 			this.checkBox7.Size = new System.Drawing.Size(195, 38);
-			this.checkBox7.TabIndex = 16;
+			this.checkBox7.TabIndex = 6;
 			this.checkBox7.Text = "Allow MultiSorting";
 			// 
 			// checkBox6
@@ -197,16 +202,16 @@
 			this.checkBox6.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBox6.AutoSize = false;
 			this.checkBox6.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox6.Location = new System.Drawing.Point(28, 271);
+			this.checkBox6.Location = new System.Drawing.Point(28, 311);
 			this.checkBox6.Name = "checkBox6";
 			this.checkBox6.Size = new System.Drawing.Size(195, 38);
-			this.checkBox6.TabIndex = 17;
+			this.checkBox6.TabIndex = 5;
 			this.checkBox6.Text = "Allow Sorting";
 			// 
 			// ejGrid
 			// 
 			this.Name = "ejGrid";
-			this.Size = new System.Drawing.Size(864, 695);
+			this.Size = new System.Drawing.Size(864, 759);
 			this.groupBox1.ResumeLayout(false);
 			this.panel.ResumeLayout(false);
 			this.ResumeLayout(false);

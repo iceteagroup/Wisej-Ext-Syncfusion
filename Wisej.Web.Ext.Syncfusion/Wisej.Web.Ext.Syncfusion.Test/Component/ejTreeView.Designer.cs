@@ -43,10 +43,12 @@
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "https://help.syncfusion.com/js/treeview/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejtreeview";
 			// 
 			// groupBox1
@@ -58,7 +60,7 @@
 			this.groupBox1.Controls.Add(this.checkBox2);
 			this.groupBox1.Controls.Add(this.buttonGetCheckedNodes);
 			this.groupBox1.Controls.Add(this.checkBox1);
-			this.groupBox1.Size = new System.Drawing.Size(250, 412);
+			this.groupBox1.Size = new System.Drawing.Size(250, 509);
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
 			this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
 			this.groupBox1.Controls.SetChildIndex(this.buttonGetCheckedNodes, 0);
@@ -70,27 +72,30 @@
 			// 
 			// buttonUpdate
 			// 
-			this.buttonUpdate.Location = new System.Drawing.Point(28, 327);
+			this.buttonUpdate.Location = new System.Drawing.Point(28, 420);
+			this.buttonUpdate.TabIndex = 7;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejTreeView1);
-			this.panel.Size = new System.Drawing.Size(455, 412);
+			this.panel.Size = new System.Drawing.Size(455, 509);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
 			this.linkDemo.Size = new System.Drawing.Size(593, 24);
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/bootstrap/treeview/DefaultFunctionalities";
 			// 
 			// ejTreeView1
 			// 
 			this.ejTreeView1.Anchor = Wisej.Web.AnchorStyles.None;
 			this.ejTreeView1.BorderStyle = Wisej.Web.BorderStyle.Solid;
-			this.ejTreeView1.Location = new System.Drawing.Point(129, 98);
+			this.ejTreeView1.Location = new System.Drawing.Point(76, 107);
 			this.ejTreeView1.Name = "ejTreeView1";
 			this.ejTreeView1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejTreeView1.Options"))));
-			this.ejTreeView1.Size = new System.Drawing.Size(194, 214);
+			this.ejTreeView1.Size = new System.Drawing.Size(301, 292);
 			this.ejTreeView1.TabIndex = 0;
 			this.ejTreeView1.Text = "ejTreeView1";
 			// 
@@ -101,18 +106,18 @@
 			this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBox1.Checked = true;
 			this.checkBox1.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBox1.Location = new System.Drawing.Point(28, 34);
+			this.checkBox1.Location = new System.Drawing.Point(28, 36);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(195, 31);
-			this.checkBox1.TabIndex = 7;
+			this.checkBox1.TabIndex = 0;
 			this.checkBox1.Text = "Auto Check";
 			// 
 			// buttonGetCheckedNodes
 			// 
-			this.buttonGetCheckedNodes.Location = new System.Drawing.Point(28, 286);
+			this.buttonGetCheckedNodes.Location = new System.Drawing.Point(28, 366);
 			this.buttonGetCheckedNodes.Name = "buttonGetCheckedNodes";
 			this.buttonGetCheckedNodes.Size = new System.Drawing.Size(195, 30);
-			this.buttonGetCheckedNodes.TabIndex = 8;
+			this.buttonGetCheckedNodes.TabIndex = 6;
 			this.buttonGetCheckedNodes.Text = "Get Checked Nodes";
 			this.buttonGetCheckedNodes.Click += new System.EventHandler(this.buttonGetCheckedNodes_Click);
 			// 
@@ -121,10 +126,10 @@
 			this.checkBox2.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBox2.AutoSize = false;
 			this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox2.Location = new System.Drawing.Point(28, 76);
+			this.checkBox2.Location = new System.Drawing.Point(28, 91);
 			this.checkBox2.Name = "checkBox2";
 			this.checkBox2.Size = new System.Drawing.Size(195, 31);
-			this.checkBox2.TabIndex = 9;
+			this.checkBox2.TabIndex = 1;
 			this.checkBox2.Text = "Show Checkbox";
 			// 
 			// checkBox3
@@ -132,10 +137,10 @@
 			this.checkBox3.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBox3.AutoSize = false;
 			this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox3.Location = new System.Drawing.Point(28, 118);
+			this.checkBox3.Location = new System.Drawing.Point(28, 146);
 			this.checkBox3.Name = "checkBox3";
 			this.checkBox3.Size = new System.Drawing.Size(195, 31);
-			this.checkBox3.TabIndex = 10;
+			this.checkBox3.TabIndex = 2;
 			this.checkBox3.Text = "Allow Drag and Drop";
 			// 
 			// checkBox4
@@ -143,10 +148,10 @@
 			this.checkBox4.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBox4.AutoSize = false;
 			this.checkBox4.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox4.Location = new System.Drawing.Point(28, 160);
+			this.checkBox4.Location = new System.Drawing.Point(28, 201);
 			this.checkBox4.Name = "checkBox4";
 			this.checkBox4.Size = new System.Drawing.Size(195, 31);
-			this.checkBox4.TabIndex = 11;
+			this.checkBox4.TabIndex = 3;
 			this.checkBox4.Text = "Allow Editing";
 			// 
 			// checkBox5
@@ -154,10 +159,10 @@
 			this.checkBox5.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBox5.AutoSize = false;
 			this.checkBox5.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox5.Location = new System.Drawing.Point(28, 202);
+			this.checkBox5.Location = new System.Drawing.Point(28, 256);
 			this.checkBox5.Name = "checkBox5";
 			this.checkBox5.Size = new System.Drawing.Size(195, 31);
-			this.checkBox5.TabIndex = 12;
+			this.checkBox5.TabIndex = 4;
 			this.checkBox5.Text = "Allow Keyboard Navigation";
 			// 
 			// checkBox6
@@ -165,16 +170,16 @@
 			this.checkBox6.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBox6.AutoSize = false;
 			this.checkBox6.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox6.Location = new System.Drawing.Point(28, 244);
+			this.checkBox6.Location = new System.Drawing.Point(28, 311);
 			this.checkBox6.Name = "checkBox6";
 			this.checkBox6.Size = new System.Drawing.Size(195, 31);
-			this.checkBox6.TabIndex = 13;
+			this.checkBox6.TabIndex = 5;
 			this.checkBox6.Text = "Allow Multi Selection";
 			// 
 			// ejTreeView
 			// 
 			this.Name = "ejTreeView";
-			this.Size = new System.Drawing.Size(864, 602);
+			this.Size = new System.Drawing.Size(864, 699);
 			this.groupBox1.ResumeLayout(false);
 			this.panel.ResumeLayout(false);
 			this.ResumeLayout(false);

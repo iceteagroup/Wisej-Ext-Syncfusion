@@ -42,10 +42,12 @@
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "https://help.syncfusion.com/js/lineargauge/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejlineargauge";
 			// 
 			// groupBox1
@@ -66,16 +68,19 @@
 			// buttonUpdate
 			// 
 			this.buttonUpdate.Location = new System.Drawing.Point(28, 386);
+			this.buttonUpdate.TabIndex = 5;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejLinearGauge1);
 			this.panel.Size = new System.Drawing.Size(455, 468);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
 			this.linkDemo.Size = new System.Drawing.Size(600, 24);
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/flatlight/lineargauge/DefaultFunctionaliti" +
     "es";
 			// 
@@ -100,7 +105,7 @@
 			this.numericUpDownVal.Location = new System.Drawing.Point(28, 92);
 			this.numericUpDownVal.Name = "numericUpDownVal";
 			this.numericUpDownVal.Size = new System.Drawing.Size(195, 60);
-			this.numericUpDownVal.TabIndex = 2;
+			this.numericUpDownVal.TabIndex = 1;
 			this.numericUpDownVal.Value = new decimal(new int[] {
             50,
             0,
@@ -120,7 +125,7 @@
 			this.comboBoxOrientation.Location = new System.Drawing.Point(28, 170);
 			this.comboBoxOrientation.Name = "comboBoxOrientation";
 			this.comboBoxOrientation.Size = new System.Drawing.Size(195, 60);
-			this.comboBoxOrientation.TabIndex = 3;
+			this.comboBoxOrientation.TabIndex = 2;
 			this.comboBoxOrientation.Text = "Vertical";
 			// 
 			// comboBoxLabelPosition
@@ -138,7 +143,7 @@
 			this.comboBoxLabelPosition.Location = new System.Drawing.Point(28, 248);
 			this.comboBoxLabelPosition.Name = "comboBoxLabelPosition";
 			this.comboBoxLabelPosition.Size = new System.Drawing.Size(195, 60);
-			this.comboBoxLabelPosition.TabIndex = 4;
+			this.comboBoxLabelPosition.TabIndex = 3;
 			this.comboBoxLabelPosition.Text = "Bottom";
 			// 
 			// checkBox1
@@ -151,7 +156,7 @@
 			this.checkBox1.Location = new System.Drawing.Point(28, 36);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(195, 38);
-			this.checkBox1.TabIndex = 13;
+			this.checkBox1.TabIndex = 0;
 			this.checkBox1.Text = "Enable Marker Point Animation";
 			// 
 			// buttonSave
@@ -161,7 +166,7 @@
 			this.buttonSave.Location = new System.Drawing.Point(28, 326);
 			this.buttonSave.Name = "buttonSave";
 			this.buttonSave.Size = new System.Drawing.Size(42, 42);
-			this.buttonSave.TabIndex = 14;
+			this.buttonSave.TabIndex = 4;
 			this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
 			// 
 			// ejLinearGauge

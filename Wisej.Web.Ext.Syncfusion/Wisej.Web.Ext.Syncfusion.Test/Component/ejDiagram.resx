@@ -120,7 +120,7 @@
   <data name="ejDiagram1.Options" xml:space="preserve">
     <value>{"pageSettings":{"pageOrientation":"landscape","pageBackgroundColor":"transparent","scrollLimit":"diagram"},"layout":{"type":"none"},"nodeTemplate":"nodeTemplate","defaultSettings":{"node":{"borderColor":"#000000","labels":[{"fontColor":"white"}],"type":"flow","width":90,"height":40},"connector":{"segments":[{"type":"orthogonal"}],"lineWidth":1,"constraints":350974}},"enableContextMenu":true}</value>
   </data>
-  <data name="widgetTemplate2.Template" xml:space="preserve">
+  <data name="widgetTemplate1.Template" xml:space="preserve">
     <value>function nodeTemplate(diagram, node)
 {
     debugger;

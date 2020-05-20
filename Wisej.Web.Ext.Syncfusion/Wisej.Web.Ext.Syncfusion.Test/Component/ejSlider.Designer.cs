@@ -48,10 +48,12 @@
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "https://help.syncfusion.com/js/slider/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejslider";
 			// 
 			// groupBox1
@@ -74,6 +76,7 @@
 			// buttonUpdate
 			// 
 			this.buttonUpdate.Location = new System.Drawing.Point(28, 342);
+			this.buttonUpdate.TabIndex = 6;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
@@ -81,11 +84,13 @@
 			this.panel.Controls.Add(this.panel2);
 			this.panel.Controls.Add(this.panel1);
 			this.panel.Size = new System.Drawing.Size(455, 427);
+			this.panel.TabIndex = 7;
 			this.panel.Text = "x";
 			// 
 			// linkDemo
 			// 
 			this.linkDemo.Size = new System.Drawing.Size(606, 24);
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/flatlight/slider/DefaultFunctionalities";
 			// 
 			// panel1
@@ -97,7 +102,7 @@
 			this.panel1.Location = new System.Drawing.Point(39, 45);
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(383, 78);
-			this.panel1.TabIndex = 1;
+			this.panel1.TabIndex = 0;
 			// 
 			// label4
 			// 
@@ -105,7 +110,7 @@
 			this.label4.Location = new System.Drawing.Point(3, 3);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(42, 15);
-			this.label4.TabIndex = 1;
+			this.label4.TabIndex = 0;
 			this.label4.Text = "Range";
 			// 
 			// ejSlider1
@@ -115,7 +120,7 @@
 			this.ejSlider1.Name = "ejSlider1";
 			this.ejSlider1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"sliderType\":\"range\",\"values\":[30,60]}")));
 			this.ejSlider1.Size = new System.Drawing.Size(383, 32);
-			this.ejSlider1.TabIndex = 3;
+			this.ejSlider1.TabIndex = 1;
 			this.ejSlider1.Text = "ejSlider1";
 			// 
 			// panel2
@@ -127,7 +132,7 @@
 			this.panel2.Location = new System.Drawing.Point(39, 190);
 			this.panel2.Name = "panel2";
 			this.panel2.Size = new System.Drawing.Size(383, 78);
-			this.panel2.TabIndex = 2;
+			this.panel2.TabIndex = 1;
 			// 
 			// label5
 			// 
@@ -136,7 +141,7 @@
 			this.label5.Location = new System.Drawing.Point(0, 0);
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(383, 15);
-			this.label5.TabIndex = 1;
+			this.label5.TabIndex = 0;
 			this.label5.Text = "Min-Range";
 			// 
 			// ejSlider2
@@ -146,7 +151,7 @@
 			this.ejSlider2.Name = "ejSlider2";
 			this.ejSlider2.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":60,\"sliderType\":\"minrange\"}")));
 			this.ejSlider2.Size = new System.Drawing.Size(383, 32);
-			this.ejSlider2.TabIndex = 2;
+			this.ejSlider2.TabIndex = 1;
 			this.ejSlider2.Text = "ejSlider2";
 			// 
 			// label6
@@ -154,7 +159,7 @@
 			this.label6.Location = new System.Drawing.Point(28, 36);
 			this.label6.Name = "label6";
 			this.label6.Size = new System.Drawing.Size(195, 41);
-			this.label6.TabIndex = 2;
+			this.label6.TabIndex = 0;
 			this.label6.Text = "Note: Property changes only affect the \"Range\" slider";
 			// 
 			// checkBox2
@@ -165,7 +170,7 @@
 			this.checkBox2.Location = new System.Drawing.Point(28, 89);
 			this.checkBox2.Name = "checkBox2";
 			this.checkBox2.Size = new System.Drawing.Size(195, 38);
-			this.checkBox2.TabIndex = 9;
+			this.checkBox2.TabIndex = 1;
 			this.checkBox2.Text = "Allow Mouse Wheel";
 			// 
 			// checkBox1
@@ -176,7 +181,7 @@
 			this.checkBox1.Location = new System.Drawing.Point(28, 139);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(195, 38);
-			this.checkBox1.TabIndex = 10;
+			this.checkBox1.TabIndex = 2;
 			this.checkBox1.Text = "Show Buttons";
 			// 
 			// checkBox3
@@ -187,7 +192,7 @@
 			this.checkBox3.Location = new System.Drawing.Point(28, 189);
 			this.checkBox3.Name = "checkBox3";
 			this.checkBox3.Size = new System.Drawing.Size(195, 38);
-			this.checkBox3.TabIndex = 11;
+			this.checkBox3.TabIndex = 3;
 			this.checkBox3.Text = "Show Scale";
 			// 
 			// checkBox4
@@ -200,7 +205,7 @@
 			this.checkBox4.Location = new System.Drawing.Point(28, 239);
 			this.checkBox4.Name = "checkBox4";
 			this.checkBox4.Size = new System.Drawing.Size(195, 38);
-			this.checkBox4.TabIndex = 12;
+			this.checkBox4.TabIndex = 4;
 			this.checkBox4.Text = "Show Small Ticks";
 			// 
 			// comboBox1
@@ -214,7 +219,7 @@
 			this.comboBox1.Location = new System.Drawing.Point(28, 289);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(195, 41);
-			this.comboBox1.TabIndex = 13;
+			this.comboBox1.TabIndex = 5;
 			this.comboBox1.Text = "Default";
 			// 
 			// ejSlider

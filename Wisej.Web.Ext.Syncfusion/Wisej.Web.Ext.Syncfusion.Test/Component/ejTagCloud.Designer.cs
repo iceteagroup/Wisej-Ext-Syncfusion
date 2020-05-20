@@ -42,10 +42,12 @@
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "https://help.syncfusion.com/js/tagcloud/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejtagcloud";
 			// 
 			// groupBox1
@@ -64,16 +66,19 @@
 			// buttonUpdate
 			// 
 			this.buttonUpdate.Location = new System.Drawing.Point(28, 314);
+			this.buttonUpdate.TabIndex = 4;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejTagCloud1);
 			this.panel.Size = new System.Drawing.Size(455, 398);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
 			this.linkDemo.Size = new System.Drawing.Size(524, 24);
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/flatlight/tagcloud/DefaultFunctionalities";
 			// 
 			// ejTagCloud1
@@ -112,7 +117,7 @@
             0});
 			this.numericUpDownMinimumFontSize.Name = "numericUpDownMinimumFontSize";
 			this.numericUpDownMinimumFontSize.Size = new System.Drawing.Size(195, 60);
-			this.numericUpDownMinimumFontSize.TabIndex = 4;
+			this.numericUpDownMinimumFontSize.TabIndex = 1;
 			this.numericUpDownMinimumFontSize.Value = new decimal(new int[] {
             10,
             0,
@@ -143,7 +148,7 @@
             0});
 			this.numericUpDownMaximumFontSize.Name = "numericUpDownMaximumFontSize";
 			this.numericUpDownMaximumFontSize.Size = new System.Drawing.Size(195, 60);
-			this.numericUpDownMaximumFontSize.TabIndex = 5;
+			this.numericUpDownMaximumFontSize.TabIndex = 2;
 			this.numericUpDownMaximumFontSize.Value = new decimal(new int[] {
             40,
             0,
@@ -163,7 +168,7 @@
 			this.comboBoxFormat.Location = new System.Drawing.Point(28, 239);
 			this.comboBoxFormat.Name = "comboBoxFormat";
 			this.comboBoxFormat.Size = new System.Drawing.Size(195, 60);
-			this.comboBoxFormat.TabIndex = 6;
+			this.comboBoxFormat.TabIndex = 3;
 			this.comboBoxFormat.Text = "Cloud";
 			// 
 			// checkBox1
@@ -176,7 +181,7 @@
 			this.checkBox1.Location = new System.Drawing.Point(28, 36);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(195, 38);
-			this.checkBox1.TabIndex = 9;
+			this.checkBox1.TabIndex = 0;
 			this.checkBox1.Text = "Show Title";
 			// 
 			// ejTagCloud

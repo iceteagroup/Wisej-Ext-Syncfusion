@@ -38,10 +38,12 @@
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "https://help.syncfusion.com/js/toolbar/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejtoolbar";
 			// 
 			// groupBox1
@@ -54,15 +56,18 @@
 			// 
 			// buttonUpdate
 			// 
+			this.buttonUpdate.TabIndex = 2;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejToolbar1);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
 			this.linkDemo.Size = new System.Drawing.Size(617, 24);
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/bootstrap/toolbar/defaultfunctionalities";
 			// 
 			// ejToolbar1
@@ -86,7 +91,7 @@
 			this.checkBox1.Location = new System.Drawing.Point(28, 36);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(195, 30);
-			this.checkBox1.TabIndex = 9;
+			this.checkBox1.TabIndex = 0;
 			this.checkBox1.Text = "Enable Separator";
 			// 
 			// checkBox2
@@ -97,7 +102,7 @@
 			this.checkBox2.Location = new System.Drawing.Point(28, 135);
 			this.checkBox2.Name = "checkBox2";
 			this.checkBox2.Size = new System.Drawing.Size(195, 30);
-			this.checkBox2.TabIndex = 10;
+			this.checkBox2.TabIndex = 1;
 			this.checkBox2.Text = "Show Rounded Corner";
 			// 
 			// ejToolbar

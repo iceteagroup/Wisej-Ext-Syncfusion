@@ -41,10 +41,12 @@
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "https://help.syncfusion.com/js/datetimepicker/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejdatetimepicker";
 			// 
 			// groupBox1
@@ -65,16 +67,19 @@
 			// buttonUpdate
 			// 
 			this.buttonUpdate.Location = new System.Drawing.Point(28, 360);
+			this.buttonUpdate.TabIndex = 5;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejDateTimePicker1);
 			this.panel.Size = new System.Drawing.Size(455, 443);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
 			this.linkDemo.Size = new System.Drawing.Size(539, 24);
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/flatlight/datetimepicker/defaultfunctional" +
     "ities";
 			// 
@@ -97,7 +102,7 @@
 			this.textBox1.Location = new System.Drawing.Point(28, 198);
 			this.textBox1.Name = "textBox1";
 			this.textBox1.Size = new System.Drawing.Size(195, 60);
-			this.textBox1.TabIndex = 2;
+			this.textBox1.TabIndex = 3;
 			this.textBox1.Text = "M/d/yyyy h:mm tt";
 			// 
 			// numericUpDown1
@@ -119,7 +124,7 @@
             0});
 			this.numericUpDown1.Name = "numericUpDown1";
 			this.numericUpDown1.Size = new System.Drawing.Size(195, 60);
-			this.numericUpDown1.TabIndex = 3;
+			this.numericUpDown1.TabIndex = 4;
 			this.numericUpDown1.Value = new decimal(new int[] {
             1,
             0,
@@ -136,7 +141,7 @@
 			this.checkBox1.Location = new System.Drawing.Point(28, 36);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(195, 38);
-			this.checkBox1.TabIndex = 9;
+			this.checkBox1.TabIndex = 0;
 			this.checkBox1.Text = "Allow Edit";
 			// 
 			// checkBox2
@@ -147,7 +152,7 @@
 			this.checkBox2.Location = new System.Drawing.Point(28, 80);
 			this.checkBox2.Name = "checkBox2";
 			this.checkBox2.Size = new System.Drawing.Size(195, 38);
-			this.checkBox2.TabIndex = 10;
+			this.checkBox2.TabIndex = 1;
 			this.checkBox2.Text = "Enable Strict Mode";
 			// 
 			// checkBox3
@@ -158,7 +163,7 @@
 			this.checkBox3.Location = new System.Drawing.Point(28, 139);
 			this.checkBox3.Name = "checkBox3";
 			this.checkBox3.Size = new System.Drawing.Size(195, 38);
-			this.checkBox3.TabIndex = 11;
+			this.checkBox3.TabIndex = 2;
 			this.checkBox3.Text = "Read Only";
 			// 
 			// ejDateTimePicker

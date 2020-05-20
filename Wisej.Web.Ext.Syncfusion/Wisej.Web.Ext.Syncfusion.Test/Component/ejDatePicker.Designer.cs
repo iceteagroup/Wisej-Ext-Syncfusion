@@ -41,10 +41,12 @@
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "https://help.syncfusion.com/js/datepicker/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejdatepicker";
 			// 
 			// groupBox1
@@ -67,16 +69,19 @@
 			// buttonUpdate
 			// 
 			this.buttonUpdate.Location = new System.Drawing.Point(28, 360);
+			this.buttonUpdate.TabIndex = 6;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejDatePicker1);
 			this.panel.Size = new System.Drawing.Size(455, 444);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
 			this.linkDemo.Size = new System.Drawing.Size(519, 24);
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/flatlight/datepicker/defaultfunctionalitie" +
     "s";
 			// 
@@ -100,7 +105,7 @@
 			this.checkBox1.Location = new System.Drawing.Point(28, 36);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(195, 38);
-			this.checkBox1.TabIndex = 9;
+			this.checkBox1.TabIndex = 0;
 			this.checkBox1.Text = "Strict Mode";
 			// 
 			// checkBox2
@@ -113,7 +118,7 @@
 			this.checkBox2.Location = new System.Drawing.Point(28, 90);
 			this.checkBox2.Name = "checkBox2";
 			this.checkBox2.Size = new System.Drawing.Size(195, 38);
-			this.checkBox2.TabIndex = 11;
+			this.checkBox2.TabIndex = 1;
 			this.checkBox2.Text = "Show Other Months";
 			// 
 			// checkBox3
@@ -126,7 +131,7 @@
 			this.checkBox3.Location = new System.Drawing.Point(28, 144);
 			this.checkBox3.Name = "checkBox3";
 			this.checkBox3.Size = new System.Drawing.Size(195, 38);
-			this.checkBox3.TabIndex = 12;
+			this.checkBox3.TabIndex = 2;
 			this.checkBox3.Text = "Allow Drill Down";
 			// 
 			// checkBox4
@@ -137,7 +142,7 @@
 			this.checkBox4.Location = new System.Drawing.Point(28, 198);
 			this.checkBox4.Name = "checkBox4";
 			this.checkBox4.Size = new System.Drawing.Size(195, 38);
-			this.checkBox4.TabIndex = 13;
+			this.checkBox4.TabIndex = 3;
 			this.checkBox4.Text = "Display Inline";
 			// 
 			// checkBox5
@@ -150,7 +155,7 @@
 			this.checkBox5.Location = new System.Drawing.Point(28, 252);
 			this.checkBox5.Name = "checkBox5";
 			this.checkBox5.Size = new System.Drawing.Size(195, 38);
-			this.checkBox5.TabIndex = 14;
+			this.checkBox5.TabIndex = 4;
 			this.checkBox5.Text = "Show Disabled Range";
 			// 
 			// checkBox6
@@ -163,7 +168,7 @@
 			this.checkBox6.Location = new System.Drawing.Point(28, 306);
 			this.checkBox6.Name = "checkBox6";
 			this.checkBox6.Size = new System.Drawing.Size(195, 38);
-			this.checkBox6.TabIndex = 15;
+			this.checkBox6.TabIndex = 5;
 			this.checkBox6.Text = "Show Footer";
 			// 
 			// ejDatePicker

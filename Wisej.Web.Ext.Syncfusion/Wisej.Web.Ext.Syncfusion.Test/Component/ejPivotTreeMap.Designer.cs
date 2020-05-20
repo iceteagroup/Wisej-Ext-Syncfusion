@@ -42,21 +42,29 @@
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 2;
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejpivottreemap";
 			// 
 			// groupBox1
 			// 
 			this.groupBox1.Controls.Add(this.buttonSave);
+			this.groupBox1.TabIndex = 6;
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
 			this.groupBox1.Controls.SetChildIndex(this.buttonSave, 0);
+			// 
+			// buttonUpdate
+			// 
+			this.buttonUpdate.TabIndex = 1;
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejPivotTreeMap1);
+			this.panel.TabIndex = 8;
 			// 
 			// linkDemo
 			// 
 			this.linkDemo.Size = new System.Drawing.Size(545, 24);
+			this.linkDemo.TabIndex = 4;
 			this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/flatlight/pivottreemap/DefaultFunctionalit" +
     "ies";
 			// 
@@ -78,7 +86,7 @@
 			this.label4.Location = new System.Drawing.Point(382, 129);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(318, 15);
-			this.label4.TabIndex = 8;
+			this.label4.TabIndex = 7;
 			this.label4.Text = "Note: Issue with hover and has an external datasource";
 			// 
 			// buttonSave
@@ -88,7 +96,7 @@
 			this.buttonSave.Location = new System.Drawing.Point(28, 186);
 			this.buttonSave.Name = "buttonSave";
 			this.buttonSave.Size = new System.Drawing.Size(42, 42);
-			this.buttonSave.TabIndex = 9;
+			this.buttonSave.TabIndex = 0;
 			this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
 			// 
 			// ejPivotTreeMap

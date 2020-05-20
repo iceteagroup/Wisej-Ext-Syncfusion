@@ -53,10 +53,12 @@
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "https://help.syncfusion.com/js/numerictextbox/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejtextboxes";
 			// 
 			// groupBox1
@@ -79,6 +81,7 @@
 			// buttonUpdate
 			// 
 			this.buttonUpdate.Location = new System.Drawing.Point(28, 363);
+			this.buttonUpdate.TabIndex = 6;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
@@ -87,10 +90,12 @@
 			this.panel.Controls.Add(this.panel2);
 			this.panel.Controls.Add(this.panel1);
 			this.panel.Size = new System.Drawing.Size(455, 449);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
 			this.linkDemo.Size = new System.Drawing.Size(587, 24);
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/bootstrap/editors/DefaultFunctionalities";
 			// 
 			// panel1
@@ -165,7 +170,7 @@
 			this.panel4.Location = new System.Drawing.Point(126, 299);
 			this.panel4.Name = "panel4";
 			this.panel4.Size = new System.Drawing.Size(200, 60);
-			this.panel4.TabIndex = 1;
+			this.panel4.TabIndex = 2;
 			// 
 			// ejMaskEdit1
 			// 
@@ -198,7 +203,7 @@
 			this.checkBox1.Location = new System.Drawing.Point(28, 90);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(195, 38);
-			this.checkBox1.TabIndex = 8;
+			this.checkBox1.TabIndex = 1;
 			this.checkBox1.Text = "Show Rounded Corner";
 			// 
 			// checkBox2
@@ -209,7 +214,7 @@
 			this.checkBox2.Location = new System.Drawing.Point(28, 144);
 			this.checkBox2.Name = "checkBox2";
 			this.checkBox2.Size = new System.Drawing.Size(195, 38);
-			this.checkBox2.TabIndex = 9;
+			this.checkBox2.TabIndex = 2;
 			this.checkBox2.Text = "Enable Strict Mode";
 			// 
 			// checkBox3
@@ -220,7 +225,7 @@
 			this.checkBox3.Location = new System.Drawing.Point(28, 198);
 			this.checkBox3.Name = "checkBox3";
 			this.checkBox3.Size = new System.Drawing.Size(195, 38);
-			this.checkBox3.TabIndex = 10;
+			this.checkBox3.TabIndex = 3;
 			this.checkBox3.Text = "Show Spin Button";
 			// 
 			// checkBox4
@@ -231,7 +236,7 @@
 			this.checkBox4.Location = new System.Drawing.Point(28, 252);
 			this.checkBox4.Name = "checkBox4";
 			this.checkBox4.Size = new System.Drawing.Size(195, 38);
-			this.checkBox4.TabIndex = 11;
+			this.checkBox4.TabIndex = 4;
 			this.checkBox4.Text = "Validate on Type";
 			// 
 			// numericUpDown1
@@ -245,14 +250,14 @@
             0});
 			this.numericUpDown1.Name = "numericUpDown1";
 			this.numericUpDown1.Size = new System.Drawing.Size(195, 41);
-			this.numericUpDown1.TabIndex = 12;
+			this.numericUpDown1.TabIndex = 5;
 			// 
 			// label6
 			// 
 			this.label6.Location = new System.Drawing.Point(28, 41);
 			this.label6.Name = "label6";
 			this.label6.Size = new System.Drawing.Size(195, 33);
-			this.label6.TabIndex = 13;
+			this.label6.TabIndex = 0;
 			this.label6.Text = "Note: Property changes affect the \"Kilometers\" TextBox.";
 			// 
 			// ejTextBox

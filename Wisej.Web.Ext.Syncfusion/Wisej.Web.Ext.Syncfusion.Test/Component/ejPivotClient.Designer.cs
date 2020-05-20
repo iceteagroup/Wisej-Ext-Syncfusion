@@ -39,10 +39,12 @@
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "https://help.syncfusion.com/js/pivotclient/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejpivotclient";
 			// 
 			// groupBox1
@@ -59,16 +61,19 @@
 			// buttonUpdate
 			// 
 			this.buttonUpdate.Location = new System.Drawing.Point(28, 262);
+			this.buttonUpdate.TabIndex = 3;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejPivotClient1);
 			this.panel.Size = new System.Drawing.Size(455, 355);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
 			this.linkDemo.Size = new System.Drawing.Size(639, 24);
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/bootstrap/pivotclient/Relational/DefaultFu" +
     "nctionalities";
 			// 
@@ -100,7 +105,7 @@
 			this.comboBox1.Location = new System.Drawing.Point(28, 172);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(195, 60);
-			this.comboBox1.TabIndex = 3;
+			this.comboBox1.TabIndex = 2;
 			this.comboBox1.Text = "Line";
 			// 
 			// checkBox1
@@ -113,7 +118,7 @@
 			this.checkBox1.Location = new System.Drawing.Point(28, 36);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(195, 38);
-			this.checkBox1.TabIndex = 7;
+			this.checkBox1.TabIndex = 0;
 			this.checkBox1.Text = "Enable Cell Click";
 			// 
 			// checkBox2
@@ -126,7 +131,7 @@
 			this.checkBox2.Location = new System.Drawing.Point(28, 104);
 			this.checkBox2.Name = "checkBox2";
 			this.checkBox2.Size = new System.Drawing.Size(195, 38);
-			this.checkBox2.TabIndex = 8;
+			this.checkBox2.TabIndex = 1;
 			this.checkBox2.Text = "Enable Splitter";
 			// 
 			// ejPivotClient1
@@ -134,10 +139,10 @@
 			this.ejPivotClient1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
             | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-			this.ejPivotClient1.Location = new System.Drawing.Point(12, 14);
+			this.ejPivotClient1.Location = new System.Drawing.Point(12, 16);
 			this.ejPivotClient1.Name = "ejPivotClient1";
 			this.ejPivotClient1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejPivotClient1.Options"))));
-			this.ejPivotClient1.Size = new System.Drawing.Size(429, 700);
+			this.ejPivotClient1.Size = new System.Drawing.Size(429, 320);
 			this.ejPivotClient1.TabIndex = 0;
 			this.ejPivotClient1.Text = "ejPivotClient1";
 			this.ejPivotClient1.WebRequest += new Wisej.Web.WebRequestHandler(this.ejPivotClient1_WebRequest);

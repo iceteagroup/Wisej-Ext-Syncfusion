@@ -42,10 +42,12 @@
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "https://help.syncfusion.com/js/timepicker/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejtimepicker";
 			// 
 			// groupBox1
@@ -70,16 +72,19 @@
 			// buttonUpdate
 			// 
 			this.buttonUpdate.Location = new System.Drawing.Point(28, 390);
+			this.buttonUpdate.TabIndex = 7;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejTimePicker1);
 			this.panel.Size = new System.Drawing.Size(455, 478);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
 			this.linkDemo.Size = new System.Drawing.Size(530, 24);
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/bootstrap/timepicker/defaultfunctionalitie" +
     "s";
 			// 
@@ -97,7 +102,7 @@
 			this.buttonGetTime.Location = new System.Drawing.Point(28, 252);
 			this.buttonGetTime.Name = "buttonGetTime";
 			this.buttonGetTime.Size = new System.Drawing.Size(195, 30);
-			this.buttonGetTime.TabIndex = 2;
+			this.buttonGetTime.TabIndex = 4;
 			this.buttonGetTime.Text = "Get Time";
 			this.buttonGetTime.Click += new System.EventHandler(this.buttonGetTime_Click);
 			// 
@@ -106,7 +111,7 @@
 			this.buttonTimeNow.Location = new System.Drawing.Point(28, 298);
 			this.buttonTimeNow.Name = "buttonTimeNow";
 			this.buttonTimeNow.Size = new System.Drawing.Size(195, 30);
-			this.buttonTimeNow.TabIndex = 3;
+			this.buttonTimeNow.TabIndex = 5;
 			this.buttonTimeNow.Text = "Time Now";
 			this.buttonTimeNow.Click += new System.EventHandler(this.buttonTimeNow_Click);
 			// 
@@ -115,7 +120,7 @@
 			this.buttonShowHidePopup.Location = new System.Drawing.Point(28, 344);
 			this.buttonShowHidePopup.Name = "buttonShowHidePopup";
 			this.buttonShowHidePopup.Size = new System.Drawing.Size(195, 30);
-			this.buttonShowHidePopup.TabIndex = 4;
+			this.buttonShowHidePopup.TabIndex = 6;
 			this.buttonShowHidePopup.Text = "Show / Hide Popup";
 			this.buttonShowHidePopup.Click += new System.EventHandler(this.buttonShowHidePopup_Click);
 			// 
@@ -129,7 +134,7 @@
 			this.checkBoxEnabled.Location = new System.Drawing.Point(28, 36);
 			this.checkBoxEnabled.Name = "checkBoxEnabled";
 			this.checkBoxEnabled.Size = new System.Drawing.Size(195, 38);
-			this.checkBoxEnabled.TabIndex = 7;
+			this.checkBoxEnabled.TabIndex = 0;
 			this.checkBoxEnabled.Text = "Enabled";
 			// 
 			// checkBox1
@@ -140,7 +145,7 @@
 			this.checkBox1.Location = new System.Drawing.Point(28, 90);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(195, 38);
-			this.checkBox1.TabIndex = 8;
+			this.checkBox1.TabIndex = 1;
 			this.checkBox1.Text = "Enable Strict Mode";
 			// 
 			// checkBox2
@@ -153,7 +158,7 @@
 			this.checkBox2.Location = new System.Drawing.Point(28, 144);
 			this.checkBox2.Name = "checkBox2";
 			this.checkBox2.Size = new System.Drawing.Size(195, 38);
-			this.checkBox2.TabIndex = 9;
+			this.checkBox2.TabIndex = 2;
 			this.checkBox2.Text = "Show Popup button";
 			// 
 			// checkBox3
@@ -164,7 +169,7 @@
 			this.checkBox3.Location = new System.Drawing.Point(28, 198);
 			this.checkBox3.Name = "checkBox3";
 			this.checkBox3.Size = new System.Drawing.Size(195, 38);
-			this.checkBox3.TabIndex = 10;
+			this.checkBox3.TabIndex = 3;
 			this.checkBox3.Text = "Show Rounded Corner";
 			// 
 			// ejTimePicker

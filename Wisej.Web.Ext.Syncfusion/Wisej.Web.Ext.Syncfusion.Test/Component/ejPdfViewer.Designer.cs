@@ -45,10 +45,12 @@
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "https://help.syncfusion.com/js/pdfviewer/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejpdfviewer";
 			// 
 			// groupBox1
@@ -71,15 +73,18 @@
 			// buttonUpdate
 			// 
 			this.buttonUpdate.Location = new System.Drawing.Point(28, 400);
+			this.buttonUpdate.TabIndex = 6;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejPdfViewer1);
 			this.panel.Size = new System.Drawing.Size(455, 488);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/bootstrap/pdf/GettingStarted";
 			// 
 			// ejPdfViewer1
@@ -107,7 +112,7 @@
 			this.checkBox1.Location = new System.Drawing.Point(28, 36);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(195, 31);
-			this.checkBox1.TabIndex = 2;
+			this.checkBox1.TabIndex = 0;
 			this.checkBox1.Text = "Enable Markup";
 			// 
 			// checkBox2
@@ -118,7 +123,7 @@
 			this.checkBox2.Location = new System.Drawing.Point(28, 88);
 			this.checkBox2.Name = "checkBox2";
 			this.checkBox2.Size = new System.Drawing.Size(195, 31);
-			this.checkBox2.TabIndex = 3;
+			this.checkBox2.TabIndex = 1;
 			this.checkBox2.Text = "Enable Signature";
 			// 
 			// label4
@@ -127,7 +132,7 @@
 			this.label4.Location = new System.Drawing.Point(6, 6);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(101, 15);
-			this.label4.TabIndex = 5;
+			this.label4.TabIndex = 0;
 			this.label4.Text = "Zoom (50-400%)";
 			// 
 			// trackBar1
@@ -137,7 +142,7 @@
 			this.trackBar1.Minimum = 50;
 			this.trackBar1.Name = "trackBar1";
 			this.trackBar1.Size = new System.Drawing.Size(195, 34);
-			this.trackBar1.TabIndex = 4;
+			this.trackBar1.TabIndex = 1;
 			this.trackBar1.TickFrequency = 25;
 			this.trackBar1.Value = 100;
 			// 
@@ -149,7 +154,7 @@
 			this.buttonLoad.Location = new System.Drawing.Point(28, 337);
 			this.buttonLoad.Name = "buttonLoad";
 			this.buttonLoad.Size = new System.Drawing.Size(42, 42);
-			this.buttonLoad.TabIndex = 7;
+			this.buttonLoad.TabIndex = 5;
 			this.buttonLoad.Uploaded += new Wisej.Web.UploadedEventHandler(this.buttonLoad_Uploaded);
 			// 
 			// flexLayoutPanel1
@@ -159,7 +164,7 @@
 			this.flexLayoutPanel1.Location = new System.Drawing.Point(22, 244);
 			this.flexLayoutPanel1.Name = "flexLayoutPanel1";
 			this.flexLayoutPanel1.Size = new System.Drawing.Size(207, 72);
-			this.flexLayoutPanel1.TabIndex = 8;
+			this.flexLayoutPanel1.TabIndex = 4;
 			// 
 			// checkBox3
 			// 
@@ -171,7 +176,7 @@
 			this.checkBox3.Location = new System.Drawing.Point(28, 140);
 			this.checkBox3.Name = "checkBox3";
 			this.checkBox3.Size = new System.Drawing.Size(195, 31);
-			this.checkBox3.TabIndex = 9;
+			this.checkBox3.TabIndex = 2;
 			this.checkBox3.Text = "Enable Text Selection";
 			// 
 			// checkBox4
@@ -184,7 +189,7 @@
 			this.checkBox4.Location = new System.Drawing.Point(28, 192);
 			this.checkBox4.Name = "checkBox4";
 			this.checkBox4.Size = new System.Drawing.Size(195, 31);
-			this.checkBox4.TabIndex = 11;
+			this.checkBox4.TabIndex = 3;
 			this.checkBox4.Text = "Enable Hyperlink";
 			// 
 			// ejPdfViewer

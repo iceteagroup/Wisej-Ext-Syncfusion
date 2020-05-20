@@ -71,7 +71,7 @@
 			// 
 			// buttonUpdate
 			// 
-			this.buttonUpdate.Location = new System.Drawing.Point(28, 406);
+			this.buttonUpdate.Location = new System.Drawing.Point(28, 400);
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
@@ -99,7 +99,7 @@
 			// 
 			this.button1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-			this.button1.Location = new System.Drawing.Point(28, 354);
+			this.button1.Location = new System.Drawing.Point(28, 348);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(195, 30);
 			this.button1.TabIndex = 1;
@@ -113,7 +113,7 @@
 			this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBox1.Location = new System.Drawing.Point(28, 36);
 			this.checkBox1.Name = "checkBox1";
-			this.checkBox1.Size = new System.Drawing.Size(195, 31);
+			this.checkBox1.Size = new System.Drawing.Size(195, 30);
 			this.checkBox1.TabIndex = 3;
 			this.checkBox1.Text = "Auto Focus";
 			// 
@@ -122,9 +122,9 @@
 			this.checkBox2.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBox2.AutoSize = false;
 			this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox2.Location = new System.Drawing.Point(28, 89);
+			this.checkBox2.Location = new System.Drawing.Point(28, 88);
 			this.checkBox2.Name = "checkBox2";
-			this.checkBox2.Size = new System.Drawing.Size(195, 31);
+			this.checkBox2.Size = new System.Drawing.Size(195, 30);
 			this.checkBox2.TabIndex = 4;
 			this.checkBox2.Text = "Case Sensitive Search";
 			// 
@@ -133,9 +133,9 @@
 			this.checkBox3.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBox3.AutoSize = false;
 			this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox3.Location = new System.Drawing.Point(28, 142);
+			this.checkBox3.Location = new System.Drawing.Point(28, 140);
 			this.checkBox3.Name = "checkBox3";
-			this.checkBox3.Size = new System.Drawing.Size(195, 31);
+			this.checkBox3.Size = new System.Drawing.Size(195, 30);
 			this.checkBox3.TabIndex = 5;
 			this.checkBox3.Text = "Highlight Search";
 			// 
@@ -146,9 +146,9 @@
 			this.checkBox4.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBox4.Checked = true;
 			this.checkBox4.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBox4.Location = new System.Drawing.Point(28, 195);
+			this.checkBox4.Location = new System.Drawing.Point(28, 192);
 			this.checkBox4.Name = "checkBox4";
-			this.checkBox4.Size = new System.Drawing.Size(195, 31);
+			this.checkBox4.Size = new System.Drawing.Size(195, 30);
 			this.checkBox4.TabIndex = 6;
 			this.checkBox4.Text = "Show Empty Result Text";
 			// 
@@ -157,9 +157,9 @@
 			this.checkBox5.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBox5.AutoSize = false;
 			this.checkBox5.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox5.Location = new System.Drawing.Point(28, 248);
+			this.checkBox5.Location = new System.Drawing.Point(28, 244);
 			this.checkBox5.Name = "checkBox5";
-			this.checkBox5.Size = new System.Drawing.Size(195, 31);
+			this.checkBox5.Size = new System.Drawing.Size(195, 30);
 			this.checkBox5.TabIndex = 7;
 			this.checkBox5.Text = "Show Reset Icon";
 			// 
@@ -168,9 +168,9 @@
 			this.checkBox6.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBox6.AutoSize = false;
 			this.checkBox6.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox6.Location = new System.Drawing.Point(28, 301);
+			this.checkBox6.Location = new System.Drawing.Point(28, 296);
 			this.checkBox6.Name = "checkBox6";
-			this.checkBox6.Size = new System.Drawing.Size(195, 31);
+			this.checkBox6.Size = new System.Drawing.Size(195, 30);
 			this.checkBox6.TabIndex = 8;
 			this.checkBox6.Text = "Show Popup Button";
 			// 

@@ -39,10 +39,12 @@
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "https://help.syncfusion.com/js/daterangepicker/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejdaterangepicker";
 			// 
 			// groupBox1
@@ -61,16 +63,19 @@
 			// buttonUpdate
 			// 
 			this.buttonUpdate.Location = new System.Drawing.Point(28, 326);
+			this.buttonUpdate.TabIndex = 4;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejDateRangePicker1);
 			this.panel.Size = new System.Drawing.Size(455, 407);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
 			this.linkDemo.Size = new System.Drawing.Size(546, 24);
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/flatlight/daterangepicker/defaultfunctiona" +
     "lities";
 			// 
@@ -122,7 +127,7 @@
 			this.checkBox1.Location = new System.Drawing.Point(28, 36);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(195, 31);
-			this.checkBox1.TabIndex = 4;
+			this.checkBox1.TabIndex = 0;
 			this.checkBox1.Text = "Allow Edit";
 			// 
 			// checkBox2
@@ -133,7 +138,7 @@
 			this.checkBox2.Location = new System.Drawing.Point(28, 94);
 			this.checkBox2.Name = "checkBox2";
 			this.checkBox2.Size = new System.Drawing.Size(195, 31);
-			this.checkBox2.TabIndex = 5;
+			this.checkBox2.TabIndex = 1;
 			this.checkBox2.Text = "Enable Time Picker";
 			// 
 			// ejDateRangePicker

@@ -37,20 +37,24 @@
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "https://help.syncfusion.com/js/heatmap/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejheatmap";
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejHeatMapLegend1);
 			this.panel.Controls.Add(this.ejHeatMap1);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
 			this.linkDemo.Size = new System.Drawing.Size(538, 24);
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/flatlight/heatmap/celldatabinding";
 			// 
 			// ejHeatMap1
@@ -62,7 +66,7 @@
 			this.ejHeatMap1.Name = "ejHeatMap1";
 			this.ejHeatMap1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejHeatMap1.Options"))));
 			this.ejHeatMap1.Size = new System.Drawing.Size(409, 233);
-			this.ejHeatMap1.TabIndex = 2;
+			this.ejHeatMap1.TabIndex = 0;
 			this.ejHeatMap1.Text = "ejHeatMap1";
 			this.ejHeatMap1.Appear += new System.EventHandler(this.ejHeatMap1_Appear);
 			// 
