@@ -65,7 +65,7 @@
 			// 
 			// buttonUpdate
 			// 
-			this.buttonUpdate.Location = new System.Drawing.Point(28, 347);
+			this.buttonUpdate.Location = new System.Drawing.Point(28, 346);
 			this.buttonUpdate.TabIndex = 4;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
@@ -119,7 +119,7 @@
 			this.comboBox1.Label.Size = 50;
 			this.comboBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
 			this.comboBox1.LabelText = "Input Mode";
-			this.comboBox1.Location = new System.Drawing.Point(28, 172);
+			this.comboBox1.Location = new System.Drawing.Point(28, 162);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(195, 60);
 			this.comboBox1.TabIndex = 2;
@@ -127,11 +127,14 @@
 			// 
 			// textBox1
 			// 
+			this.textBox1.AutoSize = false;
+			this.textBox1.Label.Size = 50;
+			this.textBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
 			this.textBox1.LabelText = "Custom Character";
-			this.textBox1.Location = new System.Drawing.Point(28, 269);
+			this.textBox1.Location = new System.Drawing.Point(28, 254);
 			this.textBox1.MaxLength = 1;
 			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(195, 41);
+			this.textBox1.Size = new System.Drawing.Size(195, 60);
 			this.textBox1.TabIndex = 3;
 			this.textBox1.Text = "*";
 			// 
@@ -153,7 +156,7 @@
 			this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBox2.Checked = true;
 			this.checkBox2.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBox2.Location = new System.Drawing.Point(28, 104);
+			this.checkBox2.Location = new System.Drawing.Point(28, 99);
 			this.checkBox2.Name = "checkBox2";
 			this.checkBox2.Size = new System.Drawing.Size(195, 31);
 			this.checkBox2.TabIndex = 1;
@@ -164,7 +167,6 @@
 			this.Name = "ejMaskEdit";
 			this.Size = new System.Drawing.Size(864, 620);
 			this.groupBox1.ResumeLayout(false);
-			this.groupBox1.PerformLayout();
 			this.panel.ResumeLayout(false);
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();

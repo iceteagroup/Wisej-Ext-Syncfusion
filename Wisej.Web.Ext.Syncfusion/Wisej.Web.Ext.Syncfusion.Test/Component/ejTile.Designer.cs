@@ -75,7 +75,7 @@
 			this.groupBox1.Controls.Add(this.label4);
 			this.groupBox1.Controls.Add(this.numericUpDown1);
 			this.groupBox1.Controls.Add(this.checkBox1);
-			this.groupBox1.Size = new System.Drawing.Size(250, 471);
+			this.groupBox1.Size = new System.Drawing.Size(250, 515);
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
 			this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
 			this.groupBox1.Controls.SetChildIndex(this.numericUpDown1, 0);
@@ -86,14 +86,14 @@
 			// 
 			// buttonUpdate
 			// 
-			this.buttonUpdate.Location = new System.Drawing.Point(28, 388);
+			this.buttonUpdate.Location = new System.Drawing.Point(28, 431);
 			this.buttonUpdate.TabIndex = 6;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.flowLayoutPanel2);
-			this.panel.Size = new System.Drawing.Size(657, 471);
+			this.panel.Size = new System.Drawing.Size(657, 515);
 			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
@@ -175,7 +175,7 @@
 			this.flowLayoutPanel2.Controls.Add(this.ejTile13);
 			this.flowLayoutPanel2.Location = new System.Drawing.Point(41, 46);
 			this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-			this.flowLayoutPanel2.Size = new System.Drawing.Size(573, 377);
+			this.flowLayoutPanel2.Size = new System.Drawing.Size(573, 421);
 			this.flowLayoutPanel2.TabIndex = 0;
 			// 
 			// ejTile8
@@ -279,7 +279,7 @@
 			this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBox1.Checked = true;
 			this.checkBox1.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBox1.Location = new System.Drawing.Point(28, 88);
+			this.checkBox1.Location = new System.Drawing.Point(28, 92);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(195, 38);
 			this.checkBox1.TabIndex = 1;
@@ -291,7 +291,7 @@
 			this.numericUpDown1.Label.Size = 50;
 			this.numericUpDown1.Label.SizeType = Wisej.Web.SizeType.Percent;
 			this.numericUpDown1.LabelText = "Badge";
-			this.numericUpDown1.Location = new System.Drawing.Point(28, 253);
+			this.numericUpDown1.Location = new System.Drawing.Point(28, 269);
 			this.numericUpDown1.Name = "numericUpDown1";
 			this.numericUpDown1.Size = new System.Drawing.Size(195, 60);
 			this.numericUpDown1.TabIndex = 4;
@@ -316,7 +316,7 @@
 			this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBox2.Checked = true;
 			this.checkBox2.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBox2.Location = new System.Drawing.Point(28, 143);
+			this.checkBox2.Location = new System.Drawing.Point(28, 151);
 			this.checkBox2.Name = "checkBox2";
 			this.checkBox2.Size = new System.Drawing.Size(195, 38);
 			this.checkBox2.TabIndex = 2;
@@ -324,6 +324,7 @@
 			// 
 			// comboBox1
 			// 
+			this.comboBox1.AutoSize = false;
 			this.comboBox1.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
 			this.comboBox1.Items.AddRange(new object[] {
             "Center",
@@ -336,10 +337,12 @@
             "BottomRight",
             "BottomLeft",
             "Fill"});
+			this.comboBox1.Label.Size = 50;
+			this.comboBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
 			this.comboBox1.LabelText = "Image Position";
-			this.comboBox1.Location = new System.Drawing.Point(28, 330);
+			this.comboBox1.Location = new System.Drawing.Point(28, 350);
 			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(195, 41);
+			this.comboBox1.Size = new System.Drawing.Size(195, 60);
 			this.comboBox1.TabIndex = 5;
 			this.comboBox1.Text = "Center";
 			// 
@@ -348,7 +351,7 @@
 			this.checkBox3.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBox3.AutoSize = false;
 			this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox3.Location = new System.Drawing.Point(28, 198);
+			this.checkBox3.Location = new System.Drawing.Point(28, 210);
 			this.checkBox3.Name = "checkBox3";
 			this.checkBox3.Size = new System.Drawing.Size(195, 38);
 			this.checkBox3.TabIndex = 3;
@@ -357,9 +360,8 @@
 			// ejTile
 			// 
 			this.Name = "ejTile";
-			this.Size = new System.Drawing.Size(1066, 661);
+			this.Size = new System.Drawing.Size(1066, 705);
 			this.groupBox1.ResumeLayout(false);
-			this.groupBox1.PerformLayout();
 			this.panel.ResumeLayout(false);
 			this.flowLayoutPanel1.ResumeLayout(false);
 			this.flowLayoutPanel2.ResumeLayout(false);

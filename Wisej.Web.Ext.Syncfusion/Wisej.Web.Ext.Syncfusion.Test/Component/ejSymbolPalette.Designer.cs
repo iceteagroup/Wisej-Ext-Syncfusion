@@ -67,7 +67,7 @@
 			// 
 			// buttonUpdate
 			// 
-			this.buttonUpdate.Location = new System.Drawing.Point(28, 322);
+			this.buttonUpdate.Location = new System.Drawing.Point(28, 320);
 			this.buttonUpdate.TabIndex = 4;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
@@ -132,7 +132,7 @@
 			this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBox2.Checked = true;
 			this.checkBox2.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBox2.Location = new System.Drawing.Point(28, 106);
+			this.checkBox2.Location = new System.Drawing.Point(28, 96);
 			this.checkBox2.Name = "checkBox2";
 			this.checkBox2.Size = new System.Drawing.Size(195, 38);
 			this.checkBox2.TabIndex = 1;
@@ -140,15 +140,18 @@
 			// 
 			// numericUpDown1
 			// 
+			this.numericUpDown1.AutoSize = false;
+			this.numericUpDown1.Label.Size = 50;
+			this.numericUpDown1.Label.SizeType = Wisej.Web.SizeType.Percent;
 			this.numericUpDown1.LabelText = "Preview Height";
-			this.numericUpDown1.Location = new System.Drawing.Point(28, 176);
+			this.numericUpDown1.Location = new System.Drawing.Point(28, 156);
 			this.numericUpDown1.Maximum = new decimal(new int[] {
             200,
             0,
             0,
             0});
 			this.numericUpDown1.Name = "numericUpDown1";
-			this.numericUpDown1.Size = new System.Drawing.Size(195, 41);
+			this.numericUpDown1.Size = new System.Drawing.Size(195, 60);
 			this.numericUpDown1.TabIndex = 2;
 			this.numericUpDown1.Value = new decimal(new int[] {
             100,
@@ -158,10 +161,13 @@
 			// 
 			// numericUpDown2
 			// 
+			this.numericUpDown2.AutoSize = false;
+			this.numericUpDown2.Label.Size = 50;
+			this.numericUpDown2.Label.SizeType = Wisej.Web.SizeType.Percent;
 			this.numericUpDown2.LabelText = "Header Height";
-			this.numericUpDown2.Location = new System.Drawing.Point(28, 249);
+			this.numericUpDown2.Location = new System.Drawing.Point(28, 238);
 			this.numericUpDown2.Name = "numericUpDown2";
-			this.numericUpDown2.Size = new System.Drawing.Size(195, 41);
+			this.numericUpDown2.Size = new System.Drawing.Size(195, 60);
 			this.numericUpDown2.TabIndex = 3;
 			this.numericUpDown2.Value = new decimal(new int[] {
             30,
@@ -174,7 +180,6 @@
 			this.Name = "ejSymbolPalette";
 			this.Size = new System.Drawing.Size(864, 594);
 			this.groupBox1.ResumeLayout(false);
-			this.groupBox1.PerformLayout();
 			this.panel.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();

@@ -81,7 +81,7 @@
 			// 
 			// buttonUpdate
 			// 
-			this.buttonUpdate.Location = new System.Drawing.Point(28, 717);
+			this.buttonUpdate.Location = new System.Drawing.Point(28, 716);
 			this.buttonUpdate.TabIndex = 10;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
@@ -117,7 +117,7 @@
 			this.textBox1.Label.Size = 50;
 			this.textBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
 			this.textBox1.LabelText = "Schedule Start Date";
-			this.textBox1.Location = new System.Drawing.Point(28, 463);
+			this.textBox1.Location = new System.Drawing.Point(28, 449);
 			this.textBox1.Name = "textBox1";
 			this.textBox1.Size = new System.Drawing.Size(195, 60);
 			this.textBox1.TabIndex = 7;
@@ -144,7 +144,7 @@
 			this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBox2.Checked = true;
 			this.checkBox2.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBox2.Location = new System.Drawing.Point(28, 97);
+			this.checkBox2.Location = new System.Drawing.Point(28, 95);
 			this.checkBox2.Name = "checkBox2";
 			this.checkBox2.Size = new System.Drawing.Size(195, 30);
 			this.checkBox2.TabIndex = 1;
@@ -157,7 +157,7 @@
 			this.textBox2.Label.Size = 50;
 			this.textBox2.Label.SizeType = Wisej.Web.SizeType.Percent;
 			this.textBox2.LabelText = "Schedule End Date";
-			this.textBox2.Location = new System.Drawing.Point(28, 554);
+			this.textBox2.Location = new System.Drawing.Point(28, 538);
 			this.textBox2.Name = "textBox2";
 			this.textBox2.Size = new System.Drawing.Size(195, 60);
 			this.textBox2.TabIndex = 8;
@@ -169,7 +169,7 @@
 			this.checkBox3.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBox3.AutoSize = false;
 			this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox3.Location = new System.Drawing.Point(28, 158);
+			this.checkBox3.Location = new System.Drawing.Point(28, 154);
 			this.checkBox3.Name = "checkBox3";
 			this.checkBox3.Size = new System.Drawing.Size(195, 30);
 			this.checkBox3.TabIndex = 2;
@@ -180,7 +180,7 @@
 			this.checkBox4.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBox4.AutoSize = false;
 			this.checkBox4.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox4.Location = new System.Drawing.Point(28, 219);
+			this.checkBox4.Location = new System.Drawing.Point(28, 213);
 			this.checkBox4.Name = "checkBox4";
 			this.checkBox4.Size = new System.Drawing.Size(195, 30);
 			this.checkBox4.TabIndex = 3;
@@ -191,7 +191,7 @@
 			this.checkBox5.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBox5.AutoSize = false;
 			this.checkBox5.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox5.Location = new System.Drawing.Point(28, 280);
+			this.checkBox5.Location = new System.Drawing.Point(28, 272);
 			this.checkBox5.Name = "checkBox5";
 			this.checkBox5.Size = new System.Drawing.Size(195, 30);
 			this.checkBox5.TabIndex = 4;
@@ -202,7 +202,7 @@
 			this.checkBox6.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBox6.AutoSize = false;
 			this.checkBox6.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox6.Location = new System.Drawing.Point(28, 341);
+			this.checkBox6.Location = new System.Drawing.Point(28, 331);
 			this.checkBox6.Name = "checkBox6";
 			this.checkBox6.Size = new System.Drawing.Size(195, 30);
 			this.checkBox6.TabIndex = 5;
@@ -213,7 +213,7 @@
 			this.checkBox7.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBox7.AutoSize = false;
 			this.checkBox7.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox7.Location = new System.Drawing.Point(28, 402);
+			this.checkBox7.Location = new System.Drawing.Point(28, 390);
 			this.checkBox7.Name = "checkBox7";
 			this.checkBox7.Size = new System.Drawing.Size(195, 30);
 			this.checkBox7.TabIndex = 6;
@@ -221,14 +221,17 @@
 			// 
 			// comboBox1
 			// 
+			this.comboBox1.AutoSize = false;
 			this.comboBox1.Items.AddRange(new object[] {
             "ProjectView",
             "ResourceView",
             "HistogramView"});
+			this.comboBox1.Label.Size = 50;
+			this.comboBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
 			this.comboBox1.LabelText = "View Type";
-			this.comboBox1.Location = new System.Drawing.Point(28, 645);
+			this.comboBox1.Location = new System.Drawing.Point(28, 627);
 			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(195, 41);
+			this.comboBox1.Size = new System.Drawing.Size(195, 60);
 			this.comboBox1.TabIndex = 9;
 			this.comboBox1.Text = "ProjectView";
 			// 
@@ -237,7 +240,6 @@
 			this.Name = "ejGantt";
 			this.Size = new System.Drawing.Size(1010, 996);
 			this.groupBox1.ResumeLayout(false);
-			this.groupBox1.PerformLayout();
 			this.panel.ResumeLayout(false);
 			this.ResumeLayout(false);
 			this.PerformLayout();

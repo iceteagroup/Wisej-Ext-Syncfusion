@@ -69,7 +69,7 @@
 			this.groupBox1.Controls.Add(this.checkBox3);
 			this.groupBox1.Controls.Add(this.checkBox2);
 			this.groupBox1.Controls.Add(this.checkBox1);
-			this.groupBox1.Size = new System.Drawing.Size(250, 449);
+			this.groupBox1.Size = new System.Drawing.Size(250, 550);
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
 			this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
 			this.groupBox1.Controls.SetChildIndex(this.checkBox2, 0);
@@ -80,7 +80,7 @@
 			// 
 			// buttonUpdate
 			// 
-			this.buttonUpdate.Location = new System.Drawing.Point(28, 363);
+			this.buttonUpdate.Location = new System.Drawing.Point(28, 460);
 			this.buttonUpdate.TabIndex = 6;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
@@ -89,7 +89,7 @@
 			this.panel.Controls.Add(this.panel4);
 			this.panel.Controls.Add(this.panel2);
 			this.panel.Controls.Add(this.panel1);
-			this.panel.Size = new System.Drawing.Size(455, 449);
+			this.panel.Size = new System.Drawing.Size(455, 550);
 			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
@@ -103,7 +103,7 @@
 			this.panel1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
 			this.panel1.Controls.Add(this.ejNumericTextbox1);
 			this.panel1.Controls.Add(this.label4);
-			this.panel1.Location = new System.Drawing.Point(126, 93);
+			this.panel1.Location = new System.Drawing.Point(126, 144);
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(200, 60);
 			this.panel1.TabIndex = 0;
@@ -135,7 +135,7 @@
 			this.panel2.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
 			this.panel2.Controls.Add(this.ejPercentageTextbox1);
 			this.panel2.Controls.Add(this.label5);
-			this.panel2.Location = new System.Drawing.Point(126, 196);
+			this.panel2.Location = new System.Drawing.Point(126, 247);
 			this.panel2.Name = "panel2";
 			this.panel2.Size = new System.Drawing.Size(200, 60);
 			this.panel2.TabIndex = 1;
@@ -167,7 +167,7 @@
 			this.panel4.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
 			this.panel4.Controls.Add(this.ejMaskEdit1);
 			this.panel4.Controls.Add(this.label7);
-			this.panel4.Location = new System.Drawing.Point(126, 299);
+			this.panel4.Location = new System.Drawing.Point(126, 350);
 			this.panel4.Name = "panel4";
 			this.panel4.Size = new System.Drawing.Size(200, 60);
 			this.panel4.TabIndex = 2;
@@ -200,7 +200,7 @@
 			this.checkBox1.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBox1.AutoSize = false;
 			this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox1.Location = new System.Drawing.Point(28, 90);
+			this.checkBox1.Location = new System.Drawing.Point(28, 103);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(195, 38);
 			this.checkBox1.TabIndex = 1;
@@ -211,7 +211,7 @@
 			this.checkBox2.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBox2.AutoSize = false;
 			this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox2.Location = new System.Drawing.Point(28, 144);
+			this.checkBox2.Location = new System.Drawing.Point(28, 170);
 			this.checkBox2.Name = "checkBox2";
 			this.checkBox2.Size = new System.Drawing.Size(195, 38);
 			this.checkBox2.TabIndex = 2;
@@ -222,7 +222,7 @@
 			this.checkBox3.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBox3.AutoSize = false;
 			this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox3.Location = new System.Drawing.Point(28, 198);
+			this.checkBox3.Location = new System.Drawing.Point(28, 237);
 			this.checkBox3.Name = "checkBox3";
 			this.checkBox3.Size = new System.Drawing.Size(195, 38);
 			this.checkBox3.TabIndex = 3;
@@ -233,7 +233,7 @@
 			this.checkBox4.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBox4.AutoSize = false;
 			this.checkBox4.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox4.Location = new System.Drawing.Point(28, 252);
+			this.checkBox4.Location = new System.Drawing.Point(28, 304);
 			this.checkBox4.Name = "checkBox4";
 			this.checkBox4.Size = new System.Drawing.Size(195, 38);
 			this.checkBox4.TabIndex = 4;
@@ -241,15 +241,18 @@
 			// 
 			// numericUpDown1
 			// 
+			this.numericUpDown1.AutoSize = false;
+			this.numericUpDown1.Label.Size = 50;
+			this.numericUpDown1.Label.SizeType = Wisej.Web.SizeType.Percent;
 			this.numericUpDown1.LabelText = "Decimal Places";
-			this.numericUpDown1.Location = new System.Drawing.Point(28, 306);
+			this.numericUpDown1.Location = new System.Drawing.Point(28, 371);
 			this.numericUpDown1.Maximum = new decimal(new int[] {
             50,
             0,
             0,
             0});
 			this.numericUpDown1.Name = "numericUpDown1";
-			this.numericUpDown1.Size = new System.Drawing.Size(195, 41);
+			this.numericUpDown1.Size = new System.Drawing.Size(195, 60);
 			this.numericUpDown1.TabIndex = 5;
 			// 
 			// label6
@@ -263,9 +266,8 @@
 			// ejTextBox
 			// 
 			this.Name = "ejTextBox";
-			this.Size = new System.Drawing.Size(864, 639);
+			this.Size = new System.Drawing.Size(864, 740);
 			this.groupBox1.ResumeLayout(false);
-			this.groupBox1.PerformLayout();
 			this.panel.ResumeLayout(false);
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();

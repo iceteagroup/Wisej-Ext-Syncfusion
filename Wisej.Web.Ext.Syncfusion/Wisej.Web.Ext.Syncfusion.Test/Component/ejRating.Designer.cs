@@ -86,7 +86,7 @@
 			this.groupBox1.Controls.Add(this.checkBox1);
 			this.groupBox1.Controls.Add(this.numericUpDown2);
 			this.groupBox1.Controls.Add(this.numericUpDown1);
-			this.groupBox1.Size = new System.Drawing.Size(250, 444);
+			this.groupBox1.Size = new System.Drawing.Size(250, 554);
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
 			this.groupBox1.Controls.SetChildIndex(this.numericUpDown1, 0);
 			this.groupBox1.Controls.SetChildIndex(this.numericUpDown2, 0);
@@ -96,14 +96,14 @@
 			// 
 			// buttonUpdate
 			// 
-			this.buttonUpdate.Location = new System.Drawing.Point(28, 360);
+			this.buttonUpdate.Location = new System.Drawing.Point(28, 467);
 			this.buttonUpdate.TabIndex = 5;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.tabControl1);
-			this.panel.Size = new System.Drawing.Size(455, 446);
+			this.panel.Size = new System.Drawing.Size(455, 556);
 			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
@@ -121,7 +121,7 @@
 			this.tabControl1.Location = new System.Drawing.Point(0, 0);
 			this.tabControl1.Name = "tabControl1";
 			this.tabControl1.PageInsets = new Wisej.Web.Padding(1, 35, 1, 1);
-			this.tabControl1.Size = new System.Drawing.Size(453, 444);
+			this.tabControl1.Size = new System.Drawing.Size(453, 554);
 			this.tabControl1.TabIndex = 0;
 			// 
 			// tabPage1
@@ -134,7 +134,7 @@
 			this.tabPage1.Controls.Add(this.ejRating1);
 			this.tabPage1.Location = new System.Drawing.Point(1, 35);
 			this.tabPage1.Name = "tabPage1";
-			this.tabPage1.Size = new System.Drawing.Size(451, 408);
+			this.tabPage1.Size = new System.Drawing.Size(451, 518);
 			this.tabPage1.Text = "Man of Steel";
 			// 
 			// pictureBox1
@@ -206,7 +206,7 @@
 			this.tabPage2.Controls.Add(this.ejRating2);
 			this.tabPage2.Location = new System.Drawing.Point(1, 35);
 			this.tabPage2.Name = "tabPage2";
-			this.tabPage2.Size = new System.Drawing.Size(451, 408);
+			this.tabPage2.Size = new System.Drawing.Size(451, 518);
 			this.tabPage2.Text = "World War Z";
 			// 
 			// pictureBox2
@@ -279,7 +279,7 @@
 			this.tabPage3.Controls.Add(this.ejRating3);
 			this.tabPage3.Location = new System.Drawing.Point(1, 35);
 			this.tabPage3.Name = "tabPage3";
-			this.tabPage3.Size = new System.Drawing.Size(451, 408);
+			this.tabPage3.Size = new System.Drawing.Size(451, 518);
 			this.tabPage3.Text = "Monsters University";
 			// 
 			// pictureBox3
@@ -345,15 +345,17 @@
 			// numericUpDown1
 			// 
 			this.numericUpDown1.AutoSize = false;
+			this.numericUpDown1.Label.Size = 50;
+			this.numericUpDown1.Label.SizeType = Wisej.Web.SizeType.Percent;
 			this.numericUpDown1.LabelText = "Max Value";
-			this.numericUpDown1.Location = new System.Drawing.Point(28, 162);
+			this.numericUpDown1.Location = new System.Drawing.Point(28, 182);
 			this.numericUpDown1.Maximum = new decimal(new int[] {
             5,
             0,
             0,
             0});
 			this.numericUpDown1.Name = "numericUpDown1";
-			this.numericUpDown1.Size = new System.Drawing.Size(195, 41);
+			this.numericUpDown1.Size = new System.Drawing.Size(195, 60);
 			this.numericUpDown1.TabIndex = 2;
 			this.numericUpDown1.Value = new decimal(new int[] {
             5,
@@ -364,15 +366,17 @@
 			// numericUpDown2
 			// 
 			this.numericUpDown2.AutoSize = false;
+			this.numericUpDown2.Label.Size = 50;
+			this.numericUpDown2.Label.SizeType = Wisej.Web.SizeType.Percent;
 			this.numericUpDown2.LabelText = "Increment Step";
-			this.numericUpDown2.Location = new System.Drawing.Point(28, 228);
+			this.numericUpDown2.Location = new System.Drawing.Point(28, 277);
 			this.numericUpDown2.Maximum = new decimal(new int[] {
             5,
             0,
             0,
             0});
 			this.numericUpDown2.Name = "numericUpDown2";
-			this.numericUpDown2.Size = new System.Drawing.Size(195, 41);
+			this.numericUpDown2.Size = new System.Drawing.Size(195, 60);
 			this.numericUpDown2.TabIndex = 3;
 			this.numericUpDown2.Value = new decimal(new int[] {
             1,
@@ -387,7 +391,7 @@
 			this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBox1.Checked = true;
 			this.checkBox1.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBox1.Location = new System.Drawing.Point(28, 99);
+			this.checkBox1.Location = new System.Drawing.Point(28, 109);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(195, 38);
 			this.checkBox1.TabIndex = 1;
@@ -395,15 +399,18 @@
 			// 
 			// comboBox1
 			// 
+			this.comboBox1.AutoSize = false;
 			this.comboBox1.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
 			this.comboBox1.Items.AddRange(new object[] {
             "Exact",
             "Full",
             "Half"});
+			this.comboBox1.Label.Size = 50;
+			this.comboBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
 			this.comboBox1.LabelText = "Precision";
-			this.comboBox1.Location = new System.Drawing.Point(28, 294);
+			this.comboBox1.Location = new System.Drawing.Point(28, 372);
 			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(195, 41);
+			this.comboBox1.Size = new System.Drawing.Size(195, 60);
 			this.comboBox1.TabIndex = 4;
 			this.comboBox1.Text = "full";
 			// 
@@ -418,9 +425,8 @@
 			// ejRating
 			// 
 			this.Name = "ejRating";
-			this.Size = new System.Drawing.Size(864, 636);
+			this.Size = new System.Drawing.Size(864, 746);
 			this.groupBox1.ResumeLayout(false);
-			this.groupBox1.PerformLayout();
 			this.panel.ResumeLayout(false);
 			this.tabControl1.ResumeLayout(false);
 			this.tabPage1.ResumeLayout(false);

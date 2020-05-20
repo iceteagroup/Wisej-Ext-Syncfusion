@@ -62,7 +62,7 @@
 			this.groupBox1.Controls.Add(this.numericUpDown3);
 			this.groupBox1.Controls.Add(this.numericUpDown2);
 			this.groupBox1.Controls.Add(this.numericUpDown1);
-			this.groupBox1.Size = new System.Drawing.Size(250, 494);
+			this.groupBox1.Size = new System.Drawing.Size(250, 616);
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
 			this.groupBox1.Controls.SetChildIndex(this.numericUpDown1, 0);
 			this.groupBox1.Controls.SetChildIndex(this.numericUpDown2, 0);
@@ -73,14 +73,14 @@
 			// 
 			// buttonUpdate
 			// 
-			this.buttonUpdate.Location = new System.Drawing.Point(28, 411);
+			this.buttonUpdate.Location = new System.Drawing.Point(28, 530);
 			this.buttonUpdate.TabIndex = 6;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejSunburstChart1);
-			this.panel.Size = new System.Drawing.Size(455, 494);
+			this.panel.Size = new System.Drawing.Size(455, 616);
 			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
@@ -97,34 +97,40 @@
 			this.ejSunburstChart1.Location = new System.Drawing.Point(19, 18);
 			this.ejSunburstChart1.Name = "ejSunburstChart1";
 			this.ejSunburstChart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejSunburstChart1.Options"))));
-			this.ejSunburstChart1.Size = new System.Drawing.Size(415, 455);
+			this.ejSunburstChart1.Size = new System.Drawing.Size(415, 577);
 			this.ejSunburstChart1.TabIndex = 0;
 			this.ejSunburstChart1.Text = "ejSunburstChart1";
 			// 
 			// numericUpDown1
 			// 
+			this.numericUpDown1.AutoSize = false;
+			this.numericUpDown1.Label.Size = 50;
+			this.numericUpDown1.Label.SizeType = Wisej.Web.SizeType.Percent;
 			this.numericUpDown1.LabelText = "Start Angle";
-			this.numericUpDown1.Location = new System.Drawing.Point(28, 159);
+			this.numericUpDown1.Location = new System.Drawing.Point(28, 186);
 			this.numericUpDown1.Maximum = new decimal(new int[] {
             360,
             0,
             0,
             0});
 			this.numericUpDown1.Name = "numericUpDown1";
-			this.numericUpDown1.Size = new System.Drawing.Size(195, 41);
+			this.numericUpDown1.Size = new System.Drawing.Size(195, 60);
 			this.numericUpDown1.TabIndex = 2;
 			// 
 			// numericUpDown2
 			// 
+			this.numericUpDown2.AutoSize = false;
+			this.numericUpDown2.Label.Size = 50;
+			this.numericUpDown2.Label.SizeType = Wisej.Web.SizeType.Percent;
 			this.numericUpDown2.LabelText = "End Angle";
-			this.numericUpDown2.Location = new System.Drawing.Point(28, 222);
+			this.numericUpDown2.Location = new System.Drawing.Point(28, 272);
 			this.numericUpDown2.Maximum = new decimal(new int[] {
             360,
             0,
             0,
             0});
 			this.numericUpDown2.Name = "numericUpDown2";
-			this.numericUpDown2.Size = new System.Drawing.Size(195, 41);
+			this.numericUpDown2.Size = new System.Drawing.Size(195, 60);
 			this.numericUpDown2.TabIndex = 3;
 			this.numericUpDown2.Value = new decimal(new int[] {
             360,
@@ -134,21 +140,24 @@
 			// 
 			// numericUpDown3
 			// 
+			this.numericUpDown3.AutoSize = false;
 			this.numericUpDown3.DecimalPlaces = 2;
 			this.numericUpDown3.Increment = new decimal(new int[] {
             5,
             0,
             0,
             131072});
+			this.numericUpDown3.Label.Size = 50;
+			this.numericUpDown3.Label.SizeType = Wisej.Web.SizeType.Percent;
 			this.numericUpDown3.LabelText = "Radius";
-			this.numericUpDown3.Location = new System.Drawing.Point(28, 285);
+			this.numericUpDown3.Location = new System.Drawing.Point(28, 358);
 			this.numericUpDown3.Maximum = new decimal(new int[] {
             1,
             0,
             0,
             0});
 			this.numericUpDown3.Name = "numericUpDown3";
-			this.numericUpDown3.Size = new System.Drawing.Size(195, 41);
+			this.numericUpDown3.Size = new System.Drawing.Size(195, 60);
 			this.numericUpDown3.TabIndex = 4;
 			this.numericUpDown3.Value = new decimal(new int[] {
             1,
@@ -158,21 +167,24 @@
 			// 
 			// numericUpDown4
 			// 
+			this.numericUpDown4.AutoSize = false;
 			this.numericUpDown4.DecimalPlaces = 2;
 			this.numericUpDown4.Increment = new decimal(new int[] {
             5,
             0,
             0,
             131072});
+			this.numericUpDown4.Label.Size = 50;
+			this.numericUpDown4.Label.SizeType = Wisej.Web.SizeType.Percent;
 			this.numericUpDown4.LabelText = "Inner Radius";
-			this.numericUpDown4.Location = new System.Drawing.Point(28, 348);
+			this.numericUpDown4.Location = new System.Drawing.Point(28, 444);
 			this.numericUpDown4.Maximum = new decimal(new int[] {
             1,
             0,
             0,
             0});
 			this.numericUpDown4.Name = "numericUpDown4";
-			this.numericUpDown4.Size = new System.Drawing.Size(195, 41);
+			this.numericUpDown4.Size = new System.Drawing.Size(195, 60);
 			this.numericUpDown4.TabIndex = 5;
 			this.numericUpDown4.Value = new decimal(new int[] {
             2,
@@ -195,25 +207,27 @@
 			// 
 			// comboBox1
 			// 
+			this.comboBox1.AutoSize = false;
 			this.comboBox1.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
 			this.comboBox1.Items.AddRange(new object[] {
             "Left",
             "Right",
             "Top",
             "Bottom"});
+			this.comboBox1.Label.Size = 50;
+			this.comboBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
 			this.comboBox1.LabelText = "Legend Position";
-			this.comboBox1.Location = new System.Drawing.Point(28, 96);
+			this.comboBox1.Location = new System.Drawing.Point(28, 100);
 			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(195, 41);
+			this.comboBox1.Size = new System.Drawing.Size(195, 60);
 			this.comboBox1.TabIndex = 1;
 			this.comboBox1.Text = "Top";
 			// 
 			// ejSunburstChart
 			// 
 			this.Name = "ejSunburstChart";
-			this.Size = new System.Drawing.Size(864, 684);
+			this.Size = new System.Drawing.Size(864, 806);
 			this.groupBox1.ResumeLayout(false);
-			this.groupBox1.PerformLayout();
 			this.panel.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();

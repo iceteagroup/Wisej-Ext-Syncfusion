@@ -57,7 +57,7 @@
 			this.groupBox1.Controls.Add(this.comboBox1);
 			this.groupBox1.Controls.Add(this.numericUpDownCompMeasureVal);
 			this.groupBox1.Controls.Add(this.numericUpDownVal);
-			this.groupBox1.Size = new System.Drawing.Size(250, 395);
+			this.groupBox1.Size = new System.Drawing.Size(250, 482);
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
 			this.groupBox1.Controls.SetChildIndex(this.numericUpDownVal, 0);
 			this.groupBox1.Controls.SetChildIndex(this.numericUpDownCompMeasureVal, 0);
@@ -66,7 +66,7 @@
 			// 
 			// buttonUpdate
 			// 
-			this.buttonUpdate.Location = new System.Drawing.Point(28, 313);
+			this.buttonUpdate.Location = new System.Drawing.Point(28, 398);
 			this.buttonUpdate.TabIndex = 4;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
@@ -74,7 +74,7 @@
 			// 
 			this.panel.Controls.Add(this.ejBulletGraph2);
 			this.panel.Controls.Add(this.ejBulletGraph1);
-			this.panel.Size = new System.Drawing.Size(666, 395);
+			this.panel.Size = new System.Drawing.Size(666, 482);
 			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
@@ -105,15 +105,17 @@
 			// numericUpDownVal
 			// 
 			this.numericUpDownVal.AutoSize = false;
+			this.numericUpDownVal.Label.Size = 50;
+			this.numericUpDownVal.Label.SizeType = Wisej.Web.SizeType.Percent;
 			this.numericUpDownVal.LabelText = "Revenue Value";
-			this.numericUpDownVal.Location = new System.Drawing.Point(28, 97);
+			this.numericUpDownVal.Location = new System.Drawing.Point(28, 104);
 			this.numericUpDownVal.Maximum = new decimal(new int[] {
             10,
             0,
             0,
             0});
 			this.numericUpDownVal.Name = "numericUpDownVal";
-			this.numericUpDownVal.Size = new System.Drawing.Size(195, 41);
+			this.numericUpDownVal.Size = new System.Drawing.Size(195, 60);
 			this.numericUpDownVal.TabIndex = 1;
 			this.numericUpDownVal.Value = new decimal(new int[] {
             8,
@@ -124,15 +126,17 @@
 			// numericUpDownCompMeasureVal
 			// 
 			this.numericUpDownCompMeasureVal.AutoSize = false;
+			this.numericUpDownCompMeasureVal.Label.Size = 50;
+			this.numericUpDownCompMeasureVal.Label.SizeType = Wisej.Web.SizeType.Percent;
 			this.numericUpDownCompMeasureVal.LabelText = "Revenue Comparative Value";
-			this.numericUpDownCompMeasureVal.Location = new System.Drawing.Point(28, 169);
+			this.numericUpDownCompMeasureVal.Location = new System.Drawing.Point(28, 202);
 			this.numericUpDownCompMeasureVal.Maximum = new decimal(new int[] {
             10,
             0,
             0,
             0});
 			this.numericUpDownCompMeasureVal.Name = "numericUpDownCompMeasureVal";
-			this.numericUpDownCompMeasureVal.Size = new System.Drawing.Size(195, 41);
+			this.numericUpDownCompMeasureVal.Size = new System.Drawing.Size(195, 60);
 			this.numericUpDownCompMeasureVal.TabIndex = 2;
 			this.numericUpDownCompMeasureVal.Value = new decimal(new int[] {
             5,
@@ -142,14 +146,17 @@
 			// 
 			// comboBox1
 			// 
+			this.comboBox1.AutoSize = false;
 			this.comboBox1.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
 			this.comboBox1.Items.AddRange(new object[] {
             "Forward",
             "Backward"});
+			this.comboBox1.Label.Size = 50;
+			this.comboBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
 			this.comboBox1.LabelText = "Flow Direction";
-			this.comboBox1.Location = new System.Drawing.Point(28, 241);
+			this.comboBox1.Location = new System.Drawing.Point(28, 300);
 			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(195, 41);
+			this.comboBox1.Size = new System.Drawing.Size(195, 60);
 			this.comboBox1.TabIndex = 3;
 			// 
 			// checkBox1
@@ -168,9 +175,8 @@
 			// ejBulletGraph
 			// 
 			this.Name = "ejBulletGraph";
-			this.Size = new System.Drawing.Size(1075, 585);
+			this.Size = new System.Drawing.Size(1075, 672);
 			this.groupBox1.ResumeLayout(false);
-			this.groupBox1.PerformLayout();
 			this.panel.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDownVal)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDownCompMeasureVal)).EndInit();
