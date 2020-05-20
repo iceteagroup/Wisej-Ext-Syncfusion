@@ -29,9 +29,9 @@
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ejPivotClient));
-			this.comboBoxChartType = new Wisej.Web.ComboBox();
-			this.checkBoxEnableCellClick = new Wisej.Web.CheckBox();
-			this.checkBoxEnableSplitter = new Wisej.Web.CheckBox();
+			this.comboBox1 = new Wisej.Web.ComboBox();
+			this.checkBox1 = new Wisej.Web.CheckBox();
+			this.checkBox2 = new Wisej.Web.CheckBox();
 			this.ejPivotClient1 = new Wisej.Web.Ext.Syncfusion.ejPivotClient();
 			this.groupBox1.SuspendLayout();
 			this.panel.SuspendLayout();
@@ -47,24 +47,24 @@
 			// 
 			// groupBox1
 			// 
-			this.groupBox1.Controls.Add(this.checkBoxEnableSplitter);
-			this.groupBox1.Controls.Add(this.checkBoxEnableCellClick);
-			this.groupBox1.Controls.Add(this.comboBoxChartType);
-			this.groupBox1.Size = new System.Drawing.Size(250, 396);
+			this.groupBox1.Controls.Add(this.checkBox2);
+			this.groupBox1.Controls.Add(this.checkBox1);
+			this.groupBox1.Controls.Add(this.comboBox1);
+			this.groupBox1.Size = new System.Drawing.Size(250, 355);
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-			this.groupBox1.Controls.SetChildIndex(this.comboBoxChartType, 0);
-			this.groupBox1.Controls.SetChildIndex(this.checkBoxEnableCellClick, 0);
-			this.groupBox1.Controls.SetChildIndex(this.checkBoxEnableSplitter, 0);
+			this.groupBox1.Controls.SetChildIndex(this.comboBox1, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBox2, 0);
 			// 
 			// buttonUpdate
 			// 
-			this.buttonUpdate.Location = new System.Drawing.Point(28, 315);
+			this.buttonUpdate.Location = new System.Drawing.Point(28, 262);
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejPivotClient1);
-			this.panel.Size = new System.Drawing.Size(455, 396);
+			this.panel.Size = new System.Drawing.Size(455, 355);
 			// 
 			// linkDemo
 			// 
@@ -72,11 +72,11 @@
 			this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/bootstrap/pivotclient/Relational/DefaultFu" +
     "nctionalities";
 			// 
-			// comboBoxChartType
+			// comboBox1
 			// 
-			this.comboBoxChartType.AutoSize = false;
-			this.comboBoxChartType.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
-			this.comboBoxChartType.Items.AddRange(new object[] {
+			this.comboBox1.AutoSize = false;
+			this.comboBox1.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+			this.comboBox1.Items.AddRange(new object[] {
             "Line",
             "Spline",
             "Column",
@@ -94,40 +94,40 @@
             "Doughnut",
             "Scatter",
             "Bubble"});
-			this.comboBoxChartType.Label.Size = 50;
-			this.comboBoxChartType.Label.SizeType = Wisej.Web.SizeType.Percent;
-			this.comboBoxChartType.Label.Text = "Chart Type";
-			this.comboBoxChartType.Location = new System.Drawing.Point(28, 43);
-			this.comboBoxChartType.Name = "comboBoxChartType";
-			this.comboBoxChartType.Size = new System.Drawing.Size(195, 60);
-			this.comboBoxChartType.TabIndex = 3;
-			this.comboBoxChartType.Text = "Line";
+			this.comboBox1.Label.Size = 50;
+			this.comboBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
+			this.comboBox1.LabelText = "Chart Type";
+			this.comboBox1.Location = new System.Drawing.Point(28, 172);
+			this.comboBox1.Name = "comboBox1";
+			this.comboBox1.Size = new System.Drawing.Size(195, 60);
+			this.comboBox1.TabIndex = 3;
+			this.comboBox1.Text = "Line";
 			// 
-			// checkBoxEnableCellClick
+			// checkBox1
 			// 
-			this.checkBoxEnableCellClick.Appearance = Wisej.Web.Appearance.Switch;
-			this.checkBoxEnableCellClick.AutoSize = false;
-			this.checkBoxEnableCellClick.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBoxEnableCellClick.Checked = true;
-			this.checkBoxEnableCellClick.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBoxEnableCellClick.Location = new System.Drawing.Point(28, 139);
-			this.checkBoxEnableCellClick.Name = "checkBoxEnableCellClick";
-			this.checkBoxEnableCellClick.Size = new System.Drawing.Size(195, 38);
-			this.checkBoxEnableCellClick.TabIndex = 7;
-			this.checkBoxEnableCellClick.Text = "Enable Cell Click";
+			this.checkBox1.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBox1.AutoSize = false;
+			this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBox1.Checked = true;
+			this.checkBox1.CheckState = Wisej.Web.CheckState.Checked;
+			this.checkBox1.Location = new System.Drawing.Point(28, 36);
+			this.checkBox1.Name = "checkBox1";
+			this.checkBox1.Size = new System.Drawing.Size(195, 38);
+			this.checkBox1.TabIndex = 7;
+			this.checkBox1.Text = "Enable Cell Click";
 			// 
-			// checkBoxEnableSplitter
+			// checkBox2
 			// 
-			this.checkBoxEnableSplitter.Appearance = Wisej.Web.Appearance.Switch;
-			this.checkBoxEnableSplitter.AutoSize = false;
-			this.checkBoxEnableSplitter.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBoxEnableSplitter.Checked = true;
-			this.checkBoxEnableSplitter.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBoxEnableSplitter.Location = new System.Drawing.Point(28, 211);
-			this.checkBoxEnableSplitter.Name = "checkBoxEnableSplitter";
-			this.checkBoxEnableSplitter.Size = new System.Drawing.Size(195, 38);
-			this.checkBoxEnableSplitter.TabIndex = 8;
-			this.checkBoxEnableSplitter.Text = "Enable Splitter";
+			this.checkBox2.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBox2.AutoSize = false;
+			this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBox2.Checked = true;
+			this.checkBox2.CheckState = Wisej.Web.CheckState.Checked;
+			this.checkBox2.Location = new System.Drawing.Point(28, 104);
+			this.checkBox2.Name = "checkBox2";
+			this.checkBox2.Size = new System.Drawing.Size(195, 38);
+			this.checkBox2.TabIndex = 8;
+			this.checkBox2.Text = "Enable Splitter";
 			// 
 			// ejPivotClient1
 			// 
@@ -137,13 +137,15 @@
 			this.ejPivotClient1.Location = new System.Drawing.Point(12, 14);
 			this.ejPivotClient1.Name = "ejPivotClient1";
 			this.ejPivotClient1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejPivotClient1.Options"))));
-			this.ejPivotClient1.Size = new System.Drawing.Size(429, 365);
+			this.ejPivotClient1.Size = new System.Drawing.Size(429, 700);
+			this.ejPivotClient1.TabIndex = 0;
 			this.ejPivotClient1.Text = "ejPivotClient1";
+			this.ejPivotClient1.WebRequest += new Wisej.Web.WebRequestHandler(this.ejPivotClient1_WebRequest);
 			// 
 			// ejPivotClient
 			// 
 			this.Name = "ejPivotClient";
-			this.Size = new System.Drawing.Size(864, 586);
+			this.Size = new System.Drawing.Size(864, 545);
 			this.groupBox1.ResumeLayout(false);
 			this.panel.ResumeLayout(false);
 			this.ResumeLayout(false);
@@ -154,8 +156,8 @@
 		#endregion
 
 		private Syncfusion.ejPivotClient ejPivotClient1;
-		private ComboBox comboBoxChartType;
-		private CheckBox checkBoxEnableCellClick;
-		private CheckBox checkBoxEnableSplitter;
+		private ComboBox comboBox1;
+		private CheckBox checkBox1;
+		private CheckBox checkBox2;
 	}
 }

@@ -59,7 +59,7 @@
 			this.groupBox1.Controls.Add(this.buttonSave);
 			this.groupBox1.Controls.Add(this.checkBox2);
 			this.groupBox1.Controls.Add(this.checkBox1);
-			this.groupBox1.Size = new System.Drawing.Size(250, 422);
+			this.groupBox1.Size = new System.Drawing.Size(250, 544);
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
 			this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
 			this.groupBox1.Controls.SetChildIndex(this.checkBox2, 0);
@@ -72,13 +72,13 @@
 			// 
 			// buttonUpdate
 			// 
-			this.buttonUpdate.Location = new System.Drawing.Point(28, 335);
+			this.buttonUpdate.Location = new System.Drawing.Point(28, 454);
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejSpreadsheet1);
-			this.panel.Size = new System.Drawing.Size(455, 422);
+			this.panel.Size = new System.Drawing.Size(455, 544);
 			// 
 			// linkDemo
 			// 
@@ -93,7 +93,7 @@
             | Wisej.Web.AnchorStyles.Right)));
 			this.ejSpreadsheet1.Location = new System.Drawing.Point(26, 26);
 			this.ejSpreadsheet1.Name = "ejSpreadsheet1";
-			this.ejSpreadsheet1.Size = new System.Drawing.Size(401, 368);
+			this.ejSpreadsheet1.Size = new System.Drawing.Size(401, 490);
 			this.ejSpreadsheet1.TabIndex = 0;
 			this.ejSpreadsheet1.Text = "ejSpreadsheet1";
 			this.ejSpreadsheet1.WebRequest += new Wisej.Web.WebRequestHandler(this.ejSpreadsheet1_WebRequest);
@@ -118,7 +118,7 @@
 			this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBox2.Checked = true;
 			this.checkBox2.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBox2.Location = new System.Drawing.Point(28, 77);
+			this.checkBox2.Location = new System.Drawing.Point(28, 94);
 			this.checkBox2.Name = "checkBox2";
 			this.checkBox2.Size = new System.Drawing.Size(195, 30);
 			this.checkBox2.TabIndex = 7;
@@ -129,7 +129,7 @@
 			this.buttonLoad.AllowedFileTypes = ".xlsx";
 			this.buttonLoad.HideValue = true;
 			this.buttonLoad.ImageSource = "icon-file";
-			this.buttonLoad.Location = new System.Drawing.Point(28, 282);
+			this.buttonLoad.Location = new System.Drawing.Point(28, 384);
 			this.buttonLoad.Name = "buttonLoad";
 			this.buttonLoad.Size = new System.Drawing.Size(42, 42);
 			this.buttonLoad.TabIndex = 9;
@@ -139,7 +139,7 @@
 			// 
 			this.buttonSave.Display = Wisej.Web.Display.Icon;
 			this.buttonSave.ImageSource = "icon-save";
-			this.buttonSave.Location = new System.Drawing.Point(76, 282);
+			this.buttonSave.Location = new System.Drawing.Point(76, 384);
 			this.buttonSave.Name = "buttonSave";
 			this.buttonSave.Size = new System.Drawing.Size(42, 42);
 			this.buttonSave.TabIndex = 8;
@@ -150,7 +150,7 @@
 			this.checkBox3.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBox3.AutoSize = false;
 			this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox3.Location = new System.Drawing.Point(28, 118);
+			this.checkBox3.Location = new System.Drawing.Point(28, 152);
 			this.checkBox3.Name = "checkBox3";
 			this.checkBox3.Size = new System.Drawing.Size(195, 30);
 			this.checkBox3.TabIndex = 10;
@@ -163,7 +163,7 @@
 			this.checkBox4.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBox4.Checked = true;
 			this.checkBox4.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBox4.Location = new System.Drawing.Point(28, 159);
+			this.checkBox4.Location = new System.Drawing.Point(28, 210);
 			this.checkBox4.Name = "checkBox4";
 			this.checkBox4.Size = new System.Drawing.Size(195, 30);
 			this.checkBox4.TabIndex = 11;
@@ -174,7 +174,7 @@
 			this.checkBox5.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBox5.AutoSize = false;
 			this.checkBox5.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox5.Location = new System.Drawing.Point(28, 200);
+			this.checkBox5.Location = new System.Drawing.Point(28, 268);
 			this.checkBox5.Name = "checkBox5";
 			this.checkBox5.Size = new System.Drawing.Size(195, 30);
 			this.checkBox5.TabIndex = 12;
@@ -187,7 +187,7 @@
 			this.checkBox6.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBox6.Checked = true;
 			this.checkBox6.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBox6.Location = new System.Drawing.Point(28, 241);
+			this.checkBox6.Location = new System.Drawing.Point(28, 326);
 			this.checkBox6.Name = "checkBox6";
 			this.checkBox6.Size = new System.Drawing.Size(195, 30);
 			this.checkBox6.TabIndex = 13;
@@ -196,7 +196,7 @@
 			// ejSpreadsheet
 			// 
 			this.Name = "ejSpreadsheet";
-			this.Size = new System.Drawing.Size(864, 612);
+			this.Size = new System.Drawing.Size(864, 734);
 			this.groupBox1.ResumeLayout(false);
 			this.panel.ResumeLayout(false);
 			this.ResumeLayout(false);
