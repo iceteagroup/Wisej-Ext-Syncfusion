@@ -43,7 +43,7 @@ namespace Wisej.Web.Ext.Syncfusion
 		/// <param name="options">Initial set of options.</param>
 		public ejFileExplorer(object options) : base("ejFileExplorer", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 				"cut",
 				"copy",
 				"open",

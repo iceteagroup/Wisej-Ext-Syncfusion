@@ -169,7 +169,7 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 
 		private async void buttonSave_Click(object sender, EventArgs e)
 		{
-			var data = await this.ejDiagram1.Widget.saveAsync();
+			var data = await this.ejDiagram1.Instance.saveAsync();
 			var json = data.ToString();
 
 			Application.Download(new MemoryStream(Encoding.UTF8.GetBytes(json)), "diagram.json");
@@ -182,7 +182,7 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 				using (var stream = new StreamReader(e.Files[0].InputStream))
 				{
 					var json = stream.ReadToEnd();
-					this.ejDiagram1.Widget.load(JSON.Parse(json));
+					this.ejDiagram1.Instance.load(JSON.Parse(json));
 				}
 			}
 		}

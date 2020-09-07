@@ -40,7 +40,7 @@ namespace Wisej.Web.Ext.Syncfusion
 		/// <param name="options">Initial set of options.</param>
 		public ejPivotChart(object options) : base("ejPivotChart", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 				"drillSuccess",
 				"afterServiceInvoke",
 				"beforeServiceInvoke"

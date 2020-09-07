@@ -40,7 +40,7 @@ namespace Wisej.Web.Ext.Syncfusion
 		/// <param name="options">Initial set of options.</param>
 		public ejSignature(object options) : base("ejSignature", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 				"change",
 				"mouseUp",
 				"mouseDown",

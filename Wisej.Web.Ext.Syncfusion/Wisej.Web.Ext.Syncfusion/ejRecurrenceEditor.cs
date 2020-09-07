@@ -45,7 +45,7 @@ namespace Wisej.Web.Ext.Syncfusion
 		/// <param name="options">Initial set of options.</param>
 		public ejRecurrenceEditor(object options) : base("ejRecurrenceEditor", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 				"change",
 			};
 		}

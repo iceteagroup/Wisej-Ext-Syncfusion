@@ -12,11 +12,11 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 		{
 			InitializeComponent();
 
-			this.ejChart1.Widget.chartClick += new WidgetEventHandler(ejChart1_WidgetEvent);
+			this.ejChart1.Instance.chartClick += new WidgetEventHandler(ejChart1_WidgetEvent);
 
-			this.ejChart1.Widget.legendItemClick += new WidgetEventHandler(ejChart1_WidgetEvent);
+			this.ejChart1.Instance.legendItemClick += new WidgetEventHandler(ejChart1_WidgetEvent);
 
-			this.ejChart1.Widget.chartDoubleClick += new WidgetEventHandler(ejChart1_WidgetEvent);
+			this.ejChart1.Instance.chartDoubleClick += new WidgetEventHandler(ejChart1_WidgetEvent);
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
@@ -51,7 +51,7 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 
 		private void buttonPrint_Click(object sender, EventArgs e)
 		{
-			this.ejChart1.Widget.print($"id_{this.ejChart1.Handle}_container");
+			this.ejChart1.Instance.print($"id_{this.ejChart1.Handle}_container");
 		}
 	}
 }

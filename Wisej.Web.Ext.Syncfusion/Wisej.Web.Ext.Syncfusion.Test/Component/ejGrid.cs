@@ -11,11 +11,11 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 		{
 			InitializeComponent();
 
-			this.ejGrid1.Widget.cellSave += new WidgetEventHandler(ejGrid1_WidgetEvent);
-			this.ejGrid1.Widget.batchSave += new WidgetEventHandler(ejGrid1_WidgetEvent);
-			this.ejGrid1.Widget.rowSelected += new WidgetEventHandler(ejGrid1_WidgetEvent);
-			this.ejGrid1.Widget.cellSelected += new WidgetEventHandler(ejGrid1_WidgetEvent);
-			this.ejGrid1.Widget.toolbarClick += new WidgetEventHandler(ejGrid1_WidgetEvent);
+			this.ejGrid1.Instance.cellSave += new WidgetEventHandler(ejGrid1_WidgetEvent);
+			this.ejGrid1.Instance.batchSave += new WidgetEventHandler(ejGrid1_WidgetEvent);
+			this.ejGrid1.Instance.rowSelected += new WidgetEventHandler(ejGrid1_WidgetEvent);
+			this.ejGrid1.Instance.cellSelected += new WidgetEventHandler(ejGrid1_WidgetEvent);
+			this.ejGrid1.Instance.toolbarClick += new WidgetEventHandler(ejGrid1_WidgetEvent);
 		}
 
 		private void buttonLoad_Uploaded(object sender, UploadedEventArgs e)
@@ -25,14 +25,14 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 				using (var stream = new StreamReader(e.Files[0].InputStream))
 				{
 					var json = stream.ReadToEnd();
-					this.ejGrid1.Widget.dataSource(JSON.Parse(json));
+					this.ejGrid1.Instance.dataSource(JSON.Parse(json));
 				}
 			}
 		}
 
 		private async void buttonSave_Click(object sender, EventArgs e)
 		{
-			var data = await this.ejGrid1.Widget.optionAsync("dataSource");
+			var data = await this.ejGrid1.Instance.optionAsync("dataSource");
 			var json = Wisej.Core.WisejSerializer.Serialize(data);
 
 			Application.Download(new MemoryStream(Encoding.UTF8.GetBytes(json)), "grid.json");

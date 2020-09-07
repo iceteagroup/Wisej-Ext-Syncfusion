@@ -1,5 +1,4 @@
 ﻿using System;
-using Wisej.Web;
 
 namespace Wisej.Web.Ext.Syncfusion.Test.Component
 {
@@ -9,15 +8,15 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 		{
 			InitializeComponent();
 
-			this.ejCheckBox1.Widget.change += new WidgetEventHandler(ejCheckBoxes_WidgetEvent);
-			this.ejCheckBox2.Widget.change += new WidgetEventHandler(ejCheckBoxes_WidgetEvent);
-			this.ejCheckBox3.Widget.change += new WidgetEventHandler(ejCheckBoxes_WidgetEvent);
-			this.ejCheckBox4.Widget.change += new WidgetEventHandler(ejCheckBoxes_WidgetEvent);
-			this.ejCheckBox5.Widget.change += new WidgetEventHandler(ejCheckBoxes_WidgetEvent);
-			this.ejCheckBox6.Widget.change += new WidgetEventHandler(ejCheckBoxes_WidgetEvent);
-			this.ejCheckBox7.Widget.change += new WidgetEventHandler(ejCheckBoxes_WidgetEvent);
-			this.ejCheckBox8.Widget.change += new WidgetEventHandler(ejCheckBoxes_WidgetEvent);
-			this.ejCheckBox9.Widget.change += new WidgetEventHandler(ejCheckBoxes_WidgetEvent);
+			this.ejCheckBox1.Instance.change += new WidgetEventHandler(ejCheckBoxes_WidgetEvent);
+			this.ejCheckBox2.Instance.change += new WidgetEventHandler(ejCheckBoxes_WidgetEvent);
+			this.ejCheckBox3.Instance.change += new WidgetEventHandler(ejCheckBoxes_WidgetEvent);
+			this.ejCheckBox4.Instance.change += new WidgetEventHandler(ejCheckBoxes_WidgetEvent);
+			this.ejCheckBox5.Instance.change += new WidgetEventHandler(ejCheckBoxes_WidgetEvent);
+			this.ejCheckBox6.Instance.change += new WidgetEventHandler(ejCheckBoxes_WidgetEvent);
+			this.ejCheckBox7.Instance.change += new WidgetEventHandler(ejCheckBoxes_WidgetEvent);
+			this.ejCheckBox8.Instance.change += new WidgetEventHandler(ejCheckBoxes_WidgetEvent);
+			this.ejCheckBox9.Instance.change += new WidgetEventHandler(ejCheckBoxes_WidgetEvent);
 		}
 
 		private void ejCheckBoxes_WidgetEvent(object sender, WidgetEventArgs e)

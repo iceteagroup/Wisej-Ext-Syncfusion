@@ -9,9 +9,9 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 		{
 			InitializeComponent();
 
-			this.ejDropDownTree1.Widget.change += new WidgetEventHandler(ejDropDownTree1_WidgetEvent);
-			this.ejDropDownTree1.Widget.select += new WidgetEventHandler(ejDropDownTree1_WidgetEvent);
-			this.ejDropDownTree1.Widget.checkChange += new WidgetEventHandler(ejDropDownTree1_WidgetEvent);
+			this.ejDropDownTree1.Instance.change += new WidgetEventHandler(ejDropDownTree1_WidgetEvent);
+			this.ejDropDownTree1.Instance.select += new WidgetEventHandler(ejDropDownTree1_WidgetEvent);
+			this.ejDropDownTree1.Instance.checkChange += new WidgetEventHandler(ejDropDownTree1_WidgetEvent);
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)

@@ -9,12 +9,12 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 		{
 			InitializeComponent();
 
-			ejTile1.Widget.mouseDown += new WidgetEventHandler(ejTile_WidgetEvent);
-			ejTile2.Widget.mouseDown += new WidgetEventHandler(ejTile_WidgetEvent);
-			ejTile3.Widget.mouseDown += new WidgetEventHandler(ejTile_WidgetEvent);
-			ejTile4.Widget.mouseDown += new WidgetEventHandler(ejTile_WidgetEvent);
-			ejTile5.Widget.mouseDown += new WidgetEventHandler(ejTile_WidgetEvent);
-			ejTile6.Widget.mouseDown += new WidgetEventHandler(ejTile_WidgetEvent);
+			ejTile1.Instance.mouseDown += new WidgetEventHandler(ejTile_WidgetEvent);
+			ejTile2.Instance.mouseDown += new WidgetEventHandler(ejTile_WidgetEvent);
+			ejTile3.Instance.mouseDown += new WidgetEventHandler(ejTile_WidgetEvent);
+			ejTile4.Instance.mouseDown += new WidgetEventHandler(ejTile_WidgetEvent);
+			ejTile5.Instance.mouseDown += new WidgetEventHandler(ejTile_WidgetEvent);
+			ejTile6.Instance.mouseDown += new WidgetEventHandler(ejTile_WidgetEvent);
 
 		}
 

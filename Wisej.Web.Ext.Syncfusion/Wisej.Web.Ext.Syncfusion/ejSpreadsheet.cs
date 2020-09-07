@@ -42,7 +42,7 @@ namespace Wisej.Web.Ext.Syncfusion
 		/// <param name="options">Initial set of options.</param>
 		public ejSpreadsheet(object options) : base("ejSpreadsheet", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 				"cellSave",
 				"tabClick",
 				"cellEdit",

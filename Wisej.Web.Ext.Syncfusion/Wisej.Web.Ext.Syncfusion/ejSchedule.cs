@@ -38,7 +38,7 @@ namespace Wisej.Web.Ext.Syncfusion
 		/// <param name="options">Initial set of options.</param>
 		public ejSchedule(object options) : base("ejSchedule", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 				"keyDown",
 				"cellClick",
 				"cellHover",

@@ -10,7 +10,7 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 		{
 			InitializeComponent();
 
-			this.ejRotator1.Widget.pagerClick += new WidgetEventHandler(this.ejRotator1_pagerClick);
+			this.ejRotator1.Instance.pagerClick += new WidgetEventHandler(this.ejRotator1_pagerClick);
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
@@ -25,12 +25,12 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 
 		private void buttonPlay_Click(object sender, EventArgs e)
 		{
-			this.ejRotator1.Widget.play();
+			this.ejRotator1.Instance.play();
 		}
 
 		private void buttonPause_Click(object sender, EventArgs e)
 		{
-			this.ejRotator1.Widget.pause();
+			this.ejRotator1.Instance.pause();
 		}
 
 		private void ejRotator1_pagerClick(object sender, WidgetEventArgs e)

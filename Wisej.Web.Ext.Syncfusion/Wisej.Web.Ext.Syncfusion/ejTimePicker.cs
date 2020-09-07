@@ -41,7 +41,7 @@ namespace Wisej.Web.Ext.Syncfusion
 		/// <param name="options">Initial set of options.</param>
 		public ejTimePicker(object options) : base("ejTimePicker", "<input style='width:100%;height:100%'>", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 				"open",
 				"close",
 				"change",

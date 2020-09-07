@@ -39,7 +39,7 @@ namespace Wisej.Web.Ext.Syncfusion
 		/// <param name="options">Initial set of options.</param>
 		public ejSymbolPalette(object options) : base("ejSymbolPalette", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 				"selectionChange"
 			};
 		}

@@ -38,7 +38,7 @@ namespace Wisej.Web.Ext.Syncfusion
 		/// <param name="options">Initial set of options.</param>
 		public ejDigitalGauge(object options) : base("ejDigitalGauge", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 				"click",
 				"rightClick",
 				"doubleClick",

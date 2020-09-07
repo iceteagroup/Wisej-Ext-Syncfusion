@@ -38,7 +38,7 @@ namespace Wisej.Web.Ext.Syncfusion
 		/// <param name="options">Initial set of options.</param>
 		public ejMediaPlayer(object options) : base("ejMediaPlayer", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 				"onRepeat",
 				"onPlaying",
 				"onActionBegin",

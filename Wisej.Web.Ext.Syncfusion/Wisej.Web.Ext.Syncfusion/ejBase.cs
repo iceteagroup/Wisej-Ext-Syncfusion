@@ -22,10 +22,8 @@ using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Design;
-using System.Dynamic;
 using System.IO;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
@@ -94,19 +92,6 @@ namespace Wisej.Web.Ext.Syncfusion
 			remove { RemoveHandler(nameof(Initialized), value); }
 		}
 
-		/// <summary>
-		/// Raises the <see cref="Initialized"/> event.
-		/// </summary>
-		/// <param name="e"></param>
-		protected virtual void OnInitialized(EventArgs e)
-		{
-			this.IsInitialized = true;
-
-			ProcessDeferredCalls();
-
-			((EventHandler)base.Events[nameof(Initialized)])?.Invoke(this, e);
-		}
-
 		#endregion
 
 		#region Properties
@@ -138,6 +123,7 @@ namespace Wisej.Web.Ext.Syncfusion
 		/// <summary>
 		/// Returns whether the javascript widget has been initialized.
 		/// </summary>
+		[Browsable(false)]
 		public bool IsInitialized
 		{
 			get;
@@ -210,6 +196,18 @@ namespace Wisej.Web.Ext.Syncfusion
 			}
 		}
 		private Package[] _locales;
+
+		/// <summary>
+		/// Returns or sets the list of events that are fired by the widget wrapper.
+		/// </summary>
+		[Browsable(false)]
+		[EditorBrowsable(EditorBrowsableState.Never)]
+		[DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+		public override string[] WiredEvents
+		{
+			get { return base.WiredEvents; }
+			set { base.WiredEvents = value; }
+		}
 
 		/// <summary>
 		/// Property for required Syncfusion packages
@@ -328,7 +326,7 @@ namespace Wisej.Web.Ext.Syncfusion
 		}
 
 		/// <summary>
-		/// optional html to use as the container.
+		/// optional HTML to use as the container.
 		/// </summary>
 		private string WidgetHtml { get; set; }
 
@@ -336,11 +334,6 @@ namespace Wisej.Web.Ext.Syncfusion
 		/// the class name for the widget.
 		/// </summary>
 		private string WidgetClass { get; set; }
-
-		/// <summary>
-		/// list of events to wire back to the server.
-		/// </summary>
-		protected string[] WidgetWiredEvents { get; set; }
 
 		/// <summary>
 		/// The script used to initialize the widget
@@ -386,22 +379,6 @@ namespace Wisej.Web.Ext.Syncfusion
 			set;
 		}
 
-		/// <summary>
-		/// Returns a <see cref="System.Dynamic.DynamicObject"/> that can
-		/// convert calls into JavaScript calls targeting the third party "widget" object.
-		/// </summary>
-		[Browsable(false)]
-		[DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-		public dynamic Widget
-		{
-			get
-			{
-				this._target = this._target ?? new WidgetTarget(this, "widget");
-				return this._target;
-			}
-		}
-		private WidgetTarget _target;
-
 		#endregion
 
 		#region Methods
@@ -417,54 +394,6 @@ namespace Wisej.Web.Ext.Syncfusion
 				type = type.BaseType;
 			}
 			return type;
-		}
-
-		/// <summary>
-		/// Invokes a method on the wrapped widget. If the widgets is not initialized yet, it
-		/// will queue the call and wait until it's initialized.
-		/// </summary>
-		/// <param name="name"></param>
-		/// <param name="args"></param>
-		/// <returns></returns>
-		private object CallWidget(string name, object[] args)
-		{
-			if (!this.IsInitialized)
-			{
-				if (this.deferredCalls == null)
-					 this.deferredCalls = new ConcurrentQueue<DeferredCall>();
-
-				object result = null;
-
-				TaskCompletionSource<dynamic> tcs = null;
-				if (name.EndsWith("Async"))
-				{
-					name = name.Substring(0, name.Length - "Async".Length);
-					tcs = new TaskCompletionSource<dynamic>();
-					result = tcs.Task;
-				}
-
-				this.deferredCalls.Enqueue(new DeferredCall() { 
-
-					MethodName = name,
-					Arguments = args,
-					Tcs = tcs
-				});
-
-				return result;
-			}
-			else
-			{
-				if (name.EndsWith("Async"))
-				{
-					name = name.Substring(0, name.Length - "Async".Length);
-					return this.CallAsync(name, args);
-				}
-				else
-				{
-					this.Call(name, args);
-					return null;
-				}
-			}
 		}
 
 		/// <summary>
@@ -500,23 +429,6 @@ namespace Wisej.Web.Ext.Syncfusion
 		#region Wisej Implementation
 
 		/// <summary>
-		/// Processes the event from the client.
-		/// </summary>
-		/// <param name="e">Event arguments.</param>
-		protected override void OnWebEvent(Core.WisejEventArgs e)
-		{
-			switch (e.Type)
-			{
-				case "initialized":
-					OnInitialized(EventArgs.Empty);
-					break;
-
-				default:
-					base.OnWebEvent(e);
-					break;
-			}
-		}
-		/// <summary>
 		/// Wire the client config to the server
 		/// </summary>
 		/// <param name="config"></param>
@@ -530,15 +442,6 @@ namespace Wisej.Web.Ext.Syncfusion
 			config.widgetEvents = this.WidgetEvents;
 			config.widgetFunctions = this.WidgetFunctions;
 			config.widgetTemplates = this.WidgetTemplates;
-			config.widgetWiredEvents = this.WidgetWiredEvents;
-
-			// replace this.GetPostbackUrl() with this.GetServiceURL()
-			// to generate a rest URL with the session id in the path
-			// instead of the ?sid= parameter.
-			config.postbackUrl = this.GetServiceURL();
-			//config.postbackUrl = this.GetPostbackURL();
-
-			config.wiredEvents.Add("initialized");
 		}
 
 		#endregion
@@ -716,152 +619,6 @@ namespace Wisej.Web.Ext.Syncfusion
 			public override string ToString()
 			{
 				return this.Name ?? SR.GetString("toStringNone");
-			}
-		}
-
-		#endregion
-
-		#region WidgetTarget
-
-		/// <summary>
-		/// Represents the third party widget as the target of dynamic method calls.
-		/// </summary>
-		/// <remarks>
-		/// Converts dynamic method calls to this.Call("this.widget.{method}", args);
-		/// </remarks>
-		public class WidgetTarget : System.Dynamic.DynamicObject
-		{
-			private ejBase owner;
-			private string target;
-			private Dictionary<string, object> events = new Dictionary<string, object>();
-
-			internal WidgetTarget(ejBase owner, string target)
-			{
-				Debug.Assert(owner != null);
-
-				this.owner = owner;
-				this.target = target;
-				this.owner.WidgetEvent += this.OnWidgetEvent;
-			}
-
-			/// <summary>
-			/// Invokes the specified member.
-			/// </summary>
-			/// <param name="binder"></param>
-			/// <param name="args"></param>
-			/// <param name="result"></param>
-			/// <returns></returns>
-			public override bool TryInvokeMember(InvokeMemberBinder binder, object[] args, out object result)
-			{
-				result = null;
-				var name = binder.Name;
-
-				// is it an event?
-				if (Array.IndexOf(this.owner.WidgetWiredEvents, name) > -1)
-				{
-					return false;
-				}
-
-				result = this.owner.CallWidget($"this.{this.target}.{name}", args);
-
-				return true;
-			}
-
-			/// <summary>
-			/// Returns the requested member.
-			/// </summary>
-			/// <param name="binder"></param>
-			/// <param name="result"></param>
-			/// <returns></returns>
-			public override bool TryGetMember(GetMemberBinder binder, out object result)
-			{
-				result = null;
-				var name = binder.Name;
-
-				// is it an event?
-				if (Array.IndexOf(this.owner.WidgetWiredEvents, name) > -1)
-				{
-					if (!this.events.TryGetValue(name, out result))
-					{
-						result = new Wisej.Web.WidgetEventHandler(delegate { });
-						this.events[name] = result;
-					}
-
-					return true;
-				}
-				else
-				{
-					// otherwise can be a child object of the widget.
-					result = new WidgetTarget(this.owner, $"{this.target}.{name}");
-					return true;
-				}
-			}
-
-			/// <summary>
-			/// Sets the specified member.
-			/// </summary>
-			/// <param name="binder"></param>
-			/// <param name="value"></param>
-			/// <returns></returns>
-			public override bool TrySetMember(SetMemberBinder binder, object value)
-			{
-				var name = binder.Name;
-
-				if (this.events.ContainsKey(name) || Array.IndexOf(this.owner.WidgetWiredEvents, name) > -1)
-				{
-					this.events[name] = (Wisej.Web.WidgetEventHandler)value;
-					return true;
-				}
-
-				return base.TrySetMember(binder, value);
-			}
-
-			private void OnWidgetEvent(object sender, WidgetEventArgs e)
-			{
-				object handler;
-				if (this.events.TryGetValue(e.Type, out handler))
-				{
-					((Wisej.Web.WidgetEventHandler)handler).Invoke(sender, e);
-				}
-			}
-		}
-
-		#endregion
-
-		#region DeferredCall
-
-		private class DeferredCall
-		{
-			internal string MethodName;
-			internal object[] Arguments;
-			internal TaskCompletionSource<dynamic> Tcs;
-		}
-
-		private ConcurrentQueue<DeferredCall> deferredCalls;
-
-		private void ProcessDeferredCalls()
-		{
-			if (this.deferredCalls == null || this.deferredCalls.Count == 0)
-				return;
-
-			DeferredCall call = null;
-			while (this.deferredCalls.TryDequeue(out call))
-			{
-				if (call.Tcs == null)
-				{
-					this.Call(call.MethodName, call.Arguments);
-				}
-				else
-				{
-					this.Call(call.MethodName, (result) =>
-					{
-						if (result is Exception)
-							call.Tcs.SetException((Exception)result);
-						else
-							call.Tcs.SetResult(result);
-
-					}, call.Arguments);
-				}
 			}
 		}
 

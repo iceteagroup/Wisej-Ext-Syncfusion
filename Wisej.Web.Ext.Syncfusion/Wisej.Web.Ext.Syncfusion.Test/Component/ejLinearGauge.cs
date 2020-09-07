@@ -9,9 +9,9 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 		{
 			InitializeComponent();
 
-			this.ejLinearGauge1.Widget.mouseClick += new WidgetEventHandler(ejLinearGauge1_WidgetEvent);
-			this.ejLinearGauge1.Widget.rightClick += new WidgetEventHandler(ejLinearGauge1_WidgetEvent);
-			this.ejLinearGauge1.Widget.doubleClick += new WidgetEventHandler(ejLinearGauge1_WidgetEvent);
+			this.ejLinearGauge1.Instance.mouseClick += new WidgetEventHandler(ejLinearGauge1_WidgetEvent);
+			this.ejLinearGauge1.Instance.rightClick += new WidgetEventHandler(ejLinearGauge1_WidgetEvent);
+			this.ejLinearGauge1.Instance.doubleClick += new WidgetEventHandler(ejLinearGauge1_WidgetEvent);
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
@@ -34,7 +34,7 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 
 		private void buttonSave_Click(object sender, EventArgs e)
 		{
-			this.ejLinearGauge1.Widget.exportImage("ejLinearGauge", "jpeg");
+			this.ejLinearGauge1.Instance.exportImage("ejLinearGauge", "jpeg");
 		}
 	}
 }

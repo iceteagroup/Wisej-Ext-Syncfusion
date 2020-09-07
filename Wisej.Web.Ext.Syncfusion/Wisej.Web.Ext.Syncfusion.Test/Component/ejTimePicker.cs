@@ -11,9 +11,9 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 		{
 			InitializeComponent();
 
-			this.ejTimePicker1.Widget.open += new WidgetEventHandler(ejTimePicker1_WidgetEvent);
-			this.ejTimePicker1.Widget.change += new WidgetEventHandler(ejTimePicker1_WidgetEvent);
-			this.ejTimePicker1.Widget.select += new WidgetEventHandler(ejTimePicker1_WidgetEvent);
+			this.ejTimePicker1.Instance.open += new WidgetEventHandler(ejTimePicker1_WidgetEvent);
+			this.ejTimePicker1.Instance.change += new WidgetEventHandler(ejTimePicker1_WidgetEvent);
+			this.ejTimePicker1.Instance.select += new WidgetEventHandler(ejTimePicker1_WidgetEvent);
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
@@ -25,7 +25,7 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 
 		private async void buttonGetTime_Click(object sender, EventArgs e)
 		{
-			var timeVal = await this.ejTimePicker1.Widget.getValueAsync();
+			var timeVal = await this.ejTimePicker1.Instance.getValueAsync();
 
 			AlertBox.Show(timeVal);
 		}
@@ -34,18 +34,18 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 		{
 			if (isPopupShown)
 			{
-				this.ejTimePicker1.Widget.hide();
+				this.ejTimePicker1.Instance.hide();
 				isPopupShown = false;
 			} else
 			{
-				this.ejTimePicker1.Widget.show();
+				this.ejTimePicker1.Instance.show();
 				isPopupShown = true;
 			}
 		}
 
 		private void buttonTimeNow_Click(object sender, EventArgs e)
 		{
-			this.ejTimePicker1.Widget.setCurrentTime();
+			this.ejTimePicker1.Instance.setCurrentTime();
 		}
 
 		private void ejTimePicker1_WidgetEvent(object sender, WidgetEventArgs e)

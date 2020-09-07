@@ -38,7 +38,7 @@ namespace Wisej.Web.Ext.Syncfusion
 		/// <param name="options">Initial set of options.</param>
 		public ejPercentageTextbox(object options) : base("ejPercentageTextbox", "<input style='width:100%;height:100%'>", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 				"change"
 			};
 		}

@@ -42,7 +42,7 @@ namespace Wisej.Web.Ext.Syncfusion
 		/// <param name="options">Initial set of options.</param>
 		public ejGantt(object options) : base("ejGantt", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 				"rowSelected",
 				"taskbarClick",
 			};

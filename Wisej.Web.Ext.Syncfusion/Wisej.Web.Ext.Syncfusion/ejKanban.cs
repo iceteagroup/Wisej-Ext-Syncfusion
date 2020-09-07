@@ -40,7 +40,7 @@ namespace Wisej.Web.Ext.Syncfusion
 		/// <param name="options">Initial set of options.</param>
 		public ejKanban(object options) : base("ejKanban", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 				"cardClick",
 				"dataBound",
 				"cellClick",

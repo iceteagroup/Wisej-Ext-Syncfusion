@@ -9,9 +9,9 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 		{
 			InitializeComponent();
 
-			this.ejComboBox1.Widget.open += new WidgetEventHandler(ejComboBox1_WidgetEvent);
-			this.ejComboBox1.Widget.select += new WidgetEventHandler(ejComboBox1_WidgetEvent);
-			this.ejComboBox1.Widget.customValueSpecifier += new WidgetEventHandler(ejComboBox1_WidgetEvent);
+			this.ejComboBox1.Instance.open += new WidgetEventHandler(ejComboBox1_WidgetEvent);
+			this.ejComboBox1.Instance.select += new WidgetEventHandler(ejComboBox1_WidgetEvent);
+			this.ejComboBox1.Instance.customValueSpecifier += new WidgetEventHandler(ejComboBox1_WidgetEvent);
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)

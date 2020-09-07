@@ -41,7 +41,7 @@ namespace Wisej.Web.Ext.Syncfusion
 		/// <param name="options">Initial set of options.</param>
 		public ejListView(object options) : base("ejListView", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 				"mouseUp",
 				"mouseDown",
 				"ajaxError",

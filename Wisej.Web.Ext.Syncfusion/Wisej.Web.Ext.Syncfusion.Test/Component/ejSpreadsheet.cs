@@ -13,7 +13,7 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 		{
 			InitializeComponent();
 
-			this.ejSpreadsheet1.Widget.cellClick += new WidgetEventHandler(this.ejSpreadsheet1_WidgetEvent);
+			this.ejSpreadsheet1.Instance.cellClick += new WidgetEventHandler(this.ejSpreadsheet1_WidgetEvent);
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
@@ -34,7 +34,7 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 		{
 			if (e.Files.Count == 1)
 			{
-				this.ejSpreadsheet1.Widget.loadFromJSON(JSON.Parse(LoadFile(e.Files[0].InputStream)));
+				this.ejSpreadsheet1.Instance.loadFromJSON(JSON.Parse(LoadFile(e.Files[0].InputStream)));
 			}
 		}
 
@@ -84,7 +84,7 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 
 		private void buttonSave_Click(object sender, EventArgs e)
 		{
-			this.ejSpreadsheet1.Widget.XLExport.export("Excel", "Sample");
+			this.ejSpreadsheet1.Instance.XLExport.export("Excel", "Sample");
 		}
 
 		private void ejSpreadsheet1_WidgetEvent(object sender, WidgetEventArgs e)

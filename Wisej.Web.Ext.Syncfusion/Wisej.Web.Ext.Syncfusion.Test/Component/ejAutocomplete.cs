@@ -12,7 +12,7 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 
 		private async void button1_Click(object sender, EventArgs e)
 		{
-			var selectedVal = await this.ejAutocomplete1.Widget.getValueAsync();
+			var selectedVal = await this.ejAutocomplete1.Instance.getValueAsync();
 
 			AlertBox.Show(selectedVal);
 		}

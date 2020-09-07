@@ -9,8 +9,8 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 		{
 			InitializeComponent();
 
-			this.ejTreeView1.Widget.nodeClick += new WidgetEventHandler(ejTreeView1_WidgetEvent);
-			this.ejTreeView1.Widget.nodeCollapse += new WidgetEventHandler(ejTreeView1_WidgetEvent);
+			this.ejTreeView1.Instance.nodeClick += new WidgetEventHandler(ejTreeView1_WidgetEvent);
+			this.ejTreeView1.Instance.nodeCollapse += new WidgetEventHandler(ejTreeView1_WidgetEvent);
 		}
 
 		private void ejTreeView1_WidgetEvent(object sender, WidgetEventArgs e)
@@ -24,7 +24,7 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 
 		private async void buttonGetCheckedNodes_Click(object sender, EventArgs e)
 		{
-			var checkedNodes = await this.ejTreeView1.Widget.getCheckedNodesAsync();
+			var checkedNodes = await this.ejTreeView1.Instance.getCheckedNodesAsync();
 
 			AlertBox.Show(JSON.Stringify(checkedNodes));
 		}

@@ -32,14 +32,14 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 				using (var stream = new StreamReader(e.Files[0].InputStream))
 				{
 					var json = stream.ReadToEnd();
-					this.ejKanban1.Widget.dataSource(JSON.Parse(json));
+					this.ejKanban1.Instance.dataSource(JSON.Parse(json));
 				}
 			}
 		}
 
 		private async void buttonSave_Click(object sender, EventArgs e)
 		{
-			var data = await this.ejKanban1.Widget.optionAsync("dataSource");
+			var data = await this.ejKanban1.Instance.optionAsync("dataSource");
 			var json = Wisej.Core.WisejSerializer.Serialize(data);
 
 			Application.Download(new MemoryStream(Encoding.UTF8.GetBytes(json)), "kanban.json");
@@ -47,7 +47,7 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 
 		private async void buttonGetVisibleColumnNames_Click(object sender, EventArgs e)
 		{
-			var visibleNames = await this.ejKanban1.Widget.getVisibleColumnNamesAsync();
+			var visibleNames = await this.ejKanban1.Instance.getVisibleColumnNamesAsync();
 
 			AlertBox.Show(Wisej.Core.WisejSerializer.Serialize(visibleNames));
 		}

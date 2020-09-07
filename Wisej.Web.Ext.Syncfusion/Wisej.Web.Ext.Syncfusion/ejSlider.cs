@@ -41,7 +41,7 @@ namespace Wisej.Web.Ext.Syncfusion
 		/// <param name="options">Initial set of options.</param>
 		public ejSlider(object options) : base("ejSlider", "<div style='margin-top:10px'></div>", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 				"stop",
 				"start",
 				"slide",

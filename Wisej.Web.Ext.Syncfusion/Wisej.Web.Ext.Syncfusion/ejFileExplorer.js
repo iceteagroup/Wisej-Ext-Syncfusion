@@ -24,7 +24,7 @@
  */
 this.initWidget = function () {
 
-	this.widget.option("ajaxAction", this.getPostbackUrl());
+	this.widget.option("ajaxAction", this.getServiceUrl());
 	this.widget.refresh();
 
 };

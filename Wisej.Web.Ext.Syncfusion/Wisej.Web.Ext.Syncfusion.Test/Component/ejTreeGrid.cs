@@ -9,8 +9,8 @@ namespace Wisej.Web.Ext.Syncfusion.Test
 		{
 			InitializeComponent();
 
-			this.ejTreeGrid1.Widget.recordClick += new WidgetEventHandler(ejTreeGrid1_WidgetEvent);
-			this.ejTreeGrid1.Widget.cellSelected += new WidgetEventHandler(ejTreeGrid1_WidgetEvent);
+			this.ejTreeGrid1.Instance.recordClick += new WidgetEventHandler(ejTreeGrid1_WidgetEvent);
+			this.ejTreeGrid1.Instance.cellSelected += new WidgetEventHandler(ejTreeGrid1_WidgetEvent);
 		}
 
 		private void ejTreeGrid1_WidgetEvent(object sender, WidgetEventArgs e)
@@ -24,7 +24,7 @@ namespace Wisej.Web.Ext.Syncfusion.Test
 
 		private async void buttonGetSelectedCells_Click(object sender, EventArgs e)
 		{
-			var selectedCells = await this.ejTreeGrid1.Widget.getSelectedCellsAsync();
+			var selectedCells = await this.ejTreeGrid1.Instance.getSelectedCellsAsync();
 
 			AlertBox.Show(selectedCells.ToString());
 		}

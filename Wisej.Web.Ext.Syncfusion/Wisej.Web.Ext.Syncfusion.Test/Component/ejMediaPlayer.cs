@@ -11,47 +11,47 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 		{
 			InitializeComponent();
 
-			this.ejMediaPlayer1.Widget.onRepeat += new WidgetEventHandler(ejMediaPlayer1_WidgetEvent);
-			this.ejMediaPlayer1.Widget.onPlaying += new WidgetEventHandler(ejMediaPlayer1_WidgetEvent);
-			this.ejMediaPlayer1.Widget.onActionBegin += new WidgetEventHandler(ejMediaPlayer1_WidgetEvent);
+			this.ejMediaPlayer1.Instance.onRepeat += new WidgetEventHandler(ejMediaPlayer1_WidgetEvent);
+			this.ejMediaPlayer1.Instance.onPlaying += new WidgetEventHandler(ejMediaPlayer1_WidgetEvent);
+			this.ejMediaPlayer1.Instance.onActionBegin += new WidgetEventHandler(ejMediaPlayer1_WidgetEvent);
 		}
 
 		private void buttonMute_Click(object sender, EventArgs e)
 		{
 			if (isMute)
 			{
-				this.ejMediaPlayer1.Widget.unmute();
+				this.ejMediaPlayer1.Instance.unmute();
 				isMute = false;
 			} else
 			{
-				this.ejMediaPlayer1.Widget.mute();
+				this.ejMediaPlayer1.Instance.mute();
 				isMute = true;
 			}
 		}
 
 		private void buttonPlay_Click(object sender, EventArgs e)
 		{
-			this.ejMediaPlayer1.Widget.play();
+			this.ejMediaPlayer1.Instance.play();
 		}
 
 		private void buttonPause_Click(object sender, EventArgs e)
 		{
-			this.ejMediaPlayer1.Widget.pause();
+			this.ejMediaPlayer1.Instance.pause();
 		}
 
 		private void buttonFullScreen_Click(object sender, EventArgs e)
 		{
-			this.ejMediaPlayer1.Widget.makeFullScreen();
+			this.ejMediaPlayer1.Instance.makeFullScreen();
 		}
 
 		private void buttonNext_Click(object sender, EventArgs e)
 		{
-			this.ejMediaPlayer1.Widget.next();
+			this.ejMediaPlayer1.Instance.next();
 		}
 
 		private void buttonReset_Click(object sender, EventArgs e)
 		{
-			this.ejMediaPlayer1.Widget.stop();
+			this.ejMediaPlayer1.Instance.stop();
 		}
 
 		private void ejMediaPlayer1_WidgetEvent(object sender, WidgetEventArgs e)

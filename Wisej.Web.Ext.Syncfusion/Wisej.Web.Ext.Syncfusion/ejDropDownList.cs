@@ -40,7 +40,7 @@ namespace Wisej.Web.Ext.Syncfusion
 		/// <param name="options">Initial set of options.</param>
 		public ejDropDownList(object options) : base("ejDropDownList", "<input style='height:100%;width:100%' />", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 				"change",
 				"search",
 				"select",

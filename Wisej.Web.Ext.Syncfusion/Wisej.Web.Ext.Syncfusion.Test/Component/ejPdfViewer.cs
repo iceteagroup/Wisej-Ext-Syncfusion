@@ -86,7 +86,7 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 			this.ejPdfViewer1.Options.enableTextSelection = this.checkBox3.Checked;
 			this.ejPdfViewer1.Options.enableHyperlink = this.checkBox4.Checked;
 
-			this.ejPdfViewer1.Widget.zoomTo((int)this.trackBar1.Value);
+			this.ejPdfViewer1.Instance.zoomTo((int)this.trackBar1.Value);
 			this.ejPdfViewer1.Update();
 		}
 
@@ -96,13 +96,13 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 			{
 				var tempPath = Path.Combine(Path.GetTempPath(), e.Files[0].FileName);
 				e.Files[0].SaveAs(tempPath);
-				this.ejPdfViewer1.Widget.load(tempPath);
+				this.ejPdfViewer1.Instance.load(tempPath);
 			}
 		}
 
 		private void ejPdfViewer1_Initialized(object sender, EventArgs e)
 		{
-			this.ejPdfViewer1.Widget.load("Data\\Wisej-Datasheet-V2.3.pdf");
+			this.ejPdfViewer1.Instance.load("Data\\Wisej-Datasheet-V2.3.pdf");
 		}
 	}
 }

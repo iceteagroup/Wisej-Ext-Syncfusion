@@ -43,7 +43,7 @@ namespace Wisej.Web.Ext.Syncfusion
 		/// <param name="options">Initial set of options.</param>
 		public ejChart(object options) : base("ejChart", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 				"chartClick",
 				"axisLabelClick",
 				"annotationClick",

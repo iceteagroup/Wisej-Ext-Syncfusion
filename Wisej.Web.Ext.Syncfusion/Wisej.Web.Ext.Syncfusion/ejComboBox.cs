@@ -38,7 +38,7 @@ namespace Wisej.Web.Ext.Syncfusion
 		/// <param name="options">Initial set of options.</param>
 		public ejComboBox(object options) : base("ejComboBox", "<input style='width:100%;height:100%'>", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 				"open",
 				"focus",
 				"select",

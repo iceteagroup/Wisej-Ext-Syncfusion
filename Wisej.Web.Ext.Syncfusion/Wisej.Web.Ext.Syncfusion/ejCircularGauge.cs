@@ -52,7 +52,7 @@ namespace Wisej.Web.Ext.Syncfusion
 		/// <param name="options">Initial set of options.</param>
 		public ejCircularGauge(object options) : base("ejCircularGauge", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 				"rightClick",
 				"mouseClick",
 				"doubleClick"

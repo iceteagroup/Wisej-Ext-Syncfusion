@@ -12,7 +12,7 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 		{
 			InitializeComponent();
 
-			this.ejSignature1.Widget.change += new WidgetEventHandler(ejSignature1_WidgetEvent);
+			this.ejSignature1.Instance.change += new WidgetEventHandler(ejSignature1_WidgetEvent);
 		}
 
 		private void ejSignature1_WidgetEvent(object sender, WidgetEventArgs e)
@@ -23,22 +23,22 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 
 		private void buttonSave_Click(object sender, EventArgs e)
 		{
-			this.ejSignature1.Widget.save("UserSignature");
+			this.ejSignature1.Instance.save("UserSignature");
 		}
 
 		private void buttonClear_Click(object sender, EventArgs e)
 		{
-			this.ejSignature1.Widget.clear();
+			this.ejSignature1.Instance.clear();
 		}
 
 		private void buttonRedo_Click(object sender, EventArgs e)
 		{
-			this.ejSignature1.Widget.redo();
+			this.ejSignature1.Instance.redo();
 		}
 
 		private void buttonUndo_Click(object sender, EventArgs e)
 		{
-			this.ejSignature1.Widget.undo();
+			this.ejSignature1.Instance.undo();
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)

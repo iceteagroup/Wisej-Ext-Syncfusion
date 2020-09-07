@@ -39,7 +39,7 @@ namespace Wisej.Web.Ext.Syncfusion
 		/// <param name="options">Initial set of options.</param>
 		public ejSparkline(object options) : base("ejSparkline", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 				"load",
 				"click",
 				"rightClick",

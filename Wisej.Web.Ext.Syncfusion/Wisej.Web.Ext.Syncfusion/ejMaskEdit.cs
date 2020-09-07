@@ -40,7 +40,7 @@ namespace Wisej.Web.Ext.Syncfusion
 		/// <param name="options">Initial set of options.</param>
 		public ejMaskEdit(object options) : base("ejMaskEdit", "<input style='width:100%';height:100% >", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 				"keyUp",
 				"change",
 				"keyPress",

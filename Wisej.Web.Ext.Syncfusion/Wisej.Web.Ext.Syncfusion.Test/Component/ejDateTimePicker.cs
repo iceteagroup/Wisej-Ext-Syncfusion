@@ -9,9 +9,9 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 		{
 			InitializeComponent();
 
-			this.ejDateTimePicker1.Widget.open += new WidgetEventHandler(ejDateTimePicker1_WidgetEvent);
-			this.ejDateTimePicker1.Widget.close += new WidgetEventHandler(ejDateTimePicker1_WidgetEvent);
-			this.ejDateTimePicker1.Widget.change += new WidgetEventHandler(ejDateTimePicker1_WidgetEvent);
+			this.ejDateTimePicker1.Instance.open += new WidgetEventHandler(ejDateTimePicker1_WidgetEvent);
+			this.ejDateTimePicker1.Instance.close += new WidgetEventHandler(ejDateTimePicker1_WidgetEvent);
+			this.ejDateTimePicker1.Instance.change += new WidgetEventHandler(ejDateTimePicker1_WidgetEvent);
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)

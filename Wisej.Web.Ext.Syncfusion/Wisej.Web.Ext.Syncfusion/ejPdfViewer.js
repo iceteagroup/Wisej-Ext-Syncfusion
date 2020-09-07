@@ -24,7 +24,7 @@
  */
 this.initWidget = function () {
 
-	var serviceUrl = this.getPostbackUrl();
+	var serviceUrl = this.getServiceUrl();
 	this.widget.option({
 		serviceUrl: serviceUrl
 	});

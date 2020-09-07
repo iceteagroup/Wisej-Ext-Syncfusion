@@ -42,7 +42,7 @@ namespace Wisej.Web.Ext.Syncfusion
 		/// <param name="options">Initial set of options.</param>
 		public ejRichTextEditor(object options) : base("ejRTE", "<textarea style='width:100%;height:100%'>", options)
 		{
-			this.WidgetWiredEvents = new[] { "change", "execute" };
+			this.WiredEvents = new[] { "change", "execute" };
 		}
 
 		/// <summary>

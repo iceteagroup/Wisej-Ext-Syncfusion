@@ -39,7 +39,7 @@ namespace Wisej.Web.Ext.Syncfusion
 		/// <param name="options">Initial set of options.</param>
 		public ejLinearGauge(object options) : base("ejLinearGauge", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 				"init",
 				"mouseClick",
 				"rightClick",

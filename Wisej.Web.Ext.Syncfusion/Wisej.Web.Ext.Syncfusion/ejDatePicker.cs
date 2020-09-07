@@ -39,7 +39,7 @@ namespace Wisej.Web.Ext.Syncfusion
 		/// <param name="options">Initial set of options.</param>
 		public ejDatePicker(object options) : base("ejDatePicker", "<input style='width:100%;height:100%'>", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 				"open",
 				"close",
 				"select",

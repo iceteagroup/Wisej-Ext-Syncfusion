@@ -9,15 +9,15 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 		{
 			InitializeComponent();
 
-			this.ejPager1.Widget.click += new WidgetEventHandler(ejPager1_WidgetEvent);
-			this.ejPager1.Widget.change += new WidgetEventHandler(ejPager1_WidgetEvent);
+			this.ejPager1.Instance.click += new WidgetEventHandler(ejPager1_WidgetEvent);
+			this.ejPager1.Instance.change += new WidgetEventHandler(ejPager1_WidgetEvent);
 		}
 
 		private void ejPager1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
 			if (e.Type == "change" || e.Type == "click")
 			{
-				this.ejRotator1.Widget.gotoIndex(e.Data.currentPage);
+				this.ejRotator1.Instance.gotoIndex(e.Data.currentPage);
 			}
 			AlertBox.Show(
 				$"<b>{e.Type}</b><br/>{JSON.Stringify(e.Data)}",
@@ -28,12 +28,12 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 
 		private void buttonGoToFirstPage_Click(object sender, EventArgs e)
 		{
-			this.ejPager1.Widget.goToFirstPage();
+			this.ejPager1.Instance.goToFirstPage();
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			this.ejPager1.Widget.goToPage(this.numericSelectedPage.Value);
+			this.ejPager1.Instance.goToPage(this.numericSelectedPage.Value);
 		}
 	}
 }

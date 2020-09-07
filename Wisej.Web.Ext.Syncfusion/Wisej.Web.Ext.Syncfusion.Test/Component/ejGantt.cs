@@ -9,8 +9,8 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 		{
 			InitializeComponent();
 
-			this.ejGantt1.Widget.rowSelected += new WidgetEventHandler(ejGantt1_WidgetEvent);
-			this.ejGantt1.Widget.taskbarClick += new WidgetEventHandler(ejGantt1_WidgetEvent);
+			this.ejGantt1.Instance.rowSelected += new WidgetEventHandler(ejGantt1_WidgetEvent);
+			this.ejGantt1.Instance.taskbarClick += new WidgetEventHandler(ejGantt1_WidgetEvent);
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)

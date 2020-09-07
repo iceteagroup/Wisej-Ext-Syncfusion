@@ -11,8 +11,8 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 		{
 			InitializeComponent();
 
-			this.ejListBox1.Widget.select += new WidgetEventHandler(ejListBox1_WidgetEvent);
-			this.ejListBox1.Widget.unselect += new WidgetEventHandler(ejListBox1_WidgetEvent);
+			this.ejListBox1.Instance.select += new WidgetEventHandler(ejListBox1_WidgetEvent);
+			this.ejListBox1.Instance.unselect += new WidgetEventHandler(ejListBox1_WidgetEvent);
 		}
 
 		private void buttonLoad_Uploaded(object sender, UploadedEventArgs e)
@@ -31,7 +31,7 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 
 		private async void buttonSave_Click(object sender, EventArgs e)
 		{
-			var data = await this.ejListBox1.Widget.optionAsync("dataSource");
+			var data = await this.ejListBox1.Instance.optionAsync("dataSource");
 			var json = Wisej.Core.WisejSerializer.Serialize(data);
 
 			Application.Download(new MemoryStream(Encoding.UTF8.GetBytes(json)), "listbox.json");

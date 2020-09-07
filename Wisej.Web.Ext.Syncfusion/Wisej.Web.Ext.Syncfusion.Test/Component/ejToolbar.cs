@@ -9,8 +9,8 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 		{
 			InitializeComponent();
 
-			this.ejToolbar1.Widget.click += new WidgetEventHandler(ejToolbar1_WidgetEvent);
-			this.ejToolbar1.Widget.itemHover += new WidgetEventHandler(ejToolbar1_WidgetEvent);
+			this.ejToolbar1.Instance.click += new WidgetEventHandler(ejToolbar1_WidgetEvent);
+			this.ejToolbar1.Instance.itemHover += new WidgetEventHandler(ejToolbar1_WidgetEvent);
 		}
 
 		private void ejToolbar1_WidgetEvent(object sender, WidgetEventArgs e)

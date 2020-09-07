@@ -9,8 +9,8 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 		{
 			InitializeComponent();
 
-			this.ejTreeMap1.Widget.click += new WidgetEventHandler(ejTreeMap1_WidgetEvent);
-			this.ejTreeMap1.Widget.doubleClick += new WidgetEventHandler(ejTreeMap1_WidgetEvent);
+			this.ejTreeMap1.Instance.click += new WidgetEventHandler(ejTreeMap1_WidgetEvent);
+			this.ejTreeMap1.Instance.doubleClick += new WidgetEventHandler(ejTreeMap1_WidgetEvent);
 		}
 
 		private void ejTreeMap1_WidgetEvent(object sender, WidgetEventArgs e)

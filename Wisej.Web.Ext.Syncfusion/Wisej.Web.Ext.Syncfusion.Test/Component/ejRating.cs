@@ -9,8 +9,8 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 		{
 			InitializeComponent();
 
-			this.ejRating1.Widget.click += new WidgetEventHandler(ejRating1_WidgetEvent);
-			this.ejRating1.Widget.change += new WidgetEventHandler(ejRating1_WidgetEvent);
+			this.ejRating1.Instance.click += new WidgetEventHandler(ejRating1_WidgetEvent);
+			this.ejRating1.Instance.change += new WidgetEventHandler(ejRating1_WidgetEvent);
 		}
 
 		private void ejRating1_WidgetEvent(object sender, WidgetEventArgs e)

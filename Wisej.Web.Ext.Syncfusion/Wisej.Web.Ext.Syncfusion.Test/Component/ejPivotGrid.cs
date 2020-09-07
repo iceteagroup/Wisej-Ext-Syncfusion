@@ -11,8 +11,8 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 		{
 			InitializeComponent();
 
-			this.ejPivotGrid1.Widget.cellEdit += new WidgetEventHandler(ejPivotGrid1_WidgetEvent);
-			this.ejPivotGrid1.Widget.cellClick += new WidgetEventHandler(ejPivotGrid1_WidgetEvent);
+			this.ejPivotGrid1.Instance.cellEdit += new WidgetEventHandler(ejPivotGrid1_WidgetEvent);
+			this.ejPivotGrid1.Instance.cellClick += new WidgetEventHandler(ejPivotGrid1_WidgetEvent);
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
@@ -41,7 +41,7 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 				using (var stream = new StreamReader(e.Files[0].InputStream))
 				{
 					var json = stream.ReadToEnd();
-					this.ejPivotGrid1.Widget.setJSONRecords(JSON.Stringify(json));
+					this.ejPivotGrid1.Instance.setJSONRecords(JSON.Stringify(json));
 
 					this.ejPivotGrid1.Update();
 				}
@@ -50,7 +50,7 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 
 		private async void buttonSave_Click(object sender, EventArgs e)
 		{
-			var data = await this.ejPivotGrid1.Widget.getJSONRecordsAsync();
+			var data = await this.ejPivotGrid1.Instance.getJSONRecordsAsync();
 			var json = Wisej.Core.WisejSerializer.Serialize(data);
 
 			Application.Download(new MemoryStream(Encoding.UTF8.GetBytes(json)), "pivotgrid.json");

@@ -9,7 +9,7 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 		{
 			InitializeComponent();
 
-			this.ejRecurrenceEditor1.Widget.change += new WidgetEventHandler(ejRecurrenceEditor1_WidgetEvent);
+			this.ejRecurrenceEditor1.Instance.change += new WidgetEventHandler(ejRecurrenceEditor1_WidgetEvent);
 
 			//this.dateTimePicker1.Value = this.dateTimePicker1.MaxDate;
 			//this.dateTimePicker2.Value = this.dateTimePicker2.MinDate;
@@ -26,7 +26,7 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 
 		private async void buttonGenerateRule_Click(object sender, EventArgs e)
 		{
-			var rule = await this.ejRecurrenceEditor1.Widget.getRecurrenceRuleAsync();
+			var rule = await this.ejRecurrenceEditor1.Instance.getRecurrenceRuleAsync();
 
 			AlertBox.Show(rule);
 		}

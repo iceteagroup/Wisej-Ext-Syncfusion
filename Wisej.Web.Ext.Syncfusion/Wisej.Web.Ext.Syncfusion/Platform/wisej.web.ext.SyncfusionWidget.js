@@ -54,11 +54,6 @@ qx.Class.define("wisej.web.ext.SyncfusionWidget", {
 		widgetEvents: { init: [], check: "Array" },
 
 		/**
-		 * Names of the events fired by the widget that should be wired back to the server.
-		 */
-		widgetWiredEvents: { init: [], check: "Array" },
-
-		/**
 		 * Collection of additional javascript methods to add to the widget.
 		 */
 		widgetFunctions: { init: [], check: "Array", apply: "_applyWidgetFunctions" },
@@ -204,8 +199,8 @@ qx.Class.define("wisej.web.ext.SyncfusionWidget", {
 		_registerEventHandlers: function (options) {
 
 			var name, source;
+			var wiredEvents = this.getEvents();
 			var handlers = this.getWidgetEvents();
-			var wiredEvents = this.getWidgetWiredEvents();
 
 			if (handlers && handlers.length > 0) {
 				for (var i = 0; i < handlers.length; i++) {
@@ -246,7 +241,7 @@ qx.Class.define("wisej.web.ext.SyncfusionWidget", {
 				if (handler)
 					handler.call(this, args);
 
-				var wiredEvents = me.getWidgetWiredEvents();
+				var wiredEvents = me.getEvents();
 				if (wiredEvents && wiredEvents.indexOf(args.type) > -1) {
 
 					// make sure there is always one field or
@@ -329,17 +324,14 @@ qx.Class.define("wisej.web.ext.SyncfusionWidget", {
 		},
 
 		// fires the "render" event when in design mode to notify
-		// the html renderer that the widget has been initialized.
+		// the HTML renderer that the widget has been initialized.
 		//
 		// widgets may replace this function to fire the "render" event
 		// according to the widget's implementation.
 		//
 		_onInitialized: function () {
 
-			if (wisej.web.DesignMode)
-				this.fireEvent("render");
-
-			this.fireEvent("initialized");
+			this.base(arguments);
 
 			if (this.initWidget)
 				this.initWidget();

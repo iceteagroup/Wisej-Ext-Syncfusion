@@ -39,7 +39,7 @@ namespace Wisej.Web.Ext.Syncfusion
 		/// <param name="options">Initial set of options.</param>
 		public ejDropDownTree(object options) : base("ejDropDownTree", "<input style='width:100%;height:100%' >", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 				"blur",
 				"open",
 				"change",

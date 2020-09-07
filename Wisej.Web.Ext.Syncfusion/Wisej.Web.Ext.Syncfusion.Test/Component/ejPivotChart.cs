@@ -11,7 +11,7 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 		{
 			InitializeComponent();
 
-			this.ejPivotChart1.Widget.drillSuccess += new WidgetEventHandler(ejPivotChart1_WidgetEvent);
+			this.ejPivotChart1.Instance.drillSuccess += new WidgetEventHandler(ejPivotChart1_WidgetEvent);
 		}
 
 		private void ejPivotChart1_WidgetEvent(object sender, WidgetEventArgs e)
@@ -26,12 +26,12 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 		private void buttonExportExcel_Click(object sender, EventArgs e)
 		{
 			//TODO:
-			//this.ejPivotChart1.Widget.exportPivotChart("excel");
+			//this.ejPivotChart1.Instance.exportPivotChart("excel");
 		}
 
 		private async void buttonSaveJson_Click(object sender, EventArgs e)
 		{
-			var data = await this.ejPivotChart1.Widget.optionAsync("dataSource");
+			var data = await this.ejPivotChart1.Instance.optionAsync("dataSource");
 			var json = Wisej.Core.WisejSerializer.Serialize(data);
 
 			Application.Download(new MemoryStream(Encoding.UTF8.GetBytes(json)), "pivotchart.json");
@@ -44,7 +44,7 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 				using (var stream = new StreamReader(e.Files[0].InputStream))
 				{
 					var json = stream.ReadToEnd();
-					this.ejPivotChart1.Widget.renderChartFromJSON(JSON.Parse(json));
+					this.ejPivotChart1.Instance.renderChartFromJSON(JSON.Parse(json));
 
 					this.ejPivotChart1.Update();
 				}
