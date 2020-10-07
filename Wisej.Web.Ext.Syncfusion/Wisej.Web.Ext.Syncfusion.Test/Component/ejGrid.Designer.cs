@@ -117,13 +117,11 @@
 			// 
 			// ejGrid1
 			// 
-			this.ejGrid1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-			this.ejGrid1.Location = new System.Drawing.Point(3, 3);
+			this.ejGrid1.Dock = Wisej.Web.DockStyle.Fill;
+			this.ejGrid1.Location = new System.Drawing.Point(8, 8);
 			this.ejGrid1.Name = "ejGrid1";
 			this.ejGrid1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejGrid1.Options"))));
-			this.ejGrid1.Size = new System.Drawing.Size(447, 561);
+			this.ejGrid1.Size = new System.Drawing.Size(437, 551);
 			this.ejGrid1.TabIndex = 0;
 			this.ejGrid1.Text = "ejGrid1";
 			// 

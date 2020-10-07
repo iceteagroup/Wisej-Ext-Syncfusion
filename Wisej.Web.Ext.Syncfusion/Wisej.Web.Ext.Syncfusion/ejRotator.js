@@ -32,6 +32,10 @@ this.resizeWidget = function () {
 		var gapY = outerWrapper.height() - wrapper.height();
 
 		var bounds = this.getBounds();
+
+		if (!bounds)
+			return;
+
 		this.widget.option({
 			slideWidth: bounds.width - gapX,
 			slideHeight: bounds.height - gapY

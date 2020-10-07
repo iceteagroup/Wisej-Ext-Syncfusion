@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using Wisej.Web;
@@ -65,6 +66,70 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 			};
 
 			this.ejPivotChart1.Update();
+		}
+
+		private void ejPivotChart_Load(object sender, EventArgs e)
+		{
+			// load the data source.
+			this.ejPivotChart1.Options.dataSource = new
+			{
+				data = GenerateDataSource(),
+				rows = new[] 
+				{
+					new 
+					{
+						fieldName = "Country",
+						fieldCaption = "Country"
+					}
+				},
+				columns = new[]
+				{
+					new 
+					{
+						fieldName = "Product",
+						fieldCaption = "Product"
+					}
+				},
+				values = new[] 
+				{
+					new
+					{
+						fieldName = "Amount",
+						fieldCaption = "Amount"
+					}
+				}
+			};
+
+			this.ejPivotChart1.Update();
+		}
+
+		private List<Sale> GenerateDataSource()
+		{
+			var list = new List<Sale>();
+
+			list.Add(new Sale(100, "Canada", "Bike"));
+			list.Add(new Sale(200, "Germany", "Van"));
+			list.Add(new Sale(300, "Germany", "Car"));
+			list.Add(new Sale(150, "United Kingdom", "Bike"));
+			list.Add(new Sale(200, "Canada", "Car"));
+
+			return list;
+		}
+
+		private class Sale
+		{
+			public int Amount;
+
+			public string Country;
+
+			public string Product;
+
+			public Sale(int amount, string country, string product)
+			{
+				this.Amount = amount;
+				this.Country = country;
+				this.Product = product;
+			}
 		}
 	}
 }

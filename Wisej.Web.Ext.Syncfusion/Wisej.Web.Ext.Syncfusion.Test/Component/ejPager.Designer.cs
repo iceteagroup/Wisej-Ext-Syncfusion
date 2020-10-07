@@ -89,10 +89,10 @@
 			// ejRotator1
 			// 
 			this.ejRotator1.Anchor = Wisej.Web.AnchorStyles.None;
-			this.ejRotator1.Location = new System.Drawing.Point(31, 26);
+			this.ejRotator1.Location = new System.Drawing.Point(31, 27);
 			this.ejRotator1.Name = "ejRotator1";
 			this.ejRotator1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejRotator1.Options"))));
-			this.ejRotator1.Size = new System.Drawing.Size(630, 353);
+			this.ejRotator1.Size = new System.Drawing.Size(630, 347);
 			this.ejRotator1.TabIndex = 0;
 			this.ejRotator1.Text = "ejRotator1";
 			// 

@@ -88,13 +88,11 @@
 			// 
 			// ejPivotGrid1
 			// 
-			this.ejPivotGrid1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-			this.ejPivotGrid1.Location = new System.Drawing.Point(19, 16);
+			this.ejPivotGrid1.Dock = Wisej.Web.DockStyle.Fill;
+			this.ejPivotGrid1.Location = new System.Drawing.Point(8, 8);
 			this.ejPivotGrid1.Name = "ejPivotGrid1";
 			this.ejPivotGrid1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejPivotGrid1.Options"))));
-			this.ejPivotGrid1.Size = new System.Drawing.Size(415, 395);
+			this.ejPivotGrid1.Size = new System.Drawing.Size(437, 411);
 			this.ejPivotGrid1.TabIndex = 0;
 			this.ejPivotGrid1.Text = "ejPivotGrid1";
 			// 

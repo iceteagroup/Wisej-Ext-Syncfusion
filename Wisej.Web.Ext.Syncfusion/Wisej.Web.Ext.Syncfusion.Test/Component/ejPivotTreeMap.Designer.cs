@@ -70,13 +70,11 @@
 			// 
 			// ejPivotTreeMap1
 			// 
-			this.ejPivotTreeMap1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-			this.ejPivotTreeMap1.Location = new System.Drawing.Point(14, 14);
+			this.ejPivotTreeMap1.Dock = Wisej.Web.DockStyle.Fill;
+			this.ejPivotTreeMap1.Location = new System.Drawing.Point(8, 8);
 			this.ejPivotTreeMap1.Name = "ejPivotTreeMap1";
 			this.ejPivotTreeMap1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejPivotTreeMap1.Options"))));
-			this.ejPivotTreeMap1.Size = new System.Drawing.Size(424, 285);
+			this.ejPivotTreeMap1.Size = new System.Drawing.Size(437, 297);
 			this.ejPivotTreeMap1.TabIndex = 0;
 			this.ejPivotTreeMap1.Text = "ejPivotTreeMap1";
 			// 

@@ -62,9 +62,15 @@ this.resizeWidget = function () {
 	if (this.widget) {
 		try {
 			var bounds = this.getBounds();
-			if (bounds) {
-				this.widget.option({ width: bounds.width, height: bounds.height - 2 });
-			}
+
+			if (!bounds)
+				return;
+
+			this.widget.option({
+				width: bounds.width,
+				height: bounds.height - 2
+			});
+			
 		} catch (ex) { }
 	}
 };

@@ -36,6 +36,10 @@ this.resizeWidget = function () {
 	if (this.widget) {
 
 		var bounds = this.getBounds();
+
+		if (!bounds)
+			return;
+
 		this.widget.option({
 			scrollSettings: {
 				width: bounds.width - 2,

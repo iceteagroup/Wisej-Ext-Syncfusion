@@ -83,13 +83,11 @@
 			// 
 			// ejTagCloud1
 			// 
-			this.ejTagCloud1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-			this.ejTagCloud1.Location = new System.Drawing.Point(19, 17);
+			this.ejTagCloud1.Dock = Wisej.Web.DockStyle.Fill;
+			this.ejTagCloud1.Location = new System.Drawing.Point(8, 8);
 			this.ejTagCloud1.Name = "ejTagCloud1";
 			this.ejTagCloud1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejTagCloud1.Options"))));
-			this.ejTagCloud1.Size = new System.Drawing.Size(415, 362);
+			this.ejTagCloud1.Size = new System.Drawing.Size(437, 380);
 			this.ejTagCloud1.TabIndex = 0;
 			this.ejTagCloud1.Text = "ejTagCloud1";
 			// 

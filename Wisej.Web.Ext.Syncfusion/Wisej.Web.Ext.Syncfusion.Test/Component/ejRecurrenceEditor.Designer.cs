@@ -84,14 +84,12 @@
 			// 
 			// ejRecurrenceEditor1
 			// 
-			this.ejRecurrenceEditor1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
 			this.ejRecurrenceEditor1.BorderStyle = Wisej.Web.BorderStyle.Solid;
-			this.ejRecurrenceEditor1.Location = new System.Drawing.Point(45, 65);
+			this.ejRecurrenceEditor1.Dock = Wisej.Web.DockStyle.Fill;
+			this.ejRecurrenceEditor1.Location = new System.Drawing.Point(8, 8);
 			this.ejRecurrenceEditor1.Name = "ejRecurrenceEditor1";
 			this.ejRecurrenceEditor1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"selectedRecurrenceType\":1,\"isResponsive\":true}")));
-			this.ejRecurrenceEditor1.Size = new System.Drawing.Size(362, 419);
+			this.ejRecurrenceEditor1.Size = new System.Drawing.Size(437, 534);
 			this.ejRecurrenceEditor1.TabIndex = 0;
 			this.ejRecurrenceEditor1.Text = "ejRecurrenceEditor1";
 			// 

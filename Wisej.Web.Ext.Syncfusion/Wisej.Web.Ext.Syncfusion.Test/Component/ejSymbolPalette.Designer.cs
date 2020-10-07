@@ -87,12 +87,11 @@
 			// 
 			// ejSymbolPalette1
 			// 
-			this.ejSymbolPalette1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left)));
-			this.ejSymbolPalette1.Location = new System.Drawing.Point(3, 3);
+			this.ejSymbolPalette1.Dock = Wisej.Web.DockStyle.Left;
+			this.ejSymbolPalette1.Location = new System.Drawing.Point(8, 8);
 			this.ejSymbolPalette1.Name = "ejSymbolPalette1";
 			this.ejSymbolPalette1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejSymbolPalette1.Options"))));
-			this.ejSymbolPalette1.Size = new System.Drawing.Size(250, 396);
+			this.ejSymbolPalette1.Size = new System.Drawing.Size(250, 386);
 			this.ejSymbolPalette1.TabIndex = 0;
 			this.ejSymbolPalette1.Text = "ejSymbolPalette1";
 			widgetTemplate1.Id = "svgTemplate";
@@ -102,12 +101,10 @@
 			// 
 			// ejDiagram1
 			// 
-			this.ejDiagram1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-			this.ejDiagram1.Location = new System.Drawing.Point(259, 3);
+			this.ejDiagram1.Dock = Wisej.Web.DockStyle.Fill;
+			this.ejDiagram1.Location = new System.Drawing.Point(258, 8);
 			this.ejDiagram1.Name = "ejDiagram1";
-			this.ejDiagram1.Size = new System.Drawing.Size(191, 396);
+			this.ejDiagram1.Size = new System.Drawing.Size(187, 386);
 			this.ejDiagram1.TabIndex = 1;
 			this.ejDiagram1.Text = "ejDiagram1";
 			this.ejDiagram1.Appear += new System.EventHandler(this.ejDiagram1_Appear);

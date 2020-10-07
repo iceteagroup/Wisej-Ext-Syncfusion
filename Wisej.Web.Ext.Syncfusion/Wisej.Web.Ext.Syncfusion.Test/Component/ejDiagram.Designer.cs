@@ -90,13 +90,11 @@
 			// 
 			// ejDiagram1
 			// 
-			this.ejDiagram1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-			this.ejDiagram1.Location = new System.Drawing.Point(24, 27);
+			this.ejDiagram1.Dock = Wisej.Web.DockStyle.Fill;
+			this.ejDiagram1.Location = new System.Drawing.Point(8, 8);
 			this.ejDiagram1.Name = "ejDiagram1";
 			this.ejDiagram1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejDiagram1.Options"))));
-			this.ejDiagram1.Size = new System.Drawing.Size(404, 427);
+			this.ejDiagram1.Size = new System.Drawing.Size(437, 465);
 			this.ejDiagram1.TabIndex = 0;
 			this.ejDiagram1.Text = "ejDiagram1";
 			widgetTemplate1.Id = "template1";

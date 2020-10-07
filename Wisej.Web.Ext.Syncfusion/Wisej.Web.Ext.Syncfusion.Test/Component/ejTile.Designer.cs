@@ -116,6 +116,7 @@
 			this.flowLayoutPanel1.Name = "flowLayoutPanel1";
 			this.flowLayoutPanel1.Size = new System.Drawing.Size(150, 150);
 			this.flowLayoutPanel1.TabIndex = 7;
+			this.flowLayoutPanel1.TabStop = true;
 			// 
 			// ejTile2
 			// 
@@ -159,9 +160,6 @@
 			// 
 			// flowLayoutPanel2
 			// 
-			this.flowLayoutPanel2.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
 			this.flowLayoutPanel2.AutoScroll = true;
 			this.flowLayoutPanel2.Controls.Add(this.ejTile8);
 			this.flowLayoutPanel2.Controls.Add(this.ejTile1);
@@ -173,10 +171,12 @@
 			this.flowLayoutPanel2.Controls.Add(this.ejTile6);
 			this.flowLayoutPanel2.Controls.Add(this.ejTile12);
 			this.flowLayoutPanel2.Controls.Add(this.ejTile13);
-			this.flowLayoutPanel2.Location = new System.Drawing.Point(41, 46);
+			this.flowLayoutPanel2.Dock = Wisej.Web.DockStyle.Fill;
+			this.flowLayoutPanel2.Location = new System.Drawing.Point(8, 8);
 			this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-			this.flowLayoutPanel2.Size = new System.Drawing.Size(573, 421);
+			this.flowLayoutPanel2.Size = new System.Drawing.Size(639, 497);
 			this.flowLayoutPanel2.TabIndex = 0;
+			this.flowLayoutPanel2.TabStop = true;
 			// 
 			// ejTile8
 			// 

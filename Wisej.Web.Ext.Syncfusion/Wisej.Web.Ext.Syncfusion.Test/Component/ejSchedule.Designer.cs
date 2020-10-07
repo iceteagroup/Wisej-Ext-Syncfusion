@@ -90,13 +90,11 @@
 			// 
 			// ejSchedule1
 			// 
-			this.ejSchedule1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-			this.ejSchedule1.Location = new System.Drawing.Point(22, 19);
+			this.ejSchedule1.Dock = Wisej.Web.DockStyle.Fill;
+			this.ejSchedule1.Location = new System.Drawing.Point(8, 8);
 			this.ejSchedule1.Name = "ejSchedule1";
 			this.ejSchedule1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejSchedule1.Options"))));
-			this.ejSchedule1.Size = new System.Drawing.Size(408, 475);
+			this.ejSchedule1.Size = new System.Drawing.Size(437, 498);
 			this.ejSchedule1.TabIndex = 0;
 			this.ejSchedule1.Text = "ejSchedule1";
 			// 
@@ -202,6 +200,7 @@
 			// 
 			this.Name = "ejSchedule";
 			this.Size = new System.Drawing.Size(864, 706);
+			this.Load += new System.EventHandler(this.ejSchedule_Load);
 			this.groupBox1.ResumeLayout(false);
 			this.panel.ResumeLayout(false);
 			this.ResumeLayout(false);

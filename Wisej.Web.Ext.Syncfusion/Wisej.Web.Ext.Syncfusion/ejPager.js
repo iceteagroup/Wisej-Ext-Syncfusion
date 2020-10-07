@@ -26,3 +26,28 @@ this.filterEventData = function (args) {
 		currentPage: args.currentPage,
 	}
 };
+
+/**
+ * Resizes the hosted widget to always fit our container.
+ */
+this.resizeWidget = function () {
+
+	if (this.widget) {
+		var bounds = this.getBounds();
+		if (bounds) {
+			try {
+				this.widget.option({
+					width: bounds.width - 4,
+					height: bounds.height
+				});
+			} catch (ex) { }
+
+			if (typeof (this.widget.redraw) === "function") {
+				this.widget.redraw();
+			}
+			else if (typeof (this.widget.refresh) === "function") {
+				this.widget.refresh();
+			}
+		}
+	}
+};

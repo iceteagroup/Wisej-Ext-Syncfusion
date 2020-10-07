@@ -93,12 +93,10 @@
 			// 
 			// ejSpreadsheet1
 			// 
-			this.ejSpreadsheet1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-			this.ejSpreadsheet1.Location = new System.Drawing.Point(26, 26);
+			this.ejSpreadsheet1.Dock = Wisej.Web.DockStyle.Fill;
+			this.ejSpreadsheet1.Location = new System.Drawing.Point(8, 8);
 			this.ejSpreadsheet1.Name = "ejSpreadsheet1";
-			this.ejSpreadsheet1.Size = new System.Drawing.Size(401, 490);
+			this.ejSpreadsheet1.Size = new System.Drawing.Size(437, 526);
 			this.ejSpreadsheet1.TabIndex = 0;
 			this.ejSpreadsheet1.Text = "ejSpreadsheet1";
 			this.ejSpreadsheet1.WebRequest += new Wisej.Web.WebRequestHandler(this.ejSpreadsheet1_WebRequest);

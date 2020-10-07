@@ -83,13 +83,11 @@
 			// 
 			// ejMediaPlayer1
 			// 
-			this.ejMediaPlayer1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-			this.ejMediaPlayer1.Location = new System.Drawing.Point(21, 20);
+			this.ejMediaPlayer1.Dock = Wisej.Web.DockStyle.Fill;
+			this.ejMediaPlayer1.Location = new System.Drawing.Point(8, 8);
 			this.ejMediaPlayer1.Name = "ejMediaPlayer1";
 			this.ejMediaPlayer1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejMediaPlayer1.Options"))));
-			this.ejMediaPlayer1.Size = new System.Drawing.Size(410, 321);
+			this.ejMediaPlayer1.Size = new System.Drawing.Size(437, 346);
 			this.ejMediaPlayer1.TabIndex = 0;
 			this.ejMediaPlayer1.Text = "ejMediaPlayer1";
 			// 
@@ -108,6 +106,7 @@
 			this.flowLayoutPanel1.Name = "flowLayoutPanel1";
 			this.flowLayoutPanel1.Size = new System.Drawing.Size(144, 96);
 			this.flowLayoutPanel1.TabIndex = 0;
+			this.flowLayoutPanel1.TabStop = true;
 			// 
 			// buttonPlay
 			// 

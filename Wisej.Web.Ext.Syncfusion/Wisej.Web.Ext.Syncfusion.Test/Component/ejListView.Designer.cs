@@ -90,13 +90,11 @@
 			// 
 			// ejListView1
 			// 
-			this.ejListView1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-			this.ejListView1.Location = new System.Drawing.Point(32, 34);
+			this.ejListView1.Dock = Wisej.Web.DockStyle.Fill;
+			this.ejListView1.Location = new System.Drawing.Point(8, 8);
 			this.ejListView1.Name = "ejListView1";
 			this.ejListView1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejListView1.Options"))));
-			this.ejListView1.Size = new System.Drawing.Size(389, 520);
+			this.ejListView1.Size = new System.Drawing.Size(437, 572);
 			this.ejListView1.TabIndex = 0;
 			this.ejListView1.Text = "ejListView1";
 			// 
@@ -147,6 +145,7 @@
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(201, 103);
 			this.panel1.TabIndex = 3;
+			this.panel1.TabStop = true;
 			// 
 			// checkBox1
 			// 

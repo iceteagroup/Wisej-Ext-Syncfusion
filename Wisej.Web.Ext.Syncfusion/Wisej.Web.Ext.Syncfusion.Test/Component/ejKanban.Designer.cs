@@ -96,13 +96,11 @@
 			// 
 			// ejKanban1
 			// 
-			this.ejKanban1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-			this.ejKanban1.Location = new System.Drawing.Point(18, 18);
+			this.ejKanban1.Dock = Wisej.Web.DockStyle.Fill;
+			this.ejKanban1.Location = new System.Drawing.Point(8, 8);
 			this.ejKanban1.Name = "ejKanban1";
 			this.ejKanban1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejKanban1.Options"))));
-			this.ejKanban1.Size = new System.Drawing.Size(416, 567);
+			this.ejKanban1.Size = new System.Drawing.Size(437, 587);
 			this.ejKanban1.TabIndex = 0;
 			this.ejKanban1.Text = "ejKanban1";
 			// 

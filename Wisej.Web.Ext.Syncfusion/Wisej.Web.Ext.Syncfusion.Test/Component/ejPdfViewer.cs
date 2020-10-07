@@ -104,5 +104,13 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 		{
 			this.ejPdfViewer1.Instance.load("Data\\Wisej-Datasheet-V2.3.pdf");
 		}
+
+		private void ejPdfViewer_Load(object sender, EventArgs e)
+		{
+			this.ejPdfViewer1.Options.enableSignature = false;
+			this.ejPdfViewer1.Options.enableHighlightAnnotation = true;
+			this.ejPdfViewer1.Options.enableTextMarkupAnnotations = true;
+			this.ejPdfViewer1.Options.enableStrikethroughAnnotation = true;
+		}
 	}
 }

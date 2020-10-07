@@ -78,15 +78,13 @@
 			// 
 			// ejSparkline1
 			// 
-			this.ejSparkline1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-			this.ejSparkline1.Location = new System.Drawing.Point(36, 33);
+			this.ejSparkline1.Dock = Wisej.Web.DockStyle.Fill;
+			this.ejSparkline1.Location = new System.Drawing.Point(8, 8);
 			this.ejSparkline1.Name = "ejSparkline1";
 			this.ejSparkline1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"isResponsive\":true,\"dataSource\":[2,6,-1,1,12,5,-2,7,-3,5,8,10],\"negativePointCo" +
         "lor\":\"red\",\"highPointColor\":\"blue\",\"tooltip\":{\"visible\":true,\"font\":{\"size\":\"12p" +
         "x\"}},\"type\":\"column\"}")));
-			this.ejSparkline1.Size = new System.Drawing.Size(380, 302);
+			this.ejSparkline1.Size = new System.Drawing.Size(437, 352);
 			this.ejSparkline1.TabIndex = 0;
 			this.ejSparkline1.Text = "ejSparkline1";
 			// 

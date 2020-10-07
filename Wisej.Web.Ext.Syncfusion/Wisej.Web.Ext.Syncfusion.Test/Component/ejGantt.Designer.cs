@@ -100,13 +100,11 @@
 			// 
 			// ejGantt1
 			// 
-			this.ejGantt1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-			this.ejGantt1.Location = new System.Drawing.Point(3, 3);
+			this.ejGantt1.Dock = Wisej.Web.DockStyle.Fill;
+			this.ejGantt1.Location = new System.Drawing.Point(8, 8);
 			this.ejGantt1.Name = "ejGantt1";
 			this.ejGantt1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejGantt1.Options"))));
-			this.ejGantt1.Size = new System.Drawing.Size(593, 798);
+			this.ejGantt1.Size = new System.Drawing.Size(583, 788);
 			this.ejGantt1.TabIndex = 0;
 			this.ejGantt1.Text = "ejGantt1";
 			// 

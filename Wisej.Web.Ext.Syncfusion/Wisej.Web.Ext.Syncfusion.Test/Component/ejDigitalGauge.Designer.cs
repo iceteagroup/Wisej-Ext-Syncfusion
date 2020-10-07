@@ -86,15 +86,13 @@
 			// 
 			// ejDigitalGauge1
 			// 
-			this.ejDigitalGauge1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-			this.ejDigitalGauge1.Location = new System.Drawing.Point(76, 106);
+			this.ejDigitalGauge1.Dock = Wisej.Web.DockStyle.Fill;
+			this.ejDigitalGauge1.Location = new System.Drawing.Point(8, 8);
 			this.ejDigitalGauge1.Name = "ejDigitalGauge1";
 			this.ejDigitalGauge1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"isResponsive\":true,\"items\":[{\"segmentSettings\":{\"width\":1,\"spacing\":0,\"color\":\"" +
         "#8c8c8c\"},\"characterSettings\":{\"opacity\":0.8,\"spacing\":2},\"value\":\"123456789\",\"p" +
         "osition\":{\"x\":52,\"y\":52}}]}")));
-			this.ejDigitalGauge1.Size = new System.Drawing.Size(300, 222);
+			this.ejDigitalGauge1.Size = new System.Drawing.Size(437, 419);
 			this.ejDigitalGauge1.TabIndex = 0;
 			this.ejDigitalGauge1.Text = "ejDigitalGauge1";
 			// 
@@ -125,7 +123,7 @@
 			this.trackBarSegmentSpacing.Maximum = 1;
 			this.trackBarSegmentSpacing.Minimum = -2;
 			this.trackBarSegmentSpacing.Name = "trackBarSegmentSpacing";
-			this.trackBarSegmentSpacing.Size = new System.Drawing.Size(195, 34);
+			this.trackBarSegmentSpacing.Size = new System.Drawing.Size(195, 36);
 			this.trackBarSegmentSpacing.TabIndex = 1;
 			// 
 			// label5
@@ -143,7 +141,7 @@
 			this.trackBarCharSpacing.Maximum = 4;
 			this.trackBarCharSpacing.Minimum = 1;
 			this.trackBarCharSpacing.Name = "trackBarCharSpacing";
-			this.trackBarCharSpacing.Size = new System.Drawing.Size(195, 34);
+			this.trackBarCharSpacing.Size = new System.Drawing.Size(195, 36);
 			this.trackBarCharSpacing.TabIndex = 1;
 			this.trackBarCharSpacing.Value = 2;
 			// 
@@ -155,6 +153,7 @@
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(203, 64);
 			this.panel1.TabIndex = 1;
+			this.panel1.TabStop = true;
 			// 
 			// panel2
 			// 
@@ -164,6 +163,7 @@
 			this.panel2.Name = "panel2";
 			this.panel2.Size = new System.Drawing.Size(203, 64);
 			this.panel2.TabIndex = 2;
+			this.panel2.TabStop = true;
 			// 
 			// ejDigitalGauge
 			// 

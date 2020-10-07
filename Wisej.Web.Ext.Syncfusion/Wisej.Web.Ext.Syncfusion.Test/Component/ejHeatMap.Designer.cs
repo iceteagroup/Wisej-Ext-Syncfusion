@@ -47,8 +47,8 @@
 			// 
 			// panel
 			// 
-			this.panel.Controls.Add(this.ejHeatMapLegend1);
 			this.panel.Controls.Add(this.ejHeatMap1);
+			this.panel.Controls.Add(this.ejHeatMapLegend1);
 			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
@@ -59,26 +59,23 @@
 			// 
 			// ejHeatMap1
 			// 
-			this.ejHeatMap1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-			this.ejHeatMap1.Location = new System.Drawing.Point(22, 20);
+			this.ejHeatMap1.Dock = Wisej.Web.DockStyle.Fill;
+			this.ejHeatMap1.Location = new System.Drawing.Point(8, 8);
 			this.ejHeatMap1.Name = "ejHeatMap1";
 			this.ejHeatMap1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejHeatMap1.Options"))));
-			this.ejHeatMap1.Size = new System.Drawing.Size(409, 233);
+			this.ejHeatMap1.Size = new System.Drawing.Size(437, 260);
 			this.ejHeatMap1.TabIndex = 0;
 			this.ejHeatMap1.Text = "ejHeatMap1";
 			this.ejHeatMap1.Appear += new System.EventHandler(this.ejHeatMap1_Appear);
 			// 
 			// ejHeatMapLegend1
 			// 
-			this.ejHeatMapLegend1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-			this.ejHeatMapLegend1.Location = new System.Drawing.Point(22, 259);
+			this.ejHeatMapLegend1.Dock = Wisej.Web.DockStyle.Bottom;
+			this.ejHeatMapLegend1.Location = new System.Drawing.Point(8, 268);
 			this.ejHeatMapLegend1.Name = "ejHeatMapLegend1";
 			this.ejHeatMapLegend1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"colorMappingCollection\":[{\"value\":0,\"color\":\"#8ec8f8\",\"label\":{\"text\":\"0\"}},{\"v" +
         "alue\":100,\"color\":\"#0d47a1\",\"label\":{\"text\":\"100\"}}],\"isResponsive\":true}")));
-			this.ejHeatMapLegend1.Size = new System.Drawing.Size(409, 37);
+			this.ejHeatMapLegend1.Size = new System.Drawing.Size(437, 37);
 			this.ejHeatMapLegend1.TabIndex = 1;
 			this.ejHeatMapLegend1.Text = "ejHeatMapLegend1";
 			// 

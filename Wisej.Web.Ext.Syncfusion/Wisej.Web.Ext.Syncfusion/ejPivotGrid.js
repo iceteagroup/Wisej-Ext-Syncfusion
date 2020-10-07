@@ -34,6 +34,10 @@ this.resizeWidget = function () {
 
 	if (this.widget) {
 		var bounds = this.getBounds();
+
+		if (!bounds)
+			return;
+
 		this.widget.option({
 			size: {
 				width: bounds.width - 2,

@@ -91,11 +91,10 @@
 			// 
 			// ejCircularGauge1
 			// 
-			this.ejCircularGauge1.Anchor = Wisej.Web.AnchorStyles.None;
-			this.ejCircularGauge1.Location = new System.Drawing.Point(79, 91);
+			this.ejCircularGauge1.Dock = Wisej.Web.DockStyle.Fill;
 			this.ejCircularGauge1.Name = "ejCircularGauge1";
 			this.ejCircularGauge1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejCircularGauge1.Options"))));
-			this.ejCircularGauge1.Size = new System.Drawing.Size(296, 290);
+			this.ejCircularGauge1.Size = new System.Drawing.Size(453, 470);
 			this.ejCircularGauge1.TabIndex = 0;
 			this.ejCircularGauge1.Text = "ejCircularGauge1";
 			this.ejCircularGauge1.Value = 50;
@@ -122,7 +121,7 @@
 			this.trackBarDistanceFromScale.Maximum = 0;
 			this.trackBarDistanceFromScale.Minimum = -30;
 			this.trackBarDistanceFromScale.Name = "trackBarDistanceFromScale";
-			this.trackBarDistanceFromScale.Size = new System.Drawing.Size(195, 34);
+			this.trackBarDistanceFromScale.Size = new System.Drawing.Size(195, 36);
 			this.trackBarDistanceFromScale.TabIndex = 2;
 			this.trackBarDistanceFromScale.Value = -30;
 			// 
@@ -150,7 +149,7 @@
 			this.trackBarSize.Maximum = 12;
 			this.trackBarSize.Minimum = 2;
 			this.trackBarSize.Name = "trackBarSize";
-			this.trackBarSize.Size = new System.Drawing.Size(195, 34);
+			this.trackBarSize.Size = new System.Drawing.Size(195, 36);
 			this.trackBarSize.TabIndex = 4;
 			this.trackBarSize.Value = 2;
 			// 

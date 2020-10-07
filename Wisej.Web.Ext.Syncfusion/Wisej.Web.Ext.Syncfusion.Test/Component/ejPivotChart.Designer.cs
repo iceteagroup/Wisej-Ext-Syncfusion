@@ -28,7 +28,6 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ejPivotChart));
 			this.ejPivotChart1 = new Wisej.Web.Ext.Syncfusion.ejPivotChart();
 			this.buttonLoad = new Wisej.Web.Upload();
 			this.buttonExportExcel = new Wisej.Web.Button();
@@ -90,13 +89,10 @@
 			// 
 			// ejPivotChart1
 			// 
-			this.ejPivotChart1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-			this.ejPivotChart1.Location = new System.Drawing.Point(28, 17);
+			this.ejPivotChart1.Dock = Wisej.Web.DockStyle.Fill;
+			this.ejPivotChart1.Location = new System.Drawing.Point(8, 8);
 			this.ejPivotChart1.Name = "ejPivotChart1";
-			this.ejPivotChart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejPivotChart1.Options"))));
-			this.ejPivotChart1.Size = new System.Drawing.Size(396, 439);
+			this.ejPivotChart1.Size = new System.Drawing.Size(437, 458);
 			this.ejPivotChart1.TabIndex = 0;
 			this.ejPivotChart1.Text = "ejPivotChart1";
 			// 
@@ -204,6 +200,7 @@
 			// 
 			this.Name = "ejPivotChart";
 			this.Size = new System.Drawing.Size(864, 666);
+			this.Load += new System.EventHandler(this.ejPivotChart_Load);
 			this.groupBox1.ResumeLayout(false);
 			this.panel.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDownRotation)).EndInit();

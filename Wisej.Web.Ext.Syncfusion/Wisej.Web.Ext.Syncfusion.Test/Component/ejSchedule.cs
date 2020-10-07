@@ -37,5 +37,147 @@ namespace Wisej.Web.Ext.Syncfusion.Test.Component
 
 			this.ejSchedule1.Update();
 		}
+
+		private void ejSchedule_Load(object sender, EventArgs e)
+		{
+			this.ejSchedule1.Options.currentDate = DateTime.Now;
+
+			this.ejSchedule1.Options.contextMenuSettings = new
+			{
+				enable = true,
+				menuItems = new
+				{
+					appointment = new[] 
+					{
+						new 
+						{ 
+							id = "open",
+							text = "Open Appointment"
+						},
+						new
+						{
+							id = "delete",
+							text = "Delete Appointment"
+						},
+						new
+						{
+							id = "customMenu3",
+							text = "Menu Item 3"
+						},
+						new
+						{
+							id = "customMenu4",
+							text = "Menu Item 4"
+						},
+						new
+						{
+							id = "categorize",
+							text = "Categorize"
+						}
+					},
+					cells = new[]
+					{
+						new
+						{
+							id = "new",
+							text = "New Appointment",
+							parentId = ""
+						},
+						new
+						{
+							id = "recurrence",
+							text = "New Recurring Appointment",
+							parentId = ""
+
+						},
+						new
+						{
+							id = "today",
+							text = "Today",
+							parentId = ""
+						},
+						new
+						{
+							id = "gotodate",
+							text = "Go to date",
+							parentId = ""
+
+						},
+						new
+						{
+							id = "settings",
+							text = "Settings",
+							parentId = ""
+						},
+						new
+						{
+							id = "view",
+							text = "View",
+							parentId = "settings"
+						},
+						new
+						{
+							id = "timemode",
+							text = "TimeMode",
+							parentId = "settings"
+						},
+						new
+						{
+							id = "view_Day",
+							text = "Day",
+							parentId = "view"
+						},
+						new
+						{
+							id = "view_Week",
+							text = "Week",
+							parentId = "view",
+						},
+						new
+						{
+							id = "view_Workweek",
+							text = "Workweek",
+							parentId = "view"
+						},
+						new
+						{
+							id = "view_Month",
+							text = "Month",
+							parentId = "view"
+						},
+						new
+						{
+							id = "timemode_Hour12",
+							text = "12 Hours",
+							parentId = "timemode"
+						},
+						new
+						{
+							id = "timemode_Hour24",
+							text = "24 Hours",
+							parentId = "timemode"
+						},
+						new
+						{
+							id = "workhours",
+							text = "Work Hours",
+							parentId = "settings"
+						},
+						new
+						{
+							id = "customMenu1",
+							text = "Menu Item 1",
+							parentId = ""
+						},
+						new
+						{
+							id = "customMenu2",
+							text = "Menu Item 2",
+							parentId = ""
+						}
+					}
+				}
+			};
+		}
 	}
 }

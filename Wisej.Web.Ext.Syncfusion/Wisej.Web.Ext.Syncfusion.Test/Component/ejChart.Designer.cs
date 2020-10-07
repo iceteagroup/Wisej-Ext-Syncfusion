@@ -67,6 +67,7 @@
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejChart1);
+			this.panel.Padding = new Wisej.Web.Padding(8);
 			this.panel.Size = new System.Drawing.Size(455, 448);
 			// 
 			// linkDemo
@@ -75,13 +76,11 @@
 			// 
 			// ejChart1
 			// 
-			this.ejChart1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-			this.ejChart1.Location = new System.Drawing.Point(54, 39);
+			this.ejChart1.Dock = Wisej.Web.DockStyle.Fill;
+			this.ejChart1.Location = new System.Drawing.Point(8, 8);
 			this.ejChart1.Name = "ejChart1";
 			this.ejChart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejChart1.Options"))));
-			this.ejChart1.Size = new System.Drawing.Size(345, 367);
+			this.ejChart1.Size = new System.Drawing.Size(437, 430);
 			this.ejChart1.TabIndex = 0;
 			this.ejChart1.Text = "ejChart1";
 			// 

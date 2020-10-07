@@ -91,13 +91,11 @@
 			// 
 			// ejSunburstChart1
 			// 
-			this.ejSunburstChart1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-			this.ejSunburstChart1.Location = new System.Drawing.Point(19, 18);
+			this.ejSunburstChart1.Dock = Wisej.Web.DockStyle.Fill;
+			this.ejSunburstChart1.Location = new System.Drawing.Point(8, 8);
 			this.ejSunburstChart1.Name = "ejSunburstChart1";
 			this.ejSunburstChart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejSunburstChart1.Options"))));
-			this.ejSunburstChart1.Size = new System.Drawing.Size(415, 577);
+			this.ejSunburstChart1.Size = new System.Drawing.Size(437, 598);
 			this.ejSunburstChart1.TabIndex = 0;
 			this.ejSunburstChart1.Text = "ejSunburstChart1";
 			// 

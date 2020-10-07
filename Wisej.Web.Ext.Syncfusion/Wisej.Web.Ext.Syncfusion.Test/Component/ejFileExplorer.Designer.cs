@@ -93,13 +93,11 @@
 			// 
 			// ejFileExplorer1
 			// 
-			this.ejFileExplorer1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-			this.ejFileExplorer1.Location = new System.Drawing.Point(26, 21);
+			this.ejFileExplorer1.Dock = Wisej.Web.DockStyle.Fill;
+			this.ejFileExplorer1.Location = new System.Drawing.Point(8, 8);
 			this.ejFileExplorer1.Name = "ejFileExplorer1";
 			this.ejFileExplorer1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"showFooter\":true,\"showToolbar\":true,\"layout\":\"tile\",\"path\":\"/\"}")));
-			this.ejFileExplorer1.Size = new System.Drawing.Size(400, 581);
+			this.ejFileExplorer1.Size = new System.Drawing.Size(437, 608);
 			this.ejFileExplorer1.TabIndex = 0;
 			this.ejFileExplorer1.Text = "ejFileExplorer1";
 			this.ejFileExplorer1.WebRequest += new Wisej.Web.WebRequestHandler(this.ejFileExplorer1_WebRequest);

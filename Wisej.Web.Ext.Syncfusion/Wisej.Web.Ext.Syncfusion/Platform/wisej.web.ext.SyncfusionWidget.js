@@ -337,16 +337,6 @@ qx.Class.define("wisej.web.ext.SyncfusionWidget", {
 				this.initWidget();
 		},
 
-		/**
-		 * Destroys the wrapped widget.
-		 */
-		_onDestroyed: function () {
-			if (this.widget) {
-				this.widget.destroy();
-				this.widget = null;
-			}
-		},
-
 		// handles the "focus" event to try and set the
 		// focus to the inner widget.
 		_onFocus: function (e) {
@@ -361,10 +351,13 @@ qx.Class.define("wisej.web.ext.SyncfusionWidget", {
 			} catch (ex) { }
 		}
 	},
-	destroy: function(){
 
-		if (this.widget)
+	destruct: function () {
+
+		if (this.widget) {
 			this.widget.destroy();
+			this.widget = null;
+		}
 	}
 });
 

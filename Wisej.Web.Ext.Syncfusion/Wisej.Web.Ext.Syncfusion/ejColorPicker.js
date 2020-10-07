@@ -20,7 +20,8 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 // add local state properties.
-this.setStateProperties(this.getStateProperties().concat(["value"]));
+if (this.getStateProperties())
+	this.setStateProperties(this.getStateProperties().concat(["value"]));
 
 // Returns a data map that can be converted to JSON.
 this.filterEventData = function (args) {
@@ -31,6 +32,7 @@ this.filterEventData = function (args) {
  * Returns the value.
  */
 this.getValue = function () {
+
 	if (this.widget)
 		return this.widget.option("value");
 }

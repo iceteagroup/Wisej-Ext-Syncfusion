@@ -668,9 +668,9 @@
     <Content Include="ejCurrencyTextbox.js">
       <DependentUpon>ejCurrencyTextbox.cs</DependentUpon>
     </Content>
-    <Content Include="ejGrid.js">
+    <EmbeddedResource Include="ejGrid.js">
       <DependentUpon>ejGrid.cs</DependentUpon>
-    </Content>
+    </EmbeddedResource>
     <EmbeddedResource Include="ejHeatMap.js">
       <DependentUpon>ejHeatMap.cs</DependentUpon>
     </EmbeddedResource>

@@ -28,7 +28,6 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ejPivotClient));
 			this.comboBox1 = new Wisej.Web.ComboBox();
 			this.checkBox1 = new Wisej.Web.CheckBox();
 			this.checkBox2 = new Wisej.Web.CheckBox();
@@ -67,7 +66,7 @@
 			// panel
 			// 
 			this.panel.Controls.Add(this.ejPivotClient1);
-			this.panel.Size = new System.Drawing.Size(455, 355);
+			this.panel.Size = new System.Drawing.Size(560, 412);
 			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
@@ -141,8 +140,7 @@
             | Wisej.Web.AnchorStyles.Right)));
 			this.ejPivotClient1.Location = new System.Drawing.Point(12, 16);
 			this.ejPivotClient1.Name = "ejPivotClient1";
-			this.ejPivotClient1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejPivotClient1.Options"))));
-			this.ejPivotClient1.Size = new System.Drawing.Size(429, 320);
+			this.ejPivotClient1.Size = new System.Drawing.Size(534, 377);
 			this.ejPivotClient1.TabIndex = 0;
 			this.ejPivotClient1.Text = "ejPivotClient1";
 			this.ejPivotClient1.WebRequest += new Wisej.Web.WebRequestHandler(this.ejPivotClient1_WebRequest);
@@ -150,7 +148,8 @@
 			// ejPivotClient
 			// 
 			this.Name = "ejPivotClient";
-			this.Size = new System.Drawing.Size(864, 545);
+			this.Size = new System.Drawing.Size(969, 602);
+			this.Load += new System.EventHandler(this.ejPivotClient_Load);
 			this.groupBox1.ResumeLayout(false);
 			this.panel.ResumeLayout(false);
 			this.ResumeLayout(false);

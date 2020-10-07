@@ -29,7 +29,8 @@ this.initWidget = function () {
  */
 this.resizeWidget = function () {
 
-	this.widget.windowonresize();
+	if (this.widget)
+		this.widget.windowonresize();
 };
 
 // Returns a data map that can be converted to JSON.

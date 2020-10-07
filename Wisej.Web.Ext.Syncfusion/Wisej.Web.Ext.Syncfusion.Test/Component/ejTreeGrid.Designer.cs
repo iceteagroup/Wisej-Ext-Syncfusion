@@ -93,13 +93,11 @@
 			// 
 			// ejTreeGrid1
 			// 
-			this.ejTreeGrid1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-			this.ejTreeGrid1.Location = new System.Drawing.Point(19, 18);
+			this.ejTreeGrid1.Dock = Wisej.Web.DockStyle.Fill;
+			this.ejTreeGrid1.Location = new System.Drawing.Point(8, 8);
 			this.ejTreeGrid1.Name = "ejTreeGrid1";
 			this.ejTreeGrid1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejTreeGrid1.Options"))));
-			this.ejTreeGrid1.Size = new System.Drawing.Size(415, 514);
+			this.ejTreeGrid1.Size = new System.Drawing.Size(437, 535);
 			this.ejTreeGrid1.TabIndex = 0;
 			this.ejTreeGrid1.Text = "ejTreeGrid1";
 			// 

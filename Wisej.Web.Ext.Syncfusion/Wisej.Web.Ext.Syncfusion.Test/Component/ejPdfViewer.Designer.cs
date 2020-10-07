@@ -89,14 +89,10 @@
 			// 
 			// ejPdfViewer1
 			// 
-			this.ejPdfViewer1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-			this.ejPdfViewer1.Location = new System.Drawing.Point(29, 28);
+			this.ejPdfViewer1.Dock = Wisej.Web.DockStyle.Fill;
+			this.ejPdfViewer1.Location = new System.Drawing.Point(8, 8);
 			this.ejPdfViewer1.Name = "ejPdfViewer1";
-			this.ejPdfViewer1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"enableHighlightAnnotation\":true,\"enableTextMarkupAnnotations\":true,\"enableStrik" +
-        "ethroughAnnotation\":true,\"enableSignature\":false}")));
-			this.ejPdfViewer1.Size = new System.Drawing.Size(395, 430);
+			this.ejPdfViewer1.Size = new System.Drawing.Size(437, 470);
 			this.ejPdfViewer1.TabIndex = 0;
 			this.ejPdfViewer1.Text = "ejPdfViewer1";
 			this.ejPdfViewer1.Initialized += new System.EventHandler(this.ejPdfViewer1_Initialized);
@@ -141,7 +137,7 @@
 			this.trackBar1.Maximum = 400;
 			this.trackBar1.Minimum = 50;
 			this.trackBar1.Name = "trackBar1";
-			this.trackBar1.Size = new System.Drawing.Size(195, 34);
+			this.trackBar1.Size = new System.Drawing.Size(195, 36);
 			this.trackBar1.TabIndex = 1;
 			this.trackBar1.TickFrequency = 25;
 			this.trackBar1.Value = 100;
@@ -165,6 +161,7 @@
 			this.flexLayoutPanel1.Name = "flexLayoutPanel1";
 			this.flexLayoutPanel1.Size = new System.Drawing.Size(207, 72);
 			this.flexLayoutPanel1.TabIndex = 4;
+			this.flexLayoutPanel1.TabStop = true;
 			// 
 			// checkBox3
 			// 
@@ -196,6 +193,7 @@
 			// 
 			this.Name = "ejPdfViewer";
 			this.Size = new System.Drawing.Size(864, 678);
+			this.Load += new System.EventHandler(this.ejPdfViewer_Load);
 			this.groupBox1.ResumeLayout(false);
 			this.panel.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
